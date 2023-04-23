@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.logo {
+  font-family: 'Domaine Text';
+  color: #000000;
+  letter-spacing: 0.1em;
+  font-size: larger;
+  text-shadow: 0px 4px 4px #00000040;
+  text-decoration-color: rgb(242,146,2);
+}
