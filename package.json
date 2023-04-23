@@ -1,0 +1,16 @@
+{
+  "name": "unibook-e",
+  "version": "1.0.0",
+  "description": "This repository contains our exam project **Unibook⋅E** for ITU's course UX & Webprogramming (Spring 2023).",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd client && npm start\" \"nodemon server/index.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.22"
+  }
+}
