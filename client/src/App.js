@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './App.css';
 import theme from './Theme';
-import Fonts from './Fonts';
+import Fonts from './components/Fonts';
 import { ChakraProvider } from "@chakra-ui/react";
 import Frontpage from './pages/Frontpage';
 
