@@ -14,9 +14,19 @@ code {
 
 .logo {
   font-family: 'Domaine Text';
-  color: #000000;
+  color: #FAFAFA;
   letter-spacing: 0.1em;
   font-size: larger;
   text-shadow: 0px 4px 4px #00000040;
   text-decoration-color: rgb(242,146,2);
+}
+
+.top-bar-nav {
+  color: #FAFAFA;
+  font-family: 'Domaine Text';
+  text-shadow: 0px 4px 4px #00000040;
+}
+
+.top-bar {
+  background-color: #666666;
 }

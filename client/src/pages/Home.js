@@ -4,19 +4,17 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react';
-
 import Logo from '../components/Logo';
 import { PhoneIcon } from '@chakra-ui/icons';
 
 
-const Frontpage = () => (
+const Home = () => (
   <Container>
     <Stack>
-      <Logo></Logo>
-      <Text>Front page text body</Text>
+      <Text>Homepage text body and a phone icon to illustrate icons </Text>
       <PhoneIcon />
     </Stack>
   </Container>
 )
 
-export default Frontpage;
+export default Home;
