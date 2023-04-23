@@ -13,7 +13,7 @@ The server is hosted through the [Express](https://expressjs.com/) web-applicati
 
 ## Client
 
-The client is the front-end side of the application written in reactjs. It's hosted on port 3000
+The client is the front-end side of the application written in reactjs with the Chakra-UI framework. It's hosted on port 3000
 
 ## How to run
 
