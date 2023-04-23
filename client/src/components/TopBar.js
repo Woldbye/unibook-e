@@ -31,7 +31,7 @@ const TopBar = ({ boxWidth = '100vw' }) => {
               <Text fontSize='md' className='top-bar-nav'>Lokaler</Text >
             </Link>
             <Link to="/">
-              <Logo/>
+              <Logo position="relative" top='-2px' fontSize='2xl'/>
             </Link>
             <Link to="/book">
               <Text fontSize='md' className='top-bar-nav'>Book</Text >

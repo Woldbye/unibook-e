@@ -6,12 +6,12 @@ import {
 } from '@chakra-ui/react';
 
 
-const Book = () => (
+const Rooms = () => (
   <Container>
     <Stack>
-      <Text>BOOKING</Text>
+      <Text>ROOMS</Text>
     </Stack>
   </Container>
 )
 
-export default Book;
+export default Rooms;

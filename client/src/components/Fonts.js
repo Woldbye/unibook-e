@@ -6,12 +6,12 @@ const Fonts = () => (
     styles={`
       @font-face {
         font-family: 'Founders Grotesk';
-        src: url('./../fonts/WOFF2/founders-grotesk-regular.woff2') format('woff2');
+        src: url('./fonts/WOFF2/founders-grotesk-regular.woff2') format('woff2');
       }
 
       @font-face {
         font-family: 'Domaine Text';
-        src: url('./../fonts/WOFF2/domaine-text-regular.woff2') format('woff2');
+        src: url('./fonts/WOFF2/domaine-text-regular.woff2') format('woff2');
       }
     `}
   />

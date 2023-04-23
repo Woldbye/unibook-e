@@ -6,12 +6,12 @@ import {
 } from '@chakra-ui/react';
 
 
-const Lokaler = () => (
+const BookingRoom = () => (
   <Container>
     <Stack>
-      <Text>ROOMS</Text>
+      <Text>BOOKING ROOMS</Text>
     </Stack>
   </Container>
 )
 
-export default Lokaler;
+export default BookingRoom;
