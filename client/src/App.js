@@ -1,25 +1,24 @@
-import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
+import * as React from 'react';
 import './App.css';
+import theme from './Theme';
+import Fonts from './Fonts';
+import { ChakraProvider } from "@chakra-ui/react";
+import Frontpage from './pages/Frontpage';
 
 function App() {
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = React.useState('');
 
-  useEffect(() => {
+  React.useEffect(() => {
     fetch(`${process.env.REACT_APP_API_URL}/`)
       .then(res => res.text())
       .then(message => setMessage(message));
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          {message}
-        </p>
-      </header>
-    </div>
+    <ChakraProvider theme={theme}>
+      <Fonts /> 
+      <Frontpage></Frontpage>
+    </ChakraProvider>
   );
 }
 
