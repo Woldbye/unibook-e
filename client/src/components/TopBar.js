@@ -9,8 +9,8 @@ const TopBar = ({ boxWidth = '100vw' }) => {
     <>
       <Box
         position={"sticky"}
-        height={'4vh'}
         zIndex={5}
+        height={'4vh'}
         top={0}
         className={"top-bar"}
         minWidth={boxWidth}
@@ -28,13 +28,13 @@ const TopBar = ({ boxWidth = '100vw' }) => {
             justifyContent={"space-between"}
             >
             <Link to="/lokaler">
-              <Text fontSize={'lg'}>Lokaler</Text >
+              <Text fontSize='md' className='top-bar-nav'>Lokaler</Text >
             </Link>
             <Link to="/">
               <Logo/>
             </Link>
             <Link to="/book">
-              <Text fontSize={'lg'}>Book</Text >
+              <Text fontSize='md' className='top-bar-nav'>Book</Text >
             </Link>
           </Flex>
       </Box>
