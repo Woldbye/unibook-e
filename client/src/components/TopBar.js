@@ -2,8 +2,6 @@ import { Outlet, Link } from "react-router-dom";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import Logo from "./Logo";
 
-// export const TopBar = ({ children, boxWidth = '100vw'}) => {
-
 const TopBar = ({ boxWidth = '100vw' }) => {
   return (
     <>
@@ -27,7 +25,7 @@ const TopBar = ({ boxWidth = '100vw' }) => {
             marginLeft={'1.5%'}
             justifyContent={"space-between"}
             >
-            <Link to="/lokaler">
+            <Link to="/rooms">
               <Text fontSize='md' className='top-bar-nav'>Lokaler</Text >
             </Link>
             <Link to="/">
