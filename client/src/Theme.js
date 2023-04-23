@@ -6,7 +6,7 @@ const theme = extendTheme({
   },
   fonts: {
     heading: `'Domaine Text', sans-serif`,
-    body: `'Founters Grotesk', sans-serif`
+    body: `'Founders Grotesk', sans-serif`
   }
 })
 
