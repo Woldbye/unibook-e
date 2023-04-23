@@ -4,7 +4,6 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react';
-import Logo from '../components/Logo';
 import { PhoneIcon } from '@chakra-ui/icons';
 
 
