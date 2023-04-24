@@ -28,8 +28,9 @@ code {
   color: #FAFAFA;
   letter-spacing: 0.1em;
   font-size: larger;
-  text-shadow: 0px 4px 4px #00000040;
-  text-decoration-color: rgb(242,146,2);
+  text-shadow: 0px 2px 2px #00000040;
+  text-decoration-color: #37A5F5;
+  -webkit-text-fill-color: #ffffff;
 }
 
 .top-bar-nav {
