@@ -8,12 +8,12 @@ const TopBar = ({ boxWidth = '100vw' }) => {
       <Box
         position={"sticky"}
         zIndex={5}
-        height={'4vh'}
+        height={'6vh'}
         top={0}
         className={"top-bar"}
         minWidth={boxWidth}
         maxWidth={boxWidth}
-        minHeight={'3vh'}
+        minHeight={'4vh'}
         boxShadow={'0px 1px 4px #00000040'}
         justifyContent={'center'}
       >
@@ -21,18 +21,16 @@ const TopBar = ({ boxWidth = '100vw' }) => {
             direction={"row"}
             height={'100%'}
             alignItems={'center'}
-            marginRight={'1.5%'}
-            marginLeft={'1.5%'}
-            justifyContent={"space-between"}
-            >
+            justifyContent={"center"}
+          >
             <Link to="/rooms">
-              <Text fontSize='md' className='top-bar-nav'>Lokaler</Text >
+              <Text fontSize='md' className='top-bar-nav' paddingRight={'30px'}>Oversigt</Text >
             </Link>
             <Link to="/">
               <Logo position="relative" top='-2px' fontSize='2xl'/>
             </Link>
             <Link to="/book">
-              <Text fontSize='md' className='top-bar-nav'>Book</Text >
+              <Text fontSize='md' className='top-bar-nav' paddingLeft={'30px'}>Booking</Text >
             </Link>
           </Flex>
       </Box>
