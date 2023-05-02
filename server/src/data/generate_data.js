@@ -79,11 +79,13 @@ const Rooms = [
 
 const fs = require('fs');
 function write_rooms_to_file(file_dest) {
+  const json = JSON.stringify(Rooms,null,2);
   // write the rooms to a file in json format
-  fs.writeFile(file_dest,JSON.stringify(Rooms,null,2),(err) => {
+  fs.writeFile(file_dest,json,(err) => {
     if(err) throw err;
     console.log('The file has been saved!');
   });
+  return json;
 }
 
 module.exports = write_rooms_to_file;

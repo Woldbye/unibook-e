@@ -7,11 +7,11 @@ const app = express(); // initialize app
 /** Not a good idea to generate data like this for a live project */
 app.get('/generate_data',(req,res) => { 
   try {
-    write_rooms_to_file(path.join(__dirname,'data','rooms.json'));
+    const json = write_rooms_to_file(path.join(__dirname,'data','rooms.json'));
+    res.send(`[+] Data generated succesfully!\n${json}`);
   } catch (error) {
-    res.send(`[-] Failed data generation: ${error}`);
+    res.send(`[-] Failed data generation: \n${error}`);
   }
-  res.send('[+] Data generated succesfully!');
 })
 
 app.get('/', (req, res) => {
