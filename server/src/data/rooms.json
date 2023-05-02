@@ -1,0 +1,4082 @@
+[
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 0,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 30,
+    "id": "1-A-0"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 1,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 4,
+    "id": "1-A-1"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 2,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 35,
+    "id": "1-A-2"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 3,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 27,
+    "id": "1-A-3"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 4,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 47,
+    "id": "1-A-4"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 5,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 1,
+    "id": "1-A-5"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 6,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 10,
+    "id": "1-A-6"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 7,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 0,
+    "id": "1-A-7"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 8,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 17,
+    "id": "1-A-8"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 9,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 6,
+    "id": "1-A-9"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 10,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 44,
+    "id": "1-A-10"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 11,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 3,
+    "id": "1-A-11"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 12,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 14,
+    "id": "1-A-12"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 13,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 38,
+    "id": "1-A-13"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 14,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 31,
+    "id": "1-A-14"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 15,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 21,
+    "id": "1-A-15"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 16,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 52,
+    "id": "1-A-16"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 17,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 27,
+    "id": "1-A-17"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 18,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 57,
+    "id": "1-A-18"
+  },
+  {
+    "building_nr": 1,
+    "floor": 0,
+    "room": 19,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 57,
+    "id": "1-A-19"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 0,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 11,
+    "id": "1-B-0"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 1,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 44,
+    "id": "1-B-1"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 2,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 54,
+    "id": "1-B-2"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 3,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 4,
+    "id": "1-B-3"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 4,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 38,
+    "id": "1-B-4"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 5,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 48,
+    "id": "1-B-5"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 6,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 39,
+    "id": "1-B-6"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 7,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 43,
+    "id": "1-B-7"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 8,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 44,
+    "id": "1-B-8"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 9,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 36,
+    "id": "1-B-9"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 10,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 4,
+    "id": "1-B-10"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 11,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 58,
+    "id": "1-B-11"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 12,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 20,
+    "id": "1-B-12"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 13,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 24,
+    "id": "1-B-13"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 14,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 36,
+    "id": "1-B-14"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 15,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 48,
+    "id": "1-B-15"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 16,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 53,
+    "id": "1-B-16"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 17,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 33,
+    "id": "1-B-17"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 18,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 7,
+    "id": "1-B-18"
+  },
+  {
+    "building_nr": 1,
+    "floor": 1,
+    "room": 19,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 56,
+    "id": "1-B-19"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 0,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 50,
+    "id": "1-C-0"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 1,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 19,
+    "id": "1-C-1"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 2,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 4,
+    "id": "1-C-2"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 3,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 33,
+    "id": "1-C-3"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 4,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 6,
+    "id": "1-C-4"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 5,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 51,
+    "id": "1-C-5"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 6,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 44,
+    "id": "1-C-6"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 7,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 62,
+    "id": "1-C-7"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 8,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 10,
+    "id": "1-C-8"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 9,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 5,
+    "id": "1-C-9"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 10,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 10,
+    "id": "1-C-10"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 11,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 35,
+    "id": "1-C-11"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 12,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 53,
+    "id": "1-C-12"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 13,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 33,
+    "id": "1-C-13"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 14,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 55,
+    "id": "1-C-14"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 15,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 21,
+    "id": "1-C-15"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 16,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 31,
+    "id": "1-C-16"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 17,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 37,
+    "id": "1-C-17"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 18,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 41,
+    "id": "1-C-18"
+  },
+  {
+    "building_nr": 1,
+    "floor": 2,
+    "room": 19,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 40,
+    "id": "1-C-19"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 0,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 25,
+    "id": "1-D-0"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 1,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 22,
+    "id": "1-D-1"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 2,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 8,
+    "id": "1-D-2"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 3,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 11,
+    "id": "1-D-3"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 4,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 24,
+    "id": "1-D-4"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 5,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 56,
+    "id": "1-D-5"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 6,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 49,
+    "id": "1-D-6"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 7,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 58,
+    "id": "1-D-7"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 8,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 16,
+    "id": "1-D-8"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 9,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 22,
+    "id": "1-D-9"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 10,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 29,
+    "id": "1-D-10"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 11,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 59,
+    "id": "1-D-11"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 12,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 55,
+    "id": "1-D-12"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 13,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 61,
+    "id": "1-D-13"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 14,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 22,
+    "id": "1-D-14"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 15,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 44,
+    "id": "1-D-15"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 16,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 53,
+    "id": "1-D-16"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 17,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 14,
+    "id": "1-D-17"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 18,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 49,
+    "id": "1-D-18"
+  },
+  {
+    "building_nr": 1,
+    "floor": 3,
+    "room": 19,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 62,
+    "id": "1-D-19"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 0,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 18,
+    "id": "1-E-0"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 1,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 15,
+    "id": "1-E-1"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 2,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 40,
+    "id": "1-E-2"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 3,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 19,
+    "id": "1-E-3"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 4,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 38,
+    "id": "1-E-4"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 5,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 11,
+    "id": "1-E-5"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 6,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 21,
+    "id": "1-E-6"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 7,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 33,
+    "id": "1-E-7"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 8,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 28,
+    "id": "1-E-8"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 9,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 48,
+    "id": "1-E-9"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 10,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 55,
+    "id": "1-E-10"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 11,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 56,
+    "id": "1-E-11"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 12,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 40,
+    "id": "1-E-12"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 13,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 54,
+    "id": "1-E-13"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 14,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 26,
+    "id": "1-E-14"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 15,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 47,
+    "id": "1-E-15"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 16,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 59,
+    "id": "1-E-16"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 17,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 25,
+    "id": "1-E-17"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 18,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 57,
+    "id": "1-E-18"
+  },
+  {
+    "building_nr": 1,
+    "floor": 4,
+    "room": 19,
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "tag_flags": 5,
+    "id": "1-E-19"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 0,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 3,
+    "id": "2-A-0"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 1,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 13,
+    "id": "2-A-1"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 2,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 1,
+    "id": "2-A-2"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 3,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 13,
+    "id": "2-A-3"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 4,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 61,
+    "id": "2-A-4"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 5,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 22,
+    "id": "2-A-5"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 6,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 45,
+    "id": "2-A-6"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 7,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 30,
+    "id": "2-A-7"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 8,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 58,
+    "id": "2-A-8"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 9,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 42,
+    "id": "2-A-9"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 10,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 36,
+    "id": "2-A-10"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 11,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 41,
+    "id": "2-A-11"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 12,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 32,
+    "id": "2-A-12"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 13,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 45,
+    "id": "2-A-13"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 14,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 61,
+    "id": "2-A-14"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 15,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 51,
+    "id": "2-A-15"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 16,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 23,
+    "id": "2-A-16"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 17,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 47,
+    "id": "2-A-17"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 18,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 58,
+    "id": "2-A-18"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 19,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 2,
+    "id": "2-A-19"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 20,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 35,
+    "id": "2-A-20"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 21,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 44,
+    "id": "2-A-21"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 22,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 5,
+    "id": "2-A-22"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 23,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 55,
+    "id": "2-A-23"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 24,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 13,
+    "id": "2-A-24"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 25,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 46,
+    "id": "2-A-25"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 26,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 13,
+    "id": "2-A-26"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 27,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 7,
+    "id": "2-A-27"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 28,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 45,
+    "id": "2-A-28"
+  },
+  {
+    "building_nr": 2,
+    "floor": 0,
+    "room": 29,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 1,
+    "id": "2-A-29"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 0,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 24,
+    "id": "2-B-0"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 1,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 24,
+    "id": "2-B-1"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 2,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 27,
+    "id": "2-B-2"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 3,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 19,
+    "id": "2-B-3"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 4,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 6,
+    "id": "2-B-4"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 5,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 60,
+    "id": "2-B-5"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 6,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 49,
+    "id": "2-B-6"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 7,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 58,
+    "id": "2-B-7"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 8,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 40,
+    "id": "2-B-8"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 9,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 9,
+    "id": "2-B-9"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 10,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 27,
+    "id": "2-B-10"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 11,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 55,
+    "id": "2-B-11"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 12,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 58,
+    "id": "2-B-12"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 13,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 26,
+    "id": "2-B-13"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 14,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 5,
+    "id": "2-B-14"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 15,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 37,
+    "id": "2-B-15"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 16,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 47,
+    "id": "2-B-16"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 17,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 19,
+    "id": "2-B-17"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 18,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 47,
+    "id": "2-B-18"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 19,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 20,
+    "id": "2-B-19"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 20,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 46,
+    "id": "2-B-20"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 21,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 59,
+    "id": "2-B-21"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 22,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 50,
+    "id": "2-B-22"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 23,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 43,
+    "id": "2-B-23"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 24,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 30,
+    "id": "2-B-24"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 25,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 29,
+    "id": "2-B-25"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 26,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 59,
+    "id": "2-B-26"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 27,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 45,
+    "id": "2-B-27"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 28,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 21,
+    "id": "2-B-28"
+  },
+  {
+    "building_nr": 2,
+    "floor": 1,
+    "room": 29,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 2,
+    "id": "2-B-29"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 0,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 42,
+    "id": "2-C-0"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 1,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 51,
+    "id": "2-C-1"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 2,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 29,
+    "id": "2-C-2"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 3,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 29,
+    "id": "2-C-3"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 4,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 62,
+    "id": "2-C-4"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 5,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 23,
+    "id": "2-C-5"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 6,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 48,
+    "id": "2-C-6"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 7,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 55,
+    "id": "2-C-7"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 8,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 57,
+    "id": "2-C-8"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 9,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 14,
+    "id": "2-C-9"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 10,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 55,
+    "id": "2-C-10"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 11,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 62,
+    "id": "2-C-11"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 12,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 62,
+    "id": "2-C-12"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 13,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 35,
+    "id": "2-C-13"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 14,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 16,
+    "id": "2-C-14"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 15,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 55,
+    "id": "2-C-15"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 16,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 47,
+    "id": "2-C-16"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 17,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 25,
+    "id": "2-C-17"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 18,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 47,
+    "id": "2-C-18"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 19,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 36,
+    "id": "2-C-19"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 20,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 45,
+    "id": "2-C-20"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 21,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 3,
+    "id": "2-C-21"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 22,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 42,
+    "id": "2-C-22"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 23,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 27,
+    "id": "2-C-23"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 24,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 6,
+    "id": "2-C-24"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 25,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 14,
+    "id": "2-C-25"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 26,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 20,
+    "id": "2-C-26"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 27,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 60,
+    "id": "2-C-27"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 28,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 51,
+    "id": "2-C-28"
+  },
+  {
+    "building_nr": 2,
+    "floor": 2,
+    "room": 29,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 22,
+    "id": "2-C-29"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 0,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 57,
+    "id": "2-D-0"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 1,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 43,
+    "id": "2-D-1"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 2,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 18,
+    "id": "2-D-2"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 3,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 22,
+    "id": "2-D-3"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 4,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 42,
+    "id": "2-D-4"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 5,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 33,
+    "id": "2-D-5"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 6,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 2,
+    "id": "2-D-6"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 7,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 26,
+    "id": "2-D-7"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 8,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 24,
+    "id": "2-D-8"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 9,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 31,
+    "id": "2-D-9"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 10,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 40,
+    "id": "2-D-10"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 11,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 46,
+    "id": "2-D-11"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 12,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 38,
+    "id": "2-D-12"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 13,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 17,
+    "id": "2-D-13"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 14,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 5,
+    "id": "2-D-14"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 15,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 7,
+    "id": "2-D-15"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 16,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 26,
+    "id": "2-D-16"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 17,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 38,
+    "id": "2-D-17"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 18,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 57,
+    "id": "2-D-18"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 19,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 0,
+    "id": "2-D-19"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 20,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 6,
+    "id": "2-D-20"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 21,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 46,
+    "id": "2-D-21"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 22,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 33,
+    "id": "2-D-22"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 23,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 32,
+    "id": "2-D-23"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 24,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 25,
+    "id": "2-D-24"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 25,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 18,
+    "id": "2-D-25"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 26,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 19,
+    "id": "2-D-26"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 27,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 33,
+    "id": "2-D-27"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 28,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 39,
+    "id": "2-D-28"
+  },
+  {
+    "building_nr": 2,
+    "floor": 3,
+    "room": 29,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 18,
+    "id": "2-D-29"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 0,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 22,
+    "id": "2-E-0"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 1,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 44,
+    "id": "2-E-1"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 2,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 47,
+    "id": "2-E-2"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 3,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 19,
+    "id": "2-E-3"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 4,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 1,
+    "id": "2-E-4"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 5,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 57,
+    "id": "2-E-5"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 6,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 28,
+    "id": "2-E-6"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 7,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 44,
+    "id": "2-E-7"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 8,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 38,
+    "id": "2-E-8"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 9,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 56,
+    "id": "2-E-9"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 10,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 60,
+    "id": "2-E-10"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 11,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 33,
+    "id": "2-E-11"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 12,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 12,
+    "id": "2-E-12"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 13,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 52,
+    "id": "2-E-13"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 14,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 48,
+    "id": "2-E-14"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 15,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 27,
+    "id": "2-E-15"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 16,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 44,
+    "id": "2-E-16"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 17,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 27,
+    "id": "2-E-17"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 18,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 7,
+    "id": "2-E-18"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 19,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 15,
+    "id": "2-E-19"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 20,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 44,
+    "id": "2-E-20"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 21,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 33,
+    "id": "2-E-21"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 22,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 47,
+    "id": "2-E-22"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 23,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 36,
+    "id": "2-E-23"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 24,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 47,
+    "id": "2-E-24"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 25,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 33,
+    "id": "2-E-25"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 26,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 16,
+    "id": "2-E-26"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 27,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 7,
+    "id": "2-E-27"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 28,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 56,
+    "id": "2-E-28"
+  },
+  {
+    "building_nr": 2,
+    "floor": 4,
+    "room": 29,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 25,
+    "id": "2-E-29"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 0,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 50,
+    "id": "2-F-0"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 1,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 8,
+    "id": "2-F-1"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 2,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 58,
+    "id": "2-F-2"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 3,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 28,
+    "id": "2-F-3"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 4,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 41,
+    "id": "2-F-4"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 5,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 54,
+    "id": "2-F-5"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 6,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 28,
+    "id": "2-F-6"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 7,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 7,
+    "id": "2-F-7"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 8,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 30,
+    "id": "2-F-8"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 9,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 17,
+    "id": "2-F-9"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 10,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 19,
+    "id": "2-F-10"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 11,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 53,
+    "id": "2-F-11"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 12,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 32,
+    "id": "2-F-12"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 13,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 20,
+    "id": "2-F-13"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 14,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 54,
+    "id": "2-F-14"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 15,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 57,
+    "id": "2-F-15"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 16,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 47,
+    "id": "2-F-16"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 17,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 61,
+    "id": "2-F-17"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 18,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 56,
+    "id": "2-F-18"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 19,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 54,
+    "id": "2-F-19"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 20,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 55,
+    "id": "2-F-20"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 21,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 40,
+    "id": "2-F-21"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 22,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 13,
+    "id": "2-F-22"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 23,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 58,
+    "id": "2-F-23"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 24,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 51,
+    "id": "2-F-24"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 25,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 39,
+    "id": "2-F-25"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 26,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 59,
+    "id": "2-F-26"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 27,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 17,
+    "id": "2-F-27"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 28,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 34,
+    "id": "2-F-28"
+  },
+  {
+    "building_nr": 2,
+    "floor": 5,
+    "room": 29,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 18,
+    "id": "2-F-29"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 0,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 35,
+    "id": "2-G-0"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 1,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 3,
+    "id": "2-G-1"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 2,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 8,
+    "id": "2-G-2"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 3,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 30,
+    "id": "2-G-3"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 4,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 40,
+    "id": "2-G-4"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 5,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 52,
+    "id": "2-G-5"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 6,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 56,
+    "id": "2-G-6"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 7,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 20,
+    "id": "2-G-7"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 8,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 27,
+    "id": "2-G-8"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 9,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 19,
+    "id": "2-G-9"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 10,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 23,
+    "id": "2-G-10"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 11,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 56,
+    "id": "2-G-11"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 12,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 40,
+    "id": "2-G-12"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 13,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 59,
+    "id": "2-G-13"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 14,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 18,
+    "id": "2-G-14"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 15,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 53,
+    "id": "2-G-15"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 16,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 60,
+    "id": "2-G-16"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 17,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 42,
+    "id": "2-G-17"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 18,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 15,
+    "id": "2-G-18"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 19,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 62,
+    "id": "2-G-19"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 20,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 37,
+    "id": "2-G-20"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 21,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 37,
+    "id": "2-G-21"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 22,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 37,
+    "id": "2-G-22"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 23,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 17,
+    "id": "2-G-23"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 24,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 47,
+    "id": "2-G-24"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 25,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 54,
+    "id": "2-G-25"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 26,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 15,
+    "id": "2-G-26"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 27,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 20,
+    "id": "2-G-27"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 28,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 45,
+    "id": "2-G-28"
+  },
+  {
+    "building_nr": 2,
+    "floor": 6,
+    "room": 29,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 15,
+    "id": "2-G-29"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 0,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 8,
+    "id": "2-H-0"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 1,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 8,
+    "id": "2-H-1"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 2,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 48,
+    "id": "2-H-2"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 3,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 60,
+    "id": "2-H-3"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 4,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 15,
+    "id": "2-H-4"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 5,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 58,
+    "id": "2-H-5"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 6,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 26,
+    "id": "2-H-6"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 7,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 55,
+    "id": "2-H-7"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 8,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 58,
+    "id": "2-H-8"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 9,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 62,
+    "id": "2-H-9"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 10,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 46,
+    "id": "2-H-10"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 11,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 43,
+    "id": "2-H-11"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 12,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 54,
+    "id": "2-H-12"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 13,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 18,
+    "id": "2-H-13"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 14,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 22,
+    "id": "2-H-14"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 15,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 39,
+    "id": "2-H-15"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 16,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 53,
+    "id": "2-H-16"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 17,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 42,
+    "id": "2-H-17"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 18,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 61,
+    "id": "2-H-18"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 19,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 1,
+    "id": "2-H-19"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 20,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 35,
+    "id": "2-H-20"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 21,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 32,
+    "id": "2-H-21"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 22,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 6,
+    "id": "2-H-22"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 23,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 45,
+    "id": "2-H-23"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 24,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 45,
+    "id": "2-H-24"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 25,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 43,
+    "id": "2-H-25"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 26,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 2,
+    "id": "2-H-26"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 27,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 41,
+    "id": "2-H-27"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 28,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 45,
+    "id": "2-H-28"
+  },
+  {
+    "building_nr": 2,
+    "floor": 7,
+    "room": 29,
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "tag_flags": 62,
+    "id": "2-H-29"
+  }
+]
