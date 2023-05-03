@@ -1,29 +1,4 @@
-/**
- * All the available tags for the rooms as enums, the tags are represented as bits in a number
- * to allow for a single number to represent multiple tags.
- */
-var Tag = {
-  None: 0,
-  Screen: 1,
-  Projector: 2,
-  Outlets: 4,
-  TableDesks: 8,
-  AC: 16,
-  Whiteboard: 32,
-} 
-const TagMask = 63; // 111111
-const makeRandomTags = () => Math.floor(Math.random() * TagMask);
-
-const Room = (building_nr,floor,room,address,tag_flags) => {
-  return {
-    building_nr: building_nr,
-    floor: floor,
-    room: room,
-    address: address,
-    tag_flags: tag_flags,
-    id: `${building_nr}-${String.fromCharCode(('A'.charCodeAt(0)+floor))}-${room}`,
-  };
-};
+const Room = require('../../shared/room.js');
 
 const addresses = [
   {
@@ -65,7 +40,7 @@ function populate_building(building) {
   let rooms = [];
   for (let i = 0; i < building.floors; i++) {
     for(let j = 0;j < building.rooms_per_floor;j++) {
-      const room = Room(building.building_nr,i,j,building.address,makeRandomTags());
+      const room = Room.createRoom(building.building_nr,i,j,building.address,Room.createRandomTags());
       rooms.push(room);
     }
   }
@@ -78,14 +53,21 @@ const Rooms = [
 ];
 
 const fs = require('fs');
-function write_rooms_to_file(file_dest) {
+const path = require('path');
+
+/** fname without .json extension */
+function write_rooms_to_file(fname) {
   const json = JSON.stringify(Rooms,null,2);
+  
+  var fpath = path.join(__dirname,'data',`${fname}.json`);
+  for(let i = 1;fs.existsSync(fpath);++i) {
+    fpath = path.join(__dirname,'data',`${fname}_${i}.json`);
+  }
+  console.log("Writing to file: ",fpath);
+  
   // write the rooms to a file in json format
-  fs.writeFile(file_dest,json,(err) => {
-    if(err) throw err;
-    console.log('The file has been saved!');
-  });
+  fs.writeFileSync(fpath,json); 
   return json;
 }
 
-module.exports = write_rooms_to_file;
+write_rooms_to_file('rooms')

@@ -4,7 +4,8 @@
   "description": "This repository contains our exam project **Unibook⋅E** for ITU's course UX & Webprogramming (Spring 2023).",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"cd client && npm start\" \"nodemon server/src/index.js\""
+    "start": "concurrently \"cd client && npm start\" \"nodemon server/src/index.js\"",
+    "generate": "cd server && npm run generate"
   },
   "keywords": [],
   "author": "",
