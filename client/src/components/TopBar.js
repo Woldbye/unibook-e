@@ -24,13 +24,13 @@ const TopBar = ({ boxWidth = '100vw' }) => {
             justifyContent={"center"}
           >
             <Link to="/rooms">
-              <Text fontSize='md' className='top-bar-nav' paddingRight={'30px'}>Oversigt</Text >
+              <Text fontSize='md' className='top-bar-nav' paddingRight={'20px'}>Oversigt</Text >
             </Link>
             <Link to="/">
               <Logo position="relative" top='-2px' fontSize='2xl'/>
             </Link>
             <Link to="/book">
-              <Text fontSize='md' className='top-bar-nav' paddingLeft={'30px'}>Booking</Text >
+              <Text fontSize='md' className='top-bar-nav' paddingLeft={'20px'}>Booking</Text >
             </Link>
           </Flex>
       </Box>
