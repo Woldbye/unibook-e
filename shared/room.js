@@ -10,9 +10,24 @@ const Tag = {
   TableDesks: 8,
   AC: 16,
   Whiteboard: 32,
+  Blackboard: 64,
 };
 
-const TagMask = 63; // 111111
+const RoomSizes = {
+  XS: 8,
+  S: 16,
+  M: 20,
+  L: 32,
+  XL: 64,
+  XLL: 128,
+};
+const RoomSizeArray = [
+  8, 16, 20, 32, 64, 128
+]
+
+const NrOfRoomSizes = 6; 
+const NrOfTags = 7;
+const TagMask = (1 << NrOfTags) - 1; // 2^(Tag size) - 1 
 const createRandomTags = () => Math.floor(Math.random() * TagMask);
 
 /**
@@ -41,13 +56,20 @@ const getTags = (tag_flags) => {
 }
 
 
-const createRoom = (building_nr,floor,room,address,tag_flags) => {
+const createRoom = (building_nr,floor,room,address,tag_flags,room_size) => {
   return {
     building_nr: building_nr,
     floor: floor,
     room: room,
     address: address,
-    tag_flags: tag_flags,
+    size: room_size,
+    hasScreen: hasTag(tag_flags,Tag.Screen),
+    hasProjector: hasTag(tag_flags,Tag.Projector),
+    hasOutlets: hasTag(tag_flags,Tag.Outlets),
+    hasTableDesks: hasTag(tag_flags,Tag.TableDesks),
+    hasAC: hasTag(tag_flags,Tag.AC),
+    hasWhiteBoard: hasTag(tag_flags,Tag.Whiteboard),
+    hasBlackBoard: hasTag(tag_flags,Tag.Blackboard),
     id: `${building_nr}-${floor}-${room}`,
   }
 }
@@ -55,6 +77,9 @@ const createRoom = (building_nr,floor,room,address,tag_flags) => {
 module.exports = {
   Tag,
   TagMask,
+  RoomSizes,
+  RoomSizeArray,
+  NrOfRoomSizes,
   createRoom,
   createRandomTags,
   hasTag,

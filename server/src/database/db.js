@@ -1,17 +1,22 @@
-import { LowSync } from 'lowdb';
-import { JSONFileSync } from 'lowdb/node';
+const fs = require('fs');
 
-const fpath = path.join(__dirname,'data','rooms.json');
-const db_json = new JSONFileSync('db.json');
-const db = new LowSync(db_json);
-
-await db.read();
-
-
-
-
-// class Database {
+class Database {
+  constructor() {
+    
+  }
   
-
-
-// };
+  load_rooms() {
+    const fpath = path.join(__dirname,'data','rooms.json'); 
+    const json = fs.readFileSync(fpath);
+  } 
+  
+  /** Returns an array of all rooms that satisfy the given room_query */
+  query(room_query) {
+    
+  }
+  
+  /** Returns true if the room with the given id has been succesfully booked */
+  book_room(room_id) {
+    
+  }
+};

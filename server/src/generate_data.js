@@ -40,7 +40,14 @@ function populate_building(building) {
   let rooms = [];
   for (let i = 0; i < building.floors; i++) {
     for(let j = 0;j < building.rooms_per_floor;j++) {
-      const room = Room.createRoom(building.building_nr,i,j,building.address,Room.createRandomTags());
+      const room = Room.createRoom(
+        building.building_nr,
+        i,
+        j,
+        building.address,
+        Room.createRandomTags(),
+        Room.RoomSizeArray[Math.floor(Math.random() * Room.NrOfRoomSizes)]
+      );
       rooms.push(room);
     }
   }

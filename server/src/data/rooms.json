@@ -8,8 +8,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 33,
-    "id": "1-A-0"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-0-0"
   },
   {
     "building_nr": 1,
@@ -20,8 +27,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 52,
-    "id": "1-A-1"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-0-1"
   },
   {
     "building_nr": 1,
@@ -32,8 +46,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 9,
-    "id": "1-A-2"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-0-2"
   },
   {
     "building_nr": 1,
@@ -44,8 +65,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 4,
-    "id": "1-A-3"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "1-0-3"
   },
   {
     "building_nr": 1,
@@ -56,8 +84,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 43,
-    "id": "1-A-4"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-0-4"
   },
   {
     "building_nr": 1,
@@ -68,8 +103,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 8,
-    "id": "1-A-5"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "1-0-5"
   },
   {
     "building_nr": 1,
@@ -80,8 +122,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 5,
-    "id": "1-A-6"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-0-6"
   },
   {
     "building_nr": 1,
@@ -92,8 +141,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 2,
-    "id": "1-A-7"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-0-7"
   },
   {
     "building_nr": 1,
@@ -104,8 +160,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 50,
-    "id": "1-A-8"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "1-0-8"
   },
   {
     "building_nr": 1,
@@ -116,8 +179,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 44,
-    "id": "1-A-9"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-0-9"
   },
   {
     "building_nr": 1,
@@ -128,8 +198,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 10,
-    "id": "1-A-10"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-0-10"
   },
   {
     "building_nr": 1,
@@ -140,8 +217,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 12,
-    "id": "1-A-11"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-0-11"
   },
   {
     "building_nr": 1,
@@ -152,8 +236,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 54,
-    "id": "1-A-12"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-0-12"
   },
   {
     "building_nr": 1,
@@ -164,8 +255,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 56,
-    "id": "1-A-13"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-0-13"
   },
   {
     "building_nr": 1,
@@ -176,8 +274,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 36,
-    "id": "1-A-14"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-0-14"
   },
   {
     "building_nr": 1,
@@ -188,8 +293,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 21,
-    "id": "1-A-15"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-0-15"
   },
   {
     "building_nr": 1,
@@ -200,8 +312,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 0,
-    "id": "1-A-16"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "1-0-16"
   },
   {
     "building_nr": 1,
@@ -212,8 +331,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 34,
-    "id": "1-A-17"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "1-0-17"
   },
   {
     "building_nr": 1,
@@ -224,8 +350,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 49,
-    "id": "1-A-18"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-0-18"
   },
   {
     "building_nr": 1,
@@ -236,8 +369,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 34,
-    "id": "1-A-19"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-0-19"
   },
   {
     "building_nr": 1,
@@ -248,8 +388,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 30,
-    "id": "1-B-0"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-1-0"
   },
   {
     "building_nr": 1,
@@ -260,8 +407,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 43,
-    "id": "1-B-1"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-1-1"
   },
   {
     "building_nr": 1,
@@ -272,8 +426,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 12,
-    "id": "1-B-2"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-1-2"
   },
   {
     "building_nr": 1,
@@ -284,8 +445,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 25,
-    "id": "1-B-3"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-1-3"
   },
   {
     "building_nr": 1,
@@ -296,8 +464,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 44,
-    "id": "1-B-4"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-1-4"
   },
   {
     "building_nr": 1,
@@ -308,8 +483,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 4,
-    "id": "1-B-5"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-1-5"
   },
   {
     "building_nr": 1,
@@ -320,8 +502,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 27,
-    "id": "1-B-6"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-1-6"
   },
   {
     "building_nr": 1,
@@ -332,8 +521,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 27,
-    "id": "1-B-7"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "1-1-7"
   },
   {
     "building_nr": 1,
@@ -344,8 +540,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 58,
-    "id": "1-B-8"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-1-8"
   },
   {
     "building_nr": 1,
@@ -356,8 +559,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 2,
-    "id": "1-B-9"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-1-9"
   },
   {
     "building_nr": 1,
@@ -368,8 +578,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 11,
-    "id": "1-B-10"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "1-1-10"
   },
   {
     "building_nr": 1,
@@ -380,8 +597,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 24,
-    "id": "1-B-11"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-1-11"
   },
   {
     "building_nr": 1,
@@ -392,8 +616,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 33,
-    "id": "1-B-12"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-1-12"
   },
   {
     "building_nr": 1,
@@ -404,8 +635,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 36,
-    "id": "1-B-13"
+    "size": 16,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "1-1-13"
   },
   {
     "building_nr": 1,
@@ -416,8 +654,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 20,
-    "id": "1-B-14"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-1-14"
   },
   {
     "building_nr": 1,
@@ -428,8 +673,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 42,
-    "id": "1-B-15"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "1-1-15"
   },
   {
     "building_nr": 1,
@@ -440,8 +692,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 16,
-    "id": "1-B-16"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-1-16"
   },
   {
     "building_nr": 1,
@@ -452,8 +711,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 16,
-    "id": "1-B-17"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "1-1-17"
   },
   {
     "building_nr": 1,
@@ -464,8 +730,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 14,
-    "id": "1-B-18"
+    "size": 16,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "1-1-18"
   },
   {
     "building_nr": 1,
@@ -476,8 +749,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 52,
-    "id": "1-B-19"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-1-19"
   },
   {
     "building_nr": 1,
@@ -488,8 +768,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 48,
-    "id": "1-C-0"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-2-0"
   },
   {
     "building_nr": 1,
@@ -500,8 +787,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 56,
-    "id": "1-C-1"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-2-1"
   },
   {
     "building_nr": 1,
@@ -512,8 +806,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 12,
-    "id": "1-C-2"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-2-2"
   },
   {
     "building_nr": 1,
@@ -524,8 +825,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 9,
-    "id": "1-C-3"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-2-3"
   },
   {
     "building_nr": 1,
@@ -536,8 +844,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 16,
-    "id": "1-C-4"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-2-4"
   },
   {
     "building_nr": 1,
@@ -548,8 +863,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 8,
-    "id": "1-C-5"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-2-5"
   },
   {
     "building_nr": 1,
@@ -560,8 +882,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 44,
-    "id": "1-C-6"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-2-6"
   },
   {
     "building_nr": 1,
@@ -572,8 +901,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 49,
-    "id": "1-C-7"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-2-7"
   },
   {
     "building_nr": 1,
@@ -584,8 +920,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 48,
-    "id": "1-C-8"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-2-8"
   },
   {
     "building_nr": 1,
@@ -596,8 +939,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 8,
-    "id": "1-C-9"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "1-2-9"
   },
   {
     "building_nr": 1,
@@ -608,8 +958,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 42,
-    "id": "1-C-10"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-2-10"
   },
   {
     "building_nr": 1,
@@ -620,8 +977,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 8,
-    "id": "1-C-11"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-2-11"
   },
   {
     "building_nr": 1,
@@ -632,8 +996,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 7,
-    "id": "1-C-12"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-2-12"
   },
   {
     "building_nr": 1,
@@ -644,8 +1015,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 48,
-    "id": "1-C-13"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-2-13"
   },
   {
     "building_nr": 1,
@@ -656,8 +1034,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 27,
-    "id": "1-C-14"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-2-14"
   },
   {
     "building_nr": 1,
@@ -668,8 +1053,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 58,
-    "id": "1-C-15"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-2-15"
   },
   {
     "building_nr": 1,
@@ -680,8 +1072,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 15,
-    "id": "1-C-16"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-2-16"
   },
   {
     "building_nr": 1,
@@ -692,8 +1091,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 6,
-    "id": "1-C-17"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-2-17"
   },
   {
     "building_nr": 1,
@@ -704,8 +1110,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 37,
-    "id": "1-C-18"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-2-18"
   },
   {
     "building_nr": 1,
@@ -716,8 +1129,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 24,
-    "id": "1-C-19"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-2-19"
   },
   {
     "building_nr": 1,
@@ -728,8 +1148,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 53,
-    "id": "1-D-0"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-3-0"
   },
   {
     "building_nr": 1,
@@ -740,8 +1167,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 35,
-    "id": "1-D-1"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-3-1"
   },
   {
     "building_nr": 1,
@@ -752,8 +1186,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 43,
-    "id": "1-D-2"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-3-2"
   },
   {
     "building_nr": 1,
@@ -764,8 +1205,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 5,
-    "id": "1-D-3"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-3-3"
   },
   {
     "building_nr": 1,
@@ -776,8 +1224,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 58,
-    "id": "1-D-4"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-3-4"
   },
   {
     "building_nr": 1,
@@ -788,8 +1243,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 16,
-    "id": "1-D-5"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-3-5"
   },
   {
     "building_nr": 1,
@@ -800,8 +1262,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 5,
-    "id": "1-D-6"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "1-3-6"
   },
   {
     "building_nr": 1,
@@ -812,8 +1281,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 7,
-    "id": "1-D-7"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "1-3-7"
   },
   {
     "building_nr": 1,
@@ -824,8 +1300,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 35,
-    "id": "1-D-8"
+    "size": 16,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-3-8"
   },
   {
     "building_nr": 1,
@@ -836,8 +1319,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 52,
-    "id": "1-D-9"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-3-9"
   },
   {
     "building_nr": 1,
@@ -848,8 +1338,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 5,
-    "id": "1-D-10"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-3-10"
   },
   {
     "building_nr": 1,
@@ -860,8 +1357,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 37,
-    "id": "1-D-11"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-3-11"
   },
   {
     "building_nr": 1,
@@ -872,8 +1376,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 17,
-    "id": "1-D-12"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-3-12"
   },
   {
     "building_nr": 1,
@@ -884,8 +1395,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 35,
-    "id": "1-D-13"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-3-13"
   },
   {
     "building_nr": 1,
@@ -896,8 +1414,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 30,
-    "id": "1-D-14"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-3-14"
   },
   {
     "building_nr": 1,
@@ -908,8 +1433,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 21,
-    "id": "1-D-15"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-3-15"
   },
   {
     "building_nr": 1,
@@ -920,8 +1452,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 30,
-    "id": "1-D-16"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-3-16"
   },
   {
     "building_nr": 1,
@@ -932,8 +1471,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 38,
-    "id": "1-D-17"
+    "size": 16,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "1-3-17"
   },
   {
     "building_nr": 1,
@@ -944,8 +1490,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 1,
-    "id": "1-D-18"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-3-18"
   },
   {
     "building_nr": 1,
@@ -956,8 +1509,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 1,
-    "id": "1-D-19"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-3-19"
   },
   {
     "building_nr": 1,
@@ -968,8 +1528,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 7,
-    "id": "1-E-0"
+    "size": 16,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-4-0"
   },
   {
     "building_nr": 1,
@@ -980,8 +1547,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 45,
-    "id": "1-E-1"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-4-1"
   },
   {
     "building_nr": 1,
@@ -992,8 +1566,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 30,
-    "id": "1-E-2"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-4-2"
   },
   {
     "building_nr": 1,
@@ -1004,8 +1585,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 42,
-    "id": "1-E-3"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-4-3"
   },
   {
     "building_nr": 1,
@@ -1016,8 +1604,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 10,
-    "id": "1-E-4"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-4-4"
   },
   {
     "building_nr": 1,
@@ -1028,8 +1623,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 34,
-    "id": "1-E-5"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-4-5"
   },
   {
     "building_nr": 1,
@@ -1040,8 +1642,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 9,
-    "id": "1-E-6"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-4-6"
   },
   {
     "building_nr": 1,
@@ -1052,8 +1661,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 10,
-    "id": "1-E-7"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "1-4-7"
   },
   {
     "building_nr": 1,
@@ -1064,8 +1680,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 12,
-    "id": "1-E-8"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-4-8"
   },
   {
     "building_nr": 1,
@@ -1076,8 +1699,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 42,
-    "id": "1-E-9"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-4-9"
   },
   {
     "building_nr": 1,
@@ -1088,8 +1718,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 45,
-    "id": "1-E-10"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "1-4-10"
   },
   {
     "building_nr": 1,
@@ -1100,8 +1737,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 41,
-    "id": "1-E-11"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-4-11"
   },
   {
     "building_nr": 1,
@@ -1112,8 +1756,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 45,
-    "id": "1-E-12"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "1-4-12"
   },
   {
     "building_nr": 1,
@@ -1124,8 +1775,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 31,
-    "id": "1-E-13"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-4-13"
   },
   {
     "building_nr": 1,
@@ -1136,8 +1794,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 4,
-    "id": "1-E-14"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-4-14"
   },
   {
     "building_nr": 1,
@@ -1148,8 +1813,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 61,
-    "id": "1-E-15"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "1-4-15"
   },
   {
     "building_nr": 1,
@@ -1160,8 +1832,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 38,
-    "id": "1-E-16"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-4-16"
   },
   {
     "building_nr": 1,
@@ -1172,8 +1851,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 42,
-    "id": "1-E-17"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-4-17"
   },
   {
     "building_nr": 1,
@@ -1184,8 +1870,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 33,
-    "id": "1-E-18"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "1-4-18"
   },
   {
     "building_nr": 1,
@@ -1196,8 +1889,15 @@
       "city": "København",
       "zip": "2300"
     },
-    "tag_flags": 28,
-    "id": "1-E-19"
+    "size": 16,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "1-4-19"
   },
   {
     "building_nr": 2,
@@ -1208,8 +1908,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 9,
-    "id": "2-A-0"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-0-0"
   },
   {
     "building_nr": 2,
@@ -1220,8 +1927,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 13,
-    "id": "2-A-1"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-0-1"
   },
   {
     "building_nr": 2,
@@ -1232,8 +1946,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 10,
-    "id": "2-A-2"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-0-2"
   },
   {
     "building_nr": 2,
@@ -1244,8 +1965,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 46,
-    "id": "2-A-3"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-0-3"
   },
   {
     "building_nr": 2,
@@ -1256,8 +1984,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 38,
-    "id": "2-A-4"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-0-4"
   },
   {
     "building_nr": 2,
@@ -1268,8 +2003,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 34,
-    "id": "2-A-5"
+    "size": 16,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-0-5"
   },
   {
     "building_nr": 2,
@@ -1280,8 +2022,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 7,
-    "id": "2-A-6"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-0-6"
   },
   {
     "building_nr": 2,
@@ -1292,8 +2041,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 0,
-    "id": "2-A-7"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-0-7"
   },
   {
     "building_nr": 2,
@@ -1304,8 +2060,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 60,
-    "id": "2-A-8"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-0-8"
   },
   {
     "building_nr": 2,
@@ -1316,8 +2079,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 61,
-    "id": "2-A-9"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-0-9"
   },
   {
     "building_nr": 2,
@@ -1328,8 +2098,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 35,
-    "id": "2-A-10"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-0-10"
   },
   {
     "building_nr": 2,
@@ -1340,8 +2117,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 61,
-    "id": "2-A-11"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-0-11"
   },
   {
     "building_nr": 2,
@@ -1352,8 +2136,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 27,
-    "id": "2-A-12"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-0-12"
   },
   {
     "building_nr": 2,
@@ -1364,8 +2155,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 61,
-    "id": "2-A-13"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-0-13"
   },
   {
     "building_nr": 2,
@@ -1376,8 +2174,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 4,
-    "id": "2-A-14"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-0-14"
   },
   {
     "building_nr": 2,
@@ -1388,8 +2193,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 6,
-    "id": "2-A-15"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-0-15"
   },
   {
     "building_nr": 2,
@@ -1400,8 +2212,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 56,
-    "id": "2-A-16"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-0-16"
   },
   {
     "building_nr": 2,
@@ -1412,8 +2231,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 41,
-    "id": "2-A-17"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-0-17"
   },
   {
     "building_nr": 2,
@@ -1424,8 +2250,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 31,
-    "id": "2-A-18"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-0-18"
   },
   {
     "building_nr": 2,
@@ -1436,8 +2269,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 13,
-    "id": "2-A-19"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-0-19"
   },
   {
     "building_nr": 2,
@@ -1448,8 +2288,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 57,
-    "id": "2-A-20"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-0-20"
   },
   {
     "building_nr": 2,
@@ -1460,8 +2307,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 62,
-    "id": "2-A-21"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-0-21"
   },
   {
     "building_nr": 2,
@@ -1472,8 +2326,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 24,
-    "id": "2-A-22"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-0-22"
   },
   {
     "building_nr": 2,
@@ -1484,8 +2345,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 54,
-    "id": "2-A-23"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-0-23"
   },
   {
     "building_nr": 2,
@@ -1496,8 +2364,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 41,
-    "id": "2-A-24"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-0-24"
   },
   {
     "building_nr": 2,
@@ -1508,8 +2383,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 28,
-    "id": "2-A-25"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-0-25"
   },
   {
     "building_nr": 2,
@@ -1520,8 +2402,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 56,
-    "id": "2-A-26"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-0-26"
   },
   {
     "building_nr": 2,
@@ -1532,8 +2421,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 27,
-    "id": "2-A-27"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-0-27"
   },
   {
     "building_nr": 2,
@@ -1544,8 +2440,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 39,
-    "id": "2-A-28"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-0-28"
   },
   {
     "building_nr": 2,
@@ -1556,8 +2459,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 17,
-    "id": "2-A-29"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-0-29"
   },
   {
     "building_nr": 2,
@@ -1568,8 +2478,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 11,
-    "id": "2-B-0"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-1-0"
   },
   {
     "building_nr": 2,
@@ -1580,8 +2497,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 10,
-    "id": "2-B-1"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-1-1"
   },
   {
     "building_nr": 2,
@@ -1592,8 +2516,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 20,
-    "id": "2-B-2"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-1-2"
   },
   {
     "building_nr": 2,
@@ -1604,8 +2535,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 44,
-    "id": "2-B-3"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-1-3"
   },
   {
     "building_nr": 2,
@@ -1616,8 +2554,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 34,
-    "id": "2-B-4"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-1-4"
   },
   {
     "building_nr": 2,
@@ -1628,8 +2573,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 23,
-    "id": "2-B-5"
+    "size": 16,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-1-5"
   },
   {
     "building_nr": 2,
@@ -1640,8 +2592,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 53,
-    "id": "2-B-6"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-1-6"
   },
   {
     "building_nr": 2,
@@ -1652,8 +2611,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 29,
-    "id": "2-B-7"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-1-7"
   },
   {
     "building_nr": 2,
@@ -1664,8 +2630,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 46,
-    "id": "2-B-8"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-1-8"
   },
   {
     "building_nr": 2,
@@ -1676,8 +2649,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 33,
-    "id": "2-B-9"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-1-9"
   },
   {
     "building_nr": 2,
@@ -1688,8 +2668,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 31,
-    "id": "2-B-10"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-1-10"
   },
   {
     "building_nr": 2,
@@ -1700,8 +2687,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 55,
-    "id": "2-B-11"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-1-11"
   },
   {
     "building_nr": 2,
@@ -1712,8 +2706,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 56,
-    "id": "2-B-12"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-1-12"
   },
   {
     "building_nr": 2,
@@ -1724,8 +2725,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 61,
-    "id": "2-B-13"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-1-13"
   },
   {
     "building_nr": 2,
@@ -1736,8 +2744,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 52,
-    "id": "2-B-14"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-1-14"
   },
   {
     "building_nr": 2,
@@ -1748,8 +2763,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 1,
-    "id": "2-B-15"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-1-15"
   },
   {
     "building_nr": 2,
@@ -1760,8 +2782,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 32,
-    "id": "2-B-16"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-1-16"
   },
   {
     "building_nr": 2,
@@ -1772,8 +2801,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 5,
-    "id": "2-B-17"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-1-17"
   },
   {
     "building_nr": 2,
@@ -1784,8 +2820,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 4,
-    "id": "2-B-18"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-1-18"
   },
   {
     "building_nr": 2,
@@ -1796,8 +2839,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 33,
-    "id": "2-B-19"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-1-19"
   },
   {
     "building_nr": 2,
@@ -1808,8 +2858,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 26,
-    "id": "2-B-20"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-1-20"
   },
   {
     "building_nr": 2,
@@ -1820,8 +2877,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 27,
-    "id": "2-B-21"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-1-21"
   },
   {
     "building_nr": 2,
@@ -1832,8 +2896,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 49,
-    "id": "2-B-22"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-1-22"
   },
   {
     "building_nr": 2,
@@ -1844,8 +2915,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 49,
-    "id": "2-B-23"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-1-23"
   },
   {
     "building_nr": 2,
@@ -1856,8 +2934,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 52,
-    "id": "2-B-24"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-1-24"
   },
   {
     "building_nr": 2,
@@ -1868,8 +2953,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 22,
-    "id": "2-B-25"
+    "size": 16,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-1-25"
   },
   {
     "building_nr": 2,
@@ -1880,8 +2972,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 55,
-    "id": "2-B-26"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-1-26"
   },
   {
     "building_nr": 2,
@@ -1892,8 +2991,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 62,
-    "id": "2-B-27"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-1-27"
   },
   {
     "building_nr": 2,
@@ -1904,8 +3010,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 30,
-    "id": "2-B-28"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-1-28"
   },
   {
     "building_nr": 2,
@@ -1916,8 +3029,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 54,
-    "id": "2-B-29"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-1-29"
   },
   {
     "building_nr": 2,
@@ -1928,8 +3048,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 48,
-    "id": "2-C-0"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-2-0"
   },
   {
     "building_nr": 2,
@@ -1940,8 +3067,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 13,
-    "id": "2-C-1"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-2-1"
   },
   {
     "building_nr": 2,
@@ -1952,8 +3086,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 36,
-    "id": "2-C-2"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-2-2"
   },
   {
     "building_nr": 2,
@@ -1964,8 +3105,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 49,
-    "id": "2-C-3"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-2-3"
   },
   {
     "building_nr": 2,
@@ -1976,8 +3124,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 5,
-    "id": "2-C-4"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-2-4"
   },
   {
     "building_nr": 2,
@@ -1988,8 +3143,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 27,
-    "id": "2-C-5"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-2-5"
   },
   {
     "building_nr": 2,
@@ -2000,8 +3162,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 37,
-    "id": "2-C-6"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-2-6"
   },
   {
     "building_nr": 2,
@@ -2012,8 +3181,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 55,
-    "id": "2-C-7"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-2-7"
   },
   {
     "building_nr": 2,
@@ -2024,8 +3200,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 52,
-    "id": "2-C-8"
+    "size": 16,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-2-8"
   },
   {
     "building_nr": 2,
@@ -2036,8 +3219,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 20,
-    "id": "2-C-9"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-2-9"
   },
   {
     "building_nr": 2,
@@ -2048,8 +3238,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 10,
-    "id": "2-C-10"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-2-10"
   },
   {
     "building_nr": 2,
@@ -2060,8 +3257,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 53,
-    "id": "2-C-11"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-2-11"
   },
   {
     "building_nr": 2,
@@ -2072,8 +3276,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 30,
-    "id": "2-C-12"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-2-12"
   },
   {
     "building_nr": 2,
@@ -2084,8 +3295,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 28,
-    "id": "2-C-13"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-2-13"
   },
   {
     "building_nr": 2,
@@ -2096,8 +3314,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 34,
-    "id": "2-C-14"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-2-14"
   },
   {
     "building_nr": 2,
@@ -2108,8 +3333,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 48,
-    "id": "2-C-15"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-2-15"
   },
   {
     "building_nr": 2,
@@ -2120,8 +3352,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 61,
-    "id": "2-C-16"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-2-16"
   },
   {
     "building_nr": 2,
@@ -2132,8 +3371,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 17,
-    "id": "2-C-17"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-2-17"
   },
   {
     "building_nr": 2,
@@ -2144,8 +3390,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 60,
-    "id": "2-C-18"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-2-18"
   },
   {
     "building_nr": 2,
@@ -2156,8 +3409,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 48,
-    "id": "2-C-19"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-2-19"
   },
   {
     "building_nr": 2,
@@ -2168,8 +3428,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 20,
-    "id": "2-C-20"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-2-20"
   },
   {
     "building_nr": 2,
@@ -2180,8 +3447,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 9,
-    "id": "2-C-21"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-2-21"
   },
   {
     "building_nr": 2,
@@ -2192,8 +3466,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 28,
-    "id": "2-C-22"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-2-22"
   },
   {
     "building_nr": 2,
@@ -2204,8 +3485,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 51,
-    "id": "2-C-23"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-2-23"
   },
   {
     "building_nr": 2,
@@ -2216,8 +3504,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 36,
-    "id": "2-C-24"
+    "size": 16,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-2-24"
   },
   {
     "building_nr": 2,
@@ -2228,8 +3523,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 18,
-    "id": "2-C-25"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-2-25"
   },
   {
     "building_nr": 2,
@@ -2240,8 +3542,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 34,
-    "id": "2-C-26"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-2-26"
   },
   {
     "building_nr": 2,
@@ -2252,8 +3561,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 55,
-    "id": "2-C-27"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-2-27"
   },
   {
     "building_nr": 2,
@@ -2264,8 +3580,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 32,
-    "id": "2-C-28"
+    "size": 16,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-2-28"
   },
   {
     "building_nr": 2,
@@ -2276,8 +3599,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 44,
-    "id": "2-C-29"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-2-29"
   },
   {
     "building_nr": 2,
@@ -2288,8 +3618,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 12,
-    "id": "2-D-0"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-3-0"
   },
   {
     "building_nr": 2,
@@ -2300,8 +3637,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 41,
-    "id": "2-D-1"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-3-1"
   },
   {
     "building_nr": 2,
@@ -2312,8 +3656,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 41,
-    "id": "2-D-2"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-3-2"
   },
   {
     "building_nr": 2,
@@ -2324,8 +3675,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 3,
-    "id": "2-D-3"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-3-3"
   },
   {
     "building_nr": 2,
@@ -2336,8 +3694,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 47,
-    "id": "2-D-4"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-3-4"
   },
   {
     "building_nr": 2,
@@ -2348,8 +3713,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 34,
-    "id": "2-D-5"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-3-5"
   },
   {
     "building_nr": 2,
@@ -2360,8 +3732,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 3,
-    "id": "2-D-6"
+    "size": 16,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-3-6"
   },
   {
     "building_nr": 2,
@@ -2372,8 +3751,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 6,
-    "id": "2-D-7"
+    "size": 16,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-3-7"
   },
   {
     "building_nr": 2,
@@ -2384,8 +3770,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 60,
-    "id": "2-D-8"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-3-8"
   },
   {
     "building_nr": 2,
@@ -2396,8 +3789,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 55,
-    "id": "2-D-9"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-3-9"
   },
   {
     "building_nr": 2,
@@ -2408,8 +3808,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 43,
-    "id": "2-D-10"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-3-10"
   },
   {
     "building_nr": 2,
@@ -2420,8 +3827,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 21,
-    "id": "2-D-11"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-3-11"
   },
   {
     "building_nr": 2,
@@ -2432,8 +3846,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 5,
-    "id": "2-D-12"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-3-12"
   },
   {
     "building_nr": 2,
@@ -2444,8 +3865,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 53,
-    "id": "2-D-13"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-3-13"
   },
   {
     "building_nr": 2,
@@ -2456,8 +3884,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 16,
-    "id": "2-D-14"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-3-14"
   },
   {
     "building_nr": 2,
@@ -2468,8 +3903,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 26,
-    "id": "2-D-15"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-3-15"
   },
   {
     "building_nr": 2,
@@ -2480,8 +3922,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 48,
-    "id": "2-D-16"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-3-16"
   },
   {
     "building_nr": 2,
@@ -2492,8 +3941,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 12,
-    "id": "2-D-17"
+    "size": 16,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-3-17"
   },
   {
     "building_nr": 2,
@@ -2504,8 +3960,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 56,
-    "id": "2-D-18"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-3-18"
   },
   {
     "building_nr": 2,
@@ -2516,8 +3979,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 8,
-    "id": "2-D-19"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-3-19"
   },
   {
     "building_nr": 2,
@@ -2528,8 +3998,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 28,
-    "id": "2-D-20"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-3-20"
   },
   {
     "building_nr": 2,
@@ -2540,8 +4017,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 22,
-    "id": "2-D-21"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-3-21"
   },
   {
     "building_nr": 2,
@@ -2552,8 +4036,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 62,
-    "id": "2-D-22"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-3-22"
   },
   {
     "building_nr": 2,
@@ -2564,8 +4055,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 26,
-    "id": "2-D-23"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-3-23"
   },
   {
     "building_nr": 2,
@@ -2576,8 +4074,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 14,
-    "id": "2-D-24"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-3-24"
   },
   {
     "building_nr": 2,
@@ -2588,8 +4093,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 21,
-    "id": "2-D-25"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-3-25"
   },
   {
     "building_nr": 2,
@@ -2600,8 +4112,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 32,
-    "id": "2-D-26"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-3-26"
   },
   {
     "building_nr": 2,
@@ -2612,8 +4131,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 20,
-    "id": "2-D-27"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-3-27"
   },
   {
     "building_nr": 2,
@@ -2624,8 +4150,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 12,
-    "id": "2-D-28"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-3-28"
   },
   {
     "building_nr": 2,
@@ -2636,8 +4169,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 9,
-    "id": "2-D-29"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-3-29"
   },
   {
     "building_nr": 2,
@@ -2648,8 +4188,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 52,
-    "id": "2-E-0"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-4-0"
   },
   {
     "building_nr": 2,
@@ -2660,8 +4207,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 16,
-    "id": "2-E-1"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-4-1"
   },
   {
     "building_nr": 2,
@@ -2672,8 +4226,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 19,
-    "id": "2-E-2"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-4-2"
   },
   {
     "building_nr": 2,
@@ -2684,8 +4245,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 8,
-    "id": "2-E-3"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-4-3"
   },
   {
     "building_nr": 2,
@@ -2696,8 +4264,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 42,
-    "id": "2-E-4"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-4-4"
   },
   {
     "building_nr": 2,
@@ -2708,8 +4283,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 42,
-    "id": "2-E-5"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-4-5"
   },
   {
     "building_nr": 2,
@@ -2720,8 +4302,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 48,
-    "id": "2-E-6"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-4-6"
   },
   {
     "building_nr": 2,
@@ -2732,8 +4321,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 10,
-    "id": "2-E-7"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-4-7"
   },
   {
     "building_nr": 2,
@@ -2744,8 +4340,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 16,
-    "id": "2-E-8"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-4-8"
   },
   {
     "building_nr": 2,
@@ -2756,8 +4359,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 9,
-    "id": "2-E-9"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-4-9"
   },
   {
     "building_nr": 2,
@@ -2768,8 +4378,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 31,
-    "id": "2-E-10"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-4-10"
   },
   {
     "building_nr": 2,
@@ -2780,8 +4397,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 1,
-    "id": "2-E-11"
+    "size": 16,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-4-11"
   },
   {
     "building_nr": 2,
@@ -2792,8 +4416,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 59,
-    "id": "2-E-12"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-4-12"
   },
   {
     "building_nr": 2,
@@ -2804,8 +4435,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 49,
-    "id": "2-E-13"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-4-13"
   },
   {
     "building_nr": 2,
@@ -2816,8 +4454,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 51,
-    "id": "2-E-14"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-4-14"
   },
   {
     "building_nr": 2,
@@ -2828,8 +4473,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 12,
-    "id": "2-E-15"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-4-15"
   },
   {
     "building_nr": 2,
@@ -2840,8 +4492,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 26,
-    "id": "2-E-16"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-4-16"
   },
   {
     "building_nr": 2,
@@ -2852,8 +4511,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 54,
-    "id": "2-E-17"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-4-17"
   },
   {
     "building_nr": 2,
@@ -2864,8 +4530,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 15,
-    "id": "2-E-18"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-4-18"
   },
   {
     "building_nr": 2,
@@ -2876,8 +4549,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 60,
-    "id": "2-E-19"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-4-19"
   },
   {
     "building_nr": 2,
@@ -2888,8 +4568,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 5,
-    "id": "2-E-20"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-4-20"
   },
   {
     "building_nr": 2,
@@ -2900,8 +4587,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 51,
-    "id": "2-E-21"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-4-21"
   },
   {
     "building_nr": 2,
@@ -2912,8 +4606,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 62,
-    "id": "2-E-22"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-4-22"
   },
   {
     "building_nr": 2,
@@ -2924,8 +4625,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 53,
-    "id": "2-E-23"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-4-23"
   },
   {
     "building_nr": 2,
@@ -2936,8 +4644,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 6,
-    "id": "2-E-24"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-4-24"
   },
   {
     "building_nr": 2,
@@ -2948,8 +4663,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 1,
-    "id": "2-E-25"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-4-25"
   },
   {
     "building_nr": 2,
@@ -2960,8 +4682,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 4,
-    "id": "2-E-26"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-4-26"
   },
   {
     "building_nr": 2,
@@ -2972,8 +4701,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 13,
-    "id": "2-E-27"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-4-27"
   },
   {
     "building_nr": 2,
@@ -2984,8 +4720,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 60,
-    "id": "2-E-28"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-4-28"
   },
   {
     "building_nr": 2,
@@ -2996,8 +4739,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 8,
-    "id": "2-E-29"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-4-29"
   },
   {
     "building_nr": 2,
@@ -3008,8 +4758,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 53,
-    "id": "2-F-0"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-5-0"
   },
   {
     "building_nr": 2,
@@ -3020,8 +4777,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 41,
-    "id": "2-F-1"
+    "size": 16,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-5-1"
   },
   {
     "building_nr": 2,
@@ -3032,8 +4796,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 13,
-    "id": "2-F-2"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-5-2"
   },
   {
     "building_nr": 2,
@@ -3044,8 +4815,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 35,
-    "id": "2-F-3"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-5-3"
   },
   {
     "building_nr": 2,
@@ -3056,8 +4834,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 45,
-    "id": "2-F-4"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-5-4"
   },
   {
     "building_nr": 2,
@@ -3068,8 +4853,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 24,
-    "id": "2-F-5"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-5-5"
   },
   {
     "building_nr": 2,
@@ -3080,8 +4872,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 4,
-    "id": "2-F-6"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-5-6"
   },
   {
     "building_nr": 2,
@@ -3092,8 +4891,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 27,
-    "id": "2-F-7"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-5-7"
   },
   {
     "building_nr": 2,
@@ -3104,8 +4910,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 42,
-    "id": "2-F-8"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-5-8"
   },
   {
     "building_nr": 2,
@@ -3116,8 +4929,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 4,
-    "id": "2-F-9"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-5-9"
   },
   {
     "building_nr": 2,
@@ -3128,8 +4948,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 35,
-    "id": "2-F-10"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-5-10"
   },
   {
     "building_nr": 2,
@@ -3140,8 +4967,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 34,
-    "id": "2-F-11"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-5-11"
   },
   {
     "building_nr": 2,
@@ -3152,8 +4986,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 7,
-    "id": "2-F-12"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-5-12"
   },
   {
     "building_nr": 2,
@@ -3164,8 +5005,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 62,
-    "id": "2-F-13"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-5-13"
   },
   {
     "building_nr": 2,
@@ -3176,8 +5024,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 30,
-    "id": "2-F-14"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-5-14"
   },
   {
     "building_nr": 2,
@@ -3188,8 +5043,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 23,
-    "id": "2-F-15"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-5-15"
   },
   {
     "building_nr": 2,
@@ -3200,8 +5062,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 20,
-    "id": "2-F-16"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-5-16"
   },
   {
     "building_nr": 2,
@@ -3212,8 +5081,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 8,
-    "id": "2-F-17"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-5-17"
   },
   {
     "building_nr": 2,
@@ -3224,8 +5100,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 39,
-    "id": "2-F-18"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-5-18"
   },
   {
     "building_nr": 2,
@@ -3236,8 +5119,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 27,
-    "id": "2-F-19"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-5-19"
   },
   {
     "building_nr": 2,
@@ -3248,8 +5138,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 60,
-    "id": "2-F-20"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-5-20"
   },
   {
     "building_nr": 2,
@@ -3260,8 +5157,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 10,
-    "id": "2-F-21"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-5-21"
   },
   {
     "building_nr": 2,
@@ -3272,8 +5176,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 9,
-    "id": "2-F-22"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-5-22"
   },
   {
     "building_nr": 2,
@@ -3284,8 +5195,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 9,
-    "id": "2-F-23"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-5-23"
   },
   {
     "building_nr": 2,
@@ -3296,8 +5214,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 33,
-    "id": "2-F-24"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-5-24"
   },
   {
     "building_nr": 2,
@@ -3308,8 +5233,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 3,
-    "id": "2-F-25"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-5-25"
   },
   {
     "building_nr": 2,
@@ -3320,8 +5252,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 50,
-    "id": "2-F-26"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-5-26"
   },
   {
     "building_nr": 2,
@@ -3332,8 +5271,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 58,
-    "id": "2-F-27"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-5-27"
   },
   {
     "building_nr": 2,
@@ -3344,8 +5290,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 48,
-    "id": "2-F-28"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-5-28"
   },
   {
     "building_nr": 2,
@@ -3356,8 +5309,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 33,
-    "id": "2-F-29"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-5-29"
   },
   {
     "building_nr": 2,
@@ -3368,8 +5328,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 4,
-    "id": "2-G-0"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-6-0"
   },
   {
     "building_nr": 2,
@@ -3380,8 +5347,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 12,
-    "id": "2-G-1"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-6-1"
   },
   {
     "building_nr": 2,
@@ -3392,8 +5366,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 56,
-    "id": "2-G-2"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-6-2"
   },
   {
     "building_nr": 2,
@@ -3404,8 +5385,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 24,
-    "id": "2-G-3"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-6-3"
   },
   {
     "building_nr": 2,
@@ -3416,8 +5404,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 5,
-    "id": "2-G-4"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-6-4"
   },
   {
     "building_nr": 2,
@@ -3428,8 +5423,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 5,
-    "id": "2-G-5"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-6-5"
   },
   {
     "building_nr": 2,
@@ -3440,8 +5442,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 55,
-    "id": "2-G-6"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-6-6"
   },
   {
     "building_nr": 2,
@@ -3452,8 +5461,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 22,
-    "id": "2-G-7"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-6-7"
   },
   {
     "building_nr": 2,
@@ -3464,8 +5480,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 5,
-    "id": "2-G-8"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-6-8"
   },
   {
     "building_nr": 2,
@@ -3476,8 +5499,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 15,
-    "id": "2-G-9"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-6-9"
   },
   {
     "building_nr": 2,
@@ -3488,8 +5518,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 11,
-    "id": "2-G-10"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-6-10"
   },
   {
     "building_nr": 2,
@@ -3500,8 +5537,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 32,
-    "id": "2-G-11"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-6-11"
   },
   {
     "building_nr": 2,
@@ -3512,8 +5556,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 10,
-    "id": "2-G-12"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-6-12"
   },
   {
     "building_nr": 2,
@@ -3524,8 +5575,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 14,
-    "id": "2-G-13"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-6-13"
   },
   {
     "building_nr": 2,
@@ -3536,8 +5594,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 60,
-    "id": "2-G-14"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-6-14"
   },
   {
     "building_nr": 2,
@@ -3548,8 +5613,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 26,
-    "id": "2-G-15"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-6-15"
   },
   {
     "building_nr": 2,
@@ -3560,8 +5632,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 6,
-    "id": "2-G-16"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-6-16"
   },
   {
     "building_nr": 2,
@@ -3572,8 +5651,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 58,
-    "id": "2-G-17"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-6-17"
   },
   {
     "building_nr": 2,
@@ -3584,8 +5670,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 11,
-    "id": "2-G-18"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-6-18"
   },
   {
     "building_nr": 2,
@@ -3596,8 +5689,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 62,
-    "id": "2-G-19"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-6-19"
   },
   {
     "building_nr": 2,
@@ -3608,8 +5708,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 29,
-    "id": "2-G-20"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-6-20"
   },
   {
     "building_nr": 2,
@@ -3620,8 +5727,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 17,
-    "id": "2-G-21"
+    "size": 16,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-6-21"
   },
   {
     "building_nr": 2,
@@ -3632,8 +5746,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 26,
-    "id": "2-G-22"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-6-22"
   },
   {
     "building_nr": 2,
@@ -3644,8 +5765,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 16,
-    "id": "2-G-23"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-6-23"
   },
   {
     "building_nr": 2,
@@ -3656,8 +5784,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 2,
-    "id": "2-G-24"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-6-24"
   },
   {
     "building_nr": 2,
@@ -3668,8 +5803,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 20,
-    "id": "2-G-25"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-6-25"
   },
   {
     "building_nr": 2,
@@ -3680,8 +5822,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 53,
-    "id": "2-G-26"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-6-26"
   },
   {
     "building_nr": 2,
@@ -3692,8 +5841,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 37,
-    "id": "2-G-27"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-6-27"
   },
   {
     "building_nr": 2,
@@ -3704,8 +5860,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 49,
-    "id": "2-G-28"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-6-28"
   },
   {
     "building_nr": 2,
@@ -3716,8 +5879,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 55,
-    "id": "2-G-29"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-6-29"
   },
   {
     "building_nr": 2,
@@ -3728,8 +5898,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 10,
-    "id": "2-H-0"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-7-0"
   },
   {
     "building_nr": 2,
@@ -3740,8 +5917,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 3,
-    "id": "2-H-1"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-7-1"
   },
   {
     "building_nr": 2,
@@ -3752,8 +5936,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 3,
-    "id": "2-H-2"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-7-2"
   },
   {
     "building_nr": 2,
@@ -3764,8 +5955,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 41,
-    "id": "2-H-3"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-7-3"
   },
   {
     "building_nr": 2,
@@ -3776,8 +5974,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 25,
-    "id": "2-H-4"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-7-4"
   },
   {
     "building_nr": 2,
@@ -3788,8 +5993,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 17,
-    "id": "2-H-5"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-7-5"
   },
   {
     "building_nr": 2,
@@ -3800,8 +6012,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 49,
-    "id": "2-H-6"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-7-6"
   },
   {
     "building_nr": 2,
@@ -3812,8 +6031,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 34,
-    "id": "2-H-7"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-7-7"
   },
   {
     "building_nr": 2,
@@ -3824,8 +6050,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 0,
-    "id": "2-H-8"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-7-8"
   },
   {
     "building_nr": 2,
@@ -3836,8 +6069,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 17,
-    "id": "2-H-9"
+    "size": 16,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-7-9"
   },
   {
     "building_nr": 2,
@@ -3848,8 +6088,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 53,
-    "id": "2-H-10"
+    "size": 64,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-7-10"
   },
   {
     "building_nr": 2,
@@ -3860,8 +6107,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 44,
-    "id": "2-H-11"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-7-11"
   },
   {
     "building_nr": 2,
@@ -3872,8 +6126,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 21,
-    "id": "2-H-12"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-7-12"
   },
   {
     "building_nr": 2,
@@ -3884,8 +6145,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 39,
-    "id": "2-H-13"
+    "size": 128,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-7-13"
   },
   {
     "building_nr": 2,
@@ -3896,8 +6164,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 0,
-    "id": "2-H-14"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-7-14"
   },
   {
     "building_nr": 2,
@@ -3908,8 +6183,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 52,
-    "id": "2-H-15"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-7-15"
   },
   {
     "building_nr": 2,
@@ -3920,8 +6202,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 15,
-    "id": "2-H-16"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-7-16"
   },
   {
     "building_nr": 2,
@@ -3932,8 +6221,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 38,
-    "id": "2-H-17"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-7-17"
   },
   {
     "building_nr": 2,
@@ -3944,8 +6240,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 2,
-    "id": "2-H-18"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-7-18"
   },
   {
     "building_nr": 2,
@@ -3956,8 +6259,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 18,
-    "id": "2-H-19"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-7-19"
   },
   {
     "building_nr": 2,
@@ -3968,8 +6278,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 58,
-    "id": "2-H-20"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-7-20"
   },
   {
     "building_nr": 2,
@@ -3980,8 +6297,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 29,
-    "id": "2-H-21"
+    "size": 8,
+    "hasScreen": false,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-7-21"
   },
   {
     "building_nr": 2,
@@ -3992,8 +6316,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 49,
-    "id": "2-H-22"
+    "size": 20,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-7-22"
   },
   {
     "building_nr": 2,
@@ -4004,8 +6335,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 45,
-    "id": "2-H-23"
+    "size": 8,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-7-23"
   },
   {
     "building_nr": 2,
@@ -4016,8 +6354,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 5,
-    "id": "2-H-24"
+    "size": 32,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": false,
+    "hasAC": true,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": true,
+    "id": "2-7-24"
   },
   {
     "building_nr": 2,
@@ -4028,8 +6373,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 17,
-    "id": "2-H-25"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": false,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-7-25"
   },
   {
     "building_nr": 2,
@@ -4040,8 +6392,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 50,
-    "id": "2-H-26"
+    "size": 32,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": true,
+    "id": "2-7-26"
   },
   {
     "building_nr": 2,
@@ -4052,8 +6411,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 43,
-    "id": "2-H-27"
+    "size": 128,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": true,
+    "hasTableDesks": true,
+    "hasAC": false,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-7-27"
   },
   {
     "building_nr": 2,
@@ -4064,8 +6430,15 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 23,
-    "id": "2-H-28"
+    "size": 20,
+    "hasScreen": true,
+    "hasProjector": true,
+    "hasOutlets": false,
+    "hasTableDesks": false,
+    "hasAC": false,
+    "hasWhiteBoard": false,
+    "hasBlackBoard": false,
+    "id": "2-7-28"
   },
   {
     "building_nr": 2,
@@ -4076,7 +6449,14 @@
       "city": "København",
       "zip": "2100"
     },
-    "tag_flags": 13,
-    "id": "2-H-29"
+    "size": 64,
+    "hasScreen": false,
+    "hasProjector": false,
+    "hasOutlets": false,
+    "hasTableDesks": true,
+    "hasAC": true,
+    "hasWhiteBoard": true,
+    "hasBlackBoard": false,
+    "id": "2-7-29"
   }
 ]
