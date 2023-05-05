@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react';
 import Color from '../Colors';
 
-const Background = ({children = [], height = '100vh', width = '100vw', color = 'black', backgroundColor = Color.GREY}) => (
+const Background = ({children = [], height = '100%', width = '100vw', color = 'black', backgroundColor = Color.GREY}) => (
   (
     <Box
       height={height}
