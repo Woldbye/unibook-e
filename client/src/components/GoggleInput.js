@@ -10,6 +10,7 @@ import Color from '../Colors';
  * @param {*} step_per_click denotes how much the input should change up or down for each click - defaults to 1.
  * @param {*} type_name the shown name in the middle of the component - defaults to empty string
  * @param {*} start_value the starting value of the input - defaults to 0. 
+ * @param {*} max_value the maximum value of the input - defaults to ∞.
  */
 class GoggleInput extends React.Component {
   step_per_click;
