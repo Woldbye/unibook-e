@@ -11,7 +11,7 @@ import GoggleInput from '../components/GoggleInput';
 
 const Booking = () => (
   <Container>
-    <VStack>
+    <VStack paddingBottom='2rem'>
       <Text color={Color.BLACK} fontSize={'3xl'} padding={'30px 0px 10px 0px'}>Vælg lokale krav</Text>
       <VStack width='40%' spacing={'1rem'} minWidth={'12rem'}>
         <GoggleInput step_per_click={1} type_name={'Personer'} start_value={1} max_value={128} />
@@ -31,7 +31,7 @@ const Booking = () => (
           </VStack>
         </Background>
       </Container>
-      <Button size={'lg'}>Næste</Button>
+      <Button size={'lg'} marginBottom={'1rem'}>Næste</Button>
     </VStack>
   </Container>
 )
