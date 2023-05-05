@@ -1,4 +1,4 @@
-import { Text,IconButton, HStack, VStack, } from '@chakra-ui/react';
+import { Text,IconButton, HStack, VStack, Flex } from '@chakra-ui/react';
 import { AddIcon,MinusIcon } from '@chakra-ui/icons';
 import React from 'react';
 import Color from '../Colors';
@@ -13,23 +13,26 @@ import Color from '../Colors';
 class GoggleInput extends React.Component {
   step_per_click = 1;
   type_name = "EMPTY";
-  value = 0;
 
-  constructor(props, { step_per_click = 1, type_name = "EMPTY", start_value = 0 }) {
+  constructor(props) {
     super(props);
-    this.step_per_click = step_per_click;
+    const { step_per_click, type_name, start_value } = props;
+    this.step_per_click = step_per_click ?? 1;
+    this.state = { value: start_value ?? 0 }
     this.type_name = type_name;
-    this.value = start_value;
   }
     
-  onClick = (isInc) => {
-    this.value = isInc ? this.value + this.step_per_click : Math.max(this.value - this.step_per_click, 0);
+  increment = (isInc) => {
+    const new_value = isInc ? this.state.value + this.step_per_click : Math.max(this.state.value - this.step_per_click,0);
+    this.setState({ value: new_value })
   };
 
   render() {
     return (
       <HStack
         hide={-1}
+        width={'100%'}
+        justifyContent={'space-between'}
         height={'50px'}
         backgroundColor={Color.BLUE}
         borderRadius={30}
@@ -39,18 +42,18 @@ class GoggleInput extends React.Component {
           aria-label={'Subtract ' + this.type_name}
           isRound={true}
           icon={<MinusIcon />}
-          onClick= {() => this.onClick(false)}
-        />,
-        <VStack>
-          <Text margin={'0px'} color={Color.CREME} align={'bottom'}>{this.value}</Text>,
-          <Text margin={'0px'} color={Color.CREME} align={'top'}>{this.type_name}</Text>
-        </VStack>
+          onClick= {() => this.increment(false)}
+        />
+        <Flex direction={'column'} textAlign={'center'} alignItems={'space-around'} justifyContent={'space-around'}>
+          <Text color={Color.CREME}>{this.state.value}</Text>
+          <Text color={Color.CREME}>{this.type_name}</Text>
+        </Flex>
         <IconButton
           size={'lg'}
           aria-label={'Add ' + this.type_name}
           isRound={true}
           icon={<AddIcon />}
-          onClick = {() => this.onClick(true)}
+          onClick = {() => this.increment(true)}
         />
       </HStack>
     )
