@@ -31,7 +31,7 @@ const Booking = () => (
           </VStack>
         </Background>
       </Container>
-      <Button size={'lg'} marginBottom={'1rem'}>Næste</Button>
+      <Button size={'lg'}>Næste</Button>
     </VStack>
   </Container>
 )
