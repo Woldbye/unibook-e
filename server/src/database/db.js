@@ -32,9 +32,7 @@ class RoomDatabase {
    * @returns Returns an array of all rooms that satisfy the given room_query.  
    */
   query(room_query) {
-    console.log("Query: ", room_query)
     // Exclude all rooms that dont have the values in the room_query
-    //! TO:DO debug param,value
     return this.rooms.filter(room => {
       return room["isBooked"] === "0"
         && Object.entries(room_query).every(([param,value]) => room[param] === value)
