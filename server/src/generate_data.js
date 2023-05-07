@@ -1,4 +1,7 @@
+const fs = require('fs');
+const path = require('path');
 const Room = require('../../shared/room.js');
+const { createRandomTags } = require('../../shared/roomtag.js');
 
 const addresses = [
   {
@@ -31,22 +34,22 @@ const buildings = [
 ];
 
 /**
- * Generates a list of rooms such that each room in the building is 
- * represented and unique
- * @param {Building} building a building object to fully populate 
+ * @brief Generates a list of rooms such that each room in the building is 
+ *        represented and unique
+ * @param {*} building a building object to fully populate 
  * @returns {Room[]} a list of rooms
  */
 function populate_building(building) {
   let rooms = [];
   for (let i = 0; i < building.floors; i++) {
     for(let j = 0;j < building.rooms_per_floor;j++) {
-      const room = Room.createRoom(
+      const room = Room.create(
         building.building_nr,
         i,
         j,
         building.address,
-        Room.createRandomTags(),
-        Room.RoomSizeArray[Math.floor(Math.random() * Room.NrOfRoomSizes)]
+        createRandomTags(),
+        Room.SizeArray[Math.floor(Math.random() * Room.SizeArray.length)]
       );
       rooms.push(room);
     }
@@ -59,15 +62,12 @@ const Rooms = [
   ...populate_building(buildings[1]),
 ];
 
-const fs = require('fs');
-const path = require('path');
-
 /** fname without .json extension */
 function write_rooms_to_file(fname) {
   const json = JSON.stringify(Rooms,null,2);
   
   var fpath = path.join(__dirname,'data',`${fname}.json`);
-  for(let i = 1;fs.existsSync(fpath);++i) {
+  for(let i = 1; fs.existsSync(fpath);++i) {
     fpath = path.join(__dirname,'data',`${fname}_${i}.json`);
   }
   console.log("Writing to file: ",fpath);

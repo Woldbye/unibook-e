@@ -1,19 +1,6 @@
-/**
- * All the available tags for the rooms as enums, the tags are represented as bits in a number
- * to allow for a single number to represent multiple tags.
- */
-const Tag = {
-  None: 0,
-  Screen: 1,
-  Projector: 2,
-  Outlets: 4,
-  TableDesks: 8,
-  AC: 16,
-  Whiteboard: 32,
-  Blackboard: 64,
-};
+const { hasTag, Tag } = require('./roomtag.js');
 
-const RoomSizes = {
+const Sizes = {
   XS: 8,
   S: 16,
   M: 20,
@@ -21,69 +8,34 @@ const RoomSizes = {
   XL: 64,
   XLL: 128,
 };
-const RoomSizeArray = [
-  8, 16, 20, 32, 64, 128
-]
+const SizeArray = [8,16,20,32,64,128]
 
-const NrOfRoomSizes = 6; 
-const NrOfTags = 7;
-const TagMask = (1 << NrOfTags) - 1; // 2^(Tag size) - 1 
-const createRandomTags = () => Math.floor(Math.random() * TagMask);
-
-/**
- * Evaluate whether a tag flag has a specific tag
- * @param {number} tag_flags 
- * @param {Tag} tag 
- * @returns true if the tag_flags has the tag
+/** 
+ * @brief Create a new Room object. 
+ *        All parameter values are held as strings to allow easy conversion back and forward 
  */
-const hasTag = (tag_flags,tag) => (tag_flags & tag) > 0;
-
-/**
- * Returns an ordered list of tags that is contained withinn the tag_flags
- * The list is ordered in ascending order by the Tag enum
- * @param {number} tag_flags 
- * @returns An ordered list of tags
- */
-const getTags = (tag_flags) => {
-  let flags = tag_flags;
-  let tags = [];
-  while(flags > 0) {
-    const tag = flags & -flags; // Find the first tag in the flag 
-    tags.push(tag);             // Add the first tag to the list
-    flags -= tag;               // Remove the first tag from the flag
-  }
-  return tags;
-}
-
-
-const createRoom = (building_nr,floor,room,address,tag_flags,room_size) => {
+const create = (building_nr,floor,room,address,tag_flags,room_size) => {
   return {
-    building_nr: building_nr,
-    floor: floor,
-    room: room,
+    building_nr: `${building_nr}`,
+    floor: `${floor}`,
+    room: `${room}`,
     address: address,
-    size: room_size,
-    hasScreen: hasTag(tag_flags,Tag.Screen),
-    hasProjector: hasTag(tag_flags,Tag.Projector),
-    hasOutlets: hasTag(tag_flags,Tag.Outlets),
-    hasTableDesks: hasTag(tag_flags,Tag.TableDesks),
-    hasAC: hasTag(tag_flags,Tag.AC),
-    hasWhiteBoard: hasTag(tag_flags,Tag.Whiteboard),
-    hasBlackBoard: hasTag(tag_flags,Tag.Blackboard),
+    size: `${room_size}`,
+    hasScreen: hasTag(tag_flags,Tag.Screen) ? '1' : '0',
+    hasProjector: hasTag(tag_flags,Tag.Projector) ? '1' : '0' ,
+    hasOutlets: hasTag(tag_flags,Tag.Outlets) ? '1' : '0',
+    hasTableDesks: hasTag(tag_flags,Tag.TableDesks) ? '1' : '0',
+    hasAC: hasTag(tag_flags,Tag.AC) ? '1' : '0',
+    hasWhiteBoard: hasTag(tag_flags,Tag.Whiteboard) ? '1' : '0',
+    hasBlackBoard: hasTag(tag_flags,Tag.Blackboard) ? '1' : '0',
     id: `${building_nr}-${floor}-${room}`,
   }
 }
 
 module.exports = {
-  Tag,
-  TagMask,
-  RoomSizes,
-  RoomSizeArray,
-  NrOfRoomSizes,
-  createRoom,
-  createRandomTags,
-  hasTag,
-  getTags,
+  Sizes,
+  SizeArray,
+  create,
 };
 
 
