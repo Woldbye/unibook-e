@@ -16,6 +16,7 @@ const SizeArray = [8,16,20,32,64,128]
  */
 const create = (building_nr,floor,room,address,tag_flags,room_size) => {
   return {
+    id: `${building_nr}-${floor}-${room}`,
     building_nr: `${building_nr}`,
     floor: `${floor}`,
     room: `${room}`,
@@ -28,7 +29,6 @@ const create = (building_nr,floor,room,address,tag_flags,room_size) => {
     hasAC: hasTag(tag_flags,Tag.AC) ? '1' : '0',
     hasWhiteBoard: hasTag(tag_flags,Tag.Whiteboard) ? '1' : '0',
     hasBlackBoard: hasTag(tag_flags,Tag.Blackboard) ? '1' : '0',
-    id: `${building_nr}-${floor}-${room}`,
   }
 }
 

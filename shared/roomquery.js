@@ -14,6 +14,7 @@ function toUrl(room_query) {
  * @param {*} url string as constructed by toUrl(query)
  */
 function fromUrl(url) {
+  console.log("Read in url: ", url);
   return Object.fromEntries(url.split("rooms?")[1].split("&").map(param => param.split("=")));
 }
 
