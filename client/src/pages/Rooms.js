@@ -7,16 +7,20 @@ import Room from '../components/Room';
 
 
 // Example that fetches all rooms in building 1
-const Rooms = async () => {
-  const [ rooms_json, setRooms ] = React.useState([])
-  const res = await fetch(`http://localhost:5000/rooms?building_nr=1`)
-  console.log("Response: ", res.json())
-  setRooms(res);
+const Rooms = () => {
+  const [rooms,setRooms] = React.useState([]);
   
+  React.useEffect(() => {
+    const url = `http://localhost:5000/rooms?`; // URL for overview of all rooms
+    fetch(url)
+      .then(res => res.json())
+      .then(res => setRooms(Array.isArray(res) ? res : [res]))
+  },[]);
+
   return (
     <Container>
-      <List spacing={1}>
-        {rooms_json.map(room_json => <Room json={room_json} />)}
+      <List spacing={'1rem'}>
+        {rooms.map(room => <Room json={room}/>)}
       </List>
     </Container>
   )

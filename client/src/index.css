@@ -15,8 +15,7 @@ code {
 .chakra-text {
   font-family: 'Founders Grotesk';
   color: #FAFAFA !important;
-  text-shadow: 0px 2px 2px #00000040; 
-  text-align: center;
+  text-shadow: 0px 2px 2px #00000040;
 }
 
 .button, .chakra-button {

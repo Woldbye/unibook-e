@@ -57,12 +57,12 @@ function populate_building(building) {
     for(let j = 0;j < building.rooms_per_floor;j++) {
       const room = Room.create(
         randomKey(Room.Type),
+        randomKey(Room.Size),
         building.building_nr,
         i,
         j,
         building.address,
-        createRandomTags(),
-        randomKey(Room.Size)
+        createRandomTags()
       );
       rooms.push(room);
     }

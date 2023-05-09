@@ -2,7 +2,7 @@ import { Text,VStack,Container} from '@chakra-ui/react';
 import Background from './Background';
 import React from 'react';
 import Color from '../Colors';
-
+import Address from './Address';
 /** 
  * @brief Generates a Room component
  */
@@ -16,14 +16,14 @@ class Room extends React.Component {
   }
 
   render() {
-    // TO:DO Set up display of rooms as grid
+    //! TO:DO Set up display of rooms as grid
     return (
-      <Background width="80%" height="60%" backgroundColor={Color.BLUE}>
-        <Container><Text>Lokale {this.room_json["id"]}</Text></Container>
+      <Background width="100%" height="auto" backgroundColor={Color.BLUE}>
+        <Container><Text>{this.room_json["type"]} {this.room_json["id"]}</Text></Container>
         <VStack>
           <Text>building_nr: {this.room_json["building_nr"]}</Text>
           <Text>floor: {this.room_json["floor"]}</Text>
-          <Text>address: {this.room_json["address"]}</Text>
+          <Address json={this.room_json["address"]}/>
           <Text>size: {this.room_json["size"]}</Text>
           <Text>hasScreen: {this.room_json["hasScreen"]}</Text>
           <Text>hasProjector: {this.room_json["hasProjector"]}</Text>
@@ -31,7 +31,7 @@ class Room extends React.Component {
           <Text>hasTableDesks: {this.room_json["hasTableDesks"]}</Text>
           <Text>hasAC: {this.room_json["hasAC"]}</Text>
           <Text>hasWhiteBoard: {this.room_json["hasWhiteBoard"]}</Text>
-          <Text>hasBlackBoard: {this.room_json["hasBlackboard"]}</Text>
+          <Text>hasBlackBoard: {this.room_json["hasBlackBoard"]}</Text>
         </VStack>
       </Background>
     )
