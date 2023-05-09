@@ -1,6 +1,6 @@
 const { hasTag, Tag } = require('./roomtag.js');
 
-const Sizes = {
+const Size = {
   XS: 8,
   S: 16,
   M: 20,
@@ -8,15 +8,22 @@ const Sizes = {
   XL: 64,
   XLL: 128,
 };
-const SizeArray = [8,16,20,32,64,128]
+
+const Type = {
+  Meeting: 'Mødelokale',
+  Skybox: 'Skybox',
+  Auditorium: 'Auditorium',
+  Classroom: 'Klasselokale',
+}
 
 /** 
  * @brief Create a new Room object. 
  *        All parameter values are held as strings to allow easy conversion back and forward 
  */
-const create = (building_nr,floor,room,address,tag_flags,room_size) => {
+const create = (type, building_nr,floor,room,address,tag_flags,room_size) => {
   return {
     id: `${building_nr}-${floor}-${room}`,
+    type: `${type}`,
     building_nr: `${building_nr}`,
     floor: `${floor}`,
     room: `${room}`,
@@ -33,8 +40,8 @@ const create = (building_nr,floor,room,address,tag_flags,room_size) => {
 }
 
 module.exports = {
-  Sizes,
-  SizeArray,
+  Size,
+  Type,
   create,
 };
 

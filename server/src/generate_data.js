@@ -33,6 +33,17 @@ const buildings = [
   },
 ];
 
+/** Retrieve a random property from an object */
+var randomProperty = function (obj) {
+  var props = Object.keys(obj);
+  return props[Math.floor(Math.random()*props.length)];
+};
+
+/** Retrieve a random property-key from an object */
+var randomKey = function(obj) {
+  return obj[randomProperty(obj)];
+}
+
 /**
  * @brief Generates a list of rooms such that each room in the building is 
  *        represented and unique
@@ -41,15 +52,17 @@ const buildings = [
  */
 function populate_building(building) {
   let rooms = [];
-  for (let i = 0; i < building.floors; i++) {
+  
+  for(let i = 0;i < building.floors;i++) {
     for(let j = 0;j < building.rooms_per_floor;j++) {
       const room = Room.create(
+        randomKey(Room.Type),
         building.building_nr,
         i,
         j,
         building.address,
         createRandomTags(),
-        Room.SizeArray[Math.floor(Math.random() * Room.SizeArray.length)]
+        randomKey(Room.Size)
       );
       rooms.push(room);
     }
