@@ -20,7 +20,7 @@ const Type = {
  * @brief Create a new Room object. 
  *        All parameter values are held as strings to allow easy conversion back and forward 
  */
-const create = (type, building_nr,floor,room,address,tag_flags,room_size) => {
+const create = (type, room_size, building_nr,floor,room,address,tag_flags) => {
   return {
     id: `${building_nr}-${floor}-${room}`,
     type: `${type}`,

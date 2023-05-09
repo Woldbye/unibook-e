@@ -14,7 +14,7 @@ const Tag = {
 };
 
 
-const NrOfTags = 7;
+const NrOfTags = Object.keys(Tag).length - 1;
 const TagMask = (1 << NrOfTags) - 1; // 2^(Tag size) - 1 
 const createRandomTags = () => Math.floor(Math.random() * TagMask);
 
