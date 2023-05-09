@@ -7,14 +7,16 @@ import {
 } from '@chakra-ui/react';
 import Background from '../components/Background';
 import Color from '../Colors';
-
+import GoggleInput from '../components/GoggleInput';
 
 const Booking = () => (
   <Container>
-    <VStack>
+    <VStack paddingBottom='2rem'>
       <Text color={Color.BLACK} fontSize={'3xl'} padding={'30px 0px 10px 0px'}>Vælg lokale krav</Text>
-      <Text color={Color.BLACK} fontSize={'xl'} padding={'30px 0px 0px 0px'}>Antal personer boks</Text>
-      <Text color={Color.BLACK} fontSize={'xl'} padding={'20px 0px 0px 0px'}>Tid boks</Text>
+      <VStack width='40%' spacing={'1rem'} minWidth={'12rem'}>
+        <GoggleInput step_per_click={1} type_name={'Personer'} start_value={1} max_value={128} />
+        <GoggleInput step_per_click={0.5} type_name={'Timer'} start_value={2.0} max_value={14.0} /> 
+      </VStack>
       <Container padding={"3rem 0 0 0"} centerContent="true">
         <Background width="60vw" height="40vh" backgroundColor={Color.BLUE}>
           <VStack>
