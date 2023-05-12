@@ -1,0 +1,6802 @@
+[
+  {
+    "id": "1-0-0",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "0",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-0-1",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "1",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-0-2",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "2",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-0-3",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "3",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-0-4",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "4",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-0-5",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "5",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-0-6",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "6",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-0-7",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "7",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-0-8",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "8",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-0-9",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "9",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-0-10",
+    "type": "Klasselokale",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "10",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-0-11",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "11",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-0-12",
+    "type": "Klasselokale",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "12",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-0-13",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "13",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-0-14",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "14",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-0-15",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "15",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-0-16",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "16",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-0-17",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "17",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-0-18",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "18",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-0-19",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "0",
+    "room": "19",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-1-0",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "0",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-1-1",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "1",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-1-2",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "2",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-1-3",
+    "type": "Klasselokale",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "3",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-1-4",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "4",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-1-5",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "5",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-1-6",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "6",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-1-7",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "7",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-1-8",
+    "type": "Klasselokale",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "8",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-1-9",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "9",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-1-10",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "10",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-1-11",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "11",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-1-12",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "12",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-1-13",
+    "type": "Klasselokale",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "13",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-1-14",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "14",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-1-15",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "15",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-1-16",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "16",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-1-17",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "17",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-1-18",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "18",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-1-19",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "1",
+    "room": "19",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-2-0",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "0",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-2-1",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "1",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-2-2",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "2",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-2-3",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "3",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-2-4",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "4",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-2-5",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "5",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-2-6",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "6",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-2-7",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "7",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-2-8",
+    "type": "Klasselokale",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "8",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-2-9",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "9",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-2-10",
+    "type": "Klasselokale",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "10",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-2-11",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "11",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-2-12",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "12",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-2-13",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "13",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-2-14",
+    "type": "Klasselokale",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "14",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-2-15",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "15",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-2-16",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "16",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-2-17",
+    "type": "Klasselokale",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "17",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-2-18",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "18",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-2-19",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "2",
+    "room": "19",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-3-0",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "0",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-3-1",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "1",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-3-2",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "2",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-3-3",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "3",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-3-4",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "4",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-3-5",
+    "type": "Klasselokale",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "5",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-3-6",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "6",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-3-7",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "7",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-3-8",
+    "type": "Klasselokale",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "8",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-3-9",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "9",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-3-10",
+    "type": "Klasselokale",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "10",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-3-11",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "11",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-3-12",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "12",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-3-13",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "13",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-3-14",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "14",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-3-15",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "15",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-3-16",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "16",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-3-17",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "17",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-3-18",
+    "type": "Klasselokale",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "18",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-3-19",
+    "type": "Klasselokale",
+    "building_nr": "1",
+    "floor": "3",
+    "room": "19",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-4-0",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "0",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-4-1",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "1",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-4-2",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "2",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-4-3",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "3",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-4-4",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "4",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-4-5",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "5",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-4-6",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "6",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-4-7",
+    "type": "Klasselokale",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "7",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-4-8",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "8",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-4-9",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "9",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-4-10",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "10",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-4-11",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "11",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-4-12",
+    "type": "Auditorium",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "12",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-4-13",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "13",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-4-14",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "14",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-4-15",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "15",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-4-16",
+    "type": "Skybox",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "16",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-4-17",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "17",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "1-4-18",
+    "type": "Klasselokale",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "18",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "1-4-19",
+    "type": "Mødelokale",
+    "building_nr": "1",
+    "floor": "4",
+    "room": "19",
+    "address": {
+      "street": "Rued Langgaards Vej 7",
+      "city": "København",
+      "zip": "2300"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-0-0",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "0",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-0-1",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "1",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-0-2",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "2",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-0-3",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "3",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-0-4",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "4",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-0-5",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "5",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-0-6",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "6",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-0-7",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "7",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-0-8",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "8",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-0-9",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "9",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-0-10",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "10",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-0-11",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "11",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-0-12",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "12",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-0-13",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "13",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-0-14",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "14",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-0-15",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "15",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-0-16",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "16",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-0-17",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "17",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-0-18",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "18",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-0-19",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "19",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-0-20",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "20",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-0-21",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "21",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-0-22",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "22",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-0-23",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "23",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-0-24",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "24",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-0-25",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "25",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-0-26",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "26",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-0-27",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "27",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-0-28",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "28",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-0-29",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "0",
+    "room": "29",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-1-0",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "0",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-1-1",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "1",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-1-2",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "2",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-1-3",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "3",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-1-4",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "4",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-1-5",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "5",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-1-6",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "6",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-1-7",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "7",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-1-8",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "8",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-1-9",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "9",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-1-10",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "10",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-1-11",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "11",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-1-12",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "12",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-1-13",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "13",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-1-14",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "14",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-1-15",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "15",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-1-16",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "16",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-1-17",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "17",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-1-18",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "18",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-1-19",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "19",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-1-20",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "20",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-1-21",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "21",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-1-22",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "22",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-1-23",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "23",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-1-24",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "24",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-1-25",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "25",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-1-26",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "26",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-1-27",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "27",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-1-28",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "28",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-1-29",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "1",
+    "room": "29",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-2-0",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "0",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-2-1",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "1",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-2-2",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "2",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-2-3",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "3",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-2-4",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "4",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-2-5",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "5",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-2-6",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "6",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-2-7",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "7",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-2-8",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "8",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-2-9",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "9",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-2-10",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "10",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-2-11",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "11",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-2-12",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "12",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-2-13",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "13",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-2-14",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "14",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-2-15",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "15",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-2-16",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "16",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-2-17",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "17",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-2-18",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "18",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-2-19",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "19",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-2-20",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "20",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-2-21",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "21",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-2-22",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "22",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-2-23",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "23",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-2-24",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "24",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-2-25",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "25",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-2-26",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "26",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-2-27",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "27",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-2-28",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "28",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-2-29",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "2",
+    "room": "29",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-0",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "0",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-1",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "1",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-3-2",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "2",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-3",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "3",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-4",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "4",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-5",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "5",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-3-6",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "6",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-7",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "7",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-3-8",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "8",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-9",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "9",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-10",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "10",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-3-11",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "11",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-3-12",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "12",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-13",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "13",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-3-14",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "14",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-15",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "15",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-16",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "16",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-17",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "17",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-18",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "18",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-3-19",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "19",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-3-20",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "20",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-21",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "21",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-22",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "22",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-23",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "23",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-3-24",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "24",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-25",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "25",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-26",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "26",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-3-27",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "27",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-3-28",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "28",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-3-29",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "3",
+    "room": "29",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-4-0",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "0",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-4-1",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "1",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-4-2",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "2",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-4-3",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "3",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-4-4",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "4",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-4-5",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "5",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-4-6",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "6",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-4-7",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "7",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-4-8",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "8",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-4-9",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "9",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-4-10",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "10",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-4-11",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "11",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-4-12",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "12",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-4-13",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "13",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-4-14",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "14",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-4-15",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "15",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-4-16",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "16",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-4-17",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "17",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-4-18",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "18",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-4-19",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "19",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-4-20",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "20",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-4-21",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "21",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-4-22",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "22",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-4-23",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "23",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-4-24",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "24",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-4-25",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "25",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-4-26",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "26",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-4-27",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "27",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-4-28",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "28",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-4-29",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "4",
+    "room": "29",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-5-0",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "0",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-5-1",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "1",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-5-2",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "2",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-5-3",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "3",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-5-4",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "4",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-5-5",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "5",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-5-6",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "6",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-5-7",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "7",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-5-8",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "8",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-5-9",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "9",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-5-10",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "10",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-5-11",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "11",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-5-12",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "12",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-5-13",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "13",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-5-14",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "14",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-5-15",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "15",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-5-16",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "16",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-5-17",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "17",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-5-18",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "18",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-5-19",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "19",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-5-20",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "20",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-5-21",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "21",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-5-22",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "22",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-5-23",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "23",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-5-24",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "24",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-5-25",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "25",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-5-26",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "26",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-5-27",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "27",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-5-28",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "28",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-5-29",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "5",
+    "room": "29",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-6-0",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "0",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-1",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "1",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-2",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "2",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-3",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "3",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-4",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "4",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-6-5",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "5",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-6",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "6",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-6-7",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "7",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-6-8",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "8",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-9",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "9",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-10",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "10",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-6-11",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "11",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-12",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "12",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-13",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "13",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-6-14",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "14",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-15",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "15",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-16",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "16",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-6-17",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "17",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-18",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "18",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-19",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "19",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-20",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "20",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-21",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "21",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-6-22",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "22",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-23",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "23",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-24",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "24",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-25",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "25",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-6-26",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "26",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-27",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "27",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-6-28",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "28",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-6-29",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "6",
+    "room": "29",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-7-0",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "0",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-7-1",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "1",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-7-2",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "2",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-7-3",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "3",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-7-4",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "4",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-7-5",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "5",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-7-6",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "6",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-7-7",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "7",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-7-8",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "8",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-7-9",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "9",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-7-10",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "10",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-7-11",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "11",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-7-12",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "12",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-7-13",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "13",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-7-14",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "14",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-7-15",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "15",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "128",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-7-16",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "16",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-7-17",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "17",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-7-18",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "18",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-7-19",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "19",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-7-20",
+    "type": "Klasselokale",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "20",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-7-21",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "21",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "32",
+    "hasScreen": "1",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-7-22",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "22",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-7-23",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "23",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "0",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-7-24",
+    "type": "Skybox",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "24",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "1",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-7-25",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "25",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "64",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "0",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-7-26",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "26",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-7-27",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "27",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "16",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "1",
+    "hasWhiteBoard": "1",
+    "hasBlackBoard": "1"
+  },
+  {
+    "id": "2-7-28",
+    "type": "Auditorium",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "28",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "20",
+    "hasScreen": "0",
+    "hasProjector": "0",
+    "hasOutlets": "1",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  },
+  {
+    "id": "2-7-29",
+    "type": "Mødelokale",
+    "building_nr": "2",
+    "floor": "7",
+    "room": "29",
+    "address": {
+      "street": "Universitetsparken 5",
+      "city": "København",
+      "zip": "2100"
+    },
+    "size": "8",
+    "hasScreen": "0",
+    "hasProjector": "1",
+    "hasOutlets": "0",
+    "hasTableDesks": "1",
+    "hasAC": "0",
+    "hasWhiteBoard": "0",
+    "hasBlackBoard": "0"
+  }
+]

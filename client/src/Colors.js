@@ -1,5 +1,3 @@
-
-
 const color = class {
   BLUE = "#393E46";
   GREEN = "#6D9886";

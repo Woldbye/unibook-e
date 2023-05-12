@@ -1,19 +1,28 @@
 import * as React from 'react';
 import {
   Container,
-  VStack,
-  Text,
+  List,
 } from '@chakra-ui/react';
-import LokaleModel from '../components/LokaleModel';
-import LokaleTyper from '../components/LokaleTyper';
+import Room from '../components/Room';
 
 
-const Rooms = () => (
-  <Container>
-    <VStack paddingBottom='2rem'>
-      <LokaleModel></LokaleModel>
-    </VStack>
-  </Container>
-)
+// Example that fetches all rooms in building 1
+const Rooms = () => {
+  const [rooms,setRooms] = React.useState([]);
+  
+  React.useEffect(() => {
+    const url = `http://localhost:5000/rooms?`; // URL for overview of all rooms
+    fetch(url)
+      .then(res => res.json())
+      .then(res => setRooms(Array.isArray(res) ? res : [res]))
+  },[]);
 
+  return (
+    <Container>
+      <List spacing={'1rem'}>
+        {rooms.map(room => <Room json={room}/>)}
+      </List>
+    </Container>
+  )
+}
 export default Rooms;
