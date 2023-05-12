@@ -17,6 +17,10 @@ code {
   text-shadow: 0px 2px 2px #00000040; 
 }
 
+.chakra-divider {
+  color: #0000 !important; 
+}
+
 .button, .chakra-button {
   /* Marked as important to overwrite chakra-button */
   background-color: #967E76 !important; 

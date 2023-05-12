@@ -3,22 +3,32 @@ import {
   Container,
   Button,
   VStack,
+  HStack,
   Text,
+  Input
 } from '@chakra-ui/react';
 import Background from '../components/Background';
 import Color from '../Colors';
+import BackButton from '../components/BackButton';
 
 // The site should appear after the user has selected a time slot and room
 const BookingConfirmation = () => (
   <Container>
+    <BackButton  to="book/date/rooms"/>
     <Container padding={"3rem 0 0 0"} centerContent="true">
       <Background width="80vw" height="85vh" backgroundColor={Color.BLUE}>
         <VStack>
           <Container padding={"5em 0 0 0"} centerContent="true">
             <Background width="65vw" height="25vh" backgroundColor={Color.DARK_BROWN}>
               <VStack>
-                <Text color={Color.CREME} padding={'30px 40px 0px 40px'}>Navn ______________________</Text>
-                <Text color={Color.CREME} padding={'50px 40px 0px 40px'}>Email ______________________</Text>
+              <HStack  padding={'30px 40px 0px 40px'}>
+                <Text color={Color.CREME}>Navn:</Text>
+                <Input/>
+              </HStack>
+              <HStack  padding={'50px 40px 0px 40px'}>
+                <Text color={Color.CREME}>Email:</Text>
+                <Input/>
+              </HStack>
               </VStack>
             </Background>
           </Container>
