@@ -1,16 +1,18 @@
 import * as React from 'react';
 import {
   Container,
-  Stack,
+  VStack,
   Text,
 } from '@chakra-ui/react';
+import LokaleModel from '../components/LokaleModel';
+import LokaleTyper from '../components/LokaleTyper';
 
 
 const Rooms = () => (
   <Container>
-    <Stack>
-      <Text>ROOMS</Text>
-    </Stack>
+    <VStack paddingBottom='2rem'>
+      <LokaleModel></LokaleModel>
+    </VStack>
   </Container>
 )
 
