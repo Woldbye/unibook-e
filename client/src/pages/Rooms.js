@@ -19,7 +19,7 @@ const Rooms = () => {
 
   return (
     <Container>
-      <List spacing={'1rem'}>
+      <List>
         {rooms.map(room => <Room json={room}/>)}
       </List>
     </Container>
