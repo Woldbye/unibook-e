@@ -18,19 +18,26 @@ class GoggleInput extends React.Component {
   type_name;
   max;
   min;
+  onChange;
 
   constructor(props) {
     super(props);
-    const { step_per_click, type_name, start, max, min } = props;
+    const { step_per_click, type_name, start, max, min, onChange } = props;
     this.state = { value: start ?? 0 }
     this.step_per_click = step_per_click ?? 1;
     this.type_name = type_name;
     this.max = max ?? Infinity;
     this.min = min ?? 0;
+    this.onChange = onChange ?? ((x) => {});
   }
-    
+  
+  get value() {
+    return this.state.value;
+  }
+
   changeValueByStep = (isInc) => {
     const new_value = isInc ? Math.min(this.state.value + this.step_per_click, this.max) : Math.max(this.state.value - this.step_per_click, this.min);
+    this.onChange(new_value)
     this.setState({ value: new_value })
   };
 
