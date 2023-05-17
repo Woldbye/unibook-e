@@ -9,7 +9,9 @@ import Background from '../components/Background';
 import Color from '../Colors';
 import GoggleInput from '../components/GoggleInput';
 import { Link } from 'react-router-dom';
+
 const Room = require('../shared/room.js');
+const { toUrl } = require('../shared/roomquery.js');
 
 class Booking extends React.Component {
   person_val;
@@ -54,7 +56,7 @@ class Booking extends React.Component {
             </Background>
           </Container>
           <Button size={'lg'}>
-            <Link to="date" state={this.state.query}>
+            <Link to={`date/${toUrl(this.state.query)}` }>
               <Text size={'lg'}>Næste</Text >
             </Link>
           </Button>

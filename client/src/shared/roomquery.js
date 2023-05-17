@@ -5,7 +5,7 @@
  * @returns A url string that can be used to query the server for rooms.
  */
 function toUrl(room_query) {
-  return "/rooms?" + Object.entries(room_query).map(([param,value]) => `${param}=${value}`).join("&");
+  return Object.entries(room_query).map(([param,value]) => `${param}=${value}`).join("&");
 } 
 
 
