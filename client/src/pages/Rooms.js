@@ -15,7 +15,7 @@ const Rooms = () => {
   
   React.useEffect(() => {
     getRooms(params.query).then(rooms => setRooms(rooms));
-  },[]);
+  },[params]);
 
   return (
     <Container>
