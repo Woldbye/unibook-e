@@ -17,7 +17,6 @@ app.get('/',(req,res) => {
 app.get('/rooms?*',(req,res) => {
   // console.log("Request: ", req);
   const query = roomQuery.fromUrl(req.url);
-  console.log("Query: ", query)
   const rooms = roomdb.query(query);
   res.send(rooms);
 });

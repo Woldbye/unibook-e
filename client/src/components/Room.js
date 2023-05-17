@@ -1,9 +1,19 @@
-import { Text,VStack,Container} from '@chakra-ui/react';
-import Background from './Background';
-import React from 'react';
-import Color from '../Colors';
-import Address from './Address';
-/** 
+import {
+  Text,
+  VStack,
+  Container,
+  HStack,
+  Button,
+  Box,
+  Flex,
+  Spacer,
+} from "@chakra-ui/react";
+import Background from "./Background";
+import React from "react";
+import Color from "../Colors";
+import Address from "./Address";
+
+/**
  * @brief Generates a Room component
  */
 class Room extends React.Component {
@@ -18,23 +28,63 @@ class Room extends React.Component {
   render() {
     //! TO:DO Set up display of rooms as grid
     return (
-      <Background width="100%" height="auto" backgroundColor={Color.BLUE}>
-        <Container><Text>{this.room_json["type"]} {this.room_json["id"]}</Text></Container>
-        <VStack>
-          <Text>building_nr: {this.room_json["building_nr"]}</Text>
-          <Text>floor: {this.room_json["floor"]}</Text>
-          <Address json={this.room_json["address"]}/>
-          <Text>size: {this.room_json["size"]}</Text>
-          <Text>hasScreen: {this.room_json["hasScreen"]}</Text>
-          <Text>hasProjector: {this.room_json["hasProjector"]}</Text>
-          <Text>hasOutlets: {this.room_json["hasOutlets"]}</Text>
-          <Text>hasTableDesks: {this.room_json["hasTableDesks"]}</Text>
-          <Text>hasAC: {this.room_json["hasAC"]}</Text>
-          <Text>hasWhiteBoard: {this.room_json["hasWhiteBoard"]}</Text>
-          <Text>hasBlackBoard: {this.room_json["hasBlackBoard"]}</Text>
-        </VStack>
-      </Background>
-    )
+      <Container padding={"3rem 0 0 0"}>
+        <Background width="100%" height="auto" backgroundColor={Color.BLUE}>
+          <VStack>
+            <Text color={Color.CREME} fontSize={"xl"} padding={"30px 40px 0px 40px"}>
+              {this.room_json["type"]} {this.room_json["id"]}
+            </Text>
+            <Address json={this.room_json["address"]} />
+          </VStack>
+          <VStack padding={"1rem"}>
+            <Flex spacing={"2rem"} display={"Flex"} flexWrap={"wrap"} justify={"center"}>
+              <Box backgroundColor={Color.LIGHT_BROWN} h={8}>
+                Max people for this room: {this.room_json["size"]}
+              </Box>
+              <Spacer/>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8}>
+                Building: {this.room_json["building_nr"]}
+              </Box>
+              <Spacer/>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8}>
+                Floor: {this.room_json["floor"]}
+              </Box>
+              <Spacer/>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8}>
+                Screen: {this.room_json["hasScreen"]}
+              </Box>
+              <Spacer/>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8}>
+                Projector: {this.room_json["hasProjector"]}
+              </Box>
+              <Spacer/>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8}>
+                Outlets: {this.room_json["hasOutlets"]}
+              </Box>
+              <Spacer/>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8}>
+                TableDesks: {this.room_json["hasTableDesks"]}
+              </Box>
+              <Spacer/>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8}>
+                AC: {this.room_json["hasAC"]}
+              </Box>
+              <Spacer/>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8}>
+                WhiteBoard: {this.room_json["hasWhiteBoard"]}
+              </Box>
+              <Spacer/>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8}>
+                BlackBoard: {this.room_json["hasBlackBoard"]}
+              </Box>
+            </Flex>
+          </VStack>
+          <VStack padding={"2rem 0rem 2rem 22rem"}>
+            <Button>Book this room</Button>
+          </VStack>
+        </Background>
+      </Container>
+    );
   }
 }
 

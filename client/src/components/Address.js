@@ -1,6 +1,7 @@
 import {
   Text
 } from '@chakra-ui/react';
+import Color from '../Colors';
 
 
 const Address = (props) => {
@@ -10,6 +11,6 @@ const Address = (props) => {
     zip = json["zip"] ?? 0;
     city = json["city"] ?? "";
   }
-  return (<Text>{`${street}, ${zip} ${city}`}</Text>)
+  return (<Text color={Color.CREME}>{`${street}, ${zip} ${city}`}</Text>)
 };
 export default Address;
