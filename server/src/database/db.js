@@ -34,7 +34,15 @@ class RoomDatabase {
     // Exclude all rooms that dont have the values in the room_query
     return this.rooms.filter(room => {
       return room["isBooked"] === "0"
-        && Object.entries(room_query).every(([param,value]) => room[param] === value)
+        && Object.entries(room_query).every(
+          ([param,value]) => {
+            if(param === 'size') {
+              return parseInt(room[param]) >= parseInt(value);
+            } else {
+              return room[param] === value;
+            }
+          }
+        );
     });
   }
   
