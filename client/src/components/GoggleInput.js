@@ -12,6 +12,7 @@ import Color from '../Colors';
  * @param {*} start the starting value of the input - defaults to 0. 
  * @param {*} max the maximum value of the input - defaults to ∞.
  * @param {*} min the minimum value of the input - defaults to 0.
+ * @param {*} onChange a function that is called when the value of the input changes - defaults to a function that does nothing. 
  */
 class GoggleInput extends React.Component {
   step_per_click;

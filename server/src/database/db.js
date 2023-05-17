@@ -40,6 +40,16 @@ class RoomDatabase {
               return parseInt(room[param]) >= parseInt(value);
             } else if(param === 'duration') {
               return true; // TODO: implement duration
+            } else if(param === 'type') {
+              // Unpack the room types from the room_query into an object array
+              const types = Object.values(value); 
+              // If some types are given
+              if(types.length > 0) {
+                // Check if room type is one of the given types
+                return types.some(type => room['type'].toLowerCase() === types[type].toLowerCase());
+              } else {
+                return true;
+              }
             } else {
               return room[param] === value;
             }

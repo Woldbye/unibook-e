@@ -37,6 +37,12 @@ class Booking extends React.Component {
       this.setState( newState )
     }
 
+    const onTypeChange = (tp) => {
+      const newState = this.state
+      newState['type'][tp] = Room.Type[tp];
+      this.setState ( newState )
+    }
+
     return (
       <Container>
         <VStack paddingBottom='2rem'>
@@ -45,7 +51,7 @@ class Booking extends React.Component {
             <GoggleInput step_per_click={1} type_name={'Personer'} start={1} max={128} min={1} onChange={onPersonChange.bind(this)} />
             <GoggleInput step_per_click={time_start} type_name={'Timer'} start={2.0} max={14.0} min={0.5} onChange={onTimeChange.bind(this)} />
           </VStack>
-          <LokaleTyper></LokaleTyper>
+          <LokaleTyper /*onChange={onTypeChange.bind(this)}*/></LokaleTyper>
           <Ressourcer></Ressourcer>
           <Link to={`date/${toUrl(this.state)}/` }>
             <Button size={'lg'}>
