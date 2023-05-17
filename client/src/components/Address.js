@@ -11,6 +11,6 @@ const Address = (props) => {
     zip = json["zip"] ?? 0;
     city = json["city"] ?? "";
   }
-  return (<Text color={Color.CREME}>{`${street}, ${zip} ${city}`}</Text>)
+  return (<Text color={Color.CREME} padding={'0 40px 0px 40px'}>{`${street}, ${zip} ${city}`}</Text>)
 };
 export default Address;

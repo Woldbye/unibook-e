@@ -30,57 +30,46 @@ class Room extends React.Component {
     return (
       <Container padding={"3rem 0 0 0"}>
         <Background width="100%" height="auto" backgroundColor={Color.BLUE}>
-          <VStack>
-            <Text color={Color.CREME} fontSize={"xl"} padding={"30px 40px 0px 40px"}>
-              {this.room_json["type"]} {this.room_json["id"]}
-            </Text>
-            <Address json={this.room_json["address"]} />
-          </VStack>
-          <VStack padding={"1rem"}>
+         <Text color={Color.CREME} fontSize={"xl"} padding={"30px 40px 0px 40px"}>
+            {this.room_json["type"]} {this.room_json["id"]}
+         </Text>
+         <Address json={this.room_json["address"]} />
+          <VStack padding={"1rem"} spacing={'24px'}>
             <Flex spacing={"2rem"} display={"Flex"} flexWrap={"wrap"} justify={"center"}>
-              <Box backgroundColor={Color.LIGHT_BROWN} h={8}>
-                Max people for this room: {this.room_json["size"]}
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} m={'2'} h={8}>
+                Max people for this room is {this.room_json["size"]}
               </Box>
-              <Spacer/>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8}>
-                Building: {this.room_json["building_nr"]}
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
+                Building {this.room_json["building_nr"]}
               </Box>
-              <Spacer/>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8}>
-                Floor: {this.room_json["floor"]}
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
+                Floor {this.room_json["floor"]}
               </Box>
-              <Spacer/>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8}>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
                 Screen: {this.room_json["hasScreen"]}
               </Box>
-              <Spacer/>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8}>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
                 Projector: {this.room_json["hasProjector"]}
               </Box>
-              <Spacer/>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8}>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
                 Outlets: {this.room_json["hasOutlets"]}
               </Box>
-              <Spacer/>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8}>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
                 TableDesks: {this.room_json["hasTableDesks"]}
               </Box>
-              <Spacer/>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8}>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
                 AC: {this.room_json["hasAC"]}
               </Box>
-              <Spacer/>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8}>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
                 WhiteBoard: {this.room_json["hasWhiteBoard"]}
               </Box>
-              <Spacer/>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8}>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
                 BlackBoard: {this.room_json["hasBlackBoard"]}
               </Box>
             </Flex>
           </VStack>
-          <VStack padding={"2rem 0rem 2rem 22rem"}>
-            <Button>Book this room</Button>
+          <VStack padding={'0'}>
+            <Button  marginLeft={'auto'} marginRight={'1rem'} marginBottom={'1rem'}>Book this room</Button>
           </VStack>
         </Background>
       </Container>
