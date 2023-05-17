@@ -6,7 +6,7 @@ import {
 import { useParams } from 'react-router-dom';
 import Room from '../components/Room';
 
-const { toUrl, fromUrl } = require('../api/roomquery.js');
+import { getRooms } from '../api/roomquery.js';
 
 // Example that fetches all rooms in building 1
 // setRooms is the method that filters the rooms
@@ -15,11 +15,7 @@ const Rooms = () => {
   const [rooms,setRooms] = React.useState([]);
   
   React.useEffect(() => {
-    const url = `http://localhost:5000/rooms?${params.query}`; // URL for overview of all rooms
-    console.log("Rooms url: ", url)
-    fetch(url)
-      .then(res => res.json())
-      .then(res => setRooms(Array.isArray(res) ? res : [res]))
+    getRooms(params.query).then(rooms => setRooms(rooms));
   },[]);
 
   return (

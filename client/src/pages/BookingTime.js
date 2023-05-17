@@ -8,12 +8,21 @@ import {
 import { useParams } from 'react-router-dom';
 import Background from '../components/Background';
 import { Link } from 'react-router-dom';
+import { toUrl,fromUrl, getRooms } from "../api/roomquery.js";
 
-const { toUrl,fromUrl } = require('../api/roomquery.js');
 
 const BookingTime = () => {
   let params = useParams();
-  const [query, setQuery] = React.useState(fromUrl(params.query));
+  
+  // Use setQuery to update the date information in the query
+  const [query,setQuery] = React.useState(fromUrl(params.query));
+  
+  // rooms will contain the rooms that are available for the given query
+  const [rooms,setRooms] = React.useState([]);
+
+  React.useEffect(() => {
+    getRooms(query).then(rooms => setRooms(rooms));
+  })
 
   return (
     <Background>

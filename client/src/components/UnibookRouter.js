@@ -8,7 +8,9 @@ import NoPage from "../pages/NoPage";
 import Rooms from "../pages/Rooms";
 import TopBar from "./TopBar";
 import Background from "./Background";
-const { fromUrl} = require('../api/roomquery.js');
+
+import { fromUrl } from "../api/roomquery.js";
+
 const UnibookRouter = () => {
   // The booking routes might change as we need to transfer meta-data about the booking to the server
   return (
@@ -20,7 +22,7 @@ const UnibookRouter = () => {
           <Route path="rooms/:query?/" element={<Rooms />} />
           <Route path="book/" element={<Background children={<Booking />} />} />
           <Route path="book/date/:query?/" element={<BookingTime/>}/>
-          <Route path="book/date/rooms/confirm" element={<Background children={<BookingConfirmation/>}/>}/>
+          <Route path="book/date/rooms/confirm" element={<BookingConfirmation/>}/>
           <Route path="*" element={<NoPage />}/>
         </Route>
       </Routes>
