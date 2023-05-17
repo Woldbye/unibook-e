@@ -14,25 +14,28 @@ import Ressourcer from '../components/Ressourcer';
 const Room = require('../api/room.js');
 const { toUrl } = require('../api/roomquery.js');
 
-class Booking extends React.Component {
+const time_start = 0.5;
 
+class Booking extends React.Component {
+  
   constructor(props) {
     super(props);
-    this.state = { query: { size: `${Room.Size.XS}` } };
-  }
-
-  onNextClick = () => {
-    const size = Object.values(Room.Size).find(key => Room.Size[key] >= this.person_val);
-    this.setState({query: {size: `${size}`}});
+    this.state = { size: `${Room.Size.XS}`, duration: `${time_start}` };
   }
   
   render() {
     const onPersonChange = (val) => {
       const size = Object.values(Room.Size).find(sz => sz >= val);
-      this.setState({ query: { size: `${size}` } });
+      const newState = this.state;
+      newState['size'] = `${size}`;
+      this.setState( newState );
     };
 
-    const onTimeChange = (val) => { console.log("time: ",val); }
+    const onTimeChange = (val) => {
+      const newState = this.state;
+      newState['duration'] = `${val}`; // duration in hours
+      this.setState( newState )
+    }
 
     return (
       <Container>
@@ -40,11 +43,11 @@ class Booking extends React.Component {
           <Text color={Color.BLACK} fontSize={'3xl'} padding={'30px 0px 10px 0px'}>Vælg lokale krav</Text>
           <VStack width='40%' spacing={'1rem'} minWidth={'12rem'}>
             <GoggleInput step_per_click={1} type_name={'Personer'} start={1} max={128} min={1} onChange={onPersonChange.bind(this)} />
-            <GoggleInput step_per_click={0.5} type_name={'Timer'} start={2.0} max={14.0} min={0.5} onChange={onTimeChange.bind(this)} />
+            <GoggleInput step_per_click={time_start} type_name={'Timer'} start={2.0} max={14.0} min={0.5} onChange={onTimeChange.bind(this)} />
           </VStack>
           <LokaleTyper></LokaleTyper>
           <Ressourcer></Ressourcer>
-          <Link to={`date/${toUrl(this.state.query)}/` }>
+          <Link to={`date/${toUrl(this.state)}/` }>
             <Button size={'lg'}>
               <Text size={'lg'}>Næste</Text >
             </Button>

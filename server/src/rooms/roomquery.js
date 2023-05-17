@@ -8,7 +8,6 @@ function toUrl(room_query) {
   return "/rooms?" + Object.entries(room_query).map(([param,value]) => `${param}=${value}`).join("&");
 } 
 
-
 /**
  * Receives an url string of a room query and returns an object containing the parameters of the query.
  * @param {*} url string as constructed by toUrl(query)
