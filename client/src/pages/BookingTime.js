@@ -17,13 +17,13 @@ const BookingTime = () => {
   // Use setQuery to update the date information in the query
   const [query,setQuery] = React.useState(fromUrl(params.query));
   
-  // rooms will contain the rooms that are available for the given query
+  // Rooms will contain the rooms that are available for the given query
   const [rooms,setRooms] = React.useState([]);
 
   React.useEffect(() => {
     getRooms(query).then(rooms => setRooms(rooms));
   })
-
+  
   return (
     <Background>
       <Container>

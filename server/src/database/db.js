@@ -15,7 +15,6 @@ class RoomDatabase {
   load_rooms(fpath = path.join(__dirname,'../data','rooms.json')) {
     const json = fs.readFileSync(fpath);
     this.rooms = JSON.parse(json);
-    console.log(`Loaded ${this.size()} rooms from @${fpath}`);
     for(let i = 0;i < this.rooms.length;++i) {
       // Add a flag to indicate whether the room is booked or not
       this.rooms[i]["isBooked"] = "0";
