@@ -4,7 +4,7 @@ const port = 5000;
 const app = express(); // initialize app
 const roomdb = require('./database/db.js'); // import the room database
 const path = require('path');
-const roomQuery = require('../../shared/roomquery.js');
+const roomQuery = require('./rooms/roomquery.js');
 roomdb.load_rooms(); // load the rooms from the json file into the database
 
 app.use(cors());

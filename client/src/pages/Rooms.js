@@ -6,7 +6,7 @@ import {
 import { useParams } from 'react-router-dom';
 import Room from '../components/Room';
 
-const { toUrl, fromUrl } = require('../shared/roomquery.js');
+const { toUrl, fromUrl } = require('../api/roomquery.js');
 
 // Example that fetches all rooms in building 1
 // setRooms is the method that filters the rooms
@@ -25,7 +25,7 @@ const Rooms = () => {
   return (
     <Container>
       <List spacing={'1rem'}>
-        {rooms.map(room => <Room json={room}/>)}
+        {rooms.map(room => <Room json={room} key={room.id}/>)}
       </List>
     </Container>
   )

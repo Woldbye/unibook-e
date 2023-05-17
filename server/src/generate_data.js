@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-const Room = require('../../shared/room.js');
-const { createRandomTags } = require('../../shared/roomtag.js');
+const Room = require('./rooms/room.js');
+const { createRandomTags } = require('./rooms/roomtag.js');
 
 const addresses = [
   {

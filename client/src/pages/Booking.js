@@ -10,29 +10,29 @@ import Color from '../Colors';
 import GoggleInput from '../components/GoggleInput';
 import { Link } from 'react-router-dom';
 
-const Room = require('../shared/room.js');
-const { toUrl } = require('../shared/roomquery.js');
+const Room = require('../api/room.js');
+const { toUrl } = require('../api/roomquery.js');
 
 class Booking extends React.Component {
-  person_val;
-  time_val;
 
   constructor(props) {
     super(props);
-    this.state = {query: {}};
+    this.state = { query: { size: `${Room.Size.XS}` } };
   }
 
   onNextClick = () => {
     const size = Object.values(Room.Size).find(key => Room.Size[key] >= this.person_val);
-    /** TODO: Add time_val after backend is set up to handle time bookings */
-    this.setState({query: {size: size}});
+    this.setState({query: {size: `${size}`}});
   }
   
   render() {
-    console.log(this.person_in);
-    console.log(this.time_in);
-    const onPersonChange = (val) => { this.person_val = val; }
-    const onTimeChange = (val) => { this.time_val = val; }
+    const onPersonChange = (val) => {
+      const size = Object.values(Room.Size).find(sz => sz >= val);
+      this.setState({ query: { size: `${size}` } });
+    };
+
+    const onTimeChange = (val) => { console.log("time: ",val); }
+
     return (
       <Container>
         <VStack paddingBottom='2rem'>
@@ -55,11 +55,11 @@ class Booking extends React.Component {
               </VStack>
             </Background>
           </Container>
-          <Button size={'lg'}>
-            <Link to={`date/${toUrl(this.state.query)}` }>
+          <Link to={`date/${toUrl(this.state.query)}/` }>
+            <Button size={'lg'}>
               <Text size={'lg'}>Næste</Text >
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </VStack>
       </Container>
     )
