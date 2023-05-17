@@ -11,6 +11,7 @@ import { getRooms } from '../api/roomquery.js';
 // setRooms is the method that filters the rooms
 const Rooms = () => {
   let params = useParams();
+  if(!params.query) { params.query = ''; } // If no query is given, return all rooms
   const [rooms,setRooms] = React.useState([]);
   
   React.useEffect(() => {
