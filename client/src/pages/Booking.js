@@ -39,8 +39,12 @@ class Booking extends React.Component {
 
     const onTypeChange = (tp) => {
       const newState = this.state
-      console.log("tp: ", tp)
-      newState['type'][tp] = Room.Type[tp];
+      if(Object.keys(newState['type']).includes(tp)) {
+        delete newState['type'][tp];
+      } else {
+        newState['type'][tp] = Room.Type[tp];
+      }
+      console.log("State after type change: ", newState)
       this.setState ( newState )
     }
 

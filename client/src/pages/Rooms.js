@@ -12,8 +12,10 @@ import { getRooms } from '../api/roomquery.js';
 const Rooms = () => {
   let params = useParams();
   if(!params.query) { params.query = ''; } // If no query is given, return all rooms
+
   const [rooms,setRooms] = React.useState([]);
   
+  // NOTE: This is making way too many update requests, not sure why
   React.useEffect(() => {
     getRooms(params.query).then(rooms => setRooms(rooms));
   },[params]);

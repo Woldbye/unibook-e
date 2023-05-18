@@ -6,7 +6,17 @@ import * as React from 'react';
  * @returns A url string that can be used to query the server for rooms.
  */
 export function toUrl(room_query) {
-  return Object.entries(room_query).map(([param,value]) => `${param}=${value}`).join("&");
+  const url = Object
+    .entries(room_query)
+    .map(([param,value]) => {
+      if(param === 'type' && typeof value === 'object') {
+        return `${param}=${Object.values(value)}`
+      } else {
+        return `${param}=${value}`
+      }
+    })
+    .join("&");
+  return url;
 } 
 
 /**
@@ -15,6 +25,7 @@ export function toUrl(room_query) {
  * @returns Return an array of rooms that satisfy room_query formated as jsons
  */
 export async function getRooms(room_query_url) {
+  room_query_url = typeof room_query_url === 'object' ? toUrl(room_query_url) : room_query_url;
   const url = `http://localhost:5000/rooms?${room_query_url}`; // URL for overview of all rooms
   return fetch(url)
     .then(res => res.json())
@@ -26,5 +37,10 @@ export async function getRooms(room_query_url) {
  * @param {*} url string as constructed by toUrl(query)
  */
 export function fromUrl(url) {
-  return Object.fromEntries(url.split("&").map(param => param.split("=")));
+  const objArr = url.split("&").map(param => param.split("="))
+  // Convert inner objects to arrays
+  for(let i = 0;i < objArr.length;i++) {
+    if(objArr[i][0] === 'type') objArr[i][1]= objArr[i][1].split(",");
+  }
+  return Object.fromEntries(objArr);
 }
