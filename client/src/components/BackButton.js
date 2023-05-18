@@ -9,16 +9,16 @@ import { ArrowBackIcon } from '@chakra-ui/icons';
 import Color from '../Colors';
 
 const BackButton = ({ to="/" }) => {
-    return     (
-<Container>
-<Link to>
-<HStack  width="80vw">
-    <ArrowBackIcon />
-    <Text color={Color.BLACK}>Tilbage</Text>
-</HStack>
-    </Link>
-    <Divider color={Color.BLACK}  orientation='horizontal' />
-</Container>
-)
+    return (
+        <Container>
+            <Link to={to}>
+            <HStack width="80vw">
+            <ArrowBackIcon/>
+            <Text color={Color.BLACK}>Tilbage</Text>
+            </HStack>
+            </Link>
+            <Divider color={Color.BLACK}  orientation='horizontal' />
+        </Container>
+    )
 };
 export default BackButton;

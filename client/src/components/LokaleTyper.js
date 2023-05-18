@@ -8,7 +8,7 @@ import {
   Flex,
   Center
 } from '@chakra-ui/react';
-
+import ToggleButton from './ToggleButton';
 import Background from '../components/Background';
 import Color from '../Colors';
 
@@ -19,9 +19,9 @@ class LokaleTyper extends React.Component {
   constructor(props) {
     super(props);
     const { onChange } = props;
-    this.onChange = onChange ?? ((x) => {});
+    this.onChange = onChange;
   }
-
+  
   render() {
     return (
       <>
@@ -32,18 +32,26 @@ class LokaleTyper extends React.Component {
             </VStack>
             <VStack padding={'0 0 1rem 0'}>
               <Flex spacing={'2rem'} display={'Flex'} flexWrap={'wrap'} justify={'center'}>
-              <Button margin={'10px'} width={'120px'} onClick={() => { this.onChange('Skybox') }}>
-              Skyboks
-              </Button>
-              <Button margin={'10px'} width={'120px'} onClick={() => { this.onChange('Auditorium') }}>
-              Auditorium
-              </Button>
-              <Button margin={'10px'} width={'120px'} onClick={() => { this.onChange('Meeting') }}>
-              Mødelokale
-              </Button>
-                <Button margin={'10px'} width={'120px'} onClick={() => { this.onChange('Classroom') }}>
-              Klasselokale
-              </Button>
+                <ToggleButton
+                  margin={'10px'}
+                  width={'120px'}
+                  onClick={() => this.onChange("Meeting")}
+                  children={"Mødelokale"} />
+                <ToggleButton
+                  margin={'10px'}
+                  width={'120px'}
+                  onClick={() => this.onChange("Skybox")}
+                  children={"Skybox"} />
+                <ToggleButton
+                  margin={'10px'}
+                  width={'120px'}
+                  onClick={() => this.onChange("Auditorium")}
+                  children={"Auditorium"} />
+                <ToggleButton
+                  margin={'10px'}
+                  width={'120px'}
+                  onClick={() => this.onChange("Classroom")}
+                  children={"Klasselokale"} />
               </Flex>
             </VStack>
           </Background>

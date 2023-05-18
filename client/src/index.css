@@ -35,6 +35,11 @@ code {
   box-shadow: 0px 2px 4px #00000040; 
 }
 
+.chakra-button.active {
+  background-color: #6D9886 !important;
+  outline-color: #6D9886 !important;
+}
+
 .logo {
   font-family: 'Domaine Text';
   color: #FAFAFA;

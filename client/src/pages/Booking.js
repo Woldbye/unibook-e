@@ -20,7 +20,7 @@ class Booking extends React.Component {
   
   constructor(props) {
     super(props);
-    this.state = { size: `${Room.Size.XS}`, duration: `${time_start}` };
+    this.state = { size: `${Room.Size.XS}`, duration: `${time_start}`, type: {} };
   }
   
   render() {
@@ -39,6 +39,7 @@ class Booking extends React.Component {
 
     const onTypeChange = (tp) => {
       const newState = this.state
+      console.log("tp: ", tp)
       newState['type'][tp] = Room.Type[tp];
       this.setState ( newState )
     }
@@ -51,7 +52,7 @@ class Booking extends React.Component {
             <GoggleInput step_per_click={1} type_name={'Personer'} start={1} max={128} min={1} onChange={onPersonChange.bind(this)} />
             <GoggleInput step_per_click={time_start} type_name={'Timer'} start={2.0} max={14.0} min={0.5} onChange={onTimeChange.bind(this)} />
           </VStack>
-          <LokaleTyper /*onChange={onTypeChange.bind(this)}*/></LokaleTyper>
+          <LokaleTyper onChange={onTypeChange.bind(this)} />
           <Ressourcer></Ressourcer>
           <Link to={`date/${toUrl(this.state)}/` }>
             <Button size={'lg'}>
