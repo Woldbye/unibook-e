@@ -23,7 +23,7 @@ const BookingTime = () => {
   // Also way too many update not sure why
   React.useEffect(() => {
     getRooms(query).then(rooms => setRooms(rooms));
-  })
+  }, [query])
   
   return (
     <Background>

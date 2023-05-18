@@ -9,8 +9,6 @@ import Rooms from "../pages/Rooms";
 import TopBar from "./TopBar";
 import Background from "./Background";
 
-import { fromUrl } from "../api/roomquery.js";
-
 const UnibookRouter = () => {
   // The booking routes might change as we need to transfer meta-data about the booking to the server
   return (
@@ -18,7 +16,7 @@ const UnibookRouter = () => {
       <Routes>
         <Route path="/" element={<TopBar boxWidth='100vw'/>}>
           <Route index element={<Background children={<Home />} />}/>
-          <Route path="rooms" element={<Rooms />}/>
+          <Route path="rooms" element={<BookingRoom />}/>
           <Route path="rooms/:query?/" element={<Rooms />} />
           <Route path="book/" element={<Background children={<Booking />} />} />
           <Route path="book/date/:query?/" element={<BookingTime/>}/>
