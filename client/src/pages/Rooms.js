@@ -23,7 +23,7 @@ const Rooms = () => {
   return (
     <Container>
       <List spacing={'1rem'}>
-        {rooms.map(room => <Room json={room}/>)}
+        {rooms.map(room => <Room key={room['id']} json={room}/>)}
       </List>
     </Container>
   )

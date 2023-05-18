@@ -44,7 +44,6 @@ class Booking extends React.Component {
       } else {
         newState['type'][tp] = Room.Type[tp];
       }
-      console.log("State after type change: ", newState)
       this.setState ( newState )
     }
 

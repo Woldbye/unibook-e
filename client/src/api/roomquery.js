@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 /**
  * @brief Converts a room_query object into an url string
  * @param {*} room_query A room_query object, which is a subset of the parameters of a room.
