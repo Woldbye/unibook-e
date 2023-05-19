@@ -52,8 +52,10 @@ class Booking extends React.Component {
         <VStack paddingBottom='2rem'>
           <Text color={Color.BLACK} fontSize={'3xl'} padding={'30px 0px 10px 0px'}>Vælg lokale krav</Text>
           <VStack width='40%' spacing={'1rem'} minWidth={'12rem'}>
-            <GoggleInput step_per_click={1} type_name={'Personer'} start={1} max={128} min={1} onChange={onPersonChange.bind(this)} />
-            <GoggleInput step_per_click={time_start} type_name={'Timer'} start={2.0} max={14.0} min={0.5} onChange={onTimeChange.bind(this)} />
+            <GoggleInput step_per_click={1} type_name={'Personer'} start={1} max={128} min={1}
+              onChange={onPersonChange.bind(this)} />
+            <GoggleInput step_per_click={time_start} type_name={'Timer'} start={2.0} max={14.0} min={0.5}
+              onChange={onTimeChange.bind(this)} />
           </VStack>
           <LokaleTyper onChange={onTypeChange.bind(this)} />
           <Ressourcer></Ressourcer>
