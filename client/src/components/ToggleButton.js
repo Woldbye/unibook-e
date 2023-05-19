@@ -25,7 +25,7 @@ class ToggleButton extends React.Component {
     var { onClick,children,margin,width,height,className,border,borderRadius } = props;
     this.className = (className ? `${className}` : "chakra-button");
     this.margin = margin ?? "0";
-    this.border = border ?? '1px';
+    this.border = border ?? '';
     this.borderRadius = borderRadius ?? '5px';
     this.width = width ?? "10";
     this.height = height ?? "10";

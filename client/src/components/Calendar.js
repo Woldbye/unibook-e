@@ -5,39 +5,34 @@ import Color from '../Colors';
 import React from 'react';
 
 class Calendar extends React.Component {
-  month = "januar"
-
   constructor(props) {
     super(props);
     const {} = props;
-    this.state = { value: 1, value2: 2,value3:3,value4:4,value0:31}
+    this.state = { month: "januar", value: 1, value2: 2,value3:3,value4:4,value0:31}
   }
 
-  changeMonth= (month) => {
-    if(month==="januar"||"august"){
-      this.setState({value:1,value2:2,value3:3,value4:4,value0:31})
+  changeMonth= (newMonth) => {
+    if(newMonth==="januar"||"august"){
+      this.setState({month: newMonth, value:1,value2:2,value3:3,value4:4,value0:31})
+    } else if(newMonth==="febuar"){
+      this.setState({month: newMonth, value:29,value2:30,value3:31,value4: 1,value0:28})
+    } else if(newMonth==="marts"){
+      this.setState({month: newMonth, value:1,value2:2,value3:3,value4: 4,value0:28})
+    } else if(newMonth==="april" || newMonth==="juni" || newMonth==="september" || newMonth==="november"){
+      this.setState({month: newMonth, value:31,value2:1,value3:2,value4: 3,value0:30})
+    } else if(newMonth==="maj" || newMonth==="juli" || newMonth==="october" || newMonth==="december"){
+      this.setState({month: newMonth, value:1,value2:2,value3:3,value4: 4,value0:30})
+    } else {
+      throw new Error("Invalid month: " + newMonth);
     }   
-    if(month==="febuar"){
-      this.setState({value:29,value2:30,value3:31,value4: 1,value0:28})
-    }  
-    if(month==="marts"){
-      month ="marts";
-      this.setState({value:1,value2:2,value3:3,value4: 4,value0:28})
-    }  
-    if(month==="april"||month==="juni"||month==="september"||month==="november"){
-      this.setState({value:31,value2:1,value3:2,value4: 3,value0:30})
-    }
-    if(month==="maj"||month==="juli"||month==="october"||month==="december"){
-      this.setState({value:1,value2:2,value3:3,value4: 4,value0:30})
-    }         
   }
 
   render(){
     return(
-      <Container textAlign={'center'} paddingBottom={'250px'}>
+      <Container textAlign={'center'} paddingBottom={'260px'}>
         <Menu>
           <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-            måned
+            {this.state.month}
           </MenuButton>
           <MenuList>
             <MenuItem onClick={() => this.changeMonth("januar")}>Januar</MenuItem>
@@ -52,12 +47,9 @@ class Calendar extends React.Component {
             <MenuItem onClick={() => this.changeMonth("october")}>October</MenuItem>
             <MenuItem onClick={() => this.changeMonth("november")}>November</MenuItem>
             <MenuItem onClick={() => this.changeMonth("december")}>December</MenuItem>
-
           </MenuList>
         </Menu>
-        <Text paddingBottom={'1'}> {this.month+" "+"2023"}</Text>    
         <Grid
-          // h = '90%'
           marginLeft={'18%'}
           templateRows='repeat(6, 1fr)'
           templateColumns='repeat(7, 1fr)'
@@ -91,30 +83,34 @@ class Calendar extends React.Component {
           </GridItem>
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
               onChange={(x) => console.log("Toggle button called with event ",x)}
-              children={<Text>{this.state.value0-3}</Text>}
+              children={<Text>{this.state.value0 - 3}</Text>}
           /> 
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
               onChange={(x) => console.log("Toggle button called with event ",x)}
-              children={<Text>{this.state.value0-2}</Text>}
+              children={<Text>{this.state.value0 - 2}</Text>}
           /> 
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
               onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value0-1}</Text>}
+              children={<Text>{this.state.value0 - 1}</Text>}
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -123,6 +119,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -131,6 +128,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -139,6 +137,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -147,6 +146,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -155,6 +155,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -163,6 +164,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -171,6 +173,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -179,6 +182,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -187,6 +191,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -195,6 +200,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -203,6 +209,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -211,6 +218,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -219,6 +227,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -227,6 +236,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -235,6 +245,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -243,6 +254,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -251,6 +263,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -259,6 +272,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -267,6 +281,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -275,6 +290,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -283,6 +299,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -291,6 +308,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -299,6 +317,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -307,6 +326,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -315,6 +335,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -323,6 +344,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -331,6 +353,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -339,6 +362,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -347,6 +371,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -355,6 +380,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}
@@ -363,6 +389,7 @@ class Calendar extends React.Component {
             />
           <ToggleButton
               borderRadius={'0'}
+              border='1px solid grey'
               height={'50px'}
               width={'50px'}
               className={'date-button'}

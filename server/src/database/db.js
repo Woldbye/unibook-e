@@ -41,7 +41,7 @@ class RoomDatabase {
             } else if(param === 'duration') {
               return true; // TODO: implement duration
             } else if(param === 'type') {
-              return value.some(v => room['type'] === v || v === '')  
+              return value.some(v => room['type'] === v || v === '')
             } else {
               return room[param] === value;
             }
