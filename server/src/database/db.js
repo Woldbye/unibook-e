@@ -15,7 +15,6 @@ class RoomDatabase {
   load_rooms(fpath = path.join(__dirname,'../data','rooms.json')) {
     const json = fs.readFileSync(fpath);
     this.rooms = JSON.parse(json);
-    console.log(`Loaded ${this.size()} rooms from @${fpath}`);
     for(let i = 0;i < this.rooms.length;++i) {
       // Add a flag to indicate whether the room is booked or not
       this.rooms[i]["isBooked"] = "0";
@@ -35,7 +34,20 @@ class RoomDatabase {
     // Exclude all rooms that dont have the values in the room_query
     return this.rooms.filter(room => {
       return room["isBooked"] === "0"
-        && Object.entries(room_query).every(([param,value]) => room[param] === value)
+        && Object.entries(room_query).every(
+          ([param,value]) => {
+            if(param === 'size') {
+              return parseInt(room[param]) >= parseInt(value);
+            } else if(param === 'duration') {
+              return true; // TODO: implement duration
+            
+            } else if(param === 'type') {
+                return value.some(v => room['type'] === v) || (v === '')
+            } else {
+              return room[param] === value;
+            }
+          }
+        );
     });
   }
   

@@ -8,14 +8,16 @@ function toUrl(room_query) {
   return "/rooms?" + Object.entries(room_query).map(([param,value]) => `${param}=${value}`).join("&");
 } 
 
-
 /**
  * Receives an url string of a room query and returns an object containing the parameters of the query.
  * @param {*} url string as constructed by toUrl(query)
  */
 function fromUrl(url) {
-  console.log("Read in url: ", url);
-  return Object.fromEntries(url.split("rooms?")[1].split("&").map(param => param.split("=")));
+  const url_split = url.split("/rooms?")[1].split("&").map(param => param.split("="))
+  for (let i = 0; i < url_split.length; i++) {
+    if (url_split[i][0] === 'type') url_split[i][1] = url_split[i][1].split(",");
+  }
+  return Object.fromEntries(url_split);
 }
 
 module.exports = {
