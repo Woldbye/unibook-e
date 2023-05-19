@@ -15,7 +15,7 @@ export function toUrl(room_query) {
     })
     .join("&");
   return url;
-} 
+}
 
 /**
  * @brief Query the backend for rooms that satisfy room_query 

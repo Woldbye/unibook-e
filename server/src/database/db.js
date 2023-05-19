@@ -40,9 +40,8 @@ class RoomDatabase {
               return parseInt(room[param]) >= parseInt(value);
             } else if(param === 'duration') {
               return true; // TODO: implement duration
-            
             } else if(param === 'type') {
-                return value.some(v => room['type'] === v) || (v === '')
+              return value.some(v => room['type'] === v || v === '')
             } else {
               return room[param] === value;
             }

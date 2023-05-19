@@ -3,10 +3,13 @@ import {
   Container,
   Stack,
   Text,
+  VStack,
   Button
 } from '@chakra-ui/react';
 import { useParams } from 'react-router-dom';
 import Background from '../components/Background';
+import Calendar from '../components/Calendar';
+import TimeChooser from '../components/TimeChooser';
 import { Link } from 'react-router-dom';
 import { toUrl,fromUrl, getRooms } from "../api/roomquery.js";
 
@@ -27,20 +30,22 @@ const BookingTime = () => {
   
   return (
     <Background>
-      <Container>
-        <Stack>
-          <Text>BOOKING DATE GRID</Text>
-          <Text>BOOKING TIME SELECTOR</Text>
+      <Container height={'100vh'}width ={'100vw'}>
+      <Stack alignItems={'center'} spacing={'2rem'}  minWidth={'12rem'}>
+        <Text fontSize={24}>Vælg dato</Text>
+        <Calendar/>
+        <VStack width='50%' minWidth={'12rem'}>
+          <TimeChooser />
           <Link to={`/rooms/${toUrl(query)}/` }>
-            <Button size={'lg'}>
-              <Text size={'lg'}>Næste</Text >
-            </Button>
+          <Button size={'lg'}>
+            <Text size={'lg'}>Næste</Text >
+          </Button>
           </Link>
-        </Stack>
+        </VStack>
+      </Stack>
       </Container>
     </Background>
   )
 }
-
 
 export default BookingTime;

@@ -16,17 +16,24 @@ class ToggleButton extends React.Component {
   margin;
   width;
   height;
+  border;
+  borderRadius;
+  className;
 
   constructor(props) {
     super(props);
-    var { onClick,children,margin,width,height } = props;
+    var { onClick,children,margin,width,height,className,border,borderRadius } = props;
+    this.className = (className ? `${className}` : "chakra-button");
     this.margin = margin ?? "0";
+    this.border = border ?? '';
+    this.borderRadius = borderRadius ?? '5px';
     this.width = width ?? "10";
     this.height = height ?? "10";
     this.children = children;
-    this._onClick = onClick ?? (() => {}); // Default do nothing
+    this._onClick = onClick ?? ((x) => {}); // Default do nothing
     this.state = { isOn: false };
   }
+
   get active() { return this.state.isOn; }
 
   onClick() {
@@ -41,11 +48,13 @@ class ToggleButton extends React.Component {
       <Box
         as="button"
         onClick={this.onClick.bind(this)}
-        className={this.active ? "chakra-button active" : "chakra-button"}
+        border={this.border}
+        // If button is active add active flag to the class name
+        className={`${(this.className !== '' ? `${this.className}` : '')}${(this.active ? " active" : "")}`}
         width={this.width}
         margin={this.margin}
         h={this.height}
-        borderRadius="5px" // make round
+        borderRadius={this.borderRadius} // make round
       >
       {this.children ?? "ToggleButton"}
       </Box >
