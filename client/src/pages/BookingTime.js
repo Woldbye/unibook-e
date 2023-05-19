@@ -3,21 +3,30 @@ import {
   Container,
   Stack,
   Text,
+  Button,
+  VStack
 } from '@chakra-ui/react';
 import Background from '../components/Background';
 import Calendar from '../components/Calendar';
+import TimeChooser from '../components/TimeChooser';
 
 
 const BookingTime = () => (
-  <Background>
-    <Container>
-      <Stack alignItems={'center'}>
-        <Text>BOOKING DATE GRID</Text>
+ 
+    <Container height={'100vh'}width ={'100vw'} >
+      <Stack alignItems={'center'} spacing={'2rem'}  minWidth={'12rem'}>
+        <Text fontSize={24}>Vælg dato</Text>
+
         <Calendar/>
-        <Text>BOOKING TIME SELECTOR</Text>
+        
+        <VStack width='50%' minWidth={'12rem'}>
+          <TimeChooser />
+          <Button size={'lg'}>Næste</Button>
+        </VStack>
       </Stack>
     </Container>
-  </Background>
+   
+  
 )
 
 export default BookingTime;
