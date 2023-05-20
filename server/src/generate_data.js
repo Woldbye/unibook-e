@@ -28,8 +28,8 @@ const buildings = [
   {
     building_nr: 2,
     address: addresses[1],
-    floors: 8,
-    rooms_per_floor: 30,
+    floors: 3,
+    rooms_per_floor: 10,
   },
 ];
 

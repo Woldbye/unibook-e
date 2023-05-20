@@ -13,8 +13,12 @@ code {
 }
 
 .date-button {
-  background-color: #D7C0AE;
-  color: black;
+  background-color: #D7C0AE !important;
+  color: black !important;
+}
+
+.disabled {
+  opacity: 0.6;
 }
 
 .date-button.active {

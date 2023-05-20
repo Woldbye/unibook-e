@@ -2,16 +2,15 @@ import {
   Text,
   VStack,
   Container,
-  HStack,
   Button,
   Box,
   Flex,
-  Spacer,
 } from "@chakra-ui/react";
 import Background from "./Background";
 import React from "react";
 import Color from "../Colors";
 import Address from "./Address";
+import { capitalize } from "../util";
 
 /**
  * @brief Generates a Room component
@@ -26,7 +25,8 @@ class Room extends React.Component {
   }
 
   render() {
-    //! TO:DO Set up display of rooms as grid
+    const { resources } = this.room_json 
+
     return (
       <Container padding={"3rem 0 0 0"}>
         <Background width="100%" height="auto" backgroundColor={Color.BLUE}>
@@ -45,27 +45,19 @@ class Room extends React.Component {
               <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
                 Floor {this.room_json["floor"]}
               </Box>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
-                Screen: {this.room_json["hasScreen"]}
-              </Box>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
-                Projector: {this.room_json["hasProjector"]}
-              </Box>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
-                Outlets: {this.room_json["hasOutlets"]}
-              </Box>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
-                TableDesks: {this.room_json["hasTableDesks"]}
-              </Box>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
-                AC: {this.room_json["hasAC"]}
-              </Box>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
-                WhiteBoard: {this.room_json["hasWhiteBoard"]}
-              </Box>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
-                BlackBoard: {this.room_json["hasBlackBoard"]}
-              </Box>
+              { 
+                // Show all resources that are available for this room
+                Object
+                  .keys(resources)
+                  .filter(key => resources[key] === '1')
+                  .map(key => {
+                    return (
+                      <Box key={`${this.room_json["id"]}-${key}`} backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
+                      {`${capitalize(key.replace('_', ' '))}`}
+                      </Box>
+                    )
+                  })
+              }
             </Flex>
           </VStack>
           <VStack padding={'0'}>
