@@ -21,7 +21,6 @@ const months = {
   december: 31
 }
 
-
 const Calendar = () => {
   const today = new Date();
   const [month, setMonth] = React.useState([today.getMonth()]);
@@ -40,19 +39,13 @@ const Calendar = () => {
     // first and last week day of month
     const start_weekday = new Date(year, month, 0).getDay(); 
     const end_weekday = new Date(year, month, Object.values(months)[month] - 1).getDay();
-
     const prv_start_day = (month ? Object.values(months)[month - 1] : months['december']) - start_weekday;
-
-    console.log("prv start day", prv_start_day, " start_weekday", start_weekday)
-    const prv_days = new Array(start_weekday).fill(prv_start_day).map((d, i) => d+i+1);
-    setPrv(prv_days);
-
-    console.log(Object.values(months)[month]);
+    const prv_days = new Array(start_weekday).fill(prv_start_day).map((d,i) => d + i + 1);
     const cur_days = new Array(Object.values(months)[month]).fill(0).map((_, i) => i+1);
-    setCur(cur_days);
-    
     const nxt_days = new Array(6-end_weekday).fill(0).map((_, i) => i+1);
-    setNxt(nxt_days);
+    setPrv(prv_days);
+    setCur(cur_days);
+    setNxt(nxt_days);    
   }, [month, year]);
   
   const MonthSelector = () => {
@@ -62,7 +55,6 @@ const Calendar = () => {
           icon={<ChevronDownIcon />}
           iconColor={Color.CREME}
           variant={'outline'}
-          colorScheme='orange'
           color={Color.BLUE}
           textColor={Color.CREME}
           border={'none'}
@@ -110,8 +102,7 @@ const Calendar = () => {
   }
 
   const createToggleButton = (key,day,disable) => {
-    const cname = (month === today.getMonth() && year === today.getFullYear() && day === today.getDate() ? 'date-button-today' : 'date-button')
-    console.log("className", cname)
+    const cname = key.indexOf('cur') && day === today.getDate() ? 'date-button-today' : 'date-button';
     return (
       <ToggleButton
         key={key}

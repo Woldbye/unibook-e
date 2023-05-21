@@ -1,5 +1,4 @@
 const { hasTag, Tag } = require('./roomtag.js');
-
 const Size = {
   XS: 8,
   S: 16,
@@ -18,9 +17,9 @@ const Type = {
 
 /** 
  * @brief Create a new Room object. 
- *        All parameter values are held as strings to allow easy conversion back and forward 
+ *        parameter values are held as strings to allow easy conversion back and forward 
  */
-const create = (type, room_size, building_nr,floor,room,address,tag_flags) => {
+const create = (type, room_size, building_nr,floor,room,address,tag_flags, timeslots) => {
   return {
     id: `${building_nr}-${floor}-${room}`,
     type: `${type}`,
@@ -29,6 +28,7 @@ const create = (type, room_size, building_nr,floor,room,address,tag_flags) => {
     room: `${room}`,
     address: address,
     size: `${room_size}`,
+    timeslots: timeslots,
     resources: { // Resources capitalized to ease printing and allow indexing with tag flag names
       Screen: hasTag(tag_flags,Tag.Screen) ? '1' : '0',
       Projector: hasTag(tag_flags,Tag.Projector) ? '1' : '0',
