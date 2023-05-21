@@ -1,9 +1,10 @@
-import { Container, Grid,GridItem,Menu,MenuButton,MenuList,MenuItem,Button, Text } from '@chakra-ui/react';
+import { Container, Grid,GridItem,Menu,MenuButton,MenuList,MenuItem,Button,Select,Stack, Center } from '@chakra-ui/react';
 import * as React from 'react';
 import ToggleButton from './ToggleButton';
 import Color from '../Colors';
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import { capitalize } from '../util.js';
+import { Formik } from 'formik';
 
 const months = {
   januar: 31,
@@ -61,16 +62,55 @@ const Calendar = () => {
     setNxt(nxt_days);
   }, [month, year]);
   
+  const MonthSelector = () => {
+    return (
+      <Center>
+        <Select
+          icon={<ChevronDownIcon />}
+          variant={'filled'}
+          width={'200px'}
+          onChange={(e) => {
+            const [m,y] = e.target.value.toLowerCase().split(' ');
+            setMonth(Object.keys(months).indexOf(m));
+            setYear(parseInt(y, 10));
+          }}
+          placeholder={`${capitalize(Object.keys(months)[month])} ${year}`}
+          >
+        {
+          [
+            // Previous 6 months
+            ...new Array(6).fill({}).map((_,i) => {
+              const m = ((today.getMonth() + 12) - 6 + i) % 12;
+              const y = ((today.getMonth() + 12) - 6 + i) % 12 > 5 ? today.getFullYear() - 1 : today.getFullYear();
+              return { month: m, year: y }
+            }),
+            // Next 6 months
+            ...new Array(6).fill({}).map((_,i) => {
+              const m = (today.getMonth() + i + 1) % 12;
+              const y = (today.getMonth() + i + 1) > 11 ? today.getFullYear() + 1 : today.getFullYear();
+              return { month: m ,year: y }
+            }),
+          ].sort((my1,my2) => my1['year'] === my2['year'] ? my1['month'] > my2['month'] : my1['year'] > my2['year'])
+          
+          .map((my,i) =>
+          {
+            return (
+              <option
+              key={`${i}-${my['month']}-${my['year']}`}
+              >
+              {`${capitalize(Object.keys(months)[my['month']])} ${my['year']}`}
+              </option>
+            )
+          })
+        }
+        </Select>
+      </Center>
+    )
+  }
+  
   return (
     <Container textAlign={'center'} paddingBottom={'260px'}>
-      <Menu>
-        <MenuButton as={Button} rightIcon={<ChevronDownIcon/>}>
-        {capitalize(Object.keys(months)[month])}
-        </MenuButton>
-        <MenuList>
-        {Object.keys(months).map((m, i) => <MenuItem key={`${i}-${m}`} onClick={(e) => {setMonth(i)}}>{capitalize(m)}</MenuItem>)}
-        </MenuList>
-      </Menu>
+      <MonthSelector/>
       <Grid
         marginLeft={'18%'}
         templateRows='repeat(6, 1fr)'
