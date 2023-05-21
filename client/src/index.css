@@ -23,7 +23,16 @@ code {
 
 .date-button-today {
   background-color:  #967E76 !important;
-  color: white !important;
+}
+
+.date-button.available, .date-button-today.available {
+  color: rgb(206,255,0) !important;
+  text-shadow: 0px 2px 2px rgb(100,140,17);
+}
+
+.date-button.unavailable, .date-button-today.unavailable {
+  color: rgb(232,244,140) !important;
+  text-shadow: 0px 1px 1px rgb(50,100,17);
 }
 
 .date-button.active {

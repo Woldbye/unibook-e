@@ -49,13 +49,20 @@ class RoomDatabase {
         );
     });
   }
-  
+
   /** 
    * @brief Book a room with the given id.
+   * @param room_id The id of the room to book
+   * @param dur The duration of the booking in hours
+   * @param date The date to book the room for - Date object
    * @returns True if the room with the given id has been succesfully booked, false otherwise
    * @warning not thread safe, as we are currently just emulating a database.
    */
-  book(room_id) {
+  book(room_id, dur, date) {
+    //! TO:DO implement booking
+    
+    // Find available room within the given date
+
     this.rooms.find(room => room["id"] === room_id)["isBooked"] = "1";
   }
 };

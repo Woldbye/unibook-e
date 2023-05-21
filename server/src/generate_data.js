@@ -2,45 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const Room = require('./rooms/room.js');
 const { createRandomTags } = require('./rooms/roomtag.js');
-
-
-Date.prototype.addHours = function(year = 0,month = 0,day = 0,hour = 0,min = 0) {
-  return new Date(
-    this.getFullYear() + year,
-    this.getMonth() + month,
-    this.getDate() + day,
-    this.getHours() + hour,
-    this.getMinutes() + min,
-  );
-};
-
-Date.prototype.subtract = function(year = 0,month = 0,day = 0,hour = 0,min = 0) {
-  return new Date(
-    this.getFullYear() - year,
-    this.getMonth() - month,
-    this.getDate() - day,
-    this.getHours() - hour,
-    this.getMinutes() - min,
-  );
-};
-
-
-/**
- * @brief Creates an array of Date objects from start to end with duration seperating them
- * @param {*} start time of day and date that timeslots should start
- * @param {*} end time of day and date that timeslots should close 
- * @param {*} dur The seperator of each timeslot
- * @returns Array of day objects frpfrom start to end
- */
-const createRange = (start,end,dur) => {
-  const times = [];
-  for(let tm = start;tm <= end;tm = tm.addHours(0,0,0,0,dur)) {
-    if (tm.getHours() < start.getHours() || tm.getHours() >= end.getHours()) continue;
-    times.push(tm);
-  }
-  return times;
-};
-
+require('./date.js');
+const { createDateRange } = require('./date.js');
 
 /** Retrieve a random property from an object */
 var randomProperty = (obj) => Object.keys(obj)[Math.floor(Math.random()*Object.keys(obj).length)];
@@ -58,12 +21,13 @@ var randomTimeslots = (start,end,dur,free_frac) => {
     free: [],
     reserved: [],
   }
-  createRange(start,end,dur).forEach((tm,i) => {
+  createDateRange(start,end,dur).forEach((tm,i) => {
     const isFree = Math.random() < free_frac;
     timeslots[isFree ? 'free' : 'reserved'].push(tm);
   })
   return timeslots;
 }
+
 const addresses = [
   {
     // ITU
@@ -114,7 +78,7 @@ function populate_building(building) {
         j,
         building.address,
         createRandomTags(),
-        randomTimeslots(new Date(2022,10,1,8,0),new Date(2024,1,1,20,0),30,0.25)
+        randomTimeslots(new Date(2022,10,1,8,0),new Date(2024,1,1,20,0),120,0.01)
       );
       rooms.push(room);
     }

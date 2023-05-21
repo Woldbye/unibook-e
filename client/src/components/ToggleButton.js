@@ -44,7 +44,7 @@ class ToggleButton extends React.Component {
     const newState = this.state;
     newState['isOn'] = !this.active;
     this.setState(newState);
-    this._onClick();
+    this._onClick(newState['isOn']);
   }
 
   render() {
@@ -54,7 +54,7 @@ class ToggleButton extends React.Component {
         onClick={this.onClick.bind(this)}
         border={this.border}
         // If button is active add active flag to the class name
-        className={`${(this.className !== '' ? `${this.className}` : '')}${(this.active ? " active" : "")}`}
+        className={`${this.className}${(this.active ? " active" : "")}`}
         width={this.width}
         margin={this.margin}
         h={this.height}
