@@ -21,13 +21,6 @@ const months = {
   december: 31
 }
 
-const createToggleButton = (key, val, disable) => {
-  return (
-    <ToggleButton key={key} isDisabled={disable} borderRadius={'0'} border={'1px solid grey'} height={'50px'} width={'50px'} className={'date-button'}>
-      {val}
-    </ToggleButton>
-  )
-}
 
 const Calendar = () => {
   const today = new Date();
@@ -67,53 +60,78 @@ const Calendar = () => {
       <Center>
         <Select
           icon={<ChevronDownIcon />}
-          variant={'filled'}
-          width={'200px'}
+          iconColor={Color.CREME}
+          variant={'outline'}
+          colorScheme='orange'
+          color={Color.BLUE}
+          textColor={Color.CREME}
+          border={'none'}
+          size={'lg'}
+          fontSize={'1.3rem'}
+          width={'100vw'}
           onChange={(e) => {
             const [m,y] = e.target.value.toLowerCase().split(' ');
             setMonth(Object.keys(months).indexOf(m));
             setYear(parseInt(y, 10));
           }}
-          placeholder={`${capitalize(Object.keys(months)[month])} ${year}`}
-          >
-        {
-          [
-            // Previous 6 months
-            ...new Array(6).fill({}).map((_,i) => {
-              const m = ((today.getMonth() + 12) - 6 + i) % 12;
-              const y = ((today.getMonth() + 12) - 6 + i) % 12 > 5 ? today.getFullYear() - 1 : today.getFullYear();
-              return { month: m, year: y }
-            }),
-            // Next 6 months
-            ...new Array(6).fill({}).map((_,i) => {
-              const m = (today.getMonth() + i + 1) % 12;
-              const y = (today.getMonth() + i + 1) > 11 ? today.getFullYear() + 1 : today.getFullYear();
-              return { month: m ,year: y }
-            }),
-          ].sort((my1,my2) => my1['year'] === my2['year'] ? my1['month'] > my2['month'] : my1['year'] > my2['year'])
-          
-          .map((my,i) =>
+        >
+          <option selected hidden disabled>{`${capitalize(Object.keys(months)[month])} ${year}`}</option>
           {
-            return (
-              <option
-              key={`${i}-${my['month']}-${my['year']}`}
-              >
-              {`${capitalize(Object.keys(months)[my['month']])} ${my['year']}`}
-              </option>
-            )
-          })
-        }
+            [
+              // Previous 6 months
+              ...new Array(6).fill({}).map((_,i) => {
+                const m = ((today.getMonth() + 12) - 6 + i) % 12;
+                const y = ((today.getMonth() + 12) - 6 + i) % 12 > 5 ? today.getFullYear() - 1 : today.getFullYear();
+                return { month: m, year: y }
+              }),
+              { month: today.getMonth(), year: today.getFullYear() },
+              // Next 6 months
+              ...new Array(6).fill({}).map((_,i) => {
+                const m = (today.getMonth() + i + 1) % 12;
+                const y = (today.getMonth() + i + 1) > 11 ? today.getFullYear() + 1 : today.getFullYear();
+                return { month: m ,year: y }
+              }),
+            ]
+            .map((my,i) => {
+              return (
+                <option
+                  style={{ color: Color.BLACK }}
+                  selected={my['month'] === month && my['year'] === year}
+                  key={`${i}-${my['month']}-${my['year']}`}
+                >
+                {`${capitalize(Object.keys(months)[my['month']])} ${my['year']}`}
+                </option>
+              )
+            })
+          }
         </Select>
       </Center>
     )
   }
-  
+
+  const createToggleButton = (key,day,disable) => {
+    const cname = (month === today.getMonth() && year === today.getFullYear() && day === today.getDate() ? 'date-button-today' : 'date-button')
+    console.log("className", cname)
+    return (
+      <ToggleButton
+        key={key}
+        isDisabled={disable}
+        borderRadius={'0'}
+        border={'1px solid grey'}
+        height={'50px'}
+        width={'50px'}
+        className={cname}>
+      {day}
+      </ToggleButton>
+    )
+  }
+
   return (
-    <Container textAlign={'center'} paddingBottom={'260px'}>
-      <MonthSelector/>
+    <Container textAlign={'center'} paddingBottom={'300px'}>
       <Grid
-        marginLeft={'18%'}
-        templateRows='repeat(6, 1fr)'
+        paddingTop={'2%'}
+        marginLeft={'15%'}
+        templateRows='repeat(7, 1fr)'
         templateColumns='repeat(7, 1fr)'
         gap={0}
         color ='black'
@@ -122,9 +140,12 @@ const Calendar = () => {
         width={'50px'}
         height={'32px'}
       >
-        {['man','tir','ons','tor','fre','lør','søn'].map(day => { 
+        <GridItem colSpan={'7'} bg={Color.BLUE}>
+          <MonthSelector/>
+        </GridItem>
+        {['Man','Tir','Ons','Tor','Fre','Lør','Søn'].map(day => { 
           return (
-            <GridItem key={day} width={'50px'} height={'32px'} bg= {Color.BLUE} border='1px solid grey'color ='white'>
+            <GridItem key={day} width={'50px'} height={'32px'} bg={Color.BLUE} border='1px solid grey'color ='white'>
             {day}
             </GridItem>
           )

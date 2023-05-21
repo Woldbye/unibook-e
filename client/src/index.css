@@ -21,10 +21,17 @@ code {
   opacity: 0.6;
 }
 
+.date-button-today {
+  background-color: #D7C0AE !important;
+  color: red !important;
+}
+
 .date-button.active {
   background-color: #6D9886 !important;
   outline-color: #6D9886 !important;
 }
+
+
 
 .chakra-text {
   font-family: 'Founders Grotesk';
