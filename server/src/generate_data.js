@@ -78,7 +78,7 @@ function populate_building(building) {
         j,
         building.address,
         createRandomTags(),
-        randomTimeslots(new Date(2022,10,1,8,0),new Date(2024,1,1,20,0),120,0.01)
+        randomTimeslots(new Date(2023,0,1,8,0),new Date(2025,0,1,20,0),120,0.001)
       );
       rooms.push(room);
     }

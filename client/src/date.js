@@ -34,5 +34,4 @@ export const createDateRange = (start,end,dur) => {
   }
   return times;
 };
-export { addTime,subtractTime,createDateRange };
 

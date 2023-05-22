@@ -5,7 +5,7 @@ import Color from '../Colors';
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import { capitalize } from '../util.js';
 import { Formik } from 'formik';
-
+import { } from '../date.js'
 const months = {
   januar: 31,
   februar: 28,
@@ -29,6 +29,7 @@ const months = {
  */
 const Calendar = (props) => {
   const onDateClick = props.onClick;
+  const rooms = props.rooms;
   const today = new Date();
   const [month, setMonth] = React.useState(today.getMonth());
   const [year, setYear] = React.useState(today.getFullYear());
@@ -42,12 +43,22 @@ const Calendar = (props) => {
   // nxt is the overflowing components from next month
   const [nxt, setNxt] = React.useState([]);
   
-
-  React.useEffect(() => {    
-  
+  React.useEffect(() => {
     const createToggleButton = (key,y,m,d,disable) => {
-      var cname = "date-button" + ((y === today.getFullYear() && m === today.getMonth() && d === today.getDate()) ? '-today' : '');
-      
+      // month zero indexed so we +1
+      const date_id = (new Date(y,m,d).toISOString()).split('T')[0];
+
+      // All free rooms for the given date
+      const free_rooms = rooms.filter(r => {
+        const available = r['timeslots']['free'].find(dkey => dkey.startsWith(date_id))
+        return available !== undefined
+      })
+      var cname = "date-button";
+      if(y === today.getFullYear() && m === today.getMonth() && d === today.getDate()) {
+        cname += '-today';
+      }
+      cname += (free_rooms.length > 0) ? ' available' : ' unavailable';
+
       return (
         <ToggleButton
           key={key}
@@ -62,18 +73,54 @@ const Calendar = (props) => {
         </ToggleButton>
       )
     }
-
-    // first and last week day of month
-    const start_weekday = new Date(year, month, 0).getDay(); 
-    const end_weekday = new Date(year, month, Object.values(months)[month] - 1).getDay();
-    const prv_start_day = (month ? Object.values(months)[month - 1] : months['december']) - start_weekday;
-    const prv_days = new Array(start_weekday).fill(prv_start_day).map((d,i) => d + i + 1);
-    const cur_days = new Array(Object.values(months)[month]).fill(0).map((_,i) => i + 1);
-    const nxt_days = new Array(6 - end_weekday).fill(0).map((_,i) => i + 1);
-    setPrv(prv_days.map(d => createToggleButton(`${d}-${year}-${month-1}-prv`, year,month-1,d, true)));
-    setCur(cur_days.map(d => createToggleButton(`${d}-${year}-${month}-cur`,year,month,d,false)));
-    setNxt(nxt_days.map(d => createToggleButton(`${d}-${year}-${month+1}-nxt`,year,month + 1,d,true)));    
-  },[month, year]);
+        
+    setPrv(
+      new Array(new Date(year,month,1).getDay() === 0 ? 6 : new Date(year,month,1).getDay() - 1)
+        .fill(new Date(year,month,0))
+        .map((d,i) => d.subtractTime(0,0,i))
+        .reverse()
+        .map(date => {
+          return createToggleButton(
+            `${date.getDate()}-${date.getFullYear()}-${date.getMonth()}-${rooms.length}-prv`,
+            date.getFullYear(),
+            date.getMonth(),
+            date.getDate(),
+            true
+          )
+        })
+    );
+        
+    setCur(
+      new Array(new Date(year,month + 1,0).getDate())
+        .fill(new Date(year,month,1))
+        .map((date,i) => date.addTime(0,0,i))
+        .map(date => {
+          return createToggleButton(
+            `${date.toISOString()}-${rooms.length}-cur`,
+            date.getFullYear(),
+            date.getMonth(),
+            date.getDate(),
+            false)
+        }
+        )
+    );
+            
+    const end_weekday = new Date(year,month + 1,0).getDay();
+    setNxt(
+      new Array(7 - (end_weekday === 0 ? 7 : end_weekday))
+        .fill(new Date(year,month +1,1))
+        .map((date,i) => date.addTime(0,0,i))
+        .map(date => {
+          return createToggleButton(
+            `${date.toISOString()}-${rooms.length}-nxt`,
+            date.getFullYear(),
+            date.getMonth(),
+            date.getDate(),
+            true
+          )
+        })
+    );    
+  },[rooms, month, year]);
   
   const dayRow = ['Man','Tir','Ons','Tor','Fre','Lør','Søn'].map(day => {
     return (
@@ -104,30 +151,16 @@ const Calendar = (props) => {
       >
         <option hidden disabled>{`${capitalize(Object.keys(months)[month])} ${year}`}</option>
         {
-          [
-            // Previous 6 months
-            ...new Array(6).fill({}).map((_,i) => {
-              const m = ((today.getMonth() + 12) - 6 + i) % 12;
-              const y = ((today.getMonth() + 12) - 6 + i) % 12 > 5 ? today.getFullYear() - 1 : today.getFullYear();
-              return { month: m, year: y }
-            }),
-            { month: today.getMonth(), year: today.getFullYear() },
-            // Next 6 months
-            ...new Array(5).fill({}).map((_,i) => {
-              const m = (today.getMonth() + i + 1) % 12;
-              const y = (today.getMonth() + i + 1) > 11 ? today.getFullYear() + 1 : today.getFullYear();
-              return { month: m ,year: y }
-            }),
-          ]
-          .map((my,i) => {
-            return (
-              <option
-                style={{ color: Color.BLACK }}
-                key={`${i}-${my['month']}-${my['year']}`}
-              >
-              {`${capitalize(Object.keys(months)[my['month']])} ${my['year']}`}
-              </option>
-            )
+          new Array(12).fill({}).map((_,i) => {
+            const date = today.addTime(0,i);
+              return (
+                <option
+                  style={{ color: Color.BLACK }}
+                  key={`${i}-${date.getMonth()}-${date.getFullYear()}`}
+                >
+                {`${capitalize(Object.keys(months)[date.getMonth()])} ${date.getFullYear()}`}
+                </option>
+              )
           })
         }
       </Select>

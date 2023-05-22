@@ -22,22 +22,10 @@ const BookingTime = () => {
   
   // Rooms will contain the rooms that are available for the given query
   const [rooms,setRooms] = React.useState([]);
-
-
   const [selected_date, setSelectedDate] = React.useState(today);
-  
-  
-  // const getFreeRooms = (rms,y,m,d) => {
-  //   console.log("getFreeRooms: ",y,m,d, rms)
-  //   const ret = rms.filter(r => {
-  //     const free = r['timeslots']['free']
-  //     console.log("free: ",free)
-  //     return r['timeslots']['free'].find(dkey => dkey.startsWith(`${y}-${m < 10 ? '0' : ''}${m}-${d < 10 ? '0' : ''}${d}`)) !== undefined;
-  //   })
-  //   console.log(ret);
-  //   return ret;
-  // }
 
+
+  
   React.useEffect(() => {
     console.log("update")
     getRooms(query).then(rs => setRooms(rs));
@@ -52,7 +40,9 @@ const BookingTime = () => {
             onClick={(date) => {
               console.log("received: ", date)
               setSelectedDate(date)
-            }} />
+            }}
+            rooms={rooms}
+          />
         <VStack width='50%' minWidth={'12rem'}>
           <TimeChooser />
           <Link to={`/rooms/${toUrl(query)}/` }>
