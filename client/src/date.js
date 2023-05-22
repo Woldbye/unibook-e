@@ -17,7 +17,20 @@ Date.prototype.subtractTime = function(year = 0,month = 0,day = 0,hour = 0,min =
     this.getMinutes() - min,
   );
 };
-
+export const da_months = {
+  januar: 31,
+  februar: 28,
+  marts: 31,
+  april: 30,
+  maj: 31,
+  juni: 30,
+  juli: 31,
+  august: 31,
+  september: 30,
+  oktober: 31,
+  november: 30,
+  december: 31
+}
 
 /**
  * @brief Creates an array of Date objects from start to end with duration seperating them

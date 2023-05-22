@@ -1,3 +1,6 @@
+import { rooms } from "../../../server/src/database/db";
+import date from "../../../server/src/date";
+import * as Room from './room.js';
 /**
  * @brief Converts a room_query object into an url string
  * @param {*} room_query A room_query object, which is a subset of the parameters of a room.
@@ -15,6 +18,11 @@ export function toUrl(room_query) {
     })
     .join("&");
   return url;
+}
+
+
+export function filterByDate(rooms,date) {
+  return rooms.filter(r => Room.freeTimeslots(r,date).length > 0);
 }
 
 /**

@@ -4,27 +4,13 @@ import ToggleButton from './ToggleButton';
 import Color from '../Colors';
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import { capitalize } from '../util.js';
-import { Formik } from 'formik';
-import { } from '../date.js'
-const months = {
-  januar: 31,
-  februar: 28,
-  marts: 31,
-  april: 30,
-  maj: 31,
-  juni: 30,
-  juli: 31,
-  august: 31,
-  september: 30,
-  oktober: 31,
-  november: 30,
-  december: 31
-}
+import { } from '../date.js'; //! Don't remove, for the prototype functions
+import { filterByDate } from '../api/roomquery';
+import { da_months } from '../date.js';
 
 /**
- * 
- * @param {getFree} props A function that returns the free rooms for a given date
- * @param {onClick} props A function that is called when a date is clicked
+ * @param {rooms} props A required property that should contain room objects
+ * @param {onClick} props An optional function that is called when a date is clicked
  * @returns 
  */
 const Calendar = (props) => {
@@ -45,14 +31,7 @@ const Calendar = (props) => {
   
   React.useEffect(() => {
     const createToggleButton = (key,y,m,d,disable) => {
-      // month zero indexed so we +1
-      const date_id = (new Date(y,m,d).toISOString()).split('T')[0];
-
-      // All free rooms for the given date
-      const free_rooms = rooms.filter(r => {
-        const available = r['timeslots']['free'].find(dkey => dkey.startsWith(date_id))
-        return available !== undefined
-      })
+      const free_rooms = (rooms, new Date(y,m,d))
       var cname = "date-button";
       if(y === today.getFullYear() && m === today.getMonth() && d === today.getDate()) {
         cname += '-today';
@@ -130,7 +109,7 @@ const Calendar = (props) => {
     )
   });
 
-  const MonthSelector = 
+  const da_monthselector = 
     <Center>
       <Select
         icon={<ChevronDownIcon />}
@@ -144,12 +123,12 @@ const Calendar = (props) => {
         width={'100vw'}
         onChange={(e) => {
           const [m,y] = e.target.value.toLowerCase().split(' ');
-          setMonth(Object.keys(months).indexOf(m));
+          setMonth(Object.keys(da_months).indexOf(m));
           setYear(parseInt(y,10));
         }}
-        value={`${capitalize(Object.keys(months)[month])} ${year}`}
+        value={`${capitalize(Object.keys(da_months)[month])} ${year}`}
       >
-        <option hidden disabled>{`${capitalize(Object.keys(months)[month])} ${year}`}</option>
+        <option hidden disabled>{`${capitalize(Object.keys(da_months)[month])} ${year}`}</option>
         {
           new Array(12).fill({}).map((_,i) => {
             const date = today.addTime(0,i);
@@ -158,7 +137,7 @@ const Calendar = (props) => {
                   style={{ color: Color.BLACK }}
                   key={`${i}-${date.getMonth()}-${date.getFullYear()}`}
                 >
-                {`${capitalize(Object.keys(months)[date.getMonth()])} ${date.getFullYear()}`}
+                {`${capitalize(Object.keys(da_months)[date.getMonth()])} ${date.getFullYear()}`}
                 </option>
               )
           })
@@ -179,7 +158,7 @@ const Calendar = (props) => {
         width={'50px'}
         height={'32px'}
       >
-        <GridItem colSpan={'7'} bg={Color.BLUE} children={MonthSelector}/>
+        <GridItem colSpan={'7'} bg={Color.BLUE} children={da_monthselector}/>
         {dayRow}
         {prv}
         {cur}
