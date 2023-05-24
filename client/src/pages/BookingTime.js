@@ -3,6 +3,7 @@ import {
   Container,
   Stack,
   Text,
+  Spacer,
   VStack,
   Button
 } from '@chakra-ui/react';
@@ -41,13 +42,14 @@ const BookingTime = () => {
               setSelectedDate(date)
             }}
             rooms={rooms}
+            selected_date={selected_date}
           />
         <VStack width='50%' minWidth={'12rem'}>
-          <TimeChooser date={selected_date} rooms={rooms}/>
-          <Link to={`/rooms/${toUrl(query)}/` }>
-          <Button size={'lg'}>
-            <Text size={'lg'}>Næste</Text >
-          </Button>
+          <TimeChooser marginBottom={'15%'} date={selected_date} rooms={rooms} />
+            <Link to={`/rooms/${toUrl(query)}/` }>
+            <Button size={'lg'}>
+              <Text size={'lg'}>Næste</Text >
+            </Button>
           </Link>
         </VStack>
       </Stack>

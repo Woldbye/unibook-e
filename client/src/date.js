@@ -8,6 +8,11 @@ Date.prototype.addTime = function(year = 0,month = 0,day = 0,hour = 0,min = 0) {
   );
 };
 
+// Year month and day equals
+Date.prototype.ymdEquals = function(date){
+  return this.getFullYear() === date.getFullYear() && this.getMonth() === date.getMonth() && this.getDate() === date.getDate();
+}
+
 // From https://stackoverflow.com/questions/27012854/how-to-change-iso-date-string-to-date-object
 export function parseISOString(s) {
   var b = s.split(/\D+/);

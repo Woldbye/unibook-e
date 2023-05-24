@@ -7,6 +7,7 @@ import { capitalize } from '../util.js';
 import { } from '../date.js'; //! Don't remove, for the prototype functions
 import { filterByDate } from '../api/roomquery';
 import { da_months } from '../date.js';
+import DateButton from './DateButton';
 
 /**
  * @param {rooms} props A required property that should contain room objects
@@ -16,6 +17,7 @@ import { da_months } from '../date.js';
 const Calendar = (props) => {
   const onDateClick = props.onClick;
   const rooms = props.rooms;
+  const selected_date = props.selected_date ?? new Date(); // default today
   const today = new Date();
   const [month, setMonth] = React.useState(today.getMonth());
   const [year, setYear] = React.useState(today.getFullYear());
@@ -30,26 +32,22 @@ const Calendar = (props) => {
   const [nxt, setNxt] = React.useState([]);
   
   React.useEffect(() => {
-    const createToggleButton = (key,y,m,d,disable) => {
-      const free_rooms = filterByDate(rooms, new Date(y,m,d))
-      var cname = "date-button";
-      if(y === today.getFullYear() && m === today.getMonth() && d === today.getDate()) {
-        cname += '-today';
-      }
-      cname += (free_rooms.length > 0) ? ' available' : ' unavailable';
-
+    const createToggleButton = (key,date,onClick,isDisabled) => {
+      const cname = filterByDate(rooms, date).length > 0 ? ' available' : ' unavailable';
+      const isOn = selected_date.ymdEquals(date);
       return (
-        <ToggleButton
+        <DateButton
           key={key}
-          isDisabled={disable}
+          isDisabled={isDisabled}
           borderRadius={'0'}
           border={'1px solid grey'}
           height={'50px'}
+          isOn={isOn}
+          date={date}
           width={'50px'}
-          onClick={(isOn) => { if(isOn) { onDateClick(new Date(y,m,d)) } }}
-          children={d}
+          onClick={onClick}
           className={cname}>
-        </ToggleButton>
+        </DateButton>
       )
     }
         
@@ -60,10 +58,13 @@ const Calendar = (props) => {
         .reverse()
         .map(date => {
           return createToggleButton(
-            `${date.getDate()}-${date.getFullYear()}-${date.getMonth()}-${rooms.length}-prv`,
-            date.getFullYear(),
-            date.getMonth(),
-            date.getDate(),
+            `${date.toISOString()}-${rooms.length}-${selected_date}-prv`,
+            date,
+            () => {
+              setYear(date.getFullYear());
+              setMonth(date.getMonth());
+              onDateClick(date);
+            },
             true
           )
         })
@@ -75,10 +76,9 @@ const Calendar = (props) => {
         .map((date,i) => date.addTime(0,0,i))
         .map(date => {
           return createToggleButton(
-            `${date.toISOString()}-${rooms.length}-cur`,
-            date.getFullYear(),
-            date.getMonth(),
-            date.getDate(),
+            `${date.toISOString()}-${rooms.length}-${selected_date}-cur`,
+            date,
+            () => onDateClick(date),
             false)
         }
         )
@@ -91,15 +91,18 @@ const Calendar = (props) => {
         .map((date,i) => date.addTime(0,0,i))
         .map(date => {
           return createToggleButton(
-            `${date.toISOString()}-${rooms.length}-nxt`,
-            date.getFullYear(),
-            date.getMonth(),
-            date.getDate(),
-            true
+            `${date.toISOString()}-${rooms.length}-${selected_date}-nxt`,
+            date,
+            () => {
+              setYear(date.getFullYear());
+              setMonth(date.getMonth());
+              onDateClick(date);
+            },
+            true,
           )
         })
     );    
-  },[rooms, month, year]);
+  },[rooms, selected_date, month, year]);
   
   const dayRow = ['Man','Tir','Ons','Tor','Fre','Lør','Søn'].map(day => {
     return (
@@ -114,6 +117,7 @@ const Calendar = (props) => {
       <Select
         icon={<ChevronDownIcon />}
         iconColor={Color.CREME}
+        cursor={'pointer'}
         variant={'outline'}
         color={Color.BLUE}
         textColor={Color.CREME}

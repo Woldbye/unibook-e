@@ -1,4 +1,4 @@
-import { Text,IconButton, HStack, Flex,Center,Spacer } from '@chakra-ui/react';
+import { Text,IconButton, HStack, Flex,Center } from '@chakra-ui/react';
 import {ArrowLeftIcon,ArrowRightIcon } from '@chakra-ui/icons';
 import React, { useEffect } from 'react';
 import Color from '../Colors';
@@ -8,12 +8,13 @@ import { } from '../util.js'
 import { parseISOString } from '../date';
 
 /**
- * 
- * @param {rooms} props rooms 
- * @returns 
+ * @param {rooms} props An array of Room objects 
+ * @param {date} props A Date object - the selected date to choose times from
+ * @param {marginBottom} props marginBottom
  */
 const TimeChooser = (props) => {
   const rooms = props.rooms ?? []; 
+  const marginBottom = props.marginBottom ?? '0';
   const date = props.date ?? new Date();  
   
   let byDate = {}
@@ -46,13 +47,14 @@ const TimeChooser = (props) => {
 
   useEffect(() => {
     if (index > times.length - 1 || index <= 0) setIndex(0)
-  },[bookings])  
+  },[bookings, times.length, index])  
   
   const type_name = "time"
   return (
     <HStack
         hide={-1}
         width={'100%'}
+        marginBottom={marginBottom}
         justifyContent={'space-between'}
         height={'50px'}
         backgroundColor={Color.BLUE}
@@ -82,8 +84,9 @@ const TimeChooser = (props) => {
                 color={Color.CREME}
                 className="highlight"
                 background={entry['index'] === index ? Color.DARK_BROWN : Color.BLUE}
-                paddingRight={'2px'}
-                paddingLeft={'2px'}
+                paddingRight={'10%'}
+                paddingLeft={'10%'}
+                cursor={'pointer'}
                 onClick={() => setIndex(entry['index'])}
               >
                 {`${(dt.getHours()).toString().padStart(2,0)}:${dt.getMinutes().toString().padStart(2,0)}`}
