@@ -32,7 +32,7 @@ const Calendar = (props) => {
   const [nxt, setNxt] = React.useState([]);
   
   React.useEffect(() => {
-    const createToggleButton = (key,date,onClick,isDisabled) => {
+    const createDateButton = (key,date,onClick,isDisabled) => {
       const cname = filterByDate(rooms, date).length > 0 ? ' available' : ' unavailable';
       const isOn = selected_date.ymdEquals(date);
       return (
@@ -57,7 +57,7 @@ const Calendar = (props) => {
         .map((d,i) => d.subtractTime(0,0,i))
         .reverse()
         .map(date => {
-          return createToggleButton(
+          return createDateButton(
             `${date.toISOString()}-${rooms.length}-${selected_date}-prv`,
             date,
             () => {
@@ -75,7 +75,7 @@ const Calendar = (props) => {
         .fill(new Date(year,month,1))
         .map((date,i) => date.addTime(0,0,i))
         .map(date => {
-          return createToggleButton(
+          return createDateButton(
             `${date.toISOString()}-${rooms.length}-${selected_date}-cur`,
             date,
             () => onDateClick(date),
@@ -90,7 +90,7 @@ const Calendar = (props) => {
         .fill(new Date(year,month +1,1))
         .map((date,i) => date.addTime(0,0,i))
         .map(date => {
-          return createToggleButton(
+          return createDateButton(
             `${date.toISOString()}-${rooms.length}-${selected_date}-nxt`,
             date,
             () => {
