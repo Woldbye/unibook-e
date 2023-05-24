@@ -8,6 +8,12 @@ Date.prototype.addTime = function(year = 0,month = 0,day = 0,hour = 0,min = 0) {
   );
 };
 
+// From https://stackoverflow.com/questions/27012854/how-to-change-iso-date-string-to-date-object
+export function parseISOString(s) {
+  var b = s.split(/\D+/);
+  return new Date(Date.UTC(b[0], --b[1], b[2], b[3], b[4], b[5], b[6]));
+}
+
 Date.prototype.subtractTime = function(year = 0,month = 0,day = 0,hour = 0,min = 0) {
   return new Date(
     this.getFullYear() - year,
@@ -17,6 +23,7 @@ Date.prototype.subtractTime = function(year = 0,month = 0,day = 0,hour = 0,min =
     this.getMinutes() - min,
   );
 };
+
 export const da_months = {
   januar: 31,
   februar: 28,

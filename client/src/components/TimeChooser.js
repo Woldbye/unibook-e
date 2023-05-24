@@ -1,22 +1,54 @@
-import { Text,IconButton, HStack, Flex } from '@chakra-ui/react';
+import { Text,IconButton, HStack, Flex,Center,Spacer } from '@chakra-ui/react';
 import {ArrowLeftIcon,ArrowRightIcon } from '@chakra-ui/icons';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Color from '../Colors';
 import { filterByDate } from '../api/roomquery';
 import * as Room from '../api/room';
+import { } from '../util.js'
+import { parseISOString } from '../date';
 
+/**
+ * 
+ * @param {rooms} props rooms 
+ * @returns 
+ */
 const TimeChooser = (props) => {
-  const { rooms,date } = props;
+  const rooms = props.rooms ?? []; 
+  const date = props.date ?? new Date();  
   
-  const [ index,setIndex] = React.useState(0); // active room index
-  const bookings = rooms
-    .map(room => ({ room_id: room.id,timeslots: Room.freeTimeslots(room,date) }))
-    .filter(room => room.timeslots.length > 0)
-    .fold((acc,{ id,timeslots }) => {
-      return acc.concat(timeslots.map(datestr => ({ date: Date.parse(datestr),room_id: id })))
+  let byDate = {}
+  filterByDate(rooms,date)
+    .reduce((acc,room) => {
+      const { id,timeslots } = room;
+      return acc.concat(
+        timeslots['free']
+          .map(datestr => ({ date: parseISOString(datestr),room_id: id }))
+          .filter(slot => {
+            return (slot['date'].getDate() === date.getDate()
+              && slot['date'].getFullYear() === date.getFullYear()
+              && slot['date'].getMonth() === date.getMonth())
+          })
+      )
+    },[])
+    .sort((a,b) => a['date'] - b['date']) // sort in ascending order by date
+    .forEach(({ date,room_id }) => {      // group by date
+      if(byDate[date] === undefined) byDate[date] = [room_id];
+      else byDate[date].push(room_id);
     })
-    .sort((a,b) => a.date < b.date) // sort in ascending order by date
   
+  // Transform byDate into bookings by mapping to { date: Date, room_ids: int[] } format
+  const bookings = Object
+    .keys(byDate)
+    .map(key => ({ date: key,room_ids: byDate[key] }))
+    
+  const [index,setIndex] = React.useState(0); // active room index
+  const times = bookings.sliceMid(index,1)
+
+  useEffect(() => {
+    if (index > times.length - 1 || index <= 0) setIndex(0)
+  },[bookings])  
+  
+  const type_name = "time"
   return (
     <HStack
         hide={-1}
@@ -28,33 +60,45 @@ const TimeChooser = (props) => {
       >
         <IconButton
           size={'lg'}
-          aria-label={'Subtract ' + this.type_name}
+          aria-label={'Previous ' + type_name}
           isRound={true}
           icon={<ArrowLeftIcon />}
-          onClick= {() => index < bookings.length - 1 ? setIndex(index + 1) : setIndex(0)}
+          onClick={() => { if(index > 0) setIndex(index - 1) }}
         />
-          <Flex direction={'row'}textAlign={'center'} alignItems={'space-around'} justifyContent={'space-around'}>
-          {bookings
-            .slice(index > 0 ? index - 1 : index,index + 2)
-            .map(({date,room_id},i) => {
+        <Flex
+          direction={'row'}
+          textAlign={'center'}
+          alignItems={'space-around'}
+          justifyContent={'space-around'}
+          width={'100%'}
+        >
+        {times.length > 0 ? times.map(entry => {
+          const dt = parseISOString(entry['val']['date'])
+          const { room_ids } = entry['val'];
+          
+          return (
+            <Center key={`${dt}:${room_ids}:${index}`}>
               <Text
-                key={`${date.toISOString()}:${room_id}`}
                 color={Color.CREME}
-                marginRight={5}
-                onClick={() => setIndex(index > 0 ? index + i - 1 : index + i)}
+                className="highlight"
+                background={entry['index'] === index ? Color.DARK_BROWN : Color.BLUE}
+                paddingRight={'2px'}
+                paddingLeft={'2px'}
+                onClick={() => setIndex(entry['index'])}
               >
-                {`${date.getHours()}:${date.getMinutes()}`}
+                {`${(dt.getHours()).toString().padStart(2,0)}:${dt.getMinutes().toString().padStart(2,0)}`}
               </Text>
-            })
-          }
-          </Flex>          
-        <IconButton
-          size={'lg'}
-          aria-label={'Add ' + this.type_name}
-          isRound={true}
-          icon={<ArrowRightIcon />}
-          onClick = {() => index >= 0 && bookings.length > 0 ? setIndex(index + 1) : setIndex(0)}
-        />
+            </Center>
+          )
+        }) : <Text color={Color.CREME}>Ingen ledige tider</Text>}
+        </Flex>          
+      <IconButton
+        size={'lg'}
+        aria-label={'Next ' + type_name}
+        isRound={true}
+        icon={<ArrowRightIcon />}
+        onClick={() => { if(index < bookings.length - 1) setIndex(index + 1) }}          
+      />
       </HStack>
   )
 };

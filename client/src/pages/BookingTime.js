@@ -11,6 +11,7 @@ import Background from '../components/Background';
 import Calendar from '../components/Calendar';
 import TimeChooser from '../components/TimeChooser';
 import { Link } from 'react-router-dom';
+
 import { toUrl,fromUrl, getRooms } from "../api/roomquery.js";
 
 
@@ -19,12 +20,10 @@ const BookingTime = () => {
   const today = new Date();
   // Use setQuery to update the date information in the query
   const [query,setQuery] = React.useState(fromUrl(params.query));
-  
+
   // Rooms will contain the rooms that are available for the given query
   const [rooms,setRooms] = React.useState([]);
   const [selected_date, setSelectedDate] = React.useState(today);
-
-
   
   React.useEffect(() => {
     console.log("update")
@@ -44,7 +43,7 @@ const BookingTime = () => {
             rooms={rooms}
           />
         <VStack width='50%' minWidth={'12rem'}>
-          <TimeChooser />
+          <TimeChooser date={selected_date} rooms={rooms}/>
           <Link to={`/rooms/${toUrl(query)}/` }>
           <Button size={'lg'}>
             <Text size={'lg'}>Næste</Text >

@@ -1,4 +1,5 @@
-const { hasTag, Tag } = require('./roomtag.js');
+import {} from '../date.js';
+const { hasTag,Tag } = require('./roomtag.js');
 export const Size = {
   XS: 8,
   S: 16,
@@ -16,7 +17,7 @@ export const Type = {
 };
 
 export function freeTimeslots(room,date) {
-  const date_id = date.toISOString().split('T')[0];
+  const date_id = date.addTime(0,0,1).toISOString().split('T')[0];
   return room['timeslots']['free'].filter(dkey => dkey.startsWith(date_id));
 };
 

@@ -31,7 +31,7 @@ const Calendar = (props) => {
   
   React.useEffect(() => {
     const createToggleButton = (key,y,m,d,disable) => {
-      const free_rooms = (rooms, new Date(y,m,d))
+      const free_rooms = filterByDate(rooms, new Date(y,m,d))
       var cname = "date-button";
       if(y === today.getFullYear() && m === today.getMonth() && d === today.getDate()) {
         cname += '-today';

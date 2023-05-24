@@ -1,5 +1,3 @@
-import { rooms } from "../../../server/src/database/db";
-import date from "../../../server/src/date";
 import * as Room from './room.js';
 /**
  * @brief Converts a room_query object into an url string
