@@ -7,11 +7,12 @@ import {
   Text,
   Link,
   Modal,
-  Input
+  Input,
 } from '@chakra-ui/react';
 import Background from '../components/Background';
 import Color from '../Colors';
 import BackButton from '../components/BackButton';
+import ConfirmButton from '../components/ConfirmButton';
 
 // The site should appear after the user has selected a time slot and room
 const BookingConfirmation = () => (
@@ -39,7 +40,7 @@ const BookingConfirmation = () => (
             <Text color={Color.CREME} padding={'0px 40px 0px 40px'}>Lokale :  ****</Text>
             <Text color={Color.CREME} padding={'0px 40px 0px 40px'}>Fra :  14:30</Text>
             <Text color={Color.CREME} padding={'0px 40px 40px 40px'}>Til :  15:00</Text>
-            ConfirmButton()
+            <ConfirmButton/>
           </VStack>
         </Background>
       </Container>
