@@ -54,7 +54,6 @@ const Booking = () => {
     } else {
       newState[tp] = Room.Type[tp];
     }
-
     setType(newState);
     setQuery({...query, type: newState})
   }
