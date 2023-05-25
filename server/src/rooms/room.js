@@ -1,4 +1,6 @@
-const { hasTag, Tag } = require('./roomtag.js');
+const { hasTag,Tag } = require('./roomtag.js');
+const { } = require('./../date.js');
+
 const Size = {
   XS: 8,
   S: 16,
@@ -15,6 +17,10 @@ const Type = {
   Classroom: 'Klasselokale',
 }
 
+function freeTimeslots(room,date) {
+  const date_id = date.addTime(0,0,1).toISOString().split('T')[0];
+  return room['timeslots']['free'].filter(dkey => dkey.startsWith(date_id));
+};
 /** 
  * @brief Create a new Room object. 
  *        parameter values are held as strings to allow easy conversion back and forward 
@@ -29,7 +35,8 @@ const create = (type, room_size, building_nr,floor,room,address,tag_flags, times
     address: address,
     size: `${room_size}`,
     timeslots: timeslots,
-    resources: { // Resources capitalized to ease printing and allow indexing with tag flag names
+    resources: {
+      // Resources capitalized to ease printing and allow indexing with tag flag names
       Screen: hasTag(tag_flags,Tag.Screen) ? '1' : '0',
       Projector: hasTag(tag_flags,Tag.Projector) ? '1' : '0',
       Outlets: hasTag(tag_flags,Tag.Outlets) ? '1' : '0',
@@ -45,6 +52,7 @@ module.exports = {
   Size,
   Type,
   create,
+  freeTimeslots,
 };
 
 

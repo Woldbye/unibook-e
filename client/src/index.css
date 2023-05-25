@@ -25,11 +25,9 @@ code {
 .date-button-today {
   background-color:  #967E76 !important;
   font-size: 1.5rem;
-  color: #393E46 !important; 
+  /* color: #393E46 !important;  */
 }
-.date-button-today.active {
-  text-shadow: 0px 0px 3px #D5F591;
-}
+
 .date-button.available {
   color: #476e56 !important;
   /* text-shadow: 0px 2px 2px rgb(100,140,17); */
@@ -39,7 +37,7 @@ code {
   color: #B80201 !important;
 }
 
-.date-button.active {
+.date-button.active, .date-button-today.active {
   background-color: #6D9886 !important;
   /* outline-color: lightyellow !important; */
   /* border: 1px ridge #D5F591 !important; */

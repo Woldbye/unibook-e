@@ -16,7 +16,7 @@ import BackButton from '../components/BackButton';
 const BookingConfirmation = () => (
   <Background>
     <Container>
-      <BackButton  to="book/date/rooms"/>
+      <BackButton  to="/book/date/rooms"/>
       <Container padding={"3rem 0 0 0"} centerContent="true">
         <Background width="80vw" height="85vh" backgroundColor={Color.BLUE}>
           <VStack>

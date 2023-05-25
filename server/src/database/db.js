@@ -1,5 +1,7 @@
 const fs = require('fs');
 const path = require('path');
+const { parseISOString,filterByDate } = require('../rooms/roomquery.js');
+const { freeTimeslots } = require('../rooms/room.js');
 
 class RoomDatabase {
   rooms;
@@ -32,7 +34,18 @@ class RoomDatabase {
    */
   query(room_query) {
     // Exclude all rooms that dont have the values in the room_query
-    return this.rooms.filter(room => {
+    var res = this.rooms
+    // Filter rooms so they only contain timeslots for the given date
+    if(room_query["date"] !== undefined) {
+      const date = parseISOString(room_query["date"]);
+      res = filterByDate(this.rooms,date)
+        .map(room => {
+          room["timeslots"]["free"] = freeTimeslots(room,date);
+          return room;
+        })
+    }
+      // .filter(room => {
+    return res.filter(room => {
       return room["isBooked"] === "0"
         && Object.entries(room_query).every(
           ([param,value]) => {
@@ -42,6 +55,8 @@ class RoomDatabase {
               return true; // TODO: implement duration
             } else if(param === 'type') {
               return value.some(v => room['type'] === v || v === '')
+            } else if(param === 'date') {
+              return true;
             } else {
               return room[param] === value;
             }

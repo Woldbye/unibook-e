@@ -1,3 +1,4 @@
+import { parseISOString } from '../date.js';
 import * as Room from './room.js';
 /**
  * @brief Converts a room_query object into an url string
@@ -10,6 +11,8 @@ export function toUrl(room_query) {
     .map(([param,value]) => {
       if(param === 'type' && typeof value === 'object') {
         return `${param}=${Object.values(value)}`
+      } else if (param === 'date' && typeof value === 'object') {
+        return `${param}=${value.toISOString()}`
       } else {
         return `${param}=${value}`
       }
@@ -18,6 +21,20 @@ export function toUrl(room_query) {
   return url;
 }
 
+export function queryToString(rquery) {
+  
+  rquery = fromUrl(rquery)
+  var lines = "Reservere lokale til ";
+  if(rquery['date'] !== undefined) {
+    var date = parseISOString(rquery['date'])
+    const clock = `${date.getHours() < 10 ? '0' : ''}${date.getHours()}:${date.getMinutes() < 10 ? '0' : ''}${date.getMinutes()}`;
+    lines += `kl. ${clock} d. ${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}, `;
+    if (rquery['duration'] !== undefined)
+      lines += " i " + rquery['duration'] + " timer ";
+  }
+
+  return lines;
+}
 
 export function filterByDate(rooms,date) {
   return rooms.filter(r => Room.freeTimeslots(r,date).length > 0);
@@ -44,7 +61,9 @@ export function fromUrl(url) {
   const objArr = url.split("&").map(param => param.split("="))
   // Convert inner objects to arrays
   for(let i = 0;i < objArr.length;i++) {
-    if(objArr[i][0] === 'type') objArr[i][1]= objArr[i][1].split(",");
+    if(objArr[i][0] === 'type') objArr[i][1] = objArr[i][1].split(",");
+    else if(objArr[i][0] === 'date')
+      objArr[i][1] = objArr[i][1];
   }
   return Object.fromEntries(objArr);
 }

@@ -7,11 +7,10 @@ import {
   VStack,
   Button
 } from '@chakra-ui/react';
-import { useParams } from 'react-router-dom';
+import { Link, Outlet, useParams } from 'react-router-dom';
 import Background from '../components/Background';
 import Calendar from '../components/Calendar';
 import TimeChooser from '../components/TimeChooser';
-import { Link } from 'react-router-dom';
 import BackButton from '../components/BackButton';
 import { toUrl,fromUrl, getRooms } from "../api/roomquery.js";
 
@@ -24,9 +23,7 @@ const BookingTime = () => {
   const [rooms,setRooms] = React.useState([]);
   const [selected_date, setSelectedDate] = React.useState(today);
   
-  React.useEffect(() => {
-    getRooms(query).then(rs => setRooms(rs));
-  }, [query])
+  React.useEffect(() => { getRooms(query).then(rs => setRooms(rs)); }, [query])
 
   return (
     <Background>
@@ -50,7 +47,8 @@ const BookingTime = () => {
             <Button size={'lg'}>
               <Text size={'lg'}>Næste</Text >
             </Button>
-          </Link>
+            </Link>
+            <Outlet/>
         </VStack>
       </Stack>
       </Container>
