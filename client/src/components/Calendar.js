@@ -1,404 +1,175 @@
-import { Container, Grid,GridItem,Menu,MenuButton,MenuList,MenuItem,Button, Text,Box } from '@chakra-ui/react';
-import { ChevronDownIcon } from '@chakra-ui/icons';
+import { Container, Grid,GridItem,Select, Center } from '@chakra-ui/react';
+import * as React from 'react';
 import ToggleButton from './ToggleButton';
 import Color from '../Colors';
-import React from 'react';
+import { ChevronDownIcon } from '@chakra-ui/icons';
+import { capitalize } from '../util.js';
+import { } from '../date.js'; //! Don't remove, for the prototype functions
+import { filterByDate } from '../api/roomquery';
+import { da_months } from '../date.js';
+import DateButton from './DateButton';
 
-class Calendar extends React.Component {
-  constructor(props) {
-    super(props);
-    const {} = props;
-    this.state = { month: "januar", value: 1, value2: 2,value3:3,value4:4,value0:31}
-  }
+/**
+ * @param {rooms} props A required property that should contain room objects
+ * @param {onClick} props An optional function that is called when a date is clicked
+ * @returns 
+ */
+const Calendar = (props) => {
+  const onDateClick = props.onClick;
+  const rooms = props.rooms;
+  const selected_date = props.selected_date ?? new Date(); // default today
+  const today = new Date();
+  const [month, setMonth] = React.useState(today.getMonth());
+  const [year, setYear] = React.useState(today.getFullYear());
 
-  changeMonth= (newMonth) => {
-    if(newMonth==="januar"||"august"){
-      this.setState({month: newMonth, value:1,value2:2,value3:3,value4:4,value0:31})
-    } else if(newMonth==="febuar"){
-      this.setState({month: newMonth, value:29,value2:30,value3:31,value4: 1,value0:28})
-    } else if(newMonth==="marts"){
-      this.setState({month: newMonth, value:1,value2:2,value3:3,value4: 4,value0:28})
-    } else if(newMonth==="april" || newMonth==="juni" || newMonth==="september" || newMonth==="november"){
-      this.setState({month: newMonth, value:31,value2:1,value3:2,value4: 3,value0:30})
-    } else if(newMonth==="maj" || newMonth==="juli" || newMonth==="october" || newMonth==="december"){
-      this.setState({month: newMonth, value:1,value2:2,value3:3,value4: 4,value0:30})
-    } else {
-      throw new Error("Invalid month: " + newMonth);
-    }   
-  }
+  // prv is the overflowing components from previous month
+  const [prv, setPrv] = React.useState([]);
+  
+  // cur is the components from current month
+  const [cur, setCur] = React.useState([]);
 
-  render(){
-    return(
-      <Container textAlign={'center'} paddingBottom={'260px'}>
-        <Menu>
-          <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-            {this.state.month}
-          </MenuButton>
-          <MenuList>
-            <MenuItem onClick={() => this.changeMonth("januar")}>Januar</MenuItem>
-            <MenuItem onClick={() => this.changeMonth("febuar")}>februar</MenuItem>
-            <MenuItem onClick={() => this.changeMonth("marts")}>Marts</MenuItem>
-            <MenuItem onClick={() => this.changeMonth("april")}>April</MenuItem>
-            <MenuItem onClick={() => this.changeMonth("maj")}>Maj</MenuItem>
-            <MenuItem onClick={() => this.changeMonth("juni")}>Juni</MenuItem>
-            <MenuItem onClick={() => this.changeMonth("juli")}>Juli</MenuItem>
-            <MenuItem onClick={() => this.changeMonth("august")}>August</MenuItem>
-            <MenuItem onClick={() => this.changeMonth("september")}>September</MenuItem>
-            <MenuItem onClick={() => this.changeMonth("october")}>October</MenuItem>
-            <MenuItem onClick={() => this.changeMonth("november")}>November</MenuItem>
-            <MenuItem onClick={() => this.changeMonth("december")}>December</MenuItem>
-          </MenuList>
-        </Menu>
-        <Grid
-          marginLeft={'18%'}
-          templateRows='repeat(6, 1fr)'
-          templateColumns='repeat(7, 1fr)'
-          gap={0}
-          color ='black'
-          textAlign={'center'}  
-          fontSize={'20'}
+  // nxt is the overflowing components from next month
+  const [nxt, setNxt] = React.useState([]);
+  
+  React.useEffect(() => {
+    const createDateButton = (key,date,onClick,isDisabled) => {
+      const cname = filterByDate(rooms, date).length > 0 ? ' available' : ' unavailable';
+      const isOn = selected_date.ymdEquals(date);
+      return (
+        <DateButton
+          key={key}
+          isDisabled={isDisabled}
+          borderRadius={'0'}
+          border={'1px solid grey'}
+          height={'50px'}
+          isOn={isOn}
+          date={date}
           width={'50px'}
-          height={'32px'}
-        >
-          <GridItem width={'50px'} height={'32px'} bg= {Color.BLUE}  border='1px solid grey'color ='white' >
-            man
-          </GridItem>
-          <GridItem width={'50px'} height={'32px'} bg= {Color.BLUE} border='1px solid grey'color ='white'>
-            tir
-          </GridItem>
-          <GridItem width={'50px'} height={'32px'} bg= {Color.BLUE} border='1px solid grey'color ='white'>
-            ons
-          </GridItem>
-          <GridItem width={'50px'} height={'32px'} bg= {Color.BLUE} border='1px solid grey'color ='white'>
-            tor
-          </GridItem>
-          <GridItem width={'50px'} height={'32px'} bg= {Color.BLUE} border='1px solid grey'color ='white'>
-            fre
-          </GridItem>
-          <GridItem width={'50px'} height={'32px'} bg= {Color.BLUE} border='1px solid grey'color ='white'>
-            lør
-          </GridItem>
-          <GridItem width={'50px'} height={'32px'} bg= {Color.BLUE} border='1px solid grey'color ='white'>
-            søn
-          </GridItem>
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)}
-              children={<Text>{this.state.value0 - 3}</Text>}
-          /> 
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)}
-              children={<Text>{this.state.value0 - 2}</Text>}
-          /> 
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value0 - 1}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value0}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value2}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value3}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+1}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)}
-              children={<Text>{this.state.value4 + 2}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+3}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+4}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+5}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+6}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+7}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+8}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+9}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+10}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+11}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+12}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+13}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+14}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+15}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+16}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+17}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+18}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+19}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+20}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+21}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+22}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+23}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+24}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+25}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+26}</Text>}
-            />
-          <ToggleButton
-              borderRadius={'0'}
-              border='1px solid grey'
-              height={'50px'}
-              width={'50px'}
-              className={'date-button'}
-              onChange={(x) => console.log("Toggle button called with event ",x)} 
-              children={<Text>{this.state.value4+27}</Text>}
-            />
-        </Grid>
-      </Container>  
-    ) 
-  }
+          onClick={onClick}
+          className={cname}>
+        </DateButton>
+      )
+    }
+        
+    setPrv(
+      new Array(new Date(year,month,1).getDay() === 0 ? 6 : new Date(year,month,1).getDay() - 1)
+        .fill(new Date(year,month,0))
+        .map((d,i) => d.subtractTime(0,0,i))
+        .reverse()
+        .map(date => {
+          return createDateButton(
+            `${date.toISOString()}-${rooms.length}-${selected_date}-prv`,
+            date,
+            () => {
+              setYear(date.getFullYear());
+              setMonth(date.getMonth());
+              onDateClick(date);
+            },
+            true
+          )
+        })
+    );
+        
+    setCur(
+      new Array(new Date(year,month + 1,0).getDate())
+        .fill(new Date(year,month,1))
+        .map((date,i) => date.addTime(0,0,i))
+        .map(date => {
+          return createDateButton(
+            `${date.toISOString()}-${rooms.length}-${selected_date}-cur`,
+            date,
+            () => onDateClick(date),
+            false)
+        }
+        )
+    );
+            
+    const end_weekday = new Date(year,month + 1,0).getDay();
+    setNxt(
+      new Array(7 - (end_weekday === 0 ? 7 : end_weekday))
+        .fill(new Date(year,month +1,1))
+        .map((date,i) => date.addTime(0,0,i))
+        .map(date => {
+          return createDateButton(
+            `${date.toISOString()}-${rooms.length}-${selected_date}-nxt`,
+            date,
+            () => {
+              setYear(date.getFullYear());
+              setMonth(date.getMonth());
+              onDateClick(date);
+            },
+            true,
+          )
+        })
+    );    
+  },[rooms, selected_date, month, year]);
+  
+  const dayRow = ['Man','Tir','Ons','Tor','Fre','Lør','Søn'].map(day => {
+    return (
+      <GridItem key={day} width={'50px'} height={'32px'} bg={Color.BLUE} border='1px solid grey' color='white'>
+        {day}
+      </GridItem>
+    )
+  });
+
+  const da_monthselector = 
+    <Center>
+      <Select
+        icon={<ChevronDownIcon />}
+        iconColor={Color.CREME}
+        cursor={'pointer'}
+        variant={'outline'}
+        color={Color.BLUE}
+        textColor={Color.CREME}
+        border={'none'}
+        size={'lg'}
+        fontSize={'1.3rem'}
+        width={'100vw'}
+        onChange={(e) => {
+          const [m,y] = e.target.value.toLowerCase().split(' ');
+          setMonth(Object.keys(da_months).indexOf(m));
+          setYear(parseInt(y,10));
+        }}
+        value={`${capitalize(Object.keys(da_months)[month])} ${year}`}
+      >
+        <option hidden disabled>{`${capitalize(Object.keys(da_months)[month])} ${year}`}</option>
+        {
+          new Array(12).fill({}).map((_,i) => {
+            const date = today.addTime(0,i);
+              return (
+                <option
+                  style={{ color: Color.BLACK }}
+                  key={`${i}-${date.getMonth()}-${date.getFullYear()}`}
+                >
+                {`${capitalize(Object.keys(da_months)[date.getMonth()])} ${date.getFullYear()}`}
+                </option>
+              )
+          })
+        }
+      </Select>
+    </Center>
+  
+  return (
+    <Container textAlign={'center'} paddingBottom={'65%'}>
+      <Grid
+        marginLeft={'15%'}
+        templateRows='repeat(7, 1fr)'
+        templateColumns='repeat(7, 1fr)'
+        gap={0}
+        color ='black'
+        textAlign={'center'}  
+        fontSize={'20'}
+        width={'50px'}
+        height={'32px'}
+      >
+        <GridItem colSpan={'7'} bg={Color.BLUE} children={da_monthselector}/>
+        {dayRow}
+        {prv}
+        {cur}
+        {nxt}
+      </Grid>
+    </Container>
+  )
 }
+
 export default Calendar;

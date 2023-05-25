@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-
+import Color from "../Colors";
 /**
  * @brief A button that toggles between active and inactive states. The active state receives the .active css tag
  * @param {props} props - The props of the component.
@@ -9,11 +9,13 @@ import { Box } from "@chakra-ui/react";
  * @param {string} margin - The margin of the button, default is 0
  * @param {string} width - The width of the button, default is 10
  * @param {string} height - The height of the button, default is 10
+ * @param {bool} isDisabled - If the button is disabled, default is false
  */
 class ToggleButton extends React.Component {
   _onClick;
   children;
   margin;
+  disabled;
   width;
   height;
   border;
@@ -22,8 +24,9 @@ class ToggleButton extends React.Component {
 
   constructor(props) {
     super(props);
-    var { onClick,children,margin,width,height,className,border,borderRadius } = props;
-    this.className = (className ? `${className}` : "chakra-button");
+    var { onClick,children,margin,width,height,className,border,borderRadius,isDisabled } = props;
+    this.disabled = isDisabled ?? false;
+    this.className = (className ? `${className}` : "chakra-button") + (this.disabled ? " disabled" : "");
     this.margin = margin ?? "0";
     this.border = border ?? '';
     this.borderRadius = borderRadius ?? '5px';
@@ -37,10 +40,11 @@ class ToggleButton extends React.Component {
   get active() { return this.state.isOn; }
 
   onClick() {
+    if (this.disabled) return;
     const newState = this.state;
     newState['isOn'] = !this.active;
     this.setState(newState);
-    this._onClick();
+    this._onClick(newState['isOn']);
   }
 
   render() {
@@ -50,14 +54,14 @@ class ToggleButton extends React.Component {
         onClick={this.onClick.bind(this)}
         border={this.border}
         // If button is active add active flag to the class name
-        className={`${(this.className !== '' ? `${this.className}` : '')}${(this.active ? " active" : "")}`}
+        className={`${this.className}${(this.active ? " active" : "")}`}
         width={this.width}
         margin={this.margin}
         h={this.height}
         borderRadius={this.borderRadius} // make round
       >
-      {this.children ?? "ToggleButton"}
-      </Box >
+      {this.children ?? ""}
+      </Box>
     ) 
   }
 };

@@ -7,7 +7,7 @@ const Tag = {
   Screen: 1,
   Projector: 2,
   Outlets: 4,
-  TableDesks: 8,
+  Table_Desks: 8,
   AC: 16,
   Whiteboard: 32,
   Blackboard: 64,

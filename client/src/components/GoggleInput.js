@@ -35,7 +35,7 @@ class GoggleInput extends React.Component {
   get value() {
     return this.state.value;
   }
-
+  
   changeValueByStep = (isInc) => {
     const new_value = isInc ? Math.min(this.state.value + this.step_per_click, this.max) : Math.max(this.state.value - this.step_per_click, this.min);
     this.onChange(new_value)

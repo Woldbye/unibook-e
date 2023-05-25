@@ -2,6 +2,31 @@ const fs = require('fs');
 const path = require('path');
 const Room = require('./rooms/room.js');
 const { createRandomTags } = require('./rooms/roomtag.js');
+require('./date.js');
+const { createDateRange } = require('./date.js');
+
+/** Retrieve a random property from an object */
+var randomProperty = (obj) => Object.keys(obj)[Math.floor(Math.random()*Object.keys(obj).length)];
+/** Retrieve a random property-key from an object */
+var randomKey = (obj) => obj[randomProperty(obj)];
+
+/**
+ * @param {*} start 
+ * @param {*} end 
+ * @param {*} dur 
+ * @param {*} free_frac the fraction of timeslots that should be free
+ */
+var randomTimeslots = (start,end,dur,free_frac) => {  
+  const timeslots = {
+    free: [],
+    reserved: [],
+  }
+  createDateRange(start,end,dur).forEach((tm,i) => {
+    const isFree = Math.random() < free_frac;
+    timeslots[isFree ? 'free' : 'reserved'].push(tm);
+  })
+  return timeslots;
+}
 
 const addresses = [
   {
@@ -9,14 +34,14 @@ const addresses = [
     street: 'Rued Langgaards Vej 7',
     city: 'København',
     zip: '2300'
-  },
+  },  
   {
     // DIKU
     street: 'Universitetsparken 5',
     city: 'København',
     zip: '2100'
-  }
-];
+  }  
+];  
 
 const buildings = [
   {
@@ -24,25 +49,15 @@ const buildings = [
     address: addresses[0],
     floors: 5,
     rooms_per_floor: 20,
-  },
+  },  
   {
     building_nr: 2,
     address: addresses[1],
-    floors: 8,
-    rooms_per_floor: 30,
-  },
-];
+    floors: 3,
+    rooms_per_floor: 10,
+  },  
+];  
 
-/** Retrieve a random property from an object */
-var randomProperty = function (obj) {
-  var props = Object.keys(obj);
-  return props[Math.floor(Math.random()*props.length)];
-};
-
-/** Retrieve a random property-key from an object */
-var randomKey = function(obj) {
-  return obj[randomProperty(obj)];
-}
 
 /**
  * @brief Generates a list of rooms such that each room in the building is 
@@ -62,7 +77,8 @@ function populate_building(building) {
         i,
         j,
         building.address,
-        createRandomTags()
+        createRandomTags(),
+        randomTimeslots(new Date(2023,0,1,8,0),new Date(2025,0,1,20,0),120,0.001)
       );
       rooms.push(room);
     }

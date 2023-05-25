@@ -1,58 +1,60 @@
-import { Text,IconButton, HStack, Flex } from '@chakra-ui/react';
+import { Text,IconButton, HStack, Flex,Center } from '@chakra-ui/react';
 import {ArrowLeftIcon,ArrowRightIcon } from '@chakra-ui/icons';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Color from '../Colors';
+import { filterByDate } from '../api/roomquery';
+import * as Room from '../api/room';
+import { } from '../util.js'
+import { parseISOString } from '../date';
 
 /**
- * @description Generate a timer
- * @param {*} max the maximum value of the input - defaults to ∞.
- * @param {*} min the minimum value of the input - defaults to 0.
+ * @param {rooms} props An array of Room objects 
+ * @param {date} props A Date object - the selected date to choose times from
+ * @param {marginBottom} props marginBottom
  */
-class TimeChooser extends React.Component {
+const TimeChooser = (props) => {
+  const rooms = props.rooms ?? []; 
+  const marginBottom = props.marginBottom ?? '0';
+  const date = props.date ?? new Date();  
   
-  max =24;
-  min=8;
+  let byDate = {}
+  filterByDate(rooms,date)
+    .reduce((acc,room) => {
+      const { id,timeslots } = room;
+      return acc.concat(
+        timeslots['free']
+          .map(datestr => ({ date: parseISOString(datestr),room_id: id }))
+          .filter(slot => {
+            return (slot['date'].getDate() === date.getDate()
+              && slot['date'].getFullYear() === date.getFullYear()
+              && slot['date'].getMonth() === date.getMonth())
+          })
+      )
+    },[])
+    .sort((a,b) => a['date'] - b['date']) // sort in ascending order by date
+    .forEach(({ date,room_id }) => {      // group by date
+      if(byDate[date] === undefined) byDate[date] = [room_id];
+      else byDate[date].push(room_id);
+    })
+  
+  // Transform byDate into bookings by mapping to { date: Date, room_ids: int[] } format
+  const bookings = Object
+    .keys(byDate)
+    .map(key => ({ date: key,room_ids: byDate[key] }))
+    
+  const [index,setIndex] = React.useState(0); // active room index
+  const times = bookings.sliceMid(index,1)
 
-  constructor(props) {
-    super(props);
-    const {} = props;
-    this.state = { value: 8 , value2: 0, secondValue: 7, secondValue2: 3, thirdValue:7,thirdValue2:0}
-  }
-    
-  changeValueByStep = (isInc) => {
-    
-    if(this.state.value2 === 0){
-      const new_value = isInc ? Math.min(this.state.value, this.max) : Math.max( this.state.value-1, this.min);
-      if(isInc&&this.state.value!=this.max){
-        this.setState({thirdValue: this.state.secondValue,secondValue:this.state.value})}
-      if(isInc ===false&&this.state.value!=this.min){this.setState({secondValue:this.state.thirdValue, thirdValue:this.state.thirdValue-1})}
-      this.setState({value:new_value});
-        const new_value2 = (3); 
-      if(isInc&&this.state.value!==this.max){
-        this.setState({thirdValue2: this.state.secondValue2,secondValue2:this.state.value2})}
-        if(isInc ===false&&this.state.value!==this.min){this.setState({secondValue2:this.state.thirdValue2,thirdValue2:3})}
-      this.setState({ value2: new_value2 });
-    }
-    if(this.state.value2 === 3){
-      const new_value = isInc ? Math.min(this.state.value+1, this.max) : Math.max( this.state.value, this.min);
-      if(isInc&&this.state.value!==this.max){
-        this.setState({thirdValue: this.state.secondValue,secondValue:this.state.value})}
-        if(isInc ===false){this.setState({secondValue:this.state.thirdValue})}
-      this.setState({value:new_value});
-        const new_value2 = ( 0);
-      if(isInc&&this.state.value!==this.max){
-        this.setState({thirdValue2: this.state.secondValue2,secondValue2:this.state.value2})}
-        if(isInc ===false){this.setState({secondValue2:this.state.thirdValue2,thirdValue2:0})}
-      this.setState({ value2: new_value2 })
-    }
-    
-  };
-
-  render() {
-    return (
-      <HStack
+  useEffect(() => {
+    if (index > times.length - 1 || index <= 0) setIndex(0)
+  },[bookings, times.length, index])  
+  
+  const type_name = "time"
+  return (
+    <HStack
         hide={-1}
         width={'100%'}
+        marginBottom={marginBottom}
         justifyContent={'space-between'}
         height={'50px'}
         backgroundColor={Color.BLUE}
@@ -60,26 +62,48 @@ class TimeChooser extends React.Component {
       >
         <IconButton
           size={'lg'}
-          aria-label={'Subtract ' + this.type_name}
+          aria-label={'Previous ' + type_name}
           isRound={true}
           icon={<ArrowLeftIcon />}
-          onClick= {() => this.changeValueByStep(false)}
+          onClick={() => { if(index > 0) setIndex(index - 1) }}
         />
-          <Flex direction={'row'}textAlign={'center'} alignItems={'space-around'} justifyContent={'space-around'}>
-          <Text color={Color.CREME} marginRight={5}>{this.state.thirdValue+":"+this.state.thirdValue2+0}</Text>
-          <Text color={Color.CREME}marginRight={5}>{this.state.secondValue+":"+this.state.secondValue2+0}</Text>
-          <Text color={Color.CREME}>{this.state.value+":"+this.state.value2+0}</Text>
-          </Flex>
-        <IconButton
-          size={'lg'}
-          aria-label={'Add ' + this.type_name}
-          isRound={true}
-          icon={<ArrowRightIcon />}
-          onClick = {() => this.changeValueByStep(true)}
-        />
+        <Flex
+          direction={'row'}
+          textAlign={'center'}
+          alignItems={'space-around'}
+          justifyContent={'space-around'}
+          width={'100%'}
+        >
+        {times.length > 0 ? times.map(entry => {
+          const dt = parseISOString(entry['val']['date'])
+          const { room_ids } = entry['val'];
+          
+          return (
+            <Center key={`${dt}:${room_ids}:${index}`}>
+              <Text
+                color={Color.CREME}
+                className="highlight"
+                background={entry['index'] === index ? Color.DARK_BROWN : Color.BLUE}
+                paddingRight={'10%'}
+                paddingLeft={'10%'}
+                cursor={'pointer'}
+                onClick={() => setIndex(entry['index'])}
+              >
+                {`${(dt.getHours()).toString().padStart(2,0)}:${dt.getMinutes().toString().padStart(2,0)}`}
+              </Text>
+            </Center>
+          )
+        }) : <Text color={Color.CREME}>Ingen ledige tider</Text>}
+        </Flex>          
+      <IconButton
+        size={'lg'}
+        aria-label={'Next ' + type_name}
+        isRound={true}
+        icon={<ArrowRightIcon />}
+        onClick={() => { if(index < bookings.length - 1) setIndex(index + 1) }}          
+      />
       </HStack>
-    )
-  }
-}
+  )
+};
 
 export default TimeChooser;

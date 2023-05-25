@@ -14,19 +14,21 @@ const BookingRoom = () => {
   
   // Laggy atm as it's updating too often
   React.useEffect(() => {
-    getRooms('').then(
-      r => setRooms(
-        (search === '') ? r : r.filter(r => {
-          // Search the json of the room for matches to all the words in the search bar
-          // If all words has a match return true
-          const json = JSON.stringify(r)
-          return search
-            .split(' ')
-            .filter(word => word !== ' ' && word !== '')
-            .every(word => json.includes(word))
-        })
-      )
-    );
+    setInterval(() => {
+      getRooms('').then(
+        r => setRooms(
+          (search === '') ? r : r.filter(r => {
+            // Search the json of the room for matches to all the words in the search bar
+            // If all words has a match return true
+            const json = JSON.stringify(r)
+            return search
+              .split(' ')
+              .filter(word => word !== ' ' && word !== '')
+              .every(word => json.includes(word))
+          })
+        )
+      );
+    }, 800);
   }, [search]) // Add depdency on search to update when search changes
 
   return (

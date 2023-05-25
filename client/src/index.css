@@ -13,18 +13,44 @@ code {
 }
 
 .date-button {
-  background-color: #D7C0AE;
-  color: black;
+  background-color: #D7C0AE !important;
+  color: black !important;
+  font-size: 1.5rem;
+}
+
+.disabled {
+  opacity: 0.6;
+}
+
+.date-button-today {
+  background-color:  #967E76 !important;
+  font-size: 1.5rem;
+  color: #393E46 !important; 
+}
+.date-button-today.active {
+  text-shadow: 0px 0px 3px #D5F591;
+}
+.date-button.available {
+  color: #476e56 !important;
+  /* text-shadow: 0px 2px 2px rgb(100,140,17); */
+}
+
+.date-button.unavailable, .date-button-today.unavailable {
+  color: #B80201 !important;
 }
 
 .date-button.active {
   background-color: #6D9886 !important;
-  outline-color: #6D9886 !important;
+  /* outline-color: lightyellow !important; */
+  /* border: 1px ridge #D5F591 !important; */
+  /* border-style: */
+  text-shadow: 0px 0px 3px #D5F591;
+  /* color: #FAFAFA !important; */
 }
 
 .chakra-text {
   font-family: 'Founders Grotesk';
-  text-shadow: 0px 2px 2px #00000040; 
+  text-shadow: 2px 2px 10px #00000040; 
 }
 
 .chakra-divider {
