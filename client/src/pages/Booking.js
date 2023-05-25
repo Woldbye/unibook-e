@@ -10,64 +10,84 @@ import GoggleInput from '../components/GoggleInput';
 import { Link } from 'react-router-dom';
 import LokaleTyper from '../components/LokaleTyper';
 import Ressourcer from '../components/Ressourcer';
+import Background from '../components/Background';
+import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const Room = require('../api/room.js');
-const { toUrl } = require('../api/roomquery.js');
+const { toUrl,fromUrl } = require('../api/roomquery.js');
 
 const time_start = 0.5;
 
-class Booking extends React.Component {
-  
-  constructor(props) {
-    super(props);
-    this.state = { size: `${Room.Size.XS}`, duration: `${time_start}`, type: {} };
+const Booking = () => {
+  let params = useParams();
+  const start_q = fromUrl(params.query ?? '');
+
+  const tp = start_q.type.reduce((acc,t) => {
+    const key = Object.keys(Room.Type).find(tpkey => Room.Type[tpkey] === t)
+    acc[key] = t
+    return acc;
+  },{});
+
+  const [size,setSize] = React.useState(start_q.size ?? `${Room.Size.XS}`);
+  const [duration,setDuration] = React.useState(start_q.duration ?? `${time_start}`);
+  // TO:DO change to work for danish labeled types
+  const [type,setType] = React.useState(tp ?? {})
+  const [query,setQuery] = React.useState({
+    size: size,
+    duration: duration,
+    type: type,
+  });
+
+  const onPersonChange = (val) => {
+    setSize( `${Object.values(Room.Size).find(sz => sz >= val)}` );
+  };
+
+  const onTimeChange = (val) => { setDuration( `${val}` ) }
+
+  const onTypeChange = (tp) => {
+    const newState = type;
+    if(Object.keys(type).includes(tp)) {
+      delete newState[tp];
+    } else {
+      newState[tp] = Room.Type[tp];
+    }
+
+    setType(newState);
+    setQuery({...query, type: newState})
   }
+
+  React.useEffect(() => {
+    const newState = query;
+    newState['size'] = size;
+    newState['duration'] = duration;
+    newState['type'] = type;
+    setQuery(newState);
+  },[size,duration]);
   
-  render() {
-    const onPersonChange = (val) => {
-      const size = Object.values(Room.Size).find(sz => sz >= val);
-      const newState = this.state;
-      newState['size'] = `${size}`;
-      this.setState( newState );
-    };
-
-    const onTimeChange = (val) => {
-      const newState = this.state;
-      newState['duration'] = `${val}`; // duration in hours
-      this.setState( newState )
-    }
-
-    const onTypeChange = (tp) => {
-      const newState = this.state
-      if(Object.keys(newState['type']).includes(tp)) {
-        delete newState['type'][tp];
-      } else {
-        newState['type'][tp] = Room.Type[tp];
-      }
-      this.setState ( newState )
-    }
-
-    return (
+  return (
+    <Background >
       <Container>
         <VStack paddingBottom='2rem'>
           <Text color={Color.BLACK} fontSize={'3xl'} padding={'30px 0px 10px 0px'}>Vælg lokale krav</Text>
           <VStack width='40%' spacing={'1rem'} minWidth={'12rem'}>
-            <GoggleInput step_per_click={1} type_name={'Personer'} start={1} max={128} min={1}
-              onChange={onPersonChange.bind(this)} />
-            <GoggleInput step_per_click={time_start} type_name={'Timer'} start={2.0} max={14.0} min={0.5}
-              onChange={onTimeChange.bind(this)} />
+            <GoggleInput step_per_click={1} type_name={'Personer'} start={parseInt(size)} max={128} min={1}
+              onChange={onPersonChange} />
+            <GoggleInput step_per_click={time_start} type_name={'Timer'} start={parseFloat(duration)} max={14.0} min={0.5}
+              onChange={onTimeChange} />
           </VStack>
-          <LokaleTyper onChange={onTypeChange.bind(this)} />
+          <LokaleTyper startTypes={type} onChange={onTypeChange} />
           <Ressourcer></Ressourcer>
-          <Link to={`date/${toUrl(this.state)}/` }>
+          <Link to={`/book/date/${toUrl(query)}/` }>
             <Button size={'lg'}>
               <Text size={'lg'}>Næste</Text >
             </Button>
           </Link>
         </VStack>
       </Container>
-    )
-  }
+    </Background>
+  )
 }
+
 
 export default Booking;

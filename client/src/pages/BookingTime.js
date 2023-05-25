@@ -12,34 +12,34 @@ import Background from '../components/Background';
 import Calendar from '../components/Calendar';
 import TimeChooser from '../components/TimeChooser';
 import { Link } from 'react-router-dom';
-
+import BackButton from '../components/BackButton';
 import { toUrl,fromUrl, getRooms } from "../api/roomquery.js";
 
 
 const BookingTime = () => {
   let params = useParams();
   const today = new Date();
-  // Use setQuery to update the date information in the query
-  const [query,setQuery] = React.useState(fromUrl(params.query));
-
-  // Rooms will contain the rooms that are available for the given query
+  const start_query = params.query ?? ''; // start query in url form
+  const [query,setQuery] = React.useState(fromUrl(start_query));
   const [rooms,setRooms] = React.useState([]);
   const [selected_date, setSelectedDate] = React.useState(today);
   
   React.useEffect(() => {
-    console.log("update")
     getRooms(query).then(rs => setRooms(rs));
   }, [query])
 
   return (
     <Background>
       <Container height={'100vh'}width ={'100vw'}>
-      <Stack alignItems={'center'} spacing={'2rem'}  minWidth={'12rem'}>
-        <Text fontSize={24}>Vælg dato</Text>
+        <Stack alignItems={'center'} spacing={'2rem'} minWidth={'12rem'}>
+        <BackButton to={`/book/${start_query}/`} /> 
+        <Text fontSize={28}>Vælg dato</Text>
           <Calendar
             onClick={(date) => {
-              console.log("received: ", date)
               setSelectedDate(date)
+              const newState = query;
+              newState['date'] = date;
+              setQuery(newState);
             }}
             rooms={rooms}
             selected_date={selected_date}

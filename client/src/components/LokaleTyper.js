@@ -15,10 +15,12 @@ import Color from '../Colors';
 
 class LokaleTyper extends React.Component {
   onChange;
+  startTypes;
 
   constructor(props) {
     super(props);
-    const { onChange } = props;
+    const { onChange,startTypes } = props;
+    this.startTypes = startTypes ?? {};
     this.onChange = onChange;
   }
   
@@ -36,24 +38,28 @@ class LokaleTyper extends React.Component {
                   className={'chakra-button'}
                   margin={'10px'}
                   width={'120px'}
+                  startActive={"Meeting" in this.startTypes}
                   onClick={() => this.onChange("Meeting")}
                   children={"Mødelokale"} />
                 <ToggleButton
                   className={'chakra-button'}
                   margin={'10px'}
                   width={'120px'}
+                  startActive={"Skybox" in this.startTypes}
                   onClick={() => this.onChange("Skybox")}
                   children={"Skybox"} />
                 <ToggleButton
                   className={'chakra-button'}
                   margin={'10px'}
                   width={'120px'}
+                  startActive={"Auditorium" in this.startTypes}
                   onClick={() => this.onChange("Auditorium")}
                   children={"Auditorium"} />
                 <ToggleButton
                   className={'chakra-button'}
                   margin={'10px'}
                   width={'120px'}
+                  startActive={"Classroom" in this.startTypes}
                   onClick={() => this.onChange("Classroom")}
                   children={"Klasselokale"} />
               </Flex>
