@@ -21,14 +21,15 @@ export function toUrl(room_query) {
   return url;
 }
 
-export function queryToString(rquery) {
+export function queryToStringIfDate(rquery) {
   
   rquery = fromUrl(rquery)
-  var lines = "Reservere lokale til ";
+  var lines = "";
   if(rquery['date'] !== undefined) {
+    lines += "Reserverer lokale til ";
     var date = parseISOString(rquery['date'])
     const clock = `${date.getHours() < 10 ? '0' : ''}${date.getHours()}:${date.getMinutes() < 10 ? '0' : ''}${date.getMinutes()}`;
-    lines += `kl. ${clock} d. ${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}, `;
+    lines += `kl. ${clock} d. ${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} `;
     if (rquery['duration'] !== undefined)
       lines += " i " + rquery['duration'] + " timer ";
   }

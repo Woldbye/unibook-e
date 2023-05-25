@@ -9,7 +9,6 @@ function parseISOString(s) {
 function filterByDate(rooms,date) {
   if(rooms === undefined) return [];
   if(typeof date !== 'string') date = parseISOString(date)
-  console.log("Filtering by date: ",date)
   return rooms.filter(r => freeTimeslots(r,date).length > 0);
 }
 

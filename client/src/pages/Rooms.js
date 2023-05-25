@@ -8,7 +8,7 @@ import {
 import { useParams } from 'react-router-dom';
 import Color from '../Colors';
 import Room from '../components/Room';
-import { getRooms, queryToString } from '../api/roomquery.js';
+import { getRooms, queryToStringIfDate } from '../api/roomquery.js';
 import BackButton from '../components/BackButton';
 
 const Rooms = () => {
@@ -23,7 +23,7 @@ const Rooms = () => {
     );
     setHeader(
       <Heading as='h2' color={Color.BLUE} size={"l"} padding={"30px 40px 0px 40px"} textAlign={'center'}>
-      {queryToString(params.query)}
+      {queryToStringIfDate(params.query)}
       </Heading>
     );
   },[params.query]);
