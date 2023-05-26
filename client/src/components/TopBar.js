@@ -8,7 +8,7 @@ const TopBar = ({ boxWidth = '100vw' }) => {
       <Box
         position={"sticky"}
         zIndex={5}
-        height={'6vh'}
+        height={'8vh'}
         top={0}
         className={"top-bar"}
         minWidth={boxWidth}

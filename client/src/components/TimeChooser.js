@@ -16,6 +16,7 @@ const TimeChooser = (props) => {
   const rooms = props.rooms ?? []; 
   const marginBottom = props.marginBottom ?? '0';
   const date = props.date ?? new Date().toISOString();  
+  const setBooking = props.setBooking ?? ((dt) => { })
   
   let byDate = {}
   filterByDate(rooms,parseISOString(date))
@@ -46,7 +47,7 @@ const TimeChooser = (props) => {
     
   const [index,setIndex] = React.useState(0); // active room index
   
-  const setBooking = props.setBooking ?? ((dt) => {})
+
   const times = bookings.sliceMid(index,1)
   
   useEffect(() => {

@@ -40,10 +40,10 @@ const Calendar = (props) => {
           isDisabled={isDisabled}
           borderRadius={'0'}
           border={'1px solid grey'}
-          height={'50px'}
+          height={'100%'}
           isOn={isOn}
           date={date}
-          width={'50px'}
+          width={'100%'}
           onClick={onClick}
           className={cname}>
         </DateButton>
@@ -105,7 +105,7 @@ const Calendar = (props) => {
   
   const dayRow = ['Man','Tir','Ons','Tor','Fre','Lør','Søn'].map(day => {
     return (
-      <GridItem key={day} width={'50px'} height={'32px'} bg={Color.BLUE} border='1px solid grey' color='white'>
+      <GridItem key={day} width={'100%'} height={'100%'} bg={Color.BLUE} border='1px solid grey' color='white'>
         {day}
       </GridItem>
     )
@@ -123,7 +123,7 @@ const Calendar = (props) => {
         border={'none'}
         size={'lg'}
         fontSize={'1.3rem'}
-        width={'100vw'}
+        // width={'100vw'}
         onChange={(e) => {
           const [m,y] = e.target.value.toLowerCase().split(' ');
           setMonth(Object.keys(da_months).indexOf(m));
@@ -149,17 +149,17 @@ const Calendar = (props) => {
     </Center>
   
   return (
-    <Container textAlign={'center'} paddingBottom={'65%'}>
+    <Container textAlign="center" padding={'0'} paddingBottom="10%" margin={0}>
       <Grid
-        marginLeft={'15%'}
         templateRows='repeat(7, 1fr)'
         templateColumns='repeat(7, 1fr)'
         gap={0}
         color ='black'
         textAlign={'center'}  
         fontSize={'20'}
-        width={'50px'}
-        height={'32px'}
+        height={'100%'}
+        p={'0'}
+        margin={'0'}
       >
         <GridItem colSpan={'7'} bg={Color.BLUE} children={da_monthselector}/>
         {dayRow}
