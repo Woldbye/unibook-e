@@ -1,7 +1,10 @@
-import { Text,IconButton, HStack, Flex } from '@chakra-ui/react';
-import { AddIcon,MinusIcon } from '@chakra-ui/icons';
+import { Text, IconButton, HStack, Flex } from '@chakra-ui/react';
+import { AddIcon, MinusIcon } from '@chakra-ui/icons';
 import React from 'react';
 import Color from '../Colors';
+
+//The component is used for both our bars counting the number of people, and the one with time.
+//It makes the user able to increase or decrease the number.
 
 /**
  * @description Generate an input component that has a button at each side which can be used to
@@ -37,6 +40,7 @@ class GoggleInput extends React.Component {
   }
   
   changeValueByStep = (isInc) => {
+    // Determine the new value based on whether it should be incremented or decremented
     const new_value = isInc ? Math.min(this.state.value + this.step_per_click, this.max) : Math.max(this.state.value - this.step_per_click, this.min);
     this.onChange(new_value)
     this.setState({ value: new_value })

@@ -12,6 +12,9 @@ import Color from "../Colors";
 import Address from "./Address";
 import { capitalize } from "../util";
 
+//This component works default as the room shower everywhere that the user needs to see the whole room information.
+//It takes all of the information from a room, and sets into the component.
+
 /**
  * @brief Generates a Room component
  */
