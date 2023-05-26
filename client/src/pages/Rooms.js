@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {
   Container,
-  Center,
   Heading,
   List,
 } from '@chakra-ui/react';
@@ -11,7 +10,7 @@ import Room from '../components/Room';
 import { getRooms, queryToStringIfDate } from '../api/roomquery.js';
 import BackButton from '../components/BackButton';
 import { getType } from '../util.js';
-import { fromUrl } from '../api/roomquery.js';
+import { fromUrl,toUrl } from '../api/roomquery.js';
 import { parseISOString } from '../date';
 
 const Rooms = () => {
@@ -19,15 +18,18 @@ const Rooms = () => {
   if(!params.query) { params.query = ''; } // If no query is given, return all rooms
   const navigate = useNavigate();
   const [rooms,setRooms] = React.useState([]);
-  const [header,setHeader] = React.useState('');
-  const date = fromUrl(params.query)['date']; 
-  if(getType(date) !== 'date') throw new Error("Received invalid date object from url")
+  const [header,setHeader] = React.useState('');   //Header to display query on top of page
+  const query = fromUrl(params.query);
+  const date = query['date'];
   
-  React.useEffect(() => {
+  if(getType(date) !== 'date') throw new Error("Received invalid date object from url", date)
+  
+  React.useEffect(() => {     //Listener to update rooms and query display when query changes
+
     getRooms(params.query).then(
       rooms => setRooms(rooms)
     );
-    setHeader(
+    setHeader( 
       <Heading as='h2' color={Color.BLUE} size={"l"} padding={"30px 40px 0px 40px"} textAlign={'center'}>
       {queryToStringIfDate(params.query)}
       </Heading>
@@ -35,7 +37,7 @@ const Rooms = () => {
   },[params.query]);
   
   const onRoomSelect = (roomid) => {
-    navigate(`/book/confirm/${roomid}/${date.toISOString()}`);
+    navigate(`/book/confirm/${params.query}&rid=${roomid}/`);
   }
 
   return (

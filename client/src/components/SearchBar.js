@@ -9,6 +9,8 @@ import {
   Search2Icon,
 } from '@chakra-ui/icons';
 
+//This component is only used in the overview section of the program. It makes the user able to search for a room.
+
 const SearchBar = (props) => {
   var { onChange, marginTop } = props; // on enter keypress callback
   onChange = onChange ?? ((x) => { }); // default to empty function 

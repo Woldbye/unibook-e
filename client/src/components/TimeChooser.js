@@ -1,9 +1,8 @@
-import { Text, IconButton, HStack, Flex, Center } from '@chakra-ui/react';
-import { ArrowLeftIcon, ArrowRightIcon } from '@chakra-ui/icons';
-import React, { useEffect } from 'react';
+import { Text,IconButton, HStack, Flex,Center } from '@chakra-ui/react';
+import {ArrowLeftIcon,ArrowRightIcon } from '@chakra-ui/icons';
+import React from 'react';
 import Color from '../Colors';
 import { filterByDate } from '../api/roomquery';
-import * as Room from '../api/room';
 import { } from '../util.js'
 import { parseISOString } from '../date';
 
@@ -17,15 +16,15 @@ const TimeChooser = (props) => {
   const marginBottom = props.marginBottom ?? '0';
   const date = props.date ?? new Date().toISOString();
   const setBooking = props.setBooking ?? ((dt) => { })
-
-  let byDate = {}
-  filterByDate(rooms, parseISOString(date))
-    .reduce((acc, room) => {
-      const { id, timeslots } = room;
+  
+  let byDate = {} //byDate will contain rooms grouped by available time slot
+  filterByDate(rooms,parseISOString(date)) //get rooms available on date
+    .reduce((acc,room) => { //iterate over array, accumulating timeslots 
+      const { id,timeslots } = room;
       return acc.concat(
-        timeslots['free']
-          .map(datestr => ({ date: parseISOString(datestr), room_id: id }))
-          .filter(slot => {
+        timeslots['free'] // get free timeslots only
+          .map(datestr => ({ date: parseISOString(datestr),room_id: id })) // create an array of the free timeslots collected with their associated room
+          .filter(slot => { // filter out timeslots that are not on the selected date and time
             return (slot['date'].getDate() === date.getDate()
               && slot['date'].getFullYear() === date.getFullYear()
               && slot['date'].getMonth() === date.getMonth())
@@ -42,14 +41,15 @@ const TimeChooser = (props) => {
 
   // Transform byDate into bookings by mapping to { date: Date, room_ids: int[] } format
   const bookings = Object
-    .keys(byDate)
+
+    .keys(byDate) //get the timeslots which have available rooms
     .map(key => ({ date: key, room_ids: byDate[key] }))
+    
+  const [index,setIndex] = React.useState(0); // selected timeslot
+  
 
-  const [index, setIndex] = React.useState(0); // active room index
-
-
-  const times = bookings.sliceMid(index, 1)
-
+  const times = bookings.sliceMid(index,1) //get the available rooms at the selected timeslot
+  
   useEffect(() => {
     const timeid = setTimeout(() => {
 
@@ -97,28 +97,44 @@ const TimeChooser = (props) => {
         justifyContent={'space-around'}
         width={'100%'}
       >
+        <IconButton //"got to previous available timeslot on this date" button
+          size={'lg'}
+          aria-label={'Previous ' + type_name}
+          isRound={true}
+          icon={<ArrowLeftIcon />}
+          onClick={() => { if(index > 0) setIndex(index - 1) }}
+        />
+        <Flex
+          direction={'row'}
+          textAlign={'center'}
+          alignItems={'space-around'}
+          justifyContent={'space-around'}
+          width={'100%'}
+        >
         {times.length > 0 ? times.map(entry => {
           const dt = parseISOString(entry['val']['date'])
-          const { room_ids } = entry['val'];
-
+          const { room_ids } = entry['val'];//Create a const room_ids which gets the room ids at selected time slot
           return (
             <Center key={`${dt}:${room_ids}:${index}`}>
               <Text
                 color={Color.CREME}
                 className="highlight"
-                background={entry['index'] === index ? Color.GREEN : Color.BLUE}
+                
+                //color the selected timeslot green, color the rest in the background color.
+                   background={entry['index'] === index ? Color.GREEN : Color.BLUE}
                 paddingRight={'10%'}
                 paddingLeft={'10%'}
                 cursor={'pointer'}
+                //select timeslot by clicking it
                 onClick={() => setIndex(entry['index'])}
-              >
-                {`${(dt.getHours()).toString().padStart(2, 0)}:${dt.getMinutes().toString().padStart(2, 0)}`}
+              > //write the time of the timeslot on the form HH:MM
+                {`${(dt.getHours()).toString().padStart(2,0)}:${dt.getMinutes().toString().padStart(2,0)}`}
               </Text>
             </Center>
           )
-        }) : <Text color={Color.CREME}>Ingen ledige tider</Text>}
-      </Flex>
-      <IconButton
+        }) : <Text color={Color.CREME}>Ingen ledige tider</Text>} //displayed if no timeslots are available
+        </Flex>          
+      <IconButton //"got to next available timeslot on this date" button
         size={'lg'}
         aria-label={'Next ' + type_name}
         isRound={true}

@@ -53,7 +53,7 @@ class ToggleButton extends React.Component {
         as="button"
         onClick={this.onClick.bind(this)}
         border={this.border}
-        // If button is active add active flag to the class name
+        // If button is active add active flag to the class name for css color purposes
         className={`${this.className}${(this.active ? " active" : "")}`}
         width={this.width}
         margin={this.margin}

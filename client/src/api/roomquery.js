@@ -1,12 +1,12 @@
 import { parseISOString } from '../date.js';
 import * as Room from './room.js';
-
+import { getType } from '../util.js';
 /**
  * @brief Converts a room_query object into an url string
  * @param {*} room_query A room_query object, which is a subset of the parameters of a room.
  * @returns A url string that can be used to query the server for rooms.
  */
-export function toUrl(room_query) {
+export function toUrl(room_query) { //convert room query to url string for page-to-page retention
   const url = Object
     .entries(room_query)
     .map(([param,value]) => {
@@ -22,12 +22,15 @@ export function toUrl(room_query) {
   return url;
 }
 
-export function queryToStringIfDate(rquery) {
-  
+export function queryToStringIfDate(rquery) { //room query to string for confirmation page
   rquery = fromUrl(rquery)
   var lines = "";
-  if(rquery['date'] !== undefined) {
-    lines += "Reserverer lokale til ";
+  if('date' in rquery) {
+    lines += "Reserverer lokale ";
+    if('rid' in rquery) {
+      lines += rquery['rid'] + " ";
+    }
+    lines += "til ";
     var date = parseISOString(rquery['date'])
     const clock = `${date.getHours() < 10 ? '0' : ''}${date.getHours()}:${date.getMinutes() < 10 ? '0' : ''}${date.getMinutes()}`;
     lines += `kl. ${clock} d. ${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} `;
@@ -38,7 +41,7 @@ export function queryToStringIfDate(rquery) {
   return lines;
 }
 
-export function filterByDate(rooms,date) {
+export function filterByDate(rooms,date) { // filters out rooms that are not free on the given date
   return rooms.filter(r => Room.freeTimeslots(r,date).length > 0);
 }
 
@@ -47,19 +50,21 @@ export function filterByDate(rooms,date) {
  * @param {*} room_query_url A room_query url string, which is a subset of the parameters of a room.
  * @returns Return an array of rooms that satisfy room_query formated as jsons
  */
-export async function getRooms(room_query_url) {
-  room_query_url = typeof room_query_url === 'object' ? toUrl(room_query_url) : room_query_url;
-  const url = `http://localhost:5000/rooms?${room_query_url}`; // URL for overview of all rooms
-  return fetch(url)
-    .then(res => res.json())
-    .then(res => Array.isArray(res) ? res : [res]);
+export async function getRooms(room_query_url) { 
+  room_query_url = typeof room_query_url === 'object' ? toUrl(room_query_url) : room_query_url; //if room_query_url is an object, convert it to a url string
+  const url = `http://localhost:5000/rooms?${room_query_url}`; // URL for overview of all rooms to be queried
+  return fetch(url) //response from server is all rooms that satisfy the query
+    .then(res => res.json()) // Convert them to json
+    .then(res => Array.isArray(res) ? res : [res]); //convert them to array if is not already
 } 
 
 /**
  * Receives an url string of a room query and returns an object containing the parameters of the query.
  * @param {*} url string as constructed by toUrl(query)
  */
-export function fromUrl(url) {
+
+export function fromUrl(url) { //convert url string to room query object for use on current page
+  if (getType(url) !== 'string') url = toUrl(url)
   const objArr = url.split("&").map(param => param.split("="))
   // Convert inner objects to arrays
   for(let i = 0;i < objArr.length;i++) {

@@ -16,12 +16,12 @@ const UnibookRouter = () => {
       <Routes>
         <Route path="/" element={<TopBar boxWidth='100vw'/>}>
           <Route index element={<Background children={<Home />} />}/>
-          <Route path="rooms" element={<BookingRoom />}/>
-          <Route path="rooms/:query?/" element={<Rooms />} />
-          <Route path="book/confirm/:id?/:date?/" element={<BookingConfirmation/>}/>
-          <Route path="book/date/:query?/" element={<BookingTime/>}/>
-          <Route path="book/:query?/" element={<Booking />} />
-          <Route path="*" element={<NoPage />}/>
+          <Route path="rooms" element={<BookingRoom />}/> //page of all rooms with "book" buttons
+          <Route path="rooms/:query?/" element={<Rooms />} /> //page of rooms matching the query
+          <Route path="book/confirm/:query?/" element={<BookingConfirmation/>}/>
+          <Route path="book/date/:query?/" element={<BookingTime/>}/> //page for selecting date and time
+          <Route path="book/:query?/" element={<Booking />} />//page for maanaging filter
+          <Route path="*" element={<NoPage />}/> //fallback page
         </Route>
       </Routes>
     </BrowserRouter>

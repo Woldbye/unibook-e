@@ -16,7 +16,8 @@ const BookingRoom = () => {
   React.useEffect(() => {
     // Delay search by 1 second to reduce updates
     const timeid = setTimeout(() => {
-      getRooms('').then(
+
+      getRooms('').then( //get array of all rooms, then filter by search
         r => 
           setRooms(
             (search === '') ? r : r.filter(r => {
@@ -32,13 +33,13 @@ const BookingRoom = () => {
       );
     }, update_delay)
     return () => clearTimeout(timeid);
-  }, [search]) // Add depdency on search to update when search changes
+  }, [search]) // Add dependency on search to update when search changes
 
   return (
     <Background>
       <Container paddingTop={'20px'}>
         <SearchBar marginTop={'5'} onChange={setSearch}/>
-        <List spacing={'1rem'} paddingTop={'20px'}>
+        <List spacing={'1rem'} paddingTop={'20px'}>//list of rooms matching search query
         {rooms.map(room => <Room key={room['id']} json={room}/>)}
         </List>
       </Container>
