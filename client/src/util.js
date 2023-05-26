@@ -10,7 +10,6 @@ export function capitalize(str) {
 // Attempts to retrieve k elements from each side of the array starting at index mid
 // 
 Array.prototype.sliceMid = function(mid,k) {
-  console.log("slicing: ", this, " from ", mid, " with k: ", k)
   if(this.length < k*2+1) return this.map((val,index) => ({val,index}));
   var ret = [{val: this[mid], index: mid}]
   for(let i = 1; ret.length < Math.min(this.length, k*2+1); ++i) {

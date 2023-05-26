@@ -1,27 +1,37 @@
 import * as React from 'react';
 import {
   Container,
+  Center,
+  Heading,
   List,
 } from '@chakra-ui/react';
 import { useParams } from 'react-router-dom';
+import Color from '../Colors';
 import Room from '../components/Room';
-import { getRooms } from '../api/roomquery.js';
+import { getRooms, queryToStringIfDate } from '../api/roomquery.js';
+import BackButton from '../components/BackButton';
 
-// Example that fetches all rooms in building 1
-// setRooms is the method that filters the rooms
 const Rooms = () => {
   let params = useParams();
   if(!params.query) { params.query = ''; } // If no query is given, return all rooms
-
   const [rooms,setRooms] = React.useState([]);
-  
-  // NOTE: This is making way too many update requests, not sure why
-  React.useEffect(() => {
-    getRooms(params.query).then(rooms => setRooms(rooms));
-  },[params]);
+  const [header,setHeader] = React.useState('');
 
+  React.useEffect(() => {
+    getRooms(params.query).then(
+      rooms => setRooms(rooms)
+    );
+    setHeader(
+      <Heading as='h2' color={Color.BLUE} size={"l"} padding={"30px 40px 0px 40px"} textAlign={'center'}>
+      {queryToStringIfDate(params.query)}
+      </Heading>
+    );
+  },[params.query]);
+  
   return (
     <Container>
+      <BackButton to={`/book/date/${params.query}/`} /> 
+      {header}
       <List spacing={'1rem'}>
         {rooms.map(room => <Room key={room['id']} json={room}/>)}
       </List>

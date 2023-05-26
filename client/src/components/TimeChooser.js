@@ -43,11 +43,32 @@ const TimeChooser = (props) => {
     .map(key => ({ date: key,room_ids: byDate[key] }))
     
   const [index,setIndex] = React.useState(0); // active room index
+  
+  const setBooking = props.setBooking ?? ((dt) => {})
+  
   const times = bookings.sliceMid(index,1)
 
-  useEffect(() => {
-    if (index > times.length - 1 || index <= 0) setIndex(0)
-  },[bookings, times.length, index])  
+  // useEffect(() => {
+    // const timeid = setTimeout(() => {
+
+    //   if(index > times.length - 1 || index <= 0) setIndex(0)
+    //   if(times !== undefined &&
+    //     Array.isArray(times) &&
+    //     times.length > 0 &&
+    //     'val' in times[0] &&
+    //     'room_ids' in times[0]['val'] &&
+    //     times[0]['val']['room_ids'] !== undefined
+    //   )
+    //   {
+    //     const booking = {
+    //       date: times[0]['val']['date'],
+    //       room_id: times[0]['val']['room_ids'][0]
+    //     }
+    //     setBooking(booking)
+    //   }
+    // },500)
+  //   return () => clearTimeout(timeid)
+  // },[times, index])  
   
   const type_name = "time"
   return (

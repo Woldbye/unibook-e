@@ -28,7 +28,7 @@ class Room extends React.Component {
     const { resources } = this.room_json 
 
     return (
-      <Container padding={"3rem 0 0 0"}>
+      <Container padding={"1rem 0 0 0"}>
         <Background width="100%" height="auto" backgroundColor={Color.BLUE}>
          <Text color={Color.CREME} fontSize={"xl"} padding={"30px 40px 0px 40px"}>
             {this.room_json["type"]} {this.room_json["id"]}
