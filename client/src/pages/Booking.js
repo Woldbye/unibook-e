@@ -16,7 +16,7 @@ import { useParams } from 'react-router-dom';
 const Room = require('../api/room.js');
 const { toUrl,fromUrl } = require('../api/roomquery.js');
 
-const time_start = 0.5;
+const time_start = 2.0;
 
 const Booking = () => {
   let params = useParams();
@@ -72,9 +72,9 @@ const Booking = () => {
         <VStack paddingBottom='2rem'>
           <Text color={Color.BLACK} fontSize={'3xl'} padding={'30px 0px 10px 0px'}>Vælg lokale krav</Text>
           <VStack width='40%' spacing={'1rem'} minWidth={'12rem'}>
-            <GoggleInput step_per_click={1} type_name={'Personer'} start={parseInt(size)} max={128} min={1}
+            <GoggleInput step_per_click={1.0} type_name={'Personer'} start={parseInt(size)} max={128} min={8}
               onChange={onPersonChange} />
-            <GoggleInput step_per_click={time_start} type_name={'Timer'} start={parseFloat(duration)} max={14.0} min={0.5}
+            <GoggleInput step_per_click={1.0} type_name={'Timer'} start={parseFloat(duration)} max={4.0} min={1.0}
               onChange={onTimeChange} />
           </VStack>
           <LokaleTyper startTypes={type} onChange={onTypeChange} />

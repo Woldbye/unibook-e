@@ -8,6 +8,7 @@ import NoPage from "../pages/NoPage";
 import Rooms from "../pages/Rooms";
 import TopBar from "./TopBar";
 import Background from "./Background";
+import RoomBookingTime from "../pages/RoomBookingTime";
 
 const UnibookRouter = () => {
   // The booking routes might change as we need to transfer meta-data about the booking to the server
@@ -18,6 +19,7 @@ const UnibookRouter = () => {
           <Route index element={<Background children={<Home />} />}/>
           <Route path="rooms" element={<BookingRoom />}/>
           <Route path="rooms/:query?/" element={<Rooms />} />
+          <Route path="book/room/date/:query?/" element={<RoomBookingTime/>}/>
           <Route path="book/confirm/:query?/" element={<BookingConfirmation/>}/>
           <Route path="book/date/:query?/" element={<BookingTime/>}/>
           <Route path="book/:query?/" element={<Booking />} />
