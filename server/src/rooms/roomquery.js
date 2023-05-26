@@ -39,8 +39,10 @@ function fromUrl(url) {
   
   // Convert inner objects to arrays
   for(let i = 0;i < objArr.length;i++) {
-    if(objArr[i][0] === 'type' || objArr[i][0] === 'id')
-      objArr[i][1] = objArr[i][1].split(",");
+    if(objArr[i][0] === 'type') objArr[i][1] = objArr[i][1].split(",");
+    else if(objArr[i][0]==='ressources'){
+      objArr[i][1] = objArr[i][1].split(","); 
+    }
     else if(objArr[i][0] === 'date')
       objArr[i][1] = parseISOString(objArr[i][1]);
   }

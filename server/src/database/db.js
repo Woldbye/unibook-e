@@ -54,6 +54,8 @@ class RoomDatabase {
               return true; // TODO: implement duration
             } else if(param === 'type') {
               return value.some(v => room['type'] === v || v === '')
+            } else if(param === 'ressources') {
+              return value.every(v => v in room['ressources'] && room['ressources'][v] === '1')
             } else if(param === 'date') {
               return true;
             } else if(param === 'id' && Array.isArray(value)) {

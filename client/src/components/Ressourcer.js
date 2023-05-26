@@ -10,11 +10,14 @@ import {
 
 import Background from '../components/Background';
 import Color from '../Colors';
-
+import ToggleButton from './ToggleButton';
 //! TO:DO Hold a state with value of selected room types
 //! The value is a single number represented as a bitfield (see Room.Tag)
 
-const Ressourcer = ({ }) => {
+const Ressourcer = (props) => {
+    var { onChange,startRessources } = props;
+    onChange = onChange ?? ((x)=>{});
+    startRessources = startRessources ?? {};
     return (
       <>
         <Container padding={"2rem 0 2rem 0"} centerContent="true">
@@ -24,13 +27,57 @@ const Ressourcer = ({ }) => {
                 </VStack>
                 <VStack padding={'0 0 1rem 0'}>
                     <Flex spacing={'2rem'} display={'Flex'} flexWrap={'wrap'} justify={'center'}>
-                      <Button margin={'10px'} width={'110px'}>Skærm</Button>
-                      <Button margin={'10px'} width={'110px'}>Projektor</Button>
-                      <Button margin={'10px'} width={'110px'}>White board</Button>
-                      <Button margin={'10px'} width={'110px'}>Black board</Button>
-                      <Button margin={'10px'} width={'110px'}>Outlets</Button>
-                      <Button margin={'10px'} width={'110px'}>Borde</Button>
-                      <Button margin={'10px'} width={'110px'}>AC</Button>
+                    <ToggleButton
+                  className={'chakra-button'}
+                  margin={'10px'}
+                  width={'110px'}
+                  startActive={"Screen" in startRessources}
+                  onClick={() => onChange("Screen")}
+                  children={"Skærm"} />
+                   <ToggleButton
+                  className={'chakra-button'}
+                  margin={'10px'}
+                  width={'110px'}
+                  startActive={"Projector" in startRessources}
+                  onClick={() => onChange("Projector")}
+                  children={"projekter"} />
+                   <ToggleButton
+                  className={'chakra-button'}
+                  margin={'10px'}
+                  width={'110px'}
+                  startActive={"Outlets" in startRessources}
+                  onClick={() => onChange("Outlets")}
+                  children={"Outlet"} />
+                   <ToggleButton
+                  className={'chakra-button'}
+                  margin={'10px'}
+                  width={'110px'}
+                  startActive={"Table_Desks" in startRessources}
+                  onClick={() => onChange("Table_Desks")}
+                  children={"Skrivebord"} />
+                   <ToggleButton
+                  className={'chakra-button'}
+                  margin={'10px'}
+                  width={'110px'}
+                  startActive={"AC" in startRessources}
+                  onClick={() => onChange("AC")}
+                  children={"AC"} />
+                   <ToggleButton
+                  className={'chakra-button'}
+                  margin={'10px'}
+                  width={'110px'}
+                  startActive={"Whiteboard" in startRessources}
+                  onClick={() => onChange("Whiteboard")}
+                  children={"Whiteboard"} />
+                   <ToggleButton
+                  className={'chakra-button'}
+                  margin={'10px'}
+                  width={'110px'}
+                  startActive={"Blackboard" in startRessources}
+                  onClick={() => onChange("Blackboard")}
+                  children={"tavle"} />
+
+                
                    </Flex>
                 </VStack>
             </Background>

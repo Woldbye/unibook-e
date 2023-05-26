@@ -25,16 +25,22 @@ const Booking = () => {
   if(!start_q.type) { start_q.type = []; }
   
   const tp =  start_q.type.reduce((acc,t) => {
+  
     const key = Object.keys(Room.Type).find(tpkey => Room.Type[tpkey] === t)
-    if (key != undefined)
+    if (key !== undefined)
       acc[key] = t
     return acc;
   },{});
-  
+  if (!start_q.ressources) { start_q.ressources = []; }
+  const ress = start_q.ressources.reduce((acc,r) => {
+       acc[r] = true;
+     return acc;
+   },{});;
   const [type,setType] = React.useState(tp ?? {})
   const [size,setSize] = React.useState(start_q.size ?? `${Room.Size.XS}`);
   const [duration,setDuration] = React.useState(start_q.duration ?? `${time_start}`);
-
+  const [ressources,setRessources] = React.useState(ress ?? {});
+  // TO:DO change to work for danish labeled types
   const [query,setQuery] = React.useState({
     size: size,
     duration: duration,
@@ -57,6 +63,16 @@ const Booking = () => {
     setType(newState);
     setQuery({...query, type: newState})
   }
+  const onRessourceChange = (ress) => {
+    const newState = ressources;
+    if(Object.keys(ressources).includes(ress)) {
+      delete newState[ress];
+    } else {
+      newState[ress] = true;
+    }
+    setRessources(newState);
+    setQuery({...query, ressources: newState})
+  }
 
   React.useEffect(() => {
     setQuery({
@@ -78,7 +94,7 @@ const Booking = () => {
               onChange={onTimeChange} />
           </VStack>
           <LokaleTyper startTypes={type} onChange={onTypeChange} />
-          <Ressourcer></Ressourcer>
+          <Ressourcer startRessources={ressources} onChange={onRessourceChange}></Ressourcer>
           <Link to={`/book/date/${toUrl(query)}/` }>
             <Button size={'lg'}>
               <Text size={'lg'}>Næste</Text >
