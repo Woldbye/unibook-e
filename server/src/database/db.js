@@ -58,7 +58,7 @@ class RoomDatabase {
               return true;
             } else if(param === 'id' && Array.isArray(value)) {
               return value.some(v => room['id'] === v || v === '') 
-            }            
+            }             
             return room[param] === value;
           }
         );

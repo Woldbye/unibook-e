@@ -17,17 +17,18 @@ import {
 import Background from '../components/Background';
 import Color from '../Colors';
 import BackButton from '../components/BackButton';
-
 import { useParams, useNavigate } from 'react-router-dom';
-import { parseISOString } from '../date.js';
-
+import { fromUrl,toUrl } from '../api/roomquery';
 // The site should appear after the user has selected a time slot and room
 const BookingConfirmation = () => {  
   let params = useParams();
-  
-  const id = params.id;                     // The id of the room to book
-  const date = parseISOString(params.date); // Date is now a date object
-  
+  const start_query = fromUrl(params.query) ?? ''; // start query in url form
+  const { rid,date } = start_query;
+  const back_query = start_query;
+  delete back_query['rid'];
+  console.log("back_query: ", back_query)
+  // console.log("start query: ", start_query)
+  console.log("rcv id: ",rid," date: ",date)
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [mail,setMail] = React.useState('blank');
   
@@ -45,7 +46,7 @@ const BookingConfirmation = () => {
     <>
     <Background>
     <Container>
-      <BackButton  to="/book/date/rooms"/>
+      <BackButton to={`/rooms/${toUrl(back_query)}/`}/>
       <Container padding={"3rem 0 0 0"} centerContent="true">
         <Background width="80vw" height="85vh" backgroundColor={Color.BLUE}>
           <VStack>
