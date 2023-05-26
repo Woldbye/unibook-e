@@ -81,7 +81,7 @@ const Booking = () => {
           <Ressourcer></Ressourcer>
           <Link to={`/book/date/${toUrl(query)}/` }>
             <Button size={'lg'}>
-              <Text size={'lg'}>Næste</Text >
+              <Text size={'lg'} >Næste</Text >
             </Button>
           </Link>
         </VStack>

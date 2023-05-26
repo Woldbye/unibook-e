@@ -38,13 +38,13 @@ class Room extends React.Component {
          <Address json={this.room_json["address"]} />
           <VStack padding={"1rem"} spacing={'24px'}>
             <Flex spacing={"2rem"} display={"Flex"} flexWrap={"wrap"} justify={"center"}>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} m={'2'} h={8}>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} m={'2'} h={8} boxShadow={'0px 6px 8px #00000040'}>
                 Max people for this room is {this.room_json["size"]}
               </Box>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'} boxShadow={'0px 6px 8px #00000040'}>
                 Building {this.room_json["building_nr"]}
               </Box>
-              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
+              <Box backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'} boxShadow={'0px 6px 8px #00000040'}>
                 Floor {this.room_json["floor"]}
               </Box>
               { 
@@ -54,7 +54,7 @@ class Room extends React.Component {
                   .filter(key => resources[key] === '1')
                   .map(key => {
                     return (
-                      <Box key={`${this.room_json["id"]}-${key}`} backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'}>
+                      <Box key={`${this.room_json["id"]}-${key}`} backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'} boxShadow={'0px 6px 8px #00000040'}>
                       {`${capitalize(key.replace('_', ' '))}`}
                       </Box>
                     )

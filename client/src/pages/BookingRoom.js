@@ -36,9 +36,9 @@ const BookingRoom = () => {
 
   return (
     <Background>
-      <Container>
+      <Container paddingTop={'20px'}>
         <SearchBar marginTop={'5'} onChange={setSearch}/>
-        <List spacing={'1rem'}>
+        <List spacing={'1rem'} paddingTop={'20px'}>
         {rooms.map(room => <Room key={room['id']} json={room}/>)}
         </List>
       </Container>

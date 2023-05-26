@@ -9,6 +9,7 @@ const Background = ({children = [], height = '100%', width = '100vw', color = 'b
       color={color}
       backgroundColor={backgroundColor}
       justifyContent={'center'}
+      boxShadow={'0px 6px 8px #00000040'}
     >
     {children}
     </Box>
