@@ -6,7 +6,7 @@ function parseISOString(s) {
   return new Date(Date.UTC(b[0], --b[1], b[2], b[3], b[4], b[5], b[6]));
 }
 
-function filterByDate(rooms,date) {
+function filterByDate(rooms,date) { // filters out rooms that are not free on the given date
   if(rooms === undefined) return [];
   if(typeof date !== 'string') date = parseISOString(date)
   return rooms.filter(r => freeTimeslots(r,date).length > 0);
@@ -27,14 +27,14 @@ function toUrl(room_query) {
 function fromUrl(url) {
   // console.log(url.split("/rooms?")[1].split("&"));
   const objArr = url
-    .split("/rooms?")[1]
-    .split("&")
-    .map(param => param.split("="))
+    .split("/rooms?")[1] // split url at the start of the query and use the second part
+    .split("&") // split at each new parameter
+    .map(param => param.split("=")) // split each parameter into key and value
   // Convert inner objects to arrays
   for(let i = 0;i < objArr.length;i++) {
-    if(objArr[i][0] === 'type') objArr[i][1] = objArr[i][1].split(",");
+    if(objArr[i][0] === 'type') objArr[i][1] = objArr[i][1].split(","); //split type into array of types
     else if(objArr[i][0] === 'date')
-      objArr[i][1] = parseISOString(objArr[i][1]);
+      objArr[i][1] = parseISOString(objArr[i][1]); //parse date ISO string into date object
   }
   return Object.fromEntries(objArr);
 }

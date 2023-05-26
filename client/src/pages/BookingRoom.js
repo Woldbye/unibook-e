@@ -17,7 +17,7 @@ const BookingRoom = () => {
     // Delay search by 1 second to reduce updates
     const timeid = setTimeout(() => {
       console.log("Updating rooms")
-      getRooms('').then(
+      getRooms('').then( //get array of all rooms, then filter by search
         r => 
           setRooms(
             (search === '') ? r : r.filter(r => {
@@ -33,13 +33,13 @@ const BookingRoom = () => {
       );
     }, update_delay)
     return () => clearTimeout(timeid);
-  }, [search]) // Add depdency on search to update when search changes
+  }, [search]) // Add dependency on search to update when search changes
 
   return (
     <Background>
       <Container>
         <SearchBar marginTop={'5'} onChange={setSearch}/>
-        <List spacing={'1rem'}>
+        <List spacing={'1rem'}> //list of rooms matching search query
         {rooms.map(room => <Room key={room['id']} json={room}/>)}
         </List>
       </Container>

@@ -13,7 +13,7 @@ app.get('/',(req,res) => {
   res.send('Hello World!')
 })
 
-/** Room query */
+/** Room query */ //hold cursor over function to see what it does
 app.get('/rooms?*',(req,res) => {
   // console.log("Request: ", req);
   const query = roomQuery.fromUrl(req.url);

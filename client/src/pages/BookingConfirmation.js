@@ -59,22 +59,22 @@ const BookingConfirmation = () => {
             <Text color={Color.CREME} padding={'0px 40px 0px 40px'}>Fra :  14:30</Text>
             <Text color={Color.CREME} padding={'0px 40px 40px 40px'}>Til :  15:00</Text>
             <Button onClick={onOpen}>Bekræft</Button>
-            <Modal isOpen={isOpen} onClose={onClose}>
+            <Modal isOpen={isOpen} onClose={onClose}> //Confirmation dialog
               <ModalOverlay />
               <ModalContent backgroundColor={Color.BLUE}>
                 <ModalCloseButton />
                 <ModalBody>
-                <VStack>
-                <Text color={Color.CREME}>{'Vi har sendt en bekræftelse til'}</Text>
-                <Text color={Color.CREME}>{mail.valueOf()}</Text>
+                <VStack> //display the inputted email address
+                  <Text color={Color.CREME}>{'Vi har sendt en bekræftelse til'}</Text>
+                  <Text color={Color.CREME}>{mail.valueOf()}</Text>
                 </VStack>
                 </ModalBody>
         
                 <ModalFooter>
-                  <Button mr={3} onClick={toHome}>
+                  <Button mr={3} onClick={toHome}> //closing the dialog returns to home page
                     Luk
                   </Button>
-                  <Button variant='ghost'>Send igen</Button>
+                  <Button variant='ghost'>Send igen</Button> //button to resend mail
                 </ModalFooter>
               </ModalContent>
             </Modal>
