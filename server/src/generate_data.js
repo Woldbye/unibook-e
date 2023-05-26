@@ -11,9 +11,9 @@ var randomProperty = (obj) => Object.keys(obj)[Math.floor(Math.random()*Object.k
 var randomKey = (obj) => obj[randomProperty(obj)];
 
 /**
- * @param {*} start 
- * @param {*} end 
- * @param {*} dur 
+ * @param {*} start starting date of available timeslots
+ * @param {*} end last date of available timeslots
+ * @param {*} dur TODO: not implemented
  * @param {*} free_frac the fraction of timeslots that should be free
  */
 var randomTimeslots = (start,end,dur,free_frac) => {  
@@ -22,7 +22,7 @@ var randomTimeslots = (start,end,dur,free_frac) => {
     reserved: [],
   }
   createDateRange(start,end,dur).forEach((tm,i) => {
-    const isFree = Math.random() < free_frac;
+    const isFree = Math.random() < free_frac; // if random number between 0 and 1 is less than free_frac, then the timeslot is free
     timeslots[isFree ? 'free' : 'reserved'].push(tm);
   })
   return timeslots;
@@ -94,7 +94,7 @@ const Rooms = [
 /** fname without .json extension */
 function write_rooms_to_file(fname) {
   const json = JSON.stringify(Rooms,null,2);
-  
+  //put newly generated file in data folder, add number to name if copies already exists
   var fpath = path.join(__dirname,'data',`${fname}.json`);
   for(let i = 1; fs.existsSync(fpath);++i) {
     fpath = path.join(__dirname,'data',`${fname}_${i}.json`);

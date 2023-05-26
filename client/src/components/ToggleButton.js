@@ -1,6 +1,5 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import Color from "../Colors";
 /**
  * @brief A button that toggles between active and inactive states. The active state receives the .active css tag
  * @param {props} props - The props of the component.
@@ -34,7 +33,7 @@ class ToggleButton extends React.Component {
     this.height = height ?? "10";
     this.children = children;
     this._onClick = onClick ?? ((x) => {}); // Default do nothing
-    this.state = { isOn: startActive ?? false };
+    this.state = { isOn: startActive ?? false }; // Default is off
   }
 
   get active() { return this.state.isOn; }
@@ -42,7 +41,7 @@ class ToggleButton extends React.Component {
   onClick() {
     if (this.disabled) return;
     const newState = this.state;
-    newState['isOn'] = !this.active;
+    newState['isOn'] = !this.active; // Toggle on on click
     this.setState(newState);
     this._onClick(newState['isOn']);
   }
@@ -53,7 +52,7 @@ class ToggleButton extends React.Component {
         as="button"
         onClick={this.onClick.bind(this)}
         border={this.border}
-        // If button is active add active flag to the class name
+        // If button is active add active flag to the class name for css color purposes
         className={`${this.className}${(this.active ? " active" : "")}`}
         width={this.width}
         margin={this.margin}

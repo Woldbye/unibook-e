@@ -3,7 +3,6 @@ import {
   Container,
   Stack,
   Text,
-  Spacer,
   VStack,
   Button
 } from '@chakra-ui/react';
@@ -16,24 +15,27 @@ import { toUrl, fromUrl, getRooms } from "../api/roomquery.js";
 
 const BookingTime = () => {
   let params = useParams();
-  const today = new Date();
+  const today = new Date(); // today's date
   const start_query = params.query ?? ''; // start query in url form
   const [query, setQuery] = React.useState(fromUrl(start_query));
   const [rooms, setRooms] = React.useState([]);
-  const [selected_date, setSelectedDate] = React.useState(today);
+  const [selected_date, setSelectedDate] = React.useState(today); // selected date is today, initially
 
   // { roomid, date } obj
   const [booking, setBooking] = React.useState();
 
+
+  //listener to update selected timeslot in query when picked in TimeChooser
   React.useEffect(() => {
     if(booking !== undefined && "room_ids" in booking && "date" in booking) {
       const { room_ids, date } = booking;
-      const newState = query;
+      const newState = query; // copy query
       newState['id'] = room_ids;
       newState['date'] = date;
       setQuery(newState);
     }
   }, [booking,query])
+  // listener to update rooms when query changes
   React.useEffect(() => { getRooms(query).then(rs => setRooms(rs)); },[query])
 
   return (
@@ -68,7 +70,7 @@ const BookingTime = () => {
                 <Text size={'lg'}>Næste</Text >
               </Button>
             </Link>
-            <Outlet />
+            <Outlet /> // TODO: what is nested here?
           </VStack>
         </Stack>
       </Container>
