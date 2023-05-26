@@ -4,19 +4,31 @@ import {
   Button,
   VStack,
   HStack,
-  Text,
-  Link,
+  Text,    
   Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
   Input,
 } from '@chakra-ui/react';
 import Background from '../components/Background';
 import Color from '../Colors';
 import BackButton from '../components/BackButton';
-import ConfirmButton from '../components/ConfirmButton';
 
 // The site should appear after the user has selected a time slot and room
-const BookingConfirmation = () => (
-  <Background>
+const BookingConfirmation = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const [mail,setMail] = React.useState('blank');
+  
+  const handleChange = (event) => {
+    setMail(event.target.value)
+  }
+  return (
+    <>
+    <Background>
     <Container>
       <BackButton  to="book/date/rooms"/>
       <Container padding={"3rem 0 0 0"} centerContent="true">
@@ -31,7 +43,7 @@ const BookingConfirmation = () => (
                 </HStack>
                 <HStack  padding={'50px 40px 0px 40px'}>
                   <Text color={Color.CREME}>Email:</Text>
-                  <Input/>
+                  <Input  onChange={handleChange}/>
                 </HStack>
                 </VStack>
               </Background>
@@ -40,12 +52,33 @@ const BookingConfirmation = () => (
             <Text color={Color.CREME} padding={'0px 40px 0px 40px'}>Lokale :  ****</Text>
             <Text color={Color.CREME} padding={'0px 40px 0px 40px'}>Fra :  14:30</Text>
             <Text color={Color.CREME} padding={'0px 40px 40px 40px'}>Til :  15:00</Text>
-            <ConfirmButton/>
+            <Button onClick={onOpen}>Bekræft</Button>
+            <Modal isOpen={isOpen} onClose={onClose}>
+              <ModalOverlay />
+              <ModalContent backgroundColor={Color.BLUE}>
+                <ModalCloseButton />
+                <ModalBody>
+                <VStack>
+                <Text color={Color.CREME}>{'Vi har sendt en bekræftelse til'}</Text>
+                <Text color={Color.CREME}>{mail.valueOf()}</Text>
+                </VStack>
+                </ModalBody>
+        
+                <ModalFooter>
+                  <Button mr={3} onClick={onClose}>
+                    Luk
+                  </Button>
+                  <Button variant='ghost'>Send igen</Button>
+                </ModalFooter>
+              </ModalContent>
+            </Modal>
           </VStack>
         </Background>
       </Container>
     </Container>
   </Background>
-)
+    </>
+  )
+}
 
 export default BookingConfirmation;
