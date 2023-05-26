@@ -5,18 +5,24 @@ import {
   Heading,
   List,
 } from '@chakra-ui/react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Color from '../Colors';
 import Room from '../components/Room';
 import { getRooms, queryToStringIfDate } from '../api/roomquery.js';
 import BackButton from '../components/BackButton';
+import { getType } from '../util.js';
+import { fromUrl } from '../api/roomquery.js';
+import { parseISOString } from '../date';
 
 const Rooms = () => {
   let params = useParams();
   if(!params.query) { params.query = ''; } // If no query is given, return all rooms
+  const navigate = useNavigate();
   const [rooms,setRooms] = React.useState([]);
   const [header,setHeader] = React.useState('');
-
+  const date = fromUrl(params.query)['date']; 
+  if(getType(date) !== 'date') throw new Error("Received invalid date object from url")
+  
   React.useEffect(() => {
     getRooms(params.query).then(
       rooms => setRooms(rooms)
@@ -28,12 +34,16 @@ const Rooms = () => {
     );
   },[params.query]);
   
+  const onRoomSelect = (roomid) => {
+    navigate(`/book/confirm/${roomid}/${date.toISOString()}`);
+  }
+
   return (
     <Container>
-      <BackButton to={`/book/date/${params.query}/`} /> 
+      <BackButton to={`/book/date/${params.query}/${date}/`} /> 
       {header}
       <List spacing={'1rem'}>
-        {rooms.map(room => <Room key={room['id']} json={room}/>)}
+        {rooms.map(room => <Room key={room['id']} onClick={() => onRoomSelect(room['id'])} json={room}/>)}
       </List>
     </Container>
   )

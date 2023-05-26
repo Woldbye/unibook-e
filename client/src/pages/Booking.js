@@ -22,7 +22,8 @@ const Booking = () => {
   let params = useParams();
   const start_q = fromUrl(params.query ?? '');
 
-  if (!start_q.type) { start_q.type = []; }
+  if(!start_q.type) { start_q.type = []; }
+  
   const tp =  start_q.type.reduce((acc,t) => {
     const key = Object.keys(Room.Type).find(tpkey => Room.Type[tpkey] === t)
     if (key != undefined)
