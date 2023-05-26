@@ -13,6 +13,7 @@ import {
   ModalCloseButton,
   useDisclosure,
   Input,
+  Heading,
   Center,
 } from '@chakra-ui/react';
 import Background from '../components/Background';
@@ -21,15 +22,15 @@ import BackButton from '../components/BackButton';
 import { Link } from 'react-router-dom';
 
 import { useParams, useNavigate } from 'react-router-dom';
-import { parseISOString } from '../date.js';
-
+import { fromUrl,toUrl,queryToStringIfDate } from '../api/roomquery';
 // The site should appear after the user has selected a time slot and room
 const BookingConfirmation = () => {
   let params = useParams();
-
-  const id = params.id;                     // The id of the room to book
-  const date = parseISOString(params.date); // Date is now a date object
-
+  const start_query = fromUrl(params.query) ?? ''; // start query in url form
+  const { rid,date } = start_query;
+  const back_query = start_query;
+  delete back_query['rid'];
+  const header = queryToStringIfDate(back_query)
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [mail, setMail] = React.useState('');
 
@@ -49,7 +50,10 @@ const BookingConfirmation = () => {
     <>
       <Background>
         <Container>
-          <BackButton to="/book/date/rooms" />
+        <Heading as='h2' color={Color.BLUE} size={"l"} padding={"30px 40px 0px 40px"} textAlign={'center'}>
+        {queryToStringIfDate(params.query)}
+        </Heading>
+          <BackButton to={`/rooms/${toUrl(back_query)}/`}/>
           <Container padding={"3rem 0 3rem 0"} centerContent="true">
             <Background width="80vw" height="87vh" backgroundColor={Color.BLUE}>
               <VStack>

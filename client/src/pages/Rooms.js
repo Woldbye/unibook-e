@@ -11,7 +11,7 @@ import Room from '../components/Room';
 import { getRooms, queryToStringIfDate } from '../api/roomquery.js';
 import BackButton from '../components/BackButton';
 import { getType } from '../util.js';
-import { fromUrl } from '../api/roomquery.js';
+import { fromUrl,toUrl } from '../api/roomquery.js';
 import { parseISOString } from '../date';
 
 const Rooms = () => {
@@ -20,8 +20,10 @@ const Rooms = () => {
   const navigate = useNavigate();
   const [rooms,setRooms] = React.useState([]);
   const [header,setHeader] = React.useState('');
-  const date = fromUrl(params.query)['date']; 
-  if(getType(date) !== 'date') throw new Error("Received invalid date object from url")
+  const query = fromUrl(params.query);
+  const date = query['date'];
+  
+  if(getType(date) !== 'date') throw new Error("Received invalid date object from url", date)
   
   React.useEffect(() => {
     getRooms(params.query).then(
@@ -35,7 +37,7 @@ const Rooms = () => {
   },[params.query]);
   
   const onRoomSelect = (roomid) => {
-    navigate(`/book/confirm/${roomid}/${date.toISOString()}`);
+    navigate(`/book/confirm/${params.query}&rid=${roomid}/`);
   }
 
   return (

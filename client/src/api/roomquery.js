@@ -1,6 +1,6 @@
 import { parseISOString } from '../date.js';
 import * as Room from './room.js';
-
+import { getType } from '../util.js';
 /**
  * @brief Converts a room_query object into an url string
  * @param {*} room_query A room_query object, which is a subset of the parameters of a room.
@@ -23,11 +23,14 @@ export function toUrl(room_query) {
 }
 
 export function queryToStringIfDate(rquery) {
-  
   rquery = fromUrl(rquery)
   var lines = "";
-  if(rquery['date'] !== undefined) {
-    lines += "Reserverer lokale til ";
+  if('date' in rquery) {
+    lines += "Reserverer lokale ";
+    if('rid' in rquery) {
+      lines += rquery['rid'] + " ";
+    }
+    lines += "til ";
     var date = parseISOString(rquery['date'])
     const clock = `${date.getHours() < 10 ? '0' : ''}${date.getHours()}:${date.getMinutes() < 10 ? '0' : ''}${date.getMinutes()}`;
     lines += `kl. ${clock} d. ${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} `;
@@ -60,6 +63,7 @@ export async function getRooms(room_query_url) {
  * @param {*} url string as constructed by toUrl(query)
  */
 export function fromUrl(url) {
+  if (getType(url) !== 'string') url = toUrl(url)
   const objArr = url.split("&").map(param => param.split("="))
   // Convert inner objects to arrays
   for(let i = 0;i < objArr.length;i++) {
