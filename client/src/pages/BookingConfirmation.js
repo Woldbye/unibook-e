@@ -17,12 +17,18 @@ import {
 import Background from '../components/Background';
 import Color from '../Colors';
 import BackButton from '../components/BackButton';
-
+import { useNavigate } from "react-router-dom";
 // The site should appear after the user has selected a time slot and room
 const BookingConfirmation = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [mail,setMail] = React.useState('blank');
   
+  const navigate = useNavigate();
+
+  const toHome = () => {
+    navigate("/");
+  }
+
   const handleChange = (event) => {
     setMail(event.target.value)
   }
@@ -65,7 +71,7 @@ const BookingConfirmation = () => {
                 </ModalBody>
         
                 <ModalFooter>
-                  <Button mr={3} onClick={onClose}>
+                  <Button mr={3} onClick={toHome}>
                     Luk
                   </Button>
                   <Button variant='ghost'>Send igen</Button>
