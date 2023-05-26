@@ -1,6 +1,8 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
 
+//This button is what can be seen in our calender as the dates.
+
 /**
  * @brief A button that toggles between active and inactive states. The active state receives the .active css tag
  * @param {props} props - The props of the component.
