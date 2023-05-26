@@ -13,7 +13,6 @@ import Calendar from '../components/Calendar';
 import TimeChooser from '../components/TimeChooser';
 import BackButton from '../components/BackButton';
 import { toUrl, fromUrl, getRooms } from "../api/roomquery.js";
-import { parseISOString } from '../date.js';
 
 const BookingTime = () => {
   let params = useParams();
@@ -27,21 +26,20 @@ const BookingTime = () => {
   const [booking, setBooking] = React.useState();
 
   React.useEffect(() => {
-    console.log("received update for ", booking)
-    if (booking !== undefined && "roomid" in booking && "date" in booking) {
-      const { room_id, date } = booking;
+    if(booking !== undefined && "room_ids" in booking && "date" in booking) {
+      const { room_ids, date } = booking;
       const newState = query;
-      newState['id'] = room_id;
-      newState['date'] = date.toISOString();
+      newState['id'] = room_ids;
+      newState['date'] = date;
       setQuery(newState);
     }
-  }, [booking])
-  React.useEffect(() => { getRooms(query).then(rs => setRooms(rs)); }, [query])
+  }, [booking,query])
+  React.useEffect(() => { getRooms(query).then(rs => setRooms(rs)); },[query])
 
   return (
     <Background>
       <BackButton to={`/book/${start_query}/`} />
-      <Container h={'450'}>
+      <Container>
         <Stack alignItems={'center'} spacing={'2rem'} minWidth={'12rem'}>
           <Text fontSize={28}>Vælg dato</Text>
           <Calendar
@@ -56,14 +54,14 @@ const BookingTime = () => {
           />
         </Stack>
       </Container>
-      <Container paddingTop={'5'} paddingBottom={10}>
+      <Container paddingTop={'0'} paddingBottom={10}>
         <Stack alignItems={'center'} spacing={'2rem'} minWidth={'12rem'}>
           <VStack width='50%' minWidth={'12rem'}>
             <TimeChooser
               marginBottom={'15%'}
               date={selected_date}
               rooms={rooms}
-              setBooking={({ room_id, date }) => setBooking({ roomid: room_id, date: date })}
+              setBooking={({ room_ids, date }) => setBooking({ room_ids: room_ids, date: date })}
             />
             <Link to={`/rooms/${toUrl(query)}/`}>
               <Button size={'lg'}>

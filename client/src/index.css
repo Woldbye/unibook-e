@@ -28,7 +28,7 @@ code {
   /* color: #393E46 !important;  */
 }
 
-.date-button.available {
+.date-button.available, .date-button-today.available {
   color: #476e56 !important;
   /* text-shadow: 0px 2px 2px rgb(100,140,17); */
 }

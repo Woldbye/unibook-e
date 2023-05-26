@@ -78,7 +78,7 @@ function populate_building(building) {
         j,
         building.address,
         createRandomTags(),
-        randomTimeslots(new Date(2023,0,1,8,0),new Date(2025,0,1,20,0),120,0.001)
+        randomTimeslots(new Date(2023,0,1,8,0),new Date(2025,0,1,20,0),120,0.00385)
       );
       rooms.push(room);
     }
@@ -99,7 +99,6 @@ function write_rooms_to_file(fname) {
   for(let i = 1; fs.existsSync(fpath);++i) {
     fpath = path.join(__dirname,'data',`${fname}_${i}.json`);
   }
-  console.log("Writing to file: ",fpath);
   
   // write the rooms to a file in json format
   fs.writeFileSync(fpath,json); 

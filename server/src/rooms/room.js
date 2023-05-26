@@ -18,9 +18,10 @@ const Type = {
 }
 
 function freeTimeslots(room,date) {
-  const date_id = date.addTime(0,0,1).toISOString().split('T')[0];
+  const date_id = date.addTime(0,0,0).toISOString().split('T')[0];
   return room['timeslots']['free'].filter(dkey => dkey.startsWith(date_id));
 };
+
 /** 
  * @brief Create a new Room object. 
  *        parameter values are held as strings to allow easy conversion back and forward 

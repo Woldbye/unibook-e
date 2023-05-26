@@ -17,11 +17,13 @@ import { capitalize } from "../util";
  */
 class Room extends React.Component {
   room_json;
+  onClick;
 
   constructor(props) {
     super(props);
-    const { json } = props;
+    const { json, onClick } = props; // On click next
     this.room_json = json;
+    this.onClick = onClick ?? ((e) => {});
   }
 
   render() {
@@ -61,7 +63,7 @@ class Room extends React.Component {
             </Flex>
           </VStack>
           <VStack padding={'0'}>
-            <Button  marginLeft={'auto'} marginRight={'1rem'} marginBottom={'1rem'}>Book this room</Button>
+            <Button onClick={this.onClick} marginLeft={'auto'} marginRight={'1rem'} marginBottom={'1rem'}>Book this room</Button>
           </VStack>
         </Background>
       </Container>
