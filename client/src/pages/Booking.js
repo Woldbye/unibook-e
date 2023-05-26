@@ -12,7 +12,6 @@ import LokaleTyper from '../components/LokaleTyper';
 import Ressourcer from '../components/Ressourcer';
 import Background from '../components/Background';
 import { useParams } from 'react-router-dom';
-import { useEffect } from 'react';
 
 const Room = require('../api/room.js');
 const { toUrl,fromUrl } = require('../api/roomquery.js');
@@ -34,7 +33,6 @@ const Booking = () => {
   const [size,setSize] = React.useState(start_q.size ?? `${Room.Size.XS}`);
   const [duration,setDuration] = React.useState(start_q.duration ?? `${time_start}`);
 
-  // TO:DO change to work for danish labeled types
   const [query,setQuery] = React.useState({
     size: size,
     duration: duration,
