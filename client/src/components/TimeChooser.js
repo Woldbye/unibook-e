@@ -14,11 +14,12 @@ import { parseISOString } from '../date';
 const TimeChooser = (props) => {
   const rooms = props.rooms ?? []; 
   const marginBottom = props.marginBottom ?? '0';
-  const date = props.date ?? new Date();  
+  const date = props.date ?? new Date().toISOString();  
+  const setBooking = props.setBooking ?? ((dt) => { })
   
   let byDate = {} //byDate will contain rooms grouped by available time slot
-  filterByDate(rooms,date)  //get rooms available on date
-    .reduce((acc,room) => { //iterate over array, accumulating timeslots            
+  filterByDate(rooms,parseISOString(date)) //get rooms available on date
+    .reduce((acc,room) => { //iterate over array, accumulating timeslots 
       const { id,timeslots } = room;
       return acc.concat(
         timeslots['free'] // get free timeslots only
@@ -30,42 +31,46 @@ const TimeChooser = (props) => {
           })
       )
     },[])
-    .sort((a,b) => a['date'] - b['date']) // sort in ascending order by timeslot
-    .forEach(({ date,room_id }) => {      // group by timeslot
+    .sort((a,b) => a['date'] - b['date']) // sort in ascending order by date
+    .map(({ date,room_id }) => ({ date: date.toISOString(), room_id }))
+    .forEach(({ date,room_id }) => {      // group by date
       if(byDate[date] === undefined) byDate[date] = [room_id];
       else byDate[date].push(room_id);
     })
   
+  
   // Transform byDate into bookings by mapping to { date: Date, room_ids: int[] } format
   const bookings = Object
+
     .keys(byDate) //get the timeslots which have available rooms
-    .map(key => ({ date: key,room_ids: byDate[key] }))
+    .map(key => ({ date: key, room_ids: byDate[key] }))
     
   const [index,setIndex] = React.useState(0); // selected timeslot
   
+
   const times = bookings.sliceMid(index,1) //get the available rooms at the selected timeslot
+  
+  useEffect(() => {
+    const timeid = setTimeout(() => {
 
-  // useEffect(() => {
-    // const timeid = setTimeout(() => {
-
-    //   if(index > times.length - 1 || index <= 0) setIndex(0)
-    //   if(times !== undefined &&
-    //     Array.isArray(times) &&
-    //     times.length > 0 &&
-    //     'val' in times[0] &&
-    //     'room_ids' in times[0]['val'] &&
-    //     times[0]['val']['room_ids'] !== undefined
-    //   )
-    //   {
-    //     const booking = {
-    //       date: times[0]['val']['date'],
-    //       room_id: times[0]['val']['room_ids'][0]
-    //     }
-    //     setBooking(booking)
-    //   }
-    // },500)
-  //   return () => clearTimeout(timeid)
-  // },[times, index])  
+      if(index > times.length - 1 || index <= 0) setIndex(0)
+      if(times !== undefined &&
+        Array.isArray(times) &&
+        times.length > 0 &&
+        'val' in times[0] &&
+        'room_ids' in times[0]['val'] &&
+        times[0]['val']['room_ids'] !== undefined
+      )
+      {
+        const booking = {
+          date: times[0]['val']['date'],
+          room_ids: times[0]['val']['room_ids']
+        }
+        setBooking(booking)
+      }
+    },500)
+    return () => clearTimeout(timeid)
+  },[times, index])  
   
   const type_name = "time"
   return (

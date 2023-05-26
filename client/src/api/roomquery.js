@@ -1,5 +1,6 @@
 import { parseISOString } from '../date.js';
 import * as Room from './room.js';
+import { getType } from '../util.js';
 /**
  * @brief Converts a room_query object into an url string
  * @param {*} room_query A room_query object, which is a subset of the parameters of a room.
@@ -11,7 +12,7 @@ export function toUrl(room_query) { //convert room query to url string for page-
     .map(([param,value]) => {
       if(param === 'type' && typeof value === 'object') {
         return `${param}=${Object.values(value)}`
-      } else if (param === 'date' && typeof value === 'object') {
+      } else if(param === 'date' && typeof value === 'object') {
         return `${param}=${value.toISOString()}`
       } else {
         return `${param}=${value}`
@@ -22,11 +23,14 @@ export function toUrl(room_query) { //convert room query to url string for page-
 }
 
 export function queryToStringIfDate(rquery) { //room query to string for confirmation page
-  
   rquery = fromUrl(rquery)
   var lines = "";
-  if(rquery['date'] !== undefined) {
-    lines += "Reserverer lokale til ";
+  if('date' in rquery) {
+    lines += "Reserverer lokale ";
+    if('rid' in rquery) {
+      lines += rquery['rid'] + " ";
+    }
+    lines += "til ";
     var date = parseISOString(rquery['date'])
     const clock = `${date.getHours() < 10 ? '0' : ''}${date.getHours()}:${date.getMinutes() < 10 ? '0' : ''}${date.getMinutes()}`;
     lines += `kl. ${clock} d. ${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} `;
@@ -58,14 +62,16 @@ export async function getRooms(room_query_url) {
  * Receives an url string of a room query and returns an object containing the parameters of the query.
  * @param {*} url string as constructed by toUrl(query)
  */
+
 export function fromUrl(url) { //convert url string to room query object for use on current page
+  if (getType(url) !== 'string') url = toUrl(url)
   const objArr = url.split("&").map(param => param.split("="))
   // Convert inner objects to arrays
   for(let i = 0;i < objArr.length;i++) {
-    if(objArr[i][0] === 'type')
-      objArr[i][1] = objArr[i][1].split(",");
+    if(objArr[i][0] === 'type' || objArr[i][0] === 'id')
+      objArr[i][1] = objArr[i][1].split(","); // RETURNS AN ARRAY
     else if(objArr[i][0] === 'date')
-      objArr[i][1] = objArr[i][1];
+      objArr[i][1] = parseISOString(objArr[i][1]);
   }
   return Object.fromEntries(objArr);
 }

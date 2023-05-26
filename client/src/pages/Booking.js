@@ -23,7 +23,9 @@ const time_max = 14.0;
 const Booking = () => {
   let params = useParams(); //get url parameters upon page load in case user is using the back button
   const start_q = fromUrl(params.query ?? '');
-  if (!start_q.type) { start_q.type = []; }
+
+  if(!start_q.type) { start_q.type = []; } 
+  
   const tp =  start_q.type.reduce((acc,t) => { //array of the selected room types
     const key = Object.keys(Room.Type).find(tpkey => Room.Type[tpkey] === t)
     if (key != undefined)
@@ -31,7 +33,9 @@ const Booking = () => {
     return acc;
   },{});
 
+
   //set state variables if url parameters are present
+
   const [type,setType] = React.useState(tp ?? {})
   const [size,setSize] = React.useState(start_q.size ?? `${Room.Size.XS}`);
   const [duration,setDuration] = React.useState(start_q.duration ?? `${time_start}`);

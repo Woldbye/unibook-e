@@ -15,7 +15,6 @@ app.get('/',(req,res) => {
 
 /** Room query */ //hold cursor over function to see what it does
 app.get('/rooms?*',(req,res) => {
-  // console.log("Request: ", req);
   const query = roomQuery.fromUrl(req.url);
   const rooms = roomdb.query(query);
   res.send(rooms);

@@ -1,6 +1,5 @@
 import { Container, Grid,GridItem,Select, Center } from '@chakra-ui/react';
 import * as React from 'react';
-import ToggleButton from './ToggleButton';
 import Color from '../Colors';
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import { capitalize } from '../util.js';
@@ -8,7 +7,7 @@ import { } from '../date.js'; //! Don't remove, for the prototype functions
 import { filterByDate } from '../api/roomquery';
 import { da_months } from '../date.js';
 import DateButton from './DateButton';
-
+import { parseISOString } from '../date.js';
 /**
  * @param {rooms} props A required property that should contain room objects
  * @param {onClick} props An optional function that is called when a date is clicked
@@ -17,7 +16,7 @@ import DateButton from './DateButton';
 const Calendar = (props) => {
   const onDateClick = props.onClick;
   const rooms = props.rooms;
-  const selected_date = props.selected_date ?? new Date(); // default today
+  const selected_date = props.selected_date ?? new Date().toISOString(); // default today
   const today = new Date();
   const [month, setMonth] = React.useState(today.getMonth());
   const [year, setYear] = React.useState(today.getFullYear());
@@ -34,17 +33,17 @@ const Calendar = (props) => {
   React.useEffect(() => {
     const createDateButton = (key,date,onClick,isDisabled) => {
       const cname = filterByDate(rooms, date).length > 0 ? ' available' : ' unavailable';
-      const isOn = selected_date.ymdEquals(date);
+      const isOn = parseISOString(selected_date).ymdEquals(date);
       return (
         <DateButton
           key={key}
           isDisabled={isDisabled}
           borderRadius={'0'}
           border={'1px solid grey'}
-          height={'50px'}
+          height={'100%'}
           isOn={isOn}
           date={date}
-          width={'50px'}
+          width={'100%'}
           onClick={onClick}
           className={cname}>
         </DateButton>
@@ -102,11 +101,11 @@ const Calendar = (props) => {
           )
         })
     );    
-  },[rooms, selected_date, month, year]);
+  },[rooms, selected_date, month, year, onDateClick]);
   
   const dayRow = ['Man','Tir','Ons','Tor','Fre','Lør','Søn'].map(day => {
     return (
-      <GridItem key={day} width={'50px'} height={'32px'} bg={Color.BLUE} border='1px solid grey' color='white'>
+      <GridItem key={day} width={'100%'} height={'100%'} bg={Color.BLUE} border='1px solid grey' color='white'>
         {day}
       </GridItem>
     )
@@ -124,7 +123,7 @@ const Calendar = (props) => {
         border={'none'}
         size={'lg'}
         fontSize={'1.3rem'}
-        width={'100vw'}
+        // width={'100vw'}
         onChange={(e) => {
           const [m,y] = e.target.value.toLowerCase().split(' ');
           setMonth(Object.keys(da_months).indexOf(m));
@@ -150,7 +149,7 @@ const Calendar = (props) => {
     </Center>
   
   return (
-    <Container textAlign="center" padding={0} paddingBottom="65%" margin={0}>
+    <Container textAlign="center" padding={'0'} paddingBottom="10%" margin={0}>
       <Grid
         templateRows='repeat(7, 1fr)'
         templateColumns='repeat(7, 1fr)'
@@ -158,8 +157,7 @@ const Calendar = (props) => {
         color ='black'
         textAlign={'center'}  
         fontSize={'20'}
-        width={'30px'}
-        height={'32px'}
+        height={'100%'}
         p={'0'}
         margin={'0'}
       >

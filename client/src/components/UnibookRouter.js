@@ -18,9 +18,9 @@ const UnibookRouter = () => {
           <Route index element={<Background children={<Home />} />}/>
           <Route path="rooms" element={<BookingRoom />}/> //page of all rooms with "book" buttons
           <Route path="rooms/:query?/" element={<Rooms />} /> //page of rooms matching the query
+          <Route path="book/confirm/:query?/" element={<BookingConfirmation/>}/>
           <Route path="book/date/:query?/" element={<BookingTime/>}/> //page for selecting date and time
-          <Route path="book/:query?/" element={<Booking />} /> //page for maanaging filter
-          <Route path="book/date/rooms/confirm" element={<BookingConfirmation/>}/>
+          <Route path="book/:query?/" element={<Booking />} />//page for maanaging filter
           <Route path="*" element={<NoPage />}/> //fallback page
         </Route>
       </Routes>

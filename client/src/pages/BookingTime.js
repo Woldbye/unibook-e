@@ -24,24 +24,24 @@ const BookingTime = () => {
   // { roomid, date } obj
   const [booking, setBooking] = React.useState();
 
+
   //listener to update selected timeslot in query when picked in TimeChooser
-  React.useEffect(() => { 
-    console.log("received update for ", booking)
-    if (booking !== undefined && "roomid" in booking && "date" in booking) {
-      const { room_id, date } = booking;
+  React.useEffect(() => {
+    if(booking !== undefined && "room_ids" in booking && "date" in booking) {
+      const { room_ids, date } = booking;
       const newState = query; // copy query
-      newState['id'] = room_id;
-      newState['date'] = date.toISOString();
-      setQuery(newState); //update query
+      newState['id'] = room_ids;
+      newState['date'] = date;
+      setQuery(newState);
     }
-  }, [booking])
+  }, [booking,query])
   // listener to update rooms when query changes
-  React.useEffect(() => { getRooms(query).then(rs => setRooms(rs)); }, [query])
+  React.useEffect(() => { getRooms(query).then(rs => setRooms(rs)); },[query])
 
   return (
     <Background>
       <BackButton to={`/book/${start_query}/`} />
-      <Container h={'450'}>
+      <Container>
         <Stack alignItems={'center'} spacing={'2rem'} minWidth={'12rem'}>
           <Text fontSize={28}>Vælg dato</Text>
           <Calendar
@@ -56,14 +56,14 @@ const BookingTime = () => {
           />
         </Stack>
       </Container>
-      <Container paddingTop={'5'} paddingBottom={10}>
+      <Container paddingTop={'0'} paddingBottom={10}>
         <Stack alignItems={'center'} spacing={'2rem'} minWidth={'12rem'}>
           <VStack width='50%' minWidth={'12rem'}>
             <TimeChooser
               marginBottom={'15%'}
               date={selected_date}
               rooms={rooms}
-              setBooking={({ room_id, date }) => setBooking({ roomid: room_id, date: date })}
+              setBooking={({ room_ids, date }) => setBooking({ room_ids: room_ids, date: date })}
             />
             <Link to={`/rooms/${toUrl(query)}/`}>
               <Button size={'lg'}>
