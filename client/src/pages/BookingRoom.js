@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import * as React from 'react';
 import {
   Container,
@@ -12,7 +13,7 @@ const BookingRoom = () => {
   const update_delay = 1000; // in ms
   const [rooms,setRooms] = React.useState([]);
   const [search,setSearch] = React.useState('');
-
+  //! IMPLEMENT NAVIGATE 
   React.useEffect(() => {
     // Delay search by 1 second to reduce updates
     const timeid = setTimeout(() => {
@@ -39,7 +40,7 @@ const BookingRoom = () => {
       <Container>
         <SearchBar marginTop={'5'} onChange={setSearch}/>
         <List spacing={'1rem'}>
-        {rooms.map(room => <Room key={room['id']} json={room}/>)}
+          {rooms.map(room => <Room onClick={ } key={room['id']} json={room}/>)}
         </List>
       </Container>
     </Background>

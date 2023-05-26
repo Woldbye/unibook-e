@@ -3,7 +3,7 @@ import {
   Container,
   Stack,
   Text,
-  Header,
+  Heading,
   VStack,
   Button
 } from '@chakra-ui/react';
@@ -44,7 +44,7 @@ const RoomBookingTime = () => {
       <BackButton to={`/book/${start_query}/`} />
       <Container>
         <Stack alignItems={'center'} spacing={'2rem'} minWidth={'12rem'}>
-          <Header as='h2'>Booking for Room INSERT RID</Header>
+          <Heading as='h2'>Booking for Room INSERT RID</Heading>
           <GoggleInput
             step_per_click={1.0}
             type_name={'Timer'}
