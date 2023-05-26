@@ -150,17 +150,18 @@ const Calendar = (props) => {
     </Center>
   
   return (
-    <Container textAlign={'center'} paddingBottom={'65%'}>
+    <Container textAlign="center" padding={0} paddingBottom="65%" margin={0}>
       <Grid
-        marginLeft={'15%'}
         templateRows='repeat(7, 1fr)'
         templateColumns='repeat(7, 1fr)'
         gap={0}
         color ='black'
         textAlign={'center'}  
         fontSize={'20'}
-        width={'50px'}
+        width={'30px'}
         height={'32px'}
+        p={'0'}
+        margin={'0'}
       >
         <GridItem colSpan={'7'} bg={Color.BLUE} children={da_monthselector}/>
         {dayRow}
