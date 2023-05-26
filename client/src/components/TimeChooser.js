@@ -15,10 +15,10 @@ import { parseISOString } from '../date';
 const TimeChooser = (props) => {
   const rooms = props.rooms ?? []; 
   const marginBottom = props.marginBottom ?? '0';
-  const date = props.date ?? new Date();  
+  const date = props.date ?? new Date().toISOString();  
   
   let byDate = {}
-  filterByDate(rooms,date)
+  filterByDate(rooms,parseISOString(date))
     .reduce((acc,room) => {
       const { id,timeslots } = room;
       return acc.concat(
@@ -32,43 +32,44 @@ const TimeChooser = (props) => {
       )
     },[])
     .sort((a,b) => a['date'] - b['date']) // sort in ascending order by date
+    .map(({ date,room_id }) => ({ date: date.toISOString(), room_id }))
     .forEach(({ date,room_id }) => {      // group by date
       if(byDate[date] === undefined) byDate[date] = [room_id];
       else byDate[date].push(room_id);
     })
   
+  
   // Transform byDate into bookings by mapping to { date: Date, room_ids: int[] } format
   const bookings = Object
     .keys(byDate)
-    .map(key => ({ date: key,room_ids: byDate[key] }))
+    .map(key => ({ date: key, room_ids: byDate[key] }))
     
   const [index,setIndex] = React.useState(0); // active room index
   
   const setBooking = props.setBooking ?? ((dt) => {})
-  
   const times = bookings.sliceMid(index,1)
+  
+  useEffect(() => {
+    const timeid = setTimeout(() => {
 
-  // useEffect(() => {
-    // const timeid = setTimeout(() => {
-
-    //   if(index > times.length - 1 || index <= 0) setIndex(0)
-    //   if(times !== undefined &&
-    //     Array.isArray(times) &&
-    //     times.length > 0 &&
-    //     'val' in times[0] &&
-    //     'room_ids' in times[0]['val'] &&
-    //     times[0]['val']['room_ids'] !== undefined
-    //   )
-    //   {
-    //     const booking = {
-    //       date: times[0]['val']['date'],
-    //       room_id: times[0]['val']['room_ids'][0]
-    //     }
-    //     setBooking(booking)
-    //   }
-    // },500)
-  //   return () => clearTimeout(timeid)
-  // },[times, index])  
+      if(index > times.length - 1 || index <= 0) setIndex(0)
+      if(times !== undefined &&
+        Array.isArray(times) &&
+        times.length > 0 &&
+        'val' in times[0] &&
+        'room_ids' in times[0]['val'] &&
+        times[0]['val']['room_ids'] !== undefined
+      )
+      {
+        const booking = {
+          date: times[0]['val']['date'],
+          room_ids: times[0]['val']['room_ids']
+        }
+        setBooking(booking)
+      }
+    },500)
+    return () => clearTimeout(timeid)
+  },[times, index])  
   
   const type_name = "time"
   return (

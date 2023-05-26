@@ -21,6 +21,7 @@ const time_start = 0.5;
 const Booking = () => {
   let params = useParams();
   const start_q = fromUrl(params.query ?? '');
+
   if (!start_q.type) { start_q.type = []; }
   const tp =  start_q.type.reduce((acc,t) => {
     const key = Object.keys(Room.Type).find(tpkey => Room.Type[tpkey] === t)
@@ -28,7 +29,7 @@ const Booking = () => {
       acc[key] = t
     return acc;
   },{});
-
+  
   const [type,setType] = React.useState(tp ?? {})
   const [size,setSize] = React.useState(start_q.size ?? `${Room.Size.XS}`);
   const [duration,setDuration] = React.useState(start_q.duration ?? `${time_start}`);

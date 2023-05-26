@@ -16,7 +16,6 @@ const BookingRoom = () => {
   React.useEffect(() => {
     // Delay search by 1 second to reduce updates
     const timeid = setTimeout(() => {
-      console.log("Updating rooms")
       getRooms('').then(
         r => 
           setRooms(

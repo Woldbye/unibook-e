@@ -1,5 +1,6 @@
 import { parseISOString } from '../date.js';
 import * as Room from './room.js';
+
 /**
  * @brief Converts a room_query object into an url string
  * @param {*} room_query A room_query object, which is a subset of the parameters of a room.
@@ -11,7 +12,7 @@ export function toUrl(room_query) {
     .map(([param,value]) => {
       if(param === 'type' && typeof value === 'object') {
         return `${param}=${Object.values(value)}`
-      } else if (param === 'date' && typeof value === 'object') {
+      } else if(param === 'date' && typeof value === 'object') {
         return `${param}=${value.toISOString()}`
       } else {
         return `${param}=${value}`
@@ -62,10 +63,10 @@ export function fromUrl(url) {
   const objArr = url.split("&").map(param => param.split("="))
   // Convert inner objects to arrays
   for(let i = 0;i < objArr.length;i++) {
-    if(objArr[i][0] === 'type')
-      objArr[i][1] = objArr[i][1].split(",");
+    if(objArr[i][0] === 'type' || objArr[i][0] === 'id')
+      objArr[i][1] = objArr[i][1].split(","); // RETURNS AN ARRAY
     else if(objArr[i][0] === 'date')
-      objArr[i][1] = objArr[i][1];
+      objArr[i][1] = parseISOString(objArr[i][1]);
   }
   return Object.fromEntries(objArr);
 }

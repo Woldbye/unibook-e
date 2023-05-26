@@ -1,6 +1,5 @@
 import { Container, Grid,GridItem,Select, Center } from '@chakra-ui/react';
 import * as React from 'react';
-import ToggleButton from './ToggleButton';
 import Color from '../Colors';
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import { capitalize } from '../util.js';
@@ -8,7 +7,7 @@ import { } from '../date.js'; //! Don't remove, for the prototype functions
 import { filterByDate } from '../api/roomquery';
 import { da_months } from '../date.js';
 import DateButton from './DateButton';
-
+import { parseISOString } from '../date.js';
 /**
  * @param {rooms} props A required property that should contain room objects
  * @param {onClick} props An optional function that is called when a date is clicked
@@ -17,7 +16,7 @@ import DateButton from './DateButton';
 const Calendar = (props) => {
   const onDateClick = props.onClick;
   const rooms = props.rooms;
-  const selected_date = props.selected_date ?? new Date(); // default today
+  const selected_date = props.selected_date ?? new Date().toISOString(); // default today
   const today = new Date();
   const [month, setMonth] = React.useState(today.getMonth());
   const [year, setYear] = React.useState(today.getFullYear());
@@ -34,7 +33,7 @@ const Calendar = (props) => {
   React.useEffect(() => {
     const createDateButton = (key,date,onClick,isDisabled) => {
       const cname = filterByDate(rooms, date).length > 0 ? ' available' : ' unavailable';
-      const isOn = selected_date.ymdEquals(date);
+      const isOn = parseISOString(selected_date).ymdEquals(date);
       return (
         <DateButton
           key={key}
@@ -102,7 +101,7 @@ const Calendar = (props) => {
           )
         })
     );    
-  },[rooms, selected_date, month, year]);
+  },[rooms, selected_date, month, year, onDateClick]);
   
   const dayRow = ['Man','Tir','Ons','Tor','Fre','Lør','Søn'].map(day => {
     return (
