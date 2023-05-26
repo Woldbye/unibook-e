@@ -3,13 +3,14 @@ import {
   Container,
   Button,
   VStack,
-  HStack,
   Text,
   Flex
 } from '@chakra-ui/react';
 
 import Background from '../components/Background';
 import Color from '../Colors';
+
+//Shows every ressource available to a room
 
 //! TO:DO Hold a state with value of selected room types
 //! The value is a single number represented as a bitfield (see Room.Tag)

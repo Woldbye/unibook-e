@@ -1,16 +1,15 @@
 import * as React from 'react';
 import {
   Container,
-  Button,
   VStack,
   Text,
-  HStack,
-  Flex,
-  Center
+  Flex
 } from '@chakra-ui/react';
 import ToggleButton from './ToggleButton';
 import Background from '../components/Background';
 import Color from '../Colors';
+
+//When wanting to pick a type of room, it will show this component. Which works together with the ToggleButton.
 
 
 class LokaleTyper extends React.Component {

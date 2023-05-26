@@ -3,6 +3,7 @@ import {
 } from '@chakra-ui/react';
 import Color from '../Colors';
 
+//Returns information about the adress.
 
 const Address = (props) => {
   var { street,zip,city,json } = props;

@@ -1,5 +1,7 @@
 import { Text } from '@chakra-ui/react';
 
+//Makes our logo in the Navbar
+
 /**
  * @param {position,top,left} string inject the css parameters through props
  */
