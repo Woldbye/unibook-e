@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {
   Container,
-  Center,
   Heading,
   List,
 } from '@chakra-ui/react';
