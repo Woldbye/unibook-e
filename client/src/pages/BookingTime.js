@@ -70,12 +70,12 @@ const BookingTime = () => {
                 <Text size={'lg'}>Næste</Text >
               </Button>
             </Link>
-            <Outlet /> // TODO: what is nested here?
+            <Outlet /> 
           </VStack>
         </Stack>
       </Container>
     </Background >
   )
 }
-
+// TODO: what is nested in the outlet?
 export default BookingTime;
