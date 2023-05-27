@@ -14,7 +14,7 @@ const TopBar = ({ boxWidth = '100vw' }) => {
         minWidth={boxWidth}
         maxWidth={boxWidth}
         minHeight={'4vh'}
-        boxShadow={'0px 1px 4px #00000040'}
+        boxShadow={'0px 3px 6px #00000040'}
         justifyContent={'center'}
       >
           <Flex
