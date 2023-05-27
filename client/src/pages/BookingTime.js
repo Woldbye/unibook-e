@@ -3,11 +3,10 @@ import {
   Container,
   Stack,
   Text,
-  Spacer,
   VStack,
   Button
 } from '@chakra-ui/react';
-import { Link, Outlet, useParams } from 'react-router-dom';
+import { Link,  useParams } from 'react-router-dom';
 import Background from '../components/Background';
 import Calendar from '../components/Calendar';
 import TimeChooser from '../components/TimeChooser';
@@ -16,7 +15,8 @@ import { toUrl, fromUrl, getRooms } from "../api/roomquery.js";
 
 const BookingTime = () => {
   let params = useParams();
-  const today = new Date();
+  const today = new Date(new Date().getFullYear(),new Date().getMonth(),new Date().getDate());
+
   const start_query = params.query ?? ''; // start query in url form
   const [query, setQuery] = React.useState(fromUrl(start_query));
   const [rooms, setRooms] = React.useState([]);
@@ -26,14 +26,15 @@ const BookingTime = () => {
   const [booking, setBooking] = React.useState();
 
   React.useEffect(() => {
-    if(booking !== undefined && "room_ids" in booking && "date" in booking) {
+    if(booking !== undefined && "date" in booking) {
       const { room_ids, date } = booking;
       const newState = query;
       newState['id'] = room_ids;
       newState['date'] = date;
       setQuery(newState);
     }
-  }, [booking,query])
+  },[booking,query,selected_date])
+  
   React.useEffect(() => { getRooms(query).then(rs => setRooms(rs)); },[query])
 
   return (
@@ -58,6 +59,7 @@ const BookingTime = () => {
         <Stack alignItems={'center'} spacing={'2rem'} minWidth={'12rem'}>
           <VStack width='50%' minWidth={'12rem'}>
             <TimeChooser
+              key={`${selected_date}-${query}-chooser`}
               marginBottom={'15%'}
               date={selected_date}
               rooms={rooms}
@@ -68,7 +70,6 @@ const BookingTime = () => {
                 <Text size={'lg'}>Næste</Text >
               </Button>
             </Link>
-            <Outlet />
           </VStack>
         </Stack>
       </Container>

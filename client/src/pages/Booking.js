@@ -32,8 +32,7 @@ const Booking = () => {
   },{});
   
   if(Object.keys(tp).length === 0) tp = { ...Room.Type }; // if no types are selected, select all
-  
-  console.log("tp", tp)
+
   const [type,setType] = React.useState(tp ?? {})
   const [size,setSize] = React.useState(start_q.size ?? `${Room.Size.XS}`);
   const [duration,setDuration] = React.useState(start_q.duration ?? `${time_start}`);
