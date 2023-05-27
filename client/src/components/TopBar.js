@@ -23,18 +23,18 @@ const TopBar = ({ boxWidth = '100vw' }) => {
             alignItems={'center'}
             justifyContent={"center"}
           >
-            <Link to="/rooms"> //link to overview of the rooms in the database
+            <Link to="/rooms"> 
               <Text fontSize='md' className='top-bar-nav' paddingRight={'20px'}>Oversigt</Text >
             </Link>
-            <Link to="/"> //link to home page
+            <Link to="/">
               <Logo position="relative" top='-2px' fontSize='2xl'/>
             </Link>
-            <Link to="/book"> //link to search filtering page
+            <Link to="/book"> 
               <Text fontSize='md' className='top-bar-nav' paddingLeft={'20px'}>Booking</Text >
             </Link>
           </Flex>
       </Box>
-      <Outlet /> //render the routed page
+      <Outlet />
     </>
   )
 };

@@ -50,7 +50,7 @@ const TimeChooser = (props) => {
 
   const times = bookings.sliceMid(index,1) //get the available rooms at the selected timeslot
   
-  useEffect(() => {
+  React.useEffect(() => {
     const timeid = setTimeout(() => {
 
       if (index > times.length - 1 || index <= 0) setIndex(0)
@@ -83,7 +83,7 @@ const TimeChooser = (props) => {
       borderRadius={30}
       boxShadow={'0px 6px 8px #00000040'}
     >
-      <IconButton
+      <IconButton //"got to previous available timeslot on this date" button
         size={'lg'}
         aria-label={'Previous ' + type_name}
         isRound={true}
@@ -97,13 +97,6 @@ const TimeChooser = (props) => {
         justifyContent={'space-around'}
         width={'100%'}
       >
-        <IconButton //"got to previous available timeslot on this date" button
-          size={'lg'}
-          aria-label={'Previous ' + type_name}
-          isRound={true}
-          icon={<ArrowLeftIcon />}
-          onClick={() => { if(index > 0) setIndex(index - 1) }}
-        />
         <Flex
           direction={'row'}
           textAlign={'center'}
@@ -125,14 +118,14 @@ const TimeChooser = (props) => {
                 paddingRight={'10%'}
                 paddingLeft={'10%'}
                 cursor={'pointer'}
-                //select timeslot by clicking it
+                //select timeslot by clicking it //write the time of the timeslot on the form HH:MM
                 onClick={() => setIndex(entry['index'])}
-              > //write the time of the timeslot on the form HH:MM
+              > 
                 {`${(dt.getHours()).toString().padStart(2,0)}:${dt.getMinutes().toString().padStart(2,0)}`}
               </Text>
             </Center>
           )
-        }) : <Text color={Color.CREME}>Ingen ledige tider</Text>} //displayed if no timeslots are available
+        }) : <Text color={Color.CREME}>Ingen ledige tider</Text>}
         </Flex>          
       <IconButton //"got to next available timeslot on this date" button
         size={'lg'}
@@ -141,6 +134,7 @@ const TimeChooser = (props) => {
         icon={<ArrowRightIcon />}
         onClick={() => { if (index < bookings.length - 1) setIndex(index + 1) }}
       />
+      </Flex>
     </HStack>
   )
 };
