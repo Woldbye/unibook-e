@@ -15,6 +15,10 @@ Date.prototype.ymdEquals = function(date){
   return this.getFullYear() === date.getFullYear() && this.getMonth() === date.getMonth() && this.getDate() === date.getDate();
 }
 
+Date.prototype.toClockString = function() {
+  return `${this.getHours() < 10 ? '0' : ''}${this.getHours()}:${this.getMinutes() < 10 ? '0' : ''}${this.getMinutes()}`;
+}
+
 // From https://stackoverflow.com/questions/27012854/how-to-change-iso-date-string-to-date-object
 export function parseISOString(s) {
   if(getType(s) === 'date') return s;

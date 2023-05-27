@@ -16,7 +16,7 @@ export const Type = {
   Classroom: 'Klasselokale',
 };
 
-export function freeTimeslots(room,date) {
+export function freeTimeslots(room,date) { // returns the timeslots of a room that are free on the given date
   const date_id = date.addTime(0,0,1).toISOString().split('T')[0];
   return room['timeslots']['free'].filter(dkey => dkey.startsWith(date_id));
 };

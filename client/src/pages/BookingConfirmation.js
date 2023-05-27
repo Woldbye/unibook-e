@@ -20,14 +20,14 @@ import Background from '../components/Background';
 import Color from '../Colors';
 import BackButton from '../components/BackButton';
 import { Link } from 'react-router-dom';
-
+import { } from '../date.js'
 import { useParams, useNavigate } from 'react-router-dom';
 import { fromUrl,toUrl,queryToStringIfDate } from '../api/roomquery';
 // The site should appear after the user has selected a time slot and room
 const BookingConfirmation = () => {
   let params = useParams();
   const start_query = fromUrl(params.query) ?? ''; // start query in url form
-  const back_query = start_query;
+  const back_query = { ...start_query };
   delete back_query['rid'];
 
   const isFromDatePage = 'from_date' in back_query;
@@ -74,10 +74,19 @@ const BookingConfirmation = () => {
                     </VStack>
                   </Background>
                 </Container>
-                <Text color={Color.CREME} fontSize={'xl'} padding={'30px 0px 10px 0px'}>Du er ved at booke:</Text>
-                <Text color={Color.CREME} padding={'0px 40px 0px 40px'}>Lokale : Bla  den et eller andet dato</Text>
-                <Text color={Color.CREME} padding={'0px 40px 0px 40px'}>Fra : </Text>
-                <Text color={Color.CREME} padding={'0px 40px 40px 40px'}>Til : </Text>
+                <Heading as='h4' color={Color.CREME} fontSize={'l'} padding={'30px 0px 10px 0px'}>Du er ved at booke:</Heading>
+                <Text color={Color.CREME} padding={'0px 40px 0px 40px'}>
+                  {`Lokale : ${start_query.rid}`}
+                </Text>
+                <Text color={Color.CREME} padding={'0px 40px 0px 40px'}>
+                  {`Fra : ${start_query.date.toClockString()}`}
+                </Text>
+                <Text color={Color.CREME} padding={'0px 40px 0px 40px'}>
+                  {`Til : ${start_query.date.addTime(0,0,start_query.duration).toClockString()}`}
+                </Text>
+                <Text fontSize={'l'} color={Color.CREME} padding={'0px 40px 40px 40px'}>
+                  {`d. ${start_query.date.getDate()}/${start_query.date.getMonth()+1}/${start_query.date.getFullYear()} `}
+                </Text>
                 <Button onClick={onOpen} isDisabled={!isEmailValid}>Bekræft</Button>
                 <Modal isOpen={isOpen} onClose={onClose} isCentered>
                   <ModalOverlay />

@@ -10,14 +10,14 @@ const Size = {
   XLL: 128,
 };
 
-const Type = {
+const Type = { //room types - a room can only have one at a time
   Meeting: 'Mødelokale',
   Skybox: 'Skybox',
   Auditorium: 'Auditorium',
   Classroom: 'Klasselokale',
 }
 
-function freeTimeslots(room,date) {
+function freeTimeslots(room,date) {    //Returns the timeslots of a room that are free on the given date
   const date_id = date.addTime(0,0,0).toISOString().split('T')[0];
   return room['timeslots']['free'].filter(dkey => dkey.startsWith(date_id));
 };
@@ -55,8 +55,3 @@ module.exports = {
   create,
   freeTimeslots,
 };
-
-
-
-
-

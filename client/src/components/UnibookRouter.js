@@ -17,7 +17,7 @@ const UnibookRouter = () => {
       <Routes>
         <Route path="/" element={<TopBar boxWidth='100vw'/>}>
           <Route index element={<Background children={<Home />} />}/>
-          <Route path="rooms" element={<BookingRoom />}/>
+          <Route path="rooms" element={<BookingRoom />}/> 
           <Route path="rooms/:query?/" element={<Rooms />} />
           <Route path="book/room/date/:query?/" element={<RoomBookingTime/>}/>
           <Route path="book/confirm/:query?/" element={<BookingConfirmation/>}/>

@@ -49,9 +49,17 @@ const Calendar = (props) => {
         </DateButton>
       )
     }
-        
-    setPrv(
-      new Array(new Date(year,month,1).getDay() === 0 ? 6 : new Date(year,month,1).getDay() - 1)
+    const start_weekday = new Date(year,month,1).getDay();
+    // if the first of the month is a sunday, then the previous month overflow is 6 days, 
+    // monday is a full seven day overflow, otherwise it is the start weekday minus one
+    const prev_length = (start_weekday === 0 ? 6 : start_weekday - 1)
+    // if the sum of the previous month overflow and the month length is less than 35
+    // then the next month overflow must have an additional 7 days added to maintain the 6x7 grid
+    const month_length = new Date(year,month + 1,0).getDate();    
+    const next_length = 42-(prev_length + month_length);
+
+    setPrv( 
+      new Array(prev_length)
         .fill(new Date(year,month,0))
         .map((d,i) => d.subtractTime(0,0,i))
         .reverse()
@@ -70,7 +78,7 @@ const Calendar = (props) => {
     );
         
     setCur(
-      new Array(new Date(year,month + 1,0).getDate())
+      new Array(month_length)
         .fill(new Date(year,month,1))
         .map((date,i) => date.addTime(0,0,i))
         .map(date => {
@@ -83,9 +91,8 @@ const Calendar = (props) => {
         )
     );
             
-    const end_weekday = new Date(year,month + 1,0).getDay();
     setNxt(
-      new Array(7 - (end_weekday === 0 ? 7 : end_weekday))
+      new Array(next_length)
         .fill(new Date(year,month +1,1))
         .map((date,i) => date.addTime(0,0,i))
         .map(date => {
@@ -148,7 +155,7 @@ const Calendar = (props) => {
     </Center>
   
   return (
-    <Container textAlign="center" padding={'0'} paddingBottom="10%" margin={0}>
+    <Container textAlign="center" padding={'0'} paddingBottom="10%" margin={0} >
       <Grid
         templateRows='repeat(7, 1fr)'
         templateColumns='repeat(7, 1fr)'
@@ -159,8 +166,9 @@ const Calendar = (props) => {
         height={'100%'}
         p={'0'}
         margin={'0'}
+        boxShadow={'0px 6px 8px #00000040'}
       >
-        <GridItem colSpan={'7'} bg={Color.BLUE} children={da_monthselector}/>
+        <GridItem colSpan={'7'} rowSpan={'7'} bg={Color.BLUE}  children={da_monthselector}/>
         {dayRow}
         {prv}
         {cur}

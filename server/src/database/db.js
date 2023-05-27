@@ -43,7 +43,8 @@ class RoomDatabase {
         return room;
       })
     }
-  
+    
+    // Filter rooms for each part of the query
     return res.filter(room => {
       return room["isBooked"] === "0" &&
         Object.entries(room_query).every(
@@ -74,9 +75,7 @@ class RoomDatabase {
    * @warning not thread safe, as we are currently just emulating a database.
    */
   book(room_id, dur, date) {
-    //! TO:DO implement booking
-    
-    // Find available room within the given date
+    // Find available room within the given date and set it to booked
 
     this.rooms.find(room => room["id"] === room_id)["isBooked"] = "1";
   }

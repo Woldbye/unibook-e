@@ -22,15 +22,17 @@ const BookingTime = () => {
   const start_query = params.query ?? ''; // start query in url form
   const [query, setQuery] = React.useState(fromUrl(start_query));
   const [rooms, setRooms] = React.useState([]);
-  const [selected_date, setSelectedDate] = React.useState(today);
+  const [selected_date, setSelectedDate] = React.useState(today); // selected date is today, initially
 
   // { roomid, date } obj
   const [booking, setBooking] = React.useState();
 
+
+  // listener to update selected timeslot in query when picked in TimeChooser
   React.useEffect(() => {
     if(booking !== undefined && "date" in booking) {
       const { room_ids, date } = booking;
-      const newState = query;
+      const newState = query; // copy query
       newState['id'] = room_ids;
       newState['date'] = date;
       setQuery(newState);
@@ -59,10 +61,10 @@ const BookingTime = () => {
       </Container>
       <Container paddingTop={'0'} paddingBottom={10}>
         <Stack alignItems={'center'} spacing={'2rem'} minWidth={'12rem'}>
-          <VStack width='50%' minWidth={'12rem'}>
+          <VStack width='100%' minWidth={'12rem'}>
             <TimeChooser
               key={`${selected_date}-${query}-chooser`}
-              marginBottom={'15%'}
+              marginBottom={'10%'}
               date={selected_date}
               rooms={rooms}
               setBooking={({ room_ids, date }) => setBooking({ room_ids: room_ids, date: date })}
@@ -78,5 +80,4 @@ const BookingTime = () => {
     </Background >
   )
 }
-
 export default BookingTime;

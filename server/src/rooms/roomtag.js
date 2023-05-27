@@ -16,7 +16,7 @@ const Tag = {
 
 const NrOfTags = Object.keys(Tag).length - 1;
 const TagMask = (1 << NrOfTags) - 1; // 2^(Tag size) - 1 
-const createRandomTags = () => Math.floor(Math.random() * TagMask);
+const createRandomTags = () => Math.floor(Math.random() * TagMask); //get random number between 0 and 2^(Tag size) - 1
 
 /**
  * Evaluate whether a tag flag has a specific tag
@@ -24,10 +24,10 @@ const createRandomTags = () => Math.floor(Math.random() * TagMask);
  * @param {Tag} tag 
  * @returns true if the tag_flags has the tag
  */
-const hasTag = (tag_flags,tag) => (tag_flags & tag) > 0;
+const hasTag = (tag_flags,tag) => (tag_flags & tag) > 0; //bitwise AND to check if tag is in tag_flags
 
 /**
- * Returns an ordered list of tags that is contained withinn the tag_flags
+ * Returns an ordered list of tags that is contained within the tag_flags
  * The list is ordered in ascending order by the Tag enum
  * @param {number} tag_flags 
  * @returns An ordered list of tags

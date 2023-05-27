@@ -22,7 +22,7 @@ const SearchBar = (props) => {
   }
 
   return (
-    <InputGroup size='md' marginTop={marginTop} color={Color.CREME} backgroundColor={Color.BLUE}>
+    <InputGroup size='md' marginTop={marginTop} color={Color.CREME} backgroundColor={Color.BLUE} boxShadow={'0px 4px 8px #00000040'}>
       <InputLeftElement width='2.5rem'><Search2Icon/></InputLeftElement>
       <Input
         value={value}

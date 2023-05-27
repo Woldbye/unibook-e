@@ -1,6 +1,5 @@
 import { Container } from "@chakra-ui/react";
 
-// TO:DO - Add 404 page
 const NoPage = () => {
   return (
     <Container>
