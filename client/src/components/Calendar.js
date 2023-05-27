@@ -169,7 +169,7 @@ const Calendar = (props) => {
         margin={'0'}
         boxShadow={'0px 6px 8px #00000040'}
       >
-        <GridItem colSpan={'7'} bg={Color.BLUE} children={da_monthselector}/>
+        <GridItem colSpan={'7'} rowSpan={'7'} bg={Color.BLUE}  children={da_monthselector}/>
         {dayRow}
         {prv}
         {cur}
