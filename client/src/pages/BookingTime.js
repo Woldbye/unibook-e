@@ -15,6 +15,8 @@ import { toUrl, fromUrl, getRooms } from "../api/roomquery.js";
 
 const BookingTime = () => {
   let params = useParams();
+  
+  // today's date, but without the current clock
   const today = new Date(new Date().getFullYear(),new Date().getMonth(),new Date().getDate());
 
   const start_query = params.query ?? ''; // start query in url form

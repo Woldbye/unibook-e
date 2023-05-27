@@ -17,7 +17,7 @@ import { Box } from "@chakra-ui/react";
  */
 const DateButton = (props) => {
   var { isOn,onClick,children,margin,width,height,className,border,borderRadius,isDisabled, date } = props;
-  const today = new Date();
+  const today = new Date(new Date().getFullYear(),new Date().getMonth(),new Date().getDate());
 
   isOn = isOn ?? false;
   margin = margin ?? "0";
@@ -33,6 +33,22 @@ const DateButton = (props) => {
   const isToday = date.getFullYear() === today.getFullYear()
                && date.getMonth() === today.getMonth()
                && date.getDate() === today.getDate();
+  
+  if(date < today) {
+    return (
+      <Box
+        as="button"
+        border={border}
+        className={`date-button unavailable disabled2`}
+        borderRadius={borderRadius} // make round
+        width={width}
+        margin={margin}
+        h={height}
+      >
+        {date.getDate()}
+      </Box >
+    )
+  }
 
   // Update className
   className = (className ?? '')

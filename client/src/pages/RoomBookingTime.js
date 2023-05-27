@@ -20,7 +20,7 @@ import GoggleInput from '../components/GoggleInput';
 
 const RoomBookingTime = () => {
   let params = useParams();
-  const today = new Date();
+  const today = new Date(new Date().getFullYear(),new Date().getMonth(),new Date().getDate());
   const start_query = params.query ?? ''; // start query in url form
   
   const navigate = useNavigate();
