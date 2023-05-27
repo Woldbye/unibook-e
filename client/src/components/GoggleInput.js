@@ -23,11 +23,13 @@ class GoggleInput extends React.Component {
   max;
   min;
   onChange;
+  width;
 
   constructor(props) {
     super(props);
-    const { step_per_click, type_name, start, max, min, onChange } = props;
+    const { width, step_per_click, type_name, start, max, min, onChange } = props;
     this.state = { value: start ?? 0 }
+    this.width = width ?? '100%';
     this.step_per_click = step_per_click ?? 1;
     this.type_name = type_name;
     this.max = max ?? Infinity;
@@ -50,7 +52,7 @@ class GoggleInput extends React.Component {
     return (
       <HStack
         hide={-1}
-        width={'100%'}
+        width={this.width}
         justifyContent={'space-between'}
         height={'50px'}
         backgroundColor={Color.BLUE}

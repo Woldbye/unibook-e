@@ -27,9 +27,12 @@ import { fromUrl,toUrl,queryToStringIfDate } from '../api/roomquery';
 const BookingConfirmation = () => {
   let params = useParams();
   const start_query = fromUrl(params.query) ?? ''; // start query in url form
-  const { rid,date } = start_query;
   const back_query = start_query;
   delete back_query['rid'];
+
+  const isFromDatePage = 'from_date' in back_query;
+  if (isFromDatePage) delete back_query['from_date'];
+  const prv_path = (isFromDatePage) ? `/book/room/date/${toUrl(back_query)}/` : `/rooms/${toUrl(back_query)}/`;
   const header = queryToStringIfDate(back_query)
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [mail, setMail] = React.useState('');
@@ -50,11 +53,11 @@ const BookingConfirmation = () => {
     <>
       <Background>
         <Container>
-        <Heading as='h2' color={Color.BLUE} size={"l"} padding={"30px 40px 0px 40px"} textAlign={'center'}>
-        {queryToStringIfDate(params.query)}
-        </Heading>
-          <BackButton to={`/rooms/${toUrl(back_query)}/`}/>
+          <BackButton to={prv_path}/>
           <Container padding={"3rem 0 3rem 0"} centerContent="true">
+            <Heading as='h2' color={Color.BLUE} size={"l"} padding={"30px 40px 0px 40px"} textAlign={'center'} paddingBottom={'3%'}>
+            {header}
+            </Heading>
             <Background width="80vw" height="87vh" backgroundColor={Color.BLUE}>
               <VStack>
                 <Container padding={"5rem 0 0 0"} centerContent="true" >

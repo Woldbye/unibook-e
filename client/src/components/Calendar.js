@@ -123,7 +123,6 @@ const Calendar = (props) => {
         border={'none'}
         size={'lg'}
         fontSize={'1.3rem'}
-        // width={'100vw'}
         onChange={(e) => {
           const [m,y] = e.target.value.toLowerCase().split(' ');
           setMonth(Object.keys(da_months).indexOf(m));
