@@ -18,13 +18,12 @@ const BookingTime = () => {
   const navigate = useNavigate();
   // today's date, but without the current clock
   const today = new Date(new Date().getFullYear(),new Date().getMonth(),new Date().getDate());
+
   const start_query = params.query ?? ''; // start query in url form
   const [query, setQuery] = React.useState(fromUrl(start_query));
   const [rooms, setRooms] = React.useState([]);
   const [selected_date, setSelectedDate] = React.useState(today); // selected date is today, initially
-  const duration = ('duration' in query && query['duration'] !== undefined)
-    ? query['duration'] : 0;
-  
+
   // { roomid, date } obj
   const [booking, setBooking] = React.useState();
 
@@ -55,7 +54,6 @@ const BookingTime = () => {
               setQuery(newState);
             }}
             rooms={rooms}
-            duration={duration}
             selected_date={selected_date}
           />
         </Stack>

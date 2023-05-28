@@ -17,14 +17,7 @@ Date.prototype.subtractTime = function(year = 0,month = 0,day = 0,hour = 0,min =
     this.getMinutes() - min,
   );
 };
-// From https://stackoverflow.com/questions/27012854/how-to-change-iso-date-string-to-date-object
-function parseISOString(s) {
-  if(getType(s) === 'date') return s;
-  else if(getType(s) !== 'string') throw new Error("Invalid type!!!!",s)
-  
-  var b = s.split(/\D+/);
-  return new Date(Date.UTC(b[0], --b[1], b[2], b[3], b[4], b[5], b[6]));
-}
+
 
 /**
  * @brief Creates an array of Date objects from start to end with duration seperating them
@@ -60,5 +53,4 @@ module.exports = {
   subtractTime: Date.prototype.subtractTime,
   createDateRange,
   getType,
-  parseISOString,
 }

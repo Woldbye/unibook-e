@@ -15,7 +15,6 @@ import { parseISOString } from '../date.js';
  */
 const Calendar = (props) => {
   const onDateClick = props.onClick;
-  const duration = props.duration ?? 0;
   const rooms = props.rooms;
   const selected_date = props.selected_date ?? new Date().toISOString(); // default today
   const today = new Date(new Date().getFullYear(),new Date().getMonth(),new Date().getDate());
@@ -33,7 +32,7 @@ const Calendar = (props) => {
   
   React.useEffect(() => {
     const createDateButton = (key,date,onClick,isDisabled) => {
-      const cname = filterByDate(rooms, date,duration).length > 0 ? ' available' : ' unavailable';
+      const cname = filterByDate(rooms, date).length > 0 ? ' available' : ' unavailable';
       const isOn = parseISOString(selected_date).ymdEquals(date);
       return (
         <DateButton
@@ -66,7 +65,7 @@ const Calendar = (props) => {
         .reverse()
         .map(date => {
           return createDateButton(
-            `${date.toISOString()}-${rooms.length}-${selected_date}-${duration}-prv`,
+            `${date.toISOString()}-${rooms.length}-${selected_date}-prv`,
             date,
             () => {
               setYear(date.getFullYear());
@@ -84,7 +83,7 @@ const Calendar = (props) => {
         .map((date,i) => date.addTime(0,0,i))
         .map(date => {
           return createDateButton(
-            `${date.toISOString()}-${rooms.length}-${selected_date}-${duration}-cur`,
+            `${date.toISOString()}-${rooms.length}-${selected_date}-cur`,
             date,
             () => onDateClick(date),
             false)
@@ -98,7 +97,7 @@ const Calendar = (props) => {
         .map((date,i) => date.addTime(0,0,i))
         .map(date => {
           return createDateButton(
-            `${date.toISOString()}-${rooms.length}-${selected_date}-${duration}-nxt`,
+            `${date.toISOString()}-${rooms.length}-${selected_date}-nxt`,
             date,
             () => {
               setYear(date.getFullYear());
@@ -109,7 +108,7 @@ const Calendar = (props) => {
           )
         })
     );    
-  },[rooms, selected_date, month, year, onDateClick,duration]);
+  },[rooms, selected_date, month, year, onDateClick]);
   
   const dayRow = ['Man','Tir','Ons','Tor','Fre','Lør','Søn'].map(day => {
     return (

@@ -1,12 +1,19 @@
 const { freeTimeslots } = require('./room.js');
-const { getType,parseISOString } = require('./../date.js');
+const { getType } = require('./../date.js');
+// From https://stackoverflow.com/questions/27012854/how-to-change-iso-date-string-to-date-object
+function parseISOString(s) {
+  if(getType(s) === 'date') return s;
+  else if(getType(s) !== 'string') throw new Error("Invalid type!!!!",s)
+  
+  var b = s.split(/\D+/);
+  return new Date(Date.UTC(b[0], --b[1], b[2], b[3], b[4], b[5], b[6]));
+}
 
-
-function filterByDate(rooms,date,duration = 0) { // filters out rooms that are not free on the given date
+function filterByDate(rooms,date) { // filters out rooms that are not free on the given date
   if(rooms === undefined) return [];
   if(getType(date) === 'string') date = parseISOString(date)
   if(getType(date) !== 'date') throw new Error("Invalid type!!!!",date)
-  return rooms.filter(r => freeTimeslots(r,date,duration).length > 0);
+  return rooms.filter(r => freeTimeslots(r,date).length > 0);
 }
 
 /**

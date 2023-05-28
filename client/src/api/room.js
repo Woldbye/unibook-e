@@ -16,20 +16,9 @@ export const Type = {
   Classroom: 'Klasselokale',
 };
 
-export function freeTimeslots(room,date,duration=0.0) { // returns the timeslots of a room that are free on the given date
-  const date_id = date.addTime(0,0,0).toISOString().split('T')[0];
-  const freeslots = room['timeslots']['free'].filter(dkey => dkey.startsWith(date_id));
-  const reservedslots = room['timeslots']['reserved'].filter(dkey => dkey.startsWith(date_id));
-  
-  return freeslots.filter(
-    slot => {
-      const start = parseISOString(slot);
-      const stop = start.addTime(0,0,0,duration);
-      // First slot in reserved that are later than start
-      const next = reservedslots.find(tm => tm > start)
-      // Return free timeslots that are not reserved in respect to the duration
-      return (stop < next)
-  });
+export function freeTimeslots(room,date) { // returns the timeslots of a room that are free on the given date
+  const date_id = date.addTime(0,0,1).toISOString().split('T')[0];
+  return room['timeslots']['free'].filter(dkey => dkey.startsWith(date_id));
 };
 
 /** 
