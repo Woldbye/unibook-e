@@ -1,5 +1,5 @@
 const { hasTag,Tag } = require('./roomtag.js');
-const { } = require('./../date.js');
+const { parseISOString } = require('./../date.js');
 
 const Size = {
   XS: 8,
@@ -17,9 +17,20 @@ const Type = { //room types - a room can only have one at a time
   Classroom: 'Klasselokale',
 }
 
-function freeTimeslots(room,date) {    //Returns the timeslots of a room that are free on the given date
+function freeTimeslots(room,date,duration = 0.0) {    //Returns the timeslots of a room that are free on the given date
   const date_id = date.addTime(0,0,0).toISOString().split('T')[0];
-  return room['timeslots']['free'].filter(dkey => dkey.startsWith(date_id));
+  const freeslots = room['timeslots']['free'].filter(dkey => dkey.startsWith(date_id));
+  const reservedslots = room['timeslots']['reserved'].filter(dkey => dkey.startsWith(date_id));
+
+  return freeslots.filter(
+    slot => {
+      const start = parseISOString(slot);
+      const stop = start.addTime(0,0,0,duration);
+      // First slot in reserved that are later than start
+      const next = reservedslots.find(tm => tm > start)
+      // Return free timeslots that are not reserved in respect to the duration
+      return (stop < next)
+    });
 };
 
 /** 

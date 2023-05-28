@@ -38,8 +38,12 @@ class RoomDatabase {
     // Filter rooms so they only contain timeslots for the given date
     if(room_query["date"] !== undefined) {
       const date = parseISOString(room_query["date"]);
-      res = filterByDate(this.rooms,date).map(room => {
-        room["timeslots"]["free"] = freeTimeslots(room,date);
+      res = filterByDate(this.rooms,date,duration).map(room => {
+        room["timeslots"]["free"] = freeTimeslots(
+          room,
+          date,
+          'duration' in room_query ? room_query['duration'] : 0
+        );
         return room;
       })
     }
@@ -52,7 +56,7 @@ class RoomDatabase {
             if(param === 'size') {
               return parseInt(room[param]) >= parseInt(value);
             } else if(param === 'duration') {
-              return true; // TODO: implement duration
+              return true; // Duration check is done by room timeslots.free check above"
             } else if(param === 'type') {
               return value.some(v => room['type'] === v || v === '')
             } else if(param === 'ressources') {

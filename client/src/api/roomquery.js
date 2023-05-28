@@ -41,8 +41,8 @@ export function queryToStringIfDate(rquery) { //room query to string for confirm
   return lines;
 }
 
-export function filterByDate(rooms,date) { // filters out rooms that are not free on the given date
-  return rooms.filter(r => Room.freeTimeslots(r,date).length > 0);
+export function filterByDate(rooms,date, duration = 0) { // filters out rooms that are not free on the given date
+  return rooms.filter(r => Room.freeTimeslots(r,date,duration).length > 0);
 }
 
 /**
@@ -62,7 +62,6 @@ export async function getRooms(room_query_url) {
  * Receives an url string of a room query and returns an object containing the parameters of the query.
  * @param {*} url string as constructed by toUrl(query)
  */
-
 export function fromUrl(url) { //convert url string to room query object for use on current page
   if (getType(url) !== 'string') url = toUrl(url)
   const objArr = url.split("&").map(param => param.split("="))
@@ -70,10 +69,10 @@ export function fromUrl(url) { //convert url string to room query object for use
   for(let i = 0;i < objArr.length;i++) {
     // If input param is an array
     if(objArr[i][0] === 'type' || objArr[i][0] === 'id') {
-      objArr[i][1] = objArr[i][1].split(",");
+      objArr[i][1] = objArr[i][1].split(","); 
     } else if(objArr[i][0] === 'ressources') {
       objArr[i][1] = objArr[i][1].split(",");       //Split type into array of types
-      if(objArr[i][1].length === 1 && objArr[i][1][0] === "")
+    if(objArr[i][1].length === 1 && objArr[i][1][0] === "")
         objArr[i][1] = [];
     } else if(objArr[i][0] === 'date') {
       objArr[i][1] = parseISOString(objArr[i][1]);
