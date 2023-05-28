@@ -36,7 +36,7 @@ const create = (type, room_size, building_nr,floor,room,address,tag_flags, times
     address: address,
     size: `${room_size}`,
     timeslots: timeslots,
-    resources: {
+    ressources: {
       // Resources capitalized to ease printing and allow indexing with tag flag names
       Screen: hasTag(tag_flags,Tag.Screen) ? '1' : '0',
       Projector: hasTag(tag_flags,Tag.Projector) ? '1' : '0',
@@ -48,7 +48,7 @@ const create = (type, room_size, building_nr,floor,room,address,tag_flags, times
     }
   }
 }
-
+ 
 module.exports = {
   Size,
   Type,

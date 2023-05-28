@@ -1,4 +1,4 @@
-import { Text,IconButton, HStack, Flex,Center,Spacer } from '@chakra-ui/react';
+import { Text,IconButton, HStack, Flex,Center } from '@chakra-ui/react';
 import {ArrowLeftIcon,ArrowRightIcon } from '@chakra-ui/icons';
 import React from 'react';
 import Color from '../Colors';
@@ -67,24 +67,23 @@ const TimeChooser = (props) => {
   }, [ index,bookings.length ])
 
   React.useEffect(() => {
-    const timeid = setTimeout(() => {
-      if(bookings !== undefined &&
-        Array.isArray(bookings) &&
-        bookings.length > 0 &&
-        'room_ids' in bookings[index] &&
-        bookings[index]['room_ids'] !== undefined
-      )
-      {
-        const booking = {
-          date: bookings[index]['date'],
-          room_ids: bookings[index]['room_ids']
-        }
-        if(props.setBooking !== undefined)
-          props.setBooking(booking) // Update global booking state
+    if(bookings !== undefined &&
+      Array.isArray(bookings) &&
+      bookings.length > 0 &&
+      'room_ids' in bookings[index] &&
+      bookings[index]['room_ids'] !== undefined
+    )
+    {
+      const booking = {
+        date: bookings[index]['date'],
+        room_ids: bookings[index]['room_ids']
       }
-    }, 500)
-    return () => clearTimeout(timeid)
-  },[bookings,index,props.setBooking,props.date])  
+      if(props.setBooking !== undefined)
+        props.setBooking(booking) // Update global booking state
+    } else {
+      props.setBooking({date: undefined, room_ids: []})
+    }
+  },[bookings,index,props])  
   
   const type_name = "time"
 

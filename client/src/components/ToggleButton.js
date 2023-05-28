@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import Color from "../Colors";
+
 /**
  * @brief A button that toggles between active and inactive states. The active state receives the .active css tag
  * @param {props} props - The props of the component.

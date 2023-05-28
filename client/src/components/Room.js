@@ -30,7 +30,7 @@ class Room extends React.Component {
   }
 
   render() {
-    const { resources } = this.room_json 
+    const { ressources } = this.room_json 
 
     return (
       <Container padding={"1rem 0 0 0"}>
@@ -53,8 +53,8 @@ class Room extends React.Component {
               { 
                 // Show all resources that are available for this room
                 Object
-                  .keys(resources)
-                  .filter(key => resources[key] === '1')
+                  .keys(ressources)
+                  .filter(key => ressources[key] === '1')
                   .map(key => {
                     return (
                       <Box key={`${this.room_json["id"]}-${key}`} backgroundColor={Color.LIGHT_BROWN} px={4} h={8} m={'2'} boxShadow={'0px 6px 8px #00000040'}>

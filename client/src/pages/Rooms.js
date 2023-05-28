@@ -24,7 +24,6 @@ const Rooms = () => {
   delete start_query['date'];
   delete start_query['id'];
 
-  console.log("query",query)
   if(getType(date) !== 'date') throw new Error("Received invalid date object from url", date)
   
   React.useEffect(() => {     //Listener to update rooms and query display when query changes
