@@ -22,7 +22,8 @@ const RoomBookingTime = () => {
   let params = useParams();
   const today = new Date(new Date().getFullYear(),new Date().getMonth(),new Date().getDate());
   const start_query = params.query ?? ''; // start query in url form
-  
+  const start_type = fromUrl(start_query)['type']
+  const start_id = fromUrl(start_query)['id']
   const navigate = useNavigate();
   const [query,setQuery] = React.useState(fromUrl(start_query));
   const [rooms, setRooms] = React.useState([]);
@@ -48,8 +49,9 @@ const RoomBookingTime = () => {
     <Background>
       <BackButton to={`/rooms`} />
       <Container>
+
         <Stack alignItems={'center'} spacing={'0.5rem'} minWidth={'12rem'} paddingTop={'20px'}>
-          <Heading as='h2' size='lg'>{`Tider for ${query['type']} ${query['id'][0]}`}</Heading>
+          <Heading as='h2' size='lg'>{`Tider for ${start_type} ${start_id}`}</Heading>
           <FormControl>
             <FormLabel marginTop={'4%'} textAlign={'center'} fontSize={20}>Vælg varighed</FormLabel>
             <Center>
@@ -79,16 +81,19 @@ const RoomBookingTime = () => {
       </Container>
       <Container paddingTop={'0'} paddingBottom={'10'}>
         <Stack alignItems={'center'} spacing={'2rem'} minWidth={'12rem'}>
-          <VStack width='50%' minWidth={'12rem'}>
+          <VStack width='100%' minWidth={'12rem'}>
             <TimeChooser
-              marginBottom={'15%'}
+              marginBottom={'4%'}
               date={selected_date}
               rooms={rooms}
               setBooking={({ room_ids, date }) => setBooking({ room_ids: room_ids, date: date })}
             />
-            <Button size={'lg'} onClick={() => {
-              navigate(`/book/confirm/${toUrl(query)}&rid=${query['id']}&from_date=1/`)
-            }}>
+            <Button
+              size={'lg'}
+              isDisabled={!(query !== undefined && 'date' in query && 'id' in query && query['id'][0] !== undefined)}
+              onClick={() => {
+                navigate(`/book/confirm/${toUrl(query)}&rid=${query['id']}&from_date=1/`)
+              }}>
                 <Text size={'lg'}>Næste</Text >
             </Button>
           </VStack>
