@@ -17,7 +17,7 @@ const Calendar = (props) => {
   const onDateClick = props.onClick;
   const rooms = props.rooms;
   const selected_date = props.selected_date ?? new Date().toISOString(); // default today
-  const today = new Date();
+  const today = new Date(new Date().getFullYear(),new Date().getMonth(),new Date().getDate());
   const [month, setMonth] = React.useState(today.getMonth());
   const [year, setYear] = React.useState(today.getFullYear());
 
@@ -130,7 +130,6 @@ const Calendar = (props) => {
         border={'none'}
         size={'lg'}
         fontSize={'1.3rem'}
-        // width={'100vw'}
         onChange={(e) => {
           const [m,y] = e.target.value.toLowerCase().split(' ');
           setMonth(Object.keys(da_months).indexOf(m));

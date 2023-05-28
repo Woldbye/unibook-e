@@ -11,7 +11,6 @@ import { getRooms, queryToStringIfDate } from '../api/roomquery.js';
 import BackButton from '../components/BackButton';
 import { getType } from '../util.js';
 import { fromUrl,toUrl } from '../api/roomquery.js';
-import { parseISOString } from '../date';
 
 const Rooms = () => {
   let params = useParams();
@@ -20,8 +19,12 @@ const Rooms = () => {
   const [rooms,setRooms] = React.useState([]);
   const [header,setHeader] = React.useState('');   //Header to display query on top of page
   const query = fromUrl(params.query);
+  const start_query = { ...query }; // start query in url form
   const date = query['date'];
-  
+  delete start_query['date'];
+  delete start_query['id'];
+
+  console.log("query",query)
   if(getType(date) !== 'date') throw new Error("Received invalid date object from url", date)
   
   React.useEffect(() => {     //Listener to update rooms and query display when query changes
@@ -42,7 +45,7 @@ const Rooms = () => {
 
   return (
     <Container>
-      <BackButton to={`/book/date/${params.query}/${date}/`} /> 
+      <BackButton to={`/book/date/${toUrl(start_query)}/`} /> 
       {header}
       <List spacing={'1rem'}>
         {rooms.map(room => <Room key={room['id']} onClick={() => onRoomSelect(room['id'])} json={room}/>)}

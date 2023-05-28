@@ -1,4 +1,4 @@
-import { Text,IconButton, HStack, Flex,Center } from '@chakra-ui/react';
+import { Text,IconButton, HStack, Flex,Center,Spacer } from '@chakra-ui/react';
 import {ArrowLeftIcon,ArrowRightIcon } from '@chakra-ui/icons';
 import React from 'react';
 import Color from '../Colors';
@@ -12,73 +12,91 @@ import { parseISOString } from '../date';
  * @param {marginBottom} props marginBottom
  */
 const TimeChooser = (props) => {
-  const rooms = props.rooms ?? [];
   const marginBottom = props.marginBottom ?? '0';
-  const date = props.date ?? new Date().toISOString();
-  const setBooking = props.setBooking ?? ((dt) => { })
-  
-  let byDate = {} //byDate will contain rooms grouped by available time slot
-  filterByDate(rooms,parseISOString(date)) //get rooms available on date
-    .reduce((acc,room) => { //iterate over array, accumulating timeslots 
-      const { id,timeslots } = room;
-      return acc.concat(
-        timeslots['free'] // get free timeslots only
-          .map(datestr => ({ date: parseISOString(datestr),room_id: id })) // create an array of the free timeslots collected with their associated room
-          .filter(slot => { // filter out timeslots that are not on the selected date and time
-            return (slot['date'].getDate() === date.getDate()
-              && slot['date'].getFullYear() === date.getFullYear()
-              && slot['date'].getMonth() === date.getMonth())
-          })
-      )
-    }, [])
-    .sort((a, b) => a['date'] - b['date']) // sort in ascending order by date
-    .map(({ date, room_id }) => ({ date: date.toISOString(), room_id }))
-    .forEach(({ date, room_id }) => {      // group by date
-      if (byDate[date] === undefined) byDate[date] = [room_id];
-      else byDate[date].push(room_id);
-    })
+  // Hooks
+  const [index,setIndex] = React.useState(0); // active room index
+  const [bookings,setBookings] = React.useState([]); // set local held bookings for the day as {date: Date, room_ids: int[]}
+  const [times,setTimes] = React.useState([]); // times for the day
 
+  // Extract the up to three shown values whenever index or booking changes
+  React.useEffect(() => {
+    setTimes(bookings.sliceMid(index,1))
+  }, [bookings,index])
 
-  // Transform byDate into bookings by mapping to { date: Date, room_ids: int[] } format
-  const bookings = Object
-
-    .keys(byDate) //get the timeslots which have available rooms
-    .map(key => ({ date: key, room_ids: byDate[key] }))
+  React.useEffect(() => {
+    let byDate = {} // byDate will contain rooms grouped by available time slot
+    const date = props.date ?? new Date(new Date().getFullYear(),new Date().getMonth(),0).toISOString();
     
-  const [index,setIndex] = React.useState(0); // selected timeslot
+    // get rooms available on date input date
+    filterByDate(props.rooms ?? [],parseISOString(date))
+      // roll up timeslots for all rooms available on a given date into a single array
+      .reduce((acc,room) => { 
+        const { id,timeslots } = room;
+        return acc.concat(
+          timeslots['free'] 
+            // Parse the free room times from ISO date strings to Date objects
+            .map(datestr => ({ date: parseISOString(datestr),room_id: id }))
+            // filter out timeslots that are not on the selected year,month,day
+            .filter(slot => slot['date'].ymdEquals(date))
+        )
+      },[])
+      // sort in ascending order by time of day
+      .sort((a,b) => a['date'] - b['date'])
+      // map back to ISO date strings
+      .map(({ date,room_id }) => ({ date: date.toISOString(), room_id }))
+      .forEach(({ date,room_id }) => {      // group by date
+        if(byDate[date] === undefined) byDate[date] = [room_id];
+        else byDate[date].push(room_id);
+      })
+      
+    // Transform byDate into bookings by mapping to { date: Date, room_ids: int[] } format
+    setBookings(
+      Object
+        .keys(byDate)
+        .map(key => ({ date: key,room_ids: byDate[key] }))
+    )
+      
+  },[props.rooms,props.date])
   
+  // Set index to first free timeslot whenever date changes
+  React.useEffect(() => { setIndex(0) }, [props.date])
+  
+  // Set index to 0 when bookings change
+  React.useEffect(() => {
+    if(index > bookings.length - 1 || index <= 0) setIndex(0)
+  }, [ index,bookings.length ])
 
-  const times = bookings.sliceMid(index,1) //get the available rooms at the selected timeslot
-  
   React.useEffect(() => {
     const timeid = setTimeout(() => {
-
-      if (index > times.length - 1 || index <= 0) setIndex(0)
-      if (times !== undefined &&
-        Array.isArray(times) &&
-        times.length > 0 &&
-        'val' in times[0] &&
-        'room_ids' in times[0]['val'] &&
-        times[0]['val']['room_ids'] !== undefined
-      ) {
+      if(bookings !== undefined &&
+        Array.isArray(bookings) &&
+        bookings.length > 0 &&
+        'room_ids' in bookings[index] &&
+        bookings[index]['room_ids'] !== undefined
+      )
+      {
         const booking = {
-          date: times[0]['val']['date'],
-          room_ids: times[0]['val']['room_ids']
+          date: bookings[index]['date'],
+          room_ids: bookings[index]['room_ids']
         }
-        setBooking(booking)
+        if(props.setBooking !== undefined)
+          props.setBooking(booking) // Update global booking state
       }
     }, 500)
     return () => clearTimeout(timeid)
-  }, [times, index])
-
+  },[bookings,index,props.setBooking,props.date])  
+  
   const type_name = "time"
+
   return (
     <HStack
       hide={-1}
-      width={'100%'}
+      width={'auto'}
       marginBottom={marginBottom}
       justifyContent={'space-between'}
       height={'50px'}
+      // width={'auto'}
+      minWidth={'270px'}
       backgroundColor={Color.BLUE}
       borderRadius={30}
       boxShadow={'0px 6px 8px #00000040'}
@@ -96,45 +114,43 @@ const TimeChooser = (props) => {
         alignItems={'space-around'}
         justifyContent={'space-around'}
         width={'100%'}
+        // minWidth={'200px'}
+        marginRight={'50%'}
+        marginLeft={'50%'}
       >
-        <Flex
-          direction={'row'}
-          textAlign={'center'}
-          alignItems={'space-around'}
-          justifyContent={'space-around'}
-          width={'100%'}
-        >
+        <Center>
         {times.length > 0 ? times.map(entry => {
           const dt = parseISOString(entry['val']['date'])
-          const { room_ids } = entry['val'];//Create a const room_ids which gets the room ids at selected time slot
+          // Retrieve room_ids that are available for dt
+          const { room_ids } = entry['val'];
           return (
-            <Center key={`${dt}:${room_ids}:${index}`}>
               <Text
+                key={`${dt}:${room_ids}:${index}`}
                 color={Color.CREME}
                 className="highlight"
-                
-                //color the selected timeslot green, color the rest in the background color.
-                   background={entry['index'] === index ? Color.GREEN : Color.BLUE}
-                paddingRight={'10%'}
-                paddingLeft={'10%'}
+                // color the selected timeslot green, color the rest in the background color.
+                background={entry['index'] === index ? Color.GREEN : Color.DARK_BROWN}
+                marginRight={'5%'}
+                marginLeft={'5%'}
+                paddingRight={'0.3rem'}
+                paddingLeft={'0.3rem'}
                 cursor={'pointer'}
                 //select timeslot by clicking it //write the time of the timeslot on the form HH:MM
                 onClick={() => setIndex(entry['index'])}
               > 
                 {`${(dt.getHours()).toString().padStart(2,0)}:${dt.getMinutes().toString().padStart(2,0)}`}
               </Text>
-            </Center>
           )
         }) : <Text color={Color.CREME}>Ingen ledige tider</Text>}
-        </Flex>          
+        </Center>  
+      </Flex>
       <IconButton //"got to next available timeslot on this date" button
         size={'lg'}
         aria-label={'Next ' + type_name}
         isRound={true}
         icon={<ArrowRightIcon />}
         onClick={() => { if (index < bookings.length - 1) setIndex(index + 1) }}
-      />
-      </Flex>
+        />
     </HStack>
   )
 };

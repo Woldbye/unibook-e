@@ -6,7 +6,7 @@ import {
   VStack,
   Button
 } from '@chakra-ui/react';
-import { Link, Outlet, useParams } from 'react-router-dom';
+import { Link,  useParams } from 'react-router-dom';
 import Background from '../components/Background';
 import Calendar from '../components/Calendar';
 import TimeChooser from '../components/TimeChooser';
@@ -15,7 +15,10 @@ import { toUrl, fromUrl, getRooms } from "../api/roomquery.js";
 
 const BookingTime = () => {
   let params = useParams();
-  const today = new Date(); // today's date
+  
+  // today's date, but without the current clock
+  const today = new Date(new Date().getFullYear(),new Date().getMonth(),new Date().getDate());
+
   const start_query = params.query ?? ''; // start query in url form
   const [query, setQuery] = React.useState(fromUrl(start_query));
   const [rooms, setRooms] = React.useState([]);
@@ -25,17 +28,17 @@ const BookingTime = () => {
   const [booking, setBooking] = React.useState();
 
 
-  //listener to update selected timeslot in query when picked in TimeChooser
+  // listener to update selected timeslot in query when picked in TimeChooser
   React.useEffect(() => {
-    if(booking !== undefined && "room_ids" in booking && "date" in booking) {
+    if(booking !== undefined && "date" in booking) {
       const { room_ids, date } = booking;
       const newState = query; // copy query
       newState['id'] = room_ids;
       newState['date'] = date;
       setQuery(newState);
     }
-  }, [booking,query])
-  // listener to update rooms when query changes
+  },[booking,query,selected_date])
+  
   React.useEffect(() => { getRooms(query).then(rs => setRooms(rs)); },[query])
 
   return (
@@ -58,9 +61,10 @@ const BookingTime = () => {
       </Container>
       <Container paddingTop={'0'} paddingBottom={10}>
         <Stack alignItems={'center'} spacing={'2rem'} minWidth={'12rem'}>
-          <VStack width='50%' minWidth={'12rem'}>
+          <VStack width='100%' minWidth={'12rem'}>
             <TimeChooser
-              marginBottom={'15%'}
+              key={`${selected_date}-${query}-chooser`}
+              marginBottom={'10%'}
               date={selected_date}
               rooms={rooms}
               setBooking={({ room_ids, date }) => setBooking({ room_ids: room_ids, date: date })}
@@ -70,12 +74,10 @@ const BookingTime = () => {
                 <Text size={'lg'}>Næste</Text >
               </Button>
             </Link>
-            <Outlet /> 
           </VStack>
         </Stack>
       </Container>
     </Background >
   )
 }
-// TODO: what is nested in the outlet?
 export default BookingTime;
