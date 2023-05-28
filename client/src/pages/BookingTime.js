@@ -4,9 +4,9 @@ import {
   Stack,
   Text,
   VStack,
-  Button
+  Button,
 } from '@chakra-ui/react';
-import { Link,  useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Background from '../components/Background';
 import Calendar from '../components/Calendar';
 import TimeChooser from '../components/TimeChooser';
@@ -63,14 +63,14 @@ const BookingTime = () => {
           <VStack width='100%' minWidth={'12rem'}>
             <TimeChooser
               key={`${selected_date}-${query}-chooser`}
-              marginBottom={'1%'}
+              marginBottom={'5%'}
               date={selected_date}
               rooms={rooms}
               setBooking={({ room_ids, date }) => setBooking({ room_ids: room_ids, date: date })}
             />
             <Button
               size={'lg'}
-              disabled={(query !== undefined && "id" in query && query["id"].length > 0 && "date" in query)}
+              isDisabled={!(query !== undefined && "id" in query && query["id"].length > 0 && "date" in query)}
               onClick={() => navigate(`/rooms/${toUrl(query)}/`)}
             >
               <Text size={'lg'}>Næste</Text >
