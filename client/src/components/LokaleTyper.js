@@ -29,7 +29,7 @@ class LokaleTyper extends React.Component {
         <Container padding={"2rem 0 0 0"} centerContent="true">
           <Background width="60vw" height="auto" backgroundColor={Color.BLUE}>
             <VStack>
-              <Text color={Color.CREME} fontSize={'xl'} padding={'20px 40px 0px 40px'}>Lokale typer</Text>
+              <Text color={Color.CREME} fontSize={'xl'} padding={'20px 40px 0px 40px'}>{'Lokalet skal være en af typerne'}</Text>
             </VStack>
             <VStack padding={'0 0 1rem 0'}>
               <Flex spacing={'2rem'} display={'Flex'} flexWrap={'wrap'} justify={'center'}>

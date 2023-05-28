@@ -49,7 +49,6 @@ const Booking = () => {
   const onTimeChange = (val) => { setDuration( `${val}` ) }
   
   const onResChange = (res) => { // if ressource is already selected, remove it, otherwise add it
-    //! TO:DO IMPLEMENT
     var newRessources = ressources;
     if(newRessources.includes(res)) {
       newRessources = newRessources.filter(r => r !== res);
@@ -57,8 +56,8 @@ const Booking = () => {
       newRessources.push(res);
     }
     setRessources(newRessources);
-    setQuery({ size: query.size,duration: query.duration, type: query.type, ressources: newRessources })
-    console.log("new ressources: ",newRessources, " toggled ", res);
+    // Can't figure out why but this is needed to update the query state variable, even though below useEffect listens on type
+    setQuery({ size: query.size,duration: query.duration,type: query.type,ressources: newRessources })
   }
 
   const onTypeChange = (typeKey) => { //if type is already selected, remove it, otherwise add it

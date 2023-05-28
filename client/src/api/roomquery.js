@@ -10,9 +10,9 @@ export function toUrl(room_query) { //convert room query to url string for page-
   const url = Object
     .entries(room_query)
     .map(([param,value]) => {
-      if(param === 'type' && typeof value === 'object') {
+      if(param === 'type' && getType(value) === 'object') {
         return `${param}=${Object.values(value)}`
-      } else if(param === 'date' && typeof value === 'object') {
+      } else if(param === 'date' && getType(value) === 'date') {
         return `${param}=${value.toISOString()}`
       } else {
         return `${param}=${value}`
@@ -68,10 +68,16 @@ export function fromUrl(url) { //convert url string to room query object for use
   const objArr = url.split("&").map(param => param.split("="))
   // Convert inner objects to arrays
   for(let i = 0;i < objArr.length;i++) {
-    if(objArr[i][0] === 'type' || objArr[i][0] === 'id')
-      objArr[i][1] = objArr[i][1].split(","); // RETURNS AN ARRAY
-    else if(objArr[i][0] === 'date')
+    // If input param is an array
+    if(objArr[i][0] === 'type' || objArr[i][0] === 'id') {
+      objArr[i][1] = objArr[i][1].split(",");
+    } else if(objArr[i][0] === 'ressources') {
+      objArr[i][1] = objArr[i][1].split(",");       //Split type into array of types
+      if(objArr[i][1].length === 1 && objArr[i][1][0] === "")
+        objArr[i][1] = [];
+    } else if(objArr[i][0] === 'date') {
       objArr[i][1] = parseISOString(objArr[i][1]);
+    }
   }
   return Object.fromEntries(objArr);
 }
