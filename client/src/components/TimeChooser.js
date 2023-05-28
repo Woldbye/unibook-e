@@ -67,25 +67,6 @@ const TimeChooser = (props) => {
   }, [ index,bookings.length ])
 
   React.useEffect(() => {
-    // const timeid = setTimeout(() => {
-    //   if(bookings !== undefined &&
-    //     Array.isArray(bookings) &&
-    //     bookings.length > 0 &&
-    //     'room_ids' in bookings[index] &&
-    //     bookings[index]['room_ids'] !== undefined
-    //   )
-    //   {
-    //     const booking = {
-    //       date: bookings[index]['date'],
-    //       room_ids: bookings[index]['room_ids']
-    //     }
-    //     if(props.setBooking !== undefined)
-    //       props.setBooking(booking) // Update global booking state
-    //   } else {
-    //     props.setBooking({date: undefined, room_ids: []})
-    //   }
-    // }, 200)
-    // return () => clearTimeout(timeid)
     if(bookings !== undefined &&
       Array.isArray(bookings) &&
       bookings.length > 0 &&
@@ -102,7 +83,7 @@ const TimeChooser = (props) => {
     } else {
       props.setBooking({date: undefined, room_ids: []})
     }
-  },[bookings,index,props.setBooking,props.date])  
+  },[bookings,index,props])  
   
   const type_name = "time"
 
