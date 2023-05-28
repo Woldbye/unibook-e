@@ -1,5 +1,6 @@
 const { hasTag,Tag } = require('./roomtag.js');
-const { parseISOString } = require('./../date.js');
+const { parseISOString,getType } = require('./../date.js');
+
 
 const Size = {
   XS: 8,
@@ -17,22 +18,28 @@ const Type = { //room types - a room can only have one at a time
   Classroom: 'Klasselokale',
 }
 
-function freeTimeslots(room,date,duration = 0.0) {    //Returns the timeslots of a room that are free on the given date
-  const date_id = date.addTime(0,0,0).toISOString().split('T')[0];
-  const freeslots = room['timeslots']['free'].filter(dkey => dkey.startsWith(date_id));
-  const reservedslots = room['timeslots']['reserved'].filter(dkey => dkey.startsWith(date_id));
-
-  return freeslots.filter(
-    slot => {
-      const start = parseISOString(slot);
-      const stop = start.addTime(0,0,0,duration);
-      // First slot in reserved that are later than start
-      const next = reservedslots.find(tm => tm > start)
-      // Return free timeslots that are not reserved in respect to the duration
-      return (stop < next)
+function freeTimeslots(room,date,duration=0.0) { // returns the timeslots of a room that are free on the given date
+  // console.log("Free timeslots received: ", duration, getType(duration))
+  const reservedslots = room['timeslots']['reserved']
+    .map(dkey => parseISOString(dkey));
+  
+  return  room['timeslots']['free']
+    .filter(
+      slot => {
+        slot = parseISOString(slot);
+        if(!slot.ymdEquals(date)) return false;
+        const start = slot.subtractTime(0,0,0,0,1);
+        const stop = start.addTime(0,0,0,duration,1);
+        // First slot in reserved that are later than start
+        // console.log("\n\tslot is ",slot,"\n\tstart is ", start, " \n\tstop", stop, " include: ", !reservedslots.some(tm => tm > start && tm < stop))
+        return !reservedslots.some(tm => tm > start && tm < stop)
+        // const next = reservedslots.find(tm => tm > start || tm.equals(start))
+        // if (next === undefined) return true;
+        // console.log("stop is ", stop, " and next", next, " ")
+        // // Return free timeslots that are not reserved in respect to the duration
+        // return (stop.equals(next) || stop < next)
     });
 };
-
 /** 
  * @brief Create a new Room object. 
  *        parameter values are held as strings to allow easy conversion back and forward 

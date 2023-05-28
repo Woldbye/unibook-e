@@ -41,7 +41,7 @@ export function queryToStringIfDate(rquery) { //room query to string for confirm
   return lines;
 }
 
-export function filterByDate(rooms,date, duration = 0) { // filters out rooms that are not free on the given date
+export function filterByDate(rooms,date, duration = 0.0) { // filters out rooms that are not free on the given date
   return rooms.filter(r => Room.freeTimeslots(r,date,duration).length > 0);
 }
 

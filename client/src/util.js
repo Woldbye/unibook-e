@@ -18,7 +18,10 @@ Array.prototype.sliceMid = function(mid,k) {
   }
   return ret;
 }
-
+Array.prototype.append = function(item) {
+  this.push(item);
+  return this
+};
 // https://stackoverflow.com/questions/7893776/the-most-accurate-way-to-check-js-objects-type
 export var getType = (function(global) {
   var cache = {};

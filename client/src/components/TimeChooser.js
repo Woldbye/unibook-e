@@ -13,6 +13,8 @@ import { parseISOString } from '../date';
  */
 const TimeChooser = (props) => {
   const marginBottom = props.marginBottom ?? '0';
+  const duration = props.duration ?? 0; // duration of booking in hours
+  console.log("Received duration: ", duration)
   // Hooks
   const [index,setIndex] = React.useState(0); // active room index
   const [bookings,setBookings] = React.useState([]); // set local held bookings for the day as {date: Date, room_ids: int[]}
@@ -56,7 +58,7 @@ const TimeChooser = (props) => {
         .map(key => ({ date: key,room_ids: byDate[key] }))
     )
       
-  },[props.rooms,props.date])
+  },[props])
   
   // Set index to first free timeslot whenever date changes
   React.useEffect(() => { setIndex(0) }, [props.date])

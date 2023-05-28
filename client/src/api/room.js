@@ -1,5 +1,7 @@
-import {} from '../date.js';
+import { parseISOString } from '../date.js';
+import { getType } from '../util.js';
 const { hasTag,Tag } = require('./roomtag.js');
+
 export const Size = {
   XS: 8,
   S: 16,
@@ -17,19 +19,26 @@ export const Type = {
 };
 
 export function freeTimeslots(room,date,duration=0.0) { // returns the timeslots of a room that are free on the given date
-  const date_id = date.addTime(0,0,0).toISOString().split('T')[0];
-  const freeslots = room['timeslots']['free'].filter(dkey => dkey.startsWith(date_id));
-  const reservedslots = room['timeslots']['reserved'].filter(dkey => dkey.startsWith(date_id));
+  // console.log("Free timeslots received: ", duration, getType(duration))
+  const reservedslots = room['timeslots']['reserved']
+    .map(dkey => parseISOString(dkey));
   
-  return freeslots.filter(
-    slot => {
-      const start = parseISOString(slot);
-      const stop = start.addTime(0,0,0,duration);
-      // First slot in reserved that are later than start
-      const next = reservedslots.find(tm => tm > start)
-      // Return free timeslots that are not reserved in respect to the duration
-      return (stop < next)
-  });
+  return  room['timeslots']['free']
+    .filter(
+      slot => {
+        slot = parseISOString(slot);
+        if(!slot.ymdEquals(date)) return false;
+        const start = slot.subtractTime(0,0,0,0,1);
+        const stop = start.addTime(0,0,0,duration,1);
+        // First slot in reserved that are later than start
+        // console.log("\n\tslot is ",slot,"\n\tstart is ", start, " \n\tstop", stop, " include: ", !reservedslots.some(tm => tm > start && tm < stop))
+        return !reservedslots.some(tm => tm > start && tm < stop)
+        // const next = reservedslots.find(tm => tm > start || tm.equals(start))
+        // if (next === undefined) return true;
+        // console.log("stop is ", stop, " and next", next, " ")
+        // // Return free timeslots that are not reserved in respect to the duration
+        // return (stop.equals(next) || stop < next)
+    });
 };
 
 /** 

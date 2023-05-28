@@ -2,7 +2,7 @@ const { freeTimeslots } = require('./room.js');
 const { getType,parseISOString } = require('./../date.js');
 
 
-function filterByDate(rooms,date,duration = 0) { // filters out rooms that are not free on the given date
+function filterByDate(rooms,date,duration = 0.0) { // filters out rooms that are not free on the given date
   if(rooms === undefined) return [];
   if(getType(date) === 'string') date = parseISOString(date)
   if(getType(date) !== 'date') throw new Error("Invalid type!!!!",date)

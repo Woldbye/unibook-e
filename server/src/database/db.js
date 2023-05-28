@@ -38,14 +38,15 @@ class RoomDatabase {
     // Filter rooms so they only contain timeslots for the given date
     if(room_query["date"] !== undefined) {
       const date = parseISOString(room_query["date"]);
-      res = filterByDate(this.rooms,date,duration).map(room => {
+      res = this.rooms.reduce((acc, room) => {
         room["timeslots"]["free"] = freeTimeslots(
           room,
           date,
           'duration' in room_query ? room_query['duration'] : 0
         );
-        return room;
-      })
+        
+        return (room.timeslots.free.length > 0) ? acc.append(room) : acc;
+      }, [])
     }
     
     // Filter rooms for each part of the query

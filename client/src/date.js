@@ -15,6 +15,12 @@ Date.prototype.ymdEquals = function(date){
   return this.getFullYear() === date.getFullYear() && this.getMonth() === date.getMonth() && this.getDate() === date.getDate();
 }
 
+// Date.prototype.equals = function(date) {
+//   const res = this.ymdEquals(date) && this.getHours() === date.getHours() && this.getMinutes() === date.getMinutes();
+//   console.log("Result of comparison of ", this, date, res)
+//   return res
+// }
+
 Date.prototype.toClockString = function() {
   return `${this.getHours() < 10 ? '0' : ''}${this.getHours()}:${this.getMinutes() < 10 ? '0' : ''}${this.getMinutes()}`;
 }

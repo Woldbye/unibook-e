@@ -39,7 +39,7 @@ const BookingTime = () => {
     }
   },[booking,query,selected_date])
   
-  React.useEffect(() => { getRooms(query).then(rs => setRooms(rs)); },[query])
+  React.useEffect(() => { getRooms(query).then(rs => setRooms(rs)); },[])
 
   return (
     <Background>
@@ -68,6 +68,7 @@ const BookingTime = () => {
               marginBottom={'5%'}
               date={selected_date}
               rooms={rooms}
+              duration={duration}
               setBooking={({ room_ids, date }) => setBooking({ room_ids: room_ids, date: date })}
             />
             <Button
