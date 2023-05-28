@@ -79,9 +79,9 @@ const RoomBookingTime = () => {
       </Container>
       <Container paddingTop={'0'} paddingBottom={'10'}>
         <Stack alignItems={'center'} spacing={'2rem'} minWidth={'12rem'}>
-          <VStack width='50%' minWidth={'12rem'}>
+          <VStack width='100%' minWidth={'12rem'}>
             <TimeChooser
-              marginBottom={'15%'}
+              marginBottom={'4%'}
               date={selected_date}
               rooms={rooms}
               setBooking={({ room_ids, date }) => setBooking({ room_ids: room_ids, date: date })}

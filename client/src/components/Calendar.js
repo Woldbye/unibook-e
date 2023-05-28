@@ -155,7 +155,7 @@ const Calendar = (props) => {
     </Center>
   
   return (
-    <Container textAlign="center" padding={'0'} paddingBottom="10%" margin={0} >
+    <Container textAlign="center" padding={'0'} paddingBottom="5%" margin={0} >
       <Grid
         templateRows='repeat(7, 1fr)'
         templateColumns='repeat(7, 1fr)'

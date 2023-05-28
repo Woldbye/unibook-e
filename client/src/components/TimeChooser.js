@@ -1,4 +1,4 @@
-import { Text,IconButton, HStack, Flex,Center,Spacer } from '@chakra-ui/react';
+import { Text,IconButton, HStack, Flex,Center,FormControl,FormLabel, Container } from '@chakra-ui/react';
 import {ArrowLeftIcon,ArrowRightIcon } from '@chakra-ui/icons';
 import React from 'react';
 import Color from '../Colors';
@@ -89,12 +89,14 @@ const TimeChooser = (props) => {
   const type_name = "time"
 
   return (
-    <HStack
+    <FormControl marginBottom={marginBottom}>
+      <HStack
       hide={-1}
       width={'auto'}
       marginBottom={marginBottom}
       justifyContent={'space-between'}
       height={'50px'}
+      // width={'auto'}
       minWidth={'270px'}
       backgroundColor={Color.BLUE}
       borderRadius={30}
@@ -113,6 +115,7 @@ const TimeChooser = (props) => {
         alignItems={'space-around'}
         justifyContent={'space-around'}
         width={'100%'}
+        // minWidth={'200px'}
         marginRight={'50%'}
         marginLeft={'50%'}
       >
@@ -149,7 +152,11 @@ const TimeChooser = (props) => {
         icon={<ArrowRightIcon />}
         onClick={() => { if (index < bookings.length - 1) setIndex(index + 1) }}
         />
-    </HStack>
+      </HStack>
+      <Center>
+        <FormLabel>{`${bookings.length} tilgængelige tider`}</FormLabel>
+      </Center>
+    </FormControl>
   )
 };
 
