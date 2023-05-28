@@ -3,7 +3,8 @@ import {
   Divider,
   HStack,
   VStack,
-  Center
+  Center,
+  Container
 } from '@chakra-ui/react';
 import { ArrowBackIcon } from '@chakra-ui/icons';
 import Color from '../Colors';
@@ -17,15 +18,17 @@ const BackButton = (params) => {
   const to = params.to ?? "/"
   return (
     <Center>
-      <Link to={to}>
-        <VStack w={'100vw'} alignItems={'left'}>
-          <HStack padding={'0'} paddingLeft={'2vw'}>
+      <VStack w={'100vw'} alignItems={'left'}>
+        <HStack padding={'0'} paddingLeft={'2vw'}>
+          <Link to={to}>
+            <HStack>
             <ArrowBackIcon boxSize={'8'} />
             <Text color={Color.BLACK} fontSize={'3xl'} >Tilbage</Text>
-          </HStack>
-        </VStack>
-        <Divider color={Color.BLACK} orientation='horizontal' />
-      </Link>
+            </HStack>
+          </Link>
+        </HStack>
+      </VStack>
+      <Divider color={Color.BLACK} orientation='horizontal' />
       <Outlet />
     </Center>
   )

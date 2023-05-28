@@ -58,6 +58,7 @@ class GoggleInput extends React.Component {
         backgroundColor={Color.BLUE}
         borderRadius={30}
         boxShadow={'0px 6px 8px #00000040'}
+        alignItems={'center'}
       >
         <IconButton
           size={'lg'}

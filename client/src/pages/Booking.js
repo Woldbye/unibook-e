@@ -4,6 +4,8 @@ import {
   Button,
   VStack,
   Text,
+  FormLabel,
+  FormControl
 } from '@chakra-ui/react';
 import Color from '../Colors';
 import GoggleInput from '../components/GoggleInput';
@@ -72,15 +74,19 @@ const Booking = () => {
   },[size,duration,type]);
   
   return (
-    <Background >
+    <Background height='100vh'>
       <Container>
         <VStack paddingBottom='2rem'>
-          <Text color={Color.BLACK} fontSize={'3xl'} padding={'30px 0px 10px 0px'}>Vælg krav til lokale</Text>
+          <Text color={Color.BLACK} fontSize={'3xl'} padding={'30px 0px 10px 0px'}>Vælg de ting der passer til dit lokale</Text>
           <VStack width='40%' spacing={'1rem'} minWidth={'12rem'}>
+            <FormControl>
+            <FormLabel marginTop={'4%'} textAlign={'center'} fontSize={20}>Vælg antal personer</FormLabel>
             <GoggleInput step_per_click={1.0} type_name={'Personer'} start={parseInt(size)} max={person_max} min={8}
               onChange={onPersonChange} />
+            <FormLabel marginTop={'4%'} textAlign={'center'} fontSize={20} paddingTop={'15px'}>Vælg varighed</FormLabel>
             <GoggleInput step_per_click={1.0} type_name={'Timer'} start={parseFloat(duration)} max={time_max} min={1.0}
               onChange={onTimeChange} />
+            </FormControl>
           </VStack>
           <LokaleTyper startTypes={tp} onChange={(x) => onTypeChange(x) } />
           <Ressourcer></Ressourcer>
