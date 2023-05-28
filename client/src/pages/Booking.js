@@ -23,30 +23,43 @@ const time_max = 8.0; // max meeting duiration
 const Booking = () => {
   let params = useParams(); //get url parameters upon page load in case user is using the back button
   const start_q = fromUrl(params.query ?? '');
-
-  if(!start_q.type) { start_q.type = []; } 
   
+  if(!("type" in start_q) || !Array.isArray(start_q.type)) { start_q.type = []; } 
+  if(!("ressources" in start_q) || !Array.isArray(start_q.ressources)) { start_q.ressources = []; } // Keep ressources as arrays of strings
+
   var tp =  start_q.type.reduce((acc,t) => {
     const key = Object.keys(Room.Type).find(tpkey => Room.Type[tpkey] === t)
     if (key !== undefined)
       acc[key] = t
     return acc;
   },{});
-  
   if(Object.keys(tp).length === 0)
     tp = { ...Room.Type }; // if no types are selected, select all
-
+  
   const [type,setType] = React.useState(tp)
+  const [ressources, setRessources] = React.useState(start_q.ressources);
   const [size,setSize] = React.useState(start_q.size ?? `${Room.Size.XS}`);
   const [duration,setDuration] = React.useState(start_q.duration ?? `${time_start}`);
-
-  const [query,setQuery] = React.useState({type,size,duration});
-
+  const [query,setQuery] = React.useState({type,size,duration,ressources});
+  
   const onPersonChange = (val) => { //get rooms of selected size or greater
     setSize( `${Object.values(Room.Size).find(sz => sz >= val)}` );
   };
 
   const onTimeChange = (val) => { setDuration( `${val}` ) }
+  
+  const onResChange = (res) => { // if ressource is already selected, remove it, otherwise add it
+    //! TO:DO IMPLEMENT
+    var newRessources = ressources;
+    if(newRessources.includes(res)) {
+      newRessources = newRessources.filter(r => r !== res);
+    } else {
+      newRessources.push(res);
+    }
+    setRessources(newRessources);
+    setQuery({ size: query.size,duration: query.duration, type: query.type, ressources: newRessources })
+    console.log("new ressources: ",newRessources, " toggled ", res);
+  }
 
   const onTypeChange = (typeKey) => { //if type is already selected, remove it, otherwise add it
     var newType = query.type;
@@ -59,7 +72,7 @@ const Booking = () => {
     
     setType(newType);
     // Can't figure out why but this is needed to update the query state variable, even though below useEffect listens on type
-    setQuery({ size: query.size,duration: query.duration,type: newType })
+    setQuery({ size: query.size,duration: query.duration, type: newType, ressources: query.ressources })
   }
   
   React.useEffect(() => {  //listener to update query when state variables change
@@ -67,9 +80,10 @@ const Booking = () => {
       size: size,
       duration: duration,
       type: type,
+      ressources: ressources,
     });
 
-  },[size,duration,type]);
+  },[size,duration,type,ressources]);
   
   return (
     <Background >
@@ -83,7 +97,7 @@ const Booking = () => {
               onChange={onTimeChange} />
           </VStack>
           <LokaleTyper startTypes={tp} onChange={(x) => onTypeChange(x) } />
-          <Ressourcer></Ressourcer>
+          <Ressourcer startRessources={start_q.ressources} onChange={(x) => onResChange(x)}></Ressourcer>
           <Link to={`/book/date/${toUrl(query)}/` }>
             <Button size={'lg'}>
               <Text size={'lg'} >Næste</Text >

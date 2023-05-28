@@ -84,7 +84,7 @@ const TimeChooser = (props) => {
       }
     }, 500)
     return () => clearTimeout(timeid)
-  },[bookings,index,props.setBooking,props.date])  
+  },[bookings,index,props])  
   
   const type_name = "time"
 
@@ -95,7 +95,6 @@ const TimeChooser = (props) => {
       marginBottom={marginBottom}
       justifyContent={'space-between'}
       height={'50px'}
-      // width={'auto'}
       minWidth={'270px'}
       backgroundColor={Color.BLUE}
       borderRadius={30}
@@ -114,7 +113,6 @@ const TimeChooser = (props) => {
         alignItems={'space-around'}
         justifyContent={'space-around'}
         width={'100%'}
-        // minWidth={'200px'}
         marginRight={'50%'}
         marginLeft={'50%'}
       >
