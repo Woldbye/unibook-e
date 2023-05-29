@@ -44,8 +44,8 @@ const Rooms = () => {
   }
 
   return (
-    <Background>
-      <Container>
+    <Background height='100vh'>
+      <Container height={'100vh'}>
         <BackButton to={`/book/date/${toUrl(start_query)}/`} /> 
         {header}
         <List spacing={'1rem'}>
