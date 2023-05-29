@@ -52,8 +52,8 @@ const BookingConfirmation = () => {
   return (
     <>
       <Background>
+      <BackButton to={prv_path} />
         <Container>
-          <BackButton to={prv_path} />
           <Container padding={"0 0 3rem 0"} centerContent="true">
             <Heading as='h2' color={Color.BLUE} size={"l"} padding={"30px 40px 0px 40px"} textAlign={'center'} paddingBottom={'3%'}>
               {header}

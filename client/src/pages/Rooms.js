@@ -45,8 +45,8 @@ const Rooms = () => {
 
   return (
     <Background height='100vh'>
+      <BackButton to={`/book/date/${toUrl(start_query)}/`} /> 
       <Container height={'100vh'}>
-        <BackButton to={`/book/date/${toUrl(start_query)}/`} /> 
         {header}
         <List spacing={'1rem'}>
           {rooms.map(room => <Room key={room['id']} onClick={() => onRoomSelect(room['id'])} json={room}/>)}
