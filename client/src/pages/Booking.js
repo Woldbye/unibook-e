@@ -87,7 +87,7 @@ const Booking = () => {
   },[size,duration,type,ressources]);
   
   return (
-    <Background height='100vh'>
+    <Background height='auto'>
       <Container>
         <VStack paddingBottom='2rem'>
           <Text color={Color.BLACK} fontSize={'3xl'} padding={'30px 0px 10px 0px'}>Vælg de ting der passer til dit lokale</Text>
