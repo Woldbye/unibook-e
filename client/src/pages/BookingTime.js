@@ -41,7 +41,7 @@ const BookingTime = () => {
   React.useEffect(() => { getRooms(query).then(rs => setRooms(rs)); },[query])
 
   return (
-    <Background>
+    <Background height='100vh'>
       <BackButton to={`/book/${start_query}/`} />
       <Container>
         <Stack alignItems={'center'} spacing={'2rem'} minWidth={'12rem'}>

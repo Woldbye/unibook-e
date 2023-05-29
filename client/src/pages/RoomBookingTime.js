@@ -49,7 +49,8 @@ const RoomBookingTime = () => {
     <Background>
       <BackButton to={`/rooms`} />
       <Container>
-        <Stack alignItems={'center'} spacing={'0.5rem'} minWidth={'12rem'}>
+
+        <Stack alignItems={'center'} spacing={'0.5rem'} minWidth={'12rem'} paddingTop={'20px'}>
           <Heading as='h2' size='lg'>{`Tider for ${start_type} ${start_id}`}</Heading>
           <FormControl>
             <FormLabel marginTop={'4%'} textAlign={'center'} fontSize={20}>Vælg varighed</FormLabel>
