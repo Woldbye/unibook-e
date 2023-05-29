@@ -28,8 +28,7 @@ $ npm install -y && cd client && npm install -y && cd ../server && npm install -
 ```
 
 ### How to start the project
-
-### 
+ 
 ```bash
 $ cd unibook-e
 $ npm run start
@@ -37,3 +36,16 @@ $ npm run start
 
 This will start both the server and client concurrently respectively on ports 5000 and 3000.
 To affirm it's working navigate to http://localhost:5000 and http://localhost:3000 in your web browser.
+
+### Generating random data
+
+The project includes a script for generating random rooms accessible from the root:
+
+```bash
+$ cd unibook-e
+$ npm run generate
+```
+
+The file will be written to `unibook-e/server/data/rooms.json`.
+The repository includes already includes a sample file at that location,
+so delete the file first if it already exists to get new random rooms.
