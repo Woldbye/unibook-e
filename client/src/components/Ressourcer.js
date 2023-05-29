@@ -21,7 +21,7 @@ const Ressourcer = (props) => {
         <Container padding={"2rem 0 2rem 0"} centerContent="true">
             <Background width="60vw" height="auto" backgroundColor={Color.BLUE}>
                 <VStack>
-                <Text color={Color.CREME} fontSize={'xl'} padding={'30px 40px 0px 40px'}>{'Lokalet skal havde'}</Text>
+                <Text color={Color.CREME} fontSize={'xl'} padding={'30px 40px 0px 40px'}>{'Lokalet skal have'}</Text>
                 </VStack>
                 <VStack padding={'0 0 1rem 0'}>
                   <Flex spacing={'2rem'} display={'Flex'} flexWrap={'wrap'} justify={'center'}>
