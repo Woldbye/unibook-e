@@ -42,14 +42,14 @@ const BookingRoom = () => {
   }, [search]) // Add dependency on search to update when search changes
 
   return (
-    <Background>
-      <Container paddingTop={'20px'}>
-        <SearchBar marginTop={'5'} onChange={setSearch}/>
-        <List spacing={'1rem'} paddingTop={'20px'}>
-          {rooms.map(room => <Room onClick={() => onRoomSelect(room['id'], room['type']) } key={room['id']} json={room}/>)}
-        </List>
-      </Container>
-    </Background>
+      <Background minH = '100vh'>
+        <Container paddingTop={'20px'}>
+          <SearchBar marginTop={'5'} onChange={setSearch}/>
+          <List spacing={'1rem'} paddingTop={'20px'}>
+            {rooms.map(room => <Room onClick={() => onRoomSelect(room['id'], room['type']) } key={room['id']} json={room}/>)}
+          </List>
+        </Container>
+      </Background>
   )
 }
 
