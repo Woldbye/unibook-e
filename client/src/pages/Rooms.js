@@ -11,6 +11,7 @@ import { getRooms, queryToStringIfDate } from '../api/roomquery.js';
 import BackButton from '../components/BackButton';
 import { getType } from '../util.js';
 import { fromUrl,toUrl } from '../api/roomquery.js';
+import Background from '../components/Background';
 
 const Rooms = () => {
   let params = useParams();
@@ -44,13 +45,15 @@ const Rooms = () => {
   }
 
   return (
-    <Container>
-      <BackButton to={`/book/date/${toUrl(start_query)}/`} /> 
-      {header}
-      <List spacing={'1rem'}>
-        {rooms.map(room => <Room key={room['id']} onClick={() => onRoomSelect(room['id'])} json={room}/>)}
-      </List>
-    </Container>
+    <Background>
+      <Container>
+        <BackButton to={`/book/date/${toUrl(start_query)}/`} /> 
+        {header}
+        <List spacing={'1rem'}>
+          {rooms.map(room => <Room key={room['id']} onClick={() => onRoomSelect(room['id'])} json={room}/>)}
+        </List>
+      </Container>
+    </Background>
   )
 }
 export default Rooms;
